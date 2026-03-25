@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Akshun Dogra × Ingestro | hire.akshundogra.com/ingestro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  :root {
+    --bg:      #0a0a0a;
+    --bg2:     #111111;
+    --bg3:     #161616;
+    --border:  #1f1f1f;
+    --border2: #2a2a2a;
+    --text:    #e8e3db;
+    --muted:   #6b6b6b;
+    --muted2:  #3a3a3a;
+    --accent:  #e8c547;
+    --accent2: #f0d060;
+    --green:   #4ade80;
+    --red:     #f87171;
+    --blue:    #60a5fa;
+    --font:    'Plus Jakarta Sans', sans-serif;
+    --mono:    'Geist Mono', monospace;
+    --r:       10px;
+  }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 48px;
+    height: 58px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-collab { display: flex; align-items: center; gap: 10px; }
+  .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
+  .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
+ .nav-company-logo { 
+  height: 22px; width: auto; max-width: 90px; object-fit: contain;
+  filter: brightness(0) invert(1); opacity: 0;
+  animation: fadeInLogo 0.3s ease 0.1s forwards;
+}
+@keyframes fadeInLogo { to { opacity: 0.85; } }
+  .nav-company-name { font-weight: 700; font-size: 15px; color: var(--accent); }
+  .nav-url {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    background: var(--bg3); border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 100px;
+  }
+
+  .inner { max-width: 900px; margin: 0 auto; }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 80px 48px 88px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(232,197,71,0.05) 0%, transparent 70%);
+    top: -100px; right: -60px; pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 280px;
+    gap: 48px; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 100px; padding: 6px 14px 6px 6px;
+    margin-bottom: 26px;
+  }
+ .hero-badge-logo {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: #1a1a1a; object-fit: contain; padding: 3px; flex-shrink: 0;
+}
+  .hero-badge-fallback {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); display: flex; align-items: center;
+    justify-content: center; font-size: 11px; font-weight: 700;
+    color: #000; flex-shrink: 0;
+  }
+  .hero-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
+  .hero-badge-text { font-size: 12px; color: var(--muted); font-weight: 500; }
+
+  .hero-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px;
+  }
+  .hero-h1 {
+    font-size: clamp(24px, 3.2vw, 38px); font-weight: 700;
+    line-height: 1.1; margin-bottom: 20px;
+  }
+  .hero-h1 .highlight { color: var(--accent); }
+  .hero-sub {
+    font-size: 17px; color: #9a9490; line-height: 1.75;
+    font-weight: 300; max-width: 520px; margin-bottom: 36px;
+  }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); color: #000;
+    padding: 13px 26px; border-radius: var(--r);
+    font-weight: 600; font-size: 14px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+  .hero-photo-wrap {
+    border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border2);
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .hero-photo-wrap.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-photo-wrap img {
+    width: 100%; display: block;
+  }
+  .hero-meme-overlay {
+    position: absolute;
+    bottom: 10%; left: 22%; right: 5%;
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: clamp(12px, 3vw, 17px);
+    font-weight: 900;
+    color: #fff;
+    text-shadow:
+      2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000, -2px  2px 0 #000,
+      0   2px 0 #000,  2px  0   0 #000,
+      0  -2px 0 #000, -2px  0   0 #000;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: left;
+    pointer-events: none;
+  }
+
+  /* ─── STATS BAR — Static, never changes ─── */
+  .stats-bar {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 48px;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); text-align: center;
+  }
+  .stat { padding: 0 20px; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-size: 34px; font-weight: 700; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-num .accent { color: var(--accent); }
+  .stat-label { font-size: 12px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+  .stat-channel {
+    display: inline-block; font-family: var(--mono); font-size: 10px;
+    color: var(--muted2); background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 4px; padding: 2px 6px; margin-top: 6px;
+  }
+
+  /* ─── TOOLS CAROUSEL (infinite scroll marquee) ─── */
+  .tools-carousel {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+  }
+  .tools-carousel::before,
+  .tools-carousel::after {
+    content: '';
+    position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2;
+    pointer-events: none;
+  }
+  .tools-carousel::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+  }
+  .tools-carousel::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+  }
+  .carousel-track {
+    display: flex; align-items: center; gap: 32px;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+  }
+  .carousel-track:hover { animation-play-state: paused; }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .tool-chip {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 14px;
+    font-size: 13px; color: #7a7672; font-weight: 500;
+    white-space: nowrap; transition: color 0.2s, border-color 0.2s;
+  }
+  .tool-chip:hover { color: var(--text); border-color: var(--border2); }
+  .tool-chip img { width: 16px; height: 16px; opacity: 0.6; }
+  .tool-chip .tool-emoji { font-size: 14px; }
+
+  /* ─── MEME SECTION — hover swap ─── */
+  .meme-section {
+    padding: 52px 48px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .meme-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .meme-label {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+
+  /* The hover swap container */
+  .meme-hover-container {
+    position: relative;
+    max-width: 480px; width: 100%;
+    cursor: pointer;
+  }
+  /* Both images occupy same space */
+  .meme-hover-container img {
+    display: block;
+    width: 100%; border-radius: 12px;
+    border: 1px solid var(--border2);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  /* Default image: hand washing (rejection / not yet) */
+  .meme-default {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* Hover image: handshake (let's connect) — hidden by default */
+  .meme-hover {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  /* On hover: swap */
+  .meme-hover-container:hover .meme-default {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  .meme-hover-container:hover .meme-hover {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .meme-hint {
+    font-size: 12px; color: var(--muted); text-align: center;
+    font-family: var(--mono);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .meme-hint-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--muted2); display: inline-block;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+  /* ─── SECTIONS ─── */
+  .section { padding: 80px 48px; }
+  .section-alt { background: var(--bg2); }
+  .section-border { border-top: 1px solid var(--border); }
+
+  .section-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;
+  }
+  .section-h2 {
+    font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .body-text {
+    font-size: 15px; color: #9a9490; line-height: 1.8;
+    font-weight: 300; max-width: 640px;
+  }
+  .body-text p { margin-bottom: 14px; }
+  .body-text p:last-child { margin-bottom: 0; }
+
+  /* ─── TWO COL ─── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 22px;
+  }
+  .card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .card-value { font-size: 16px; font-weight: 600; }
+  .card-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* ─── PILLARS ─── */
+  .pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 28px; }
+  .pillar {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 20px; transition: border-color 0.2s;
+  }
+  .pillar.featured { border-color: var(--accent); background: rgba(232,197,71,0.04); }
+  .pillar-badge {
+    display: inline-block; font-size: 10px; font-family: var(--mono);
+    background: rgba(232,197,71,0.15); color: var(--accent);
+    border-radius: 4px; padding: 2px 7px; margin-bottom: 8px;
+    font-weight: 500; letter-spacing: 0.05em;
+  }
+  .pillar-icon { font-size: 20px; margin-bottom: 10px; }
+  .pillar-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .pillar-body { font-size: 13px; color: #7a7672; line-height: 1.6; }
+  .pillar-proof {
+    font-size: 11px; color: var(--accent); opacity: 0.8;
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid rgba(232,197,71,0.15);
+    font-family: var(--mono); line-height: 1.5;
+  }
+  .tools-strip { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+  .tool-tag {
+    display: flex; align-items: center; gap: 5px;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 5px; padding: 4px 9px;
+    font-size: 11px; color: var(--muted); font-weight: 500;
+  }
+  .tool-tag img { width: 12px; height: 12px; opacity: 0.7; }
+
+
+  /* ─── PILLARS V2 — interactive with diagrams ─── */
+  .pillars-v2 { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+
+  .pillar-v2 {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); overflow: hidden; transition: border-color 0.2s;
+  }
+  .pillar-v2.featured {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.03);
+  }
+  .pillar-v2-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    align-items: stretch;
+  }
+  .pillar-v2-left {
+    padding: 24px; border-right: 1px solid var(--border);
+  }
+  .pillar-v2-right {
+    padding: 20px; background: var(--bg);
+  }
+
+  /* ─── Diagram shared styles ─── */
+  .pv-diagram { height: 100%; display: flex; flex-direction: column; gap: 12px; }
+  .pv-label {
+    font-family: var(--mono); font-size: 10px; color: var(--muted2);
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .pv-callout {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(232,197,71,0.06); border: 1px solid rgba(232,197,71,0.15);
+    border-radius: 7px; padding: 10px 14px; margin-top: auto;
+  }
+  .pv-callout-num {
+    font-family: var(--mono); font-size: 22px; font-weight: 700;
+    color: var(--accent); line-height: 1;
+  }
+  .pv-callout-label { font-size: 12px; color: var(--muted); line-height: 1.3; }
+
+  /* ─── Performance: Funnel ─── */
+  .pv-funnel { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .pv-funnel-stage { display: flex; justify-content: center; }
+  .pv-stage-bar {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    gap: 8px; padding: 8px 12px; border-radius: 6px;
+    border: 1px solid transparent; font-size: 12px;
+    transition: border-color 0.2s;
+  }
+  .pv-stage-icon { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+  .pv-stage-name { font-weight: 600; color: var(--text); font-size: 12px; }
+  .pv-stage-tag { font-size: 10px; color: var(--muted); font-family: var(--mono); }
+  .pv-arrow { font-size: 12px; color: var(--muted2); }
+
+  /* ─── Automation: Pipeline ─── */
+  .pv-pipeline {
+    display: flex; align-items: center; gap: 4px; flex-wrap: nowrap;
+    overflow-x: auto; padding-bottom: 4px;
+  }
+  .pv-pipe-node {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px; min-width: 52px; flex-shrink: 0;
+  }
+  .pv-pipe-source { border-color: var(--accent); }
+  .pv-pipe-end { border-color: var(--blue); }
+  .pv-pipe-icon { font-size: 14px; display: flex; align-items: center; }
+  .pv-pipe-name { font-size: 11px; font-weight: 600; color: var(--text); }
+  .pv-pipe-sub { font-size: 10px; color: var(--muted); font-family: var(--mono); }
+  .pv-pipe-arrow { font-size: 14px; color: var(--muted2); flex-shrink: 0; }
+  .pv-routing { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+  .pv-route {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    border-radius: 7px; padding: 8px 6px; text-align: center;
+  }
+  .pv-route-high { background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); }
+  .pv-route-mid  { background: rgba(232,197,71,0.08); border: 1px solid rgba(232,197,71,0.2); }
+  .pv-route-low  { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); }
+  .pv-route-label { font-size: 10px; font-weight: 700; font-family: var(--mono); color: var(--muted); }
+  .pv-route-high .pv-route-label { color: var(--green); }
+  .pv-route-mid  .pv-route-label { color: var(--accent); }
+  .pv-route-low  .pv-route-label { color: var(--red); }
+  .pv-route-dest { font-size: 11px; color: var(--text); }
+
+  /* ─── SEO: GEO grid ─── */
+  .pv-geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pv-geo-card {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px;
+    transition: border-color 0.2s;
+  }
+  .pv-geo-card:hover { border-color: var(--border2); }
+  .pv-geo-icon { font-size: 16px; margin-bottom: 5px; }
+  .pv-geo-title { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .pv-geo-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+  /* ─── Technical: Stack ─── */
+  .pv-stack { display: flex; flex-direction: column; gap: 4px; }
+  .pv-stack-row { display: flex; gap: 6px; }
+  .pv-stack-node {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 7px; padding: 7px 10px; font-size: 12px; color: var(--text);
+    font-weight: 500; flex: 1;
+  }
+  .pv-stack-top { border-color: var(--border2); }
+  .pv-stack-mid { border-color: rgba(232,197,71,0.3); background: rgba(232,197,71,0.05); }
+  .pv-stack-bot { border-color: var(--border); font-size: 11px; }
+  .pv-stack-badge {
+    margin-left: auto; font-size: 10px; font-family: var(--mono);
+    color: var(--accent); background: rgba(232,197,71,0.1);
+    border-radius: 4px; padding: 2px 6px;
+  }
+  .pv-stack-down { font-size: 11px; color: var(--muted2); text-align: center; padding: 2px 0; }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 768px) {
+    .pillar-v2-inner { grid-template-columns: 1fr; }
+    .pillar-v2-left { border-right: none; border-bottom: 1px solid var(--border); }
+    .pv-pipeline { gap: 2px; }
+    .pv-pipe-node { min-width: 38px; padding: 5px 6px; }
+    .pv-pipe-name { font-size: 10px; }
+    .pv-pipe-sub { font-size: 9px; }
+    .pv-pipe-arrow { font-size: 11px; }
+    .pv-geo-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .pv-geo-title { font-size: 11px; }
+    .pv-geo-sub { font-size: 10px; }
+    .pv-callout-num { font-size: 18px; }
+  }
+
+  /* ─── AUDIT CARD ─── */
+  .audit-card {
+    background: var(--bg); border: 1px solid var(--border2);
+    border-radius: var(--r); overflow: hidden; margin-top: 32px;
+  }
+  .audit-header {
+    background: var(--bg3); border-bottom: 1px solid var(--border);
+    padding: 13px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .audit-header-left { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+  .audit-header-right { font-size: 11px; color: var(--muted); }
+  .audit-findings { list-style: none; }
+  .audit-finding {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 18px 20px; border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .audit-finding:last-child { border-bottom: none; }
+  .audit-finding:hover { background: var(--bg3); }
+  .finding-icon {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700; flex-shrink: 0; margin-top: 1px;
+  }
+  .finding-icon.warn { background: rgba(248,113,113,0.12); color: var(--red); }
+  .finding-icon.tip  { background: rgba(232,197,71,0.12);  color: var(--accent); }
+  .finding-icon.ok   { background: rgba(74,222,128,0.12);  color: var(--green); }
+  .finding-icon.info { background: rgba(96,165,250,0.12);  color: var(--blue); }
+  .finding-text { font-size: 14px; color: #bbb; line-height: 1.75; }
+  .finding-text strong { color: var(--text); font-weight: 500; }
+
+  /* ─── 90 DAY ACTIONS ─── */
+  .action-list { list-style: none; margin-top: 24px; }
+  .action-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .action-item:last-child { border-bottom: none; }
+  .action-num {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    background: rgba(232,197,71,0.08); border: 1px solid rgba(232,197,71,0.2);
+    border-radius: 5px; padding: 3px 8px; flex-shrink: 0; margin-top: 1px;
+  }
+  .action-text { font-size: 14px; color: #9a9490; line-height: 1.65; }
+  .action-text strong { color: var(--text); font-weight: 500; }
+
+  /* ─── PERSONAL STORY ─── */
+  /* Slightly lighter bg so text is more readable */
+  .story-section {
+    padding: 80px 48px;
+    background: #0f0f0f;
+    border-top: 1px solid var(--border);
+  }
+  .story-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
+    margin-top: 32px;
+  }
+  /* Readable paragraph text — notably brighter than .body-text */
+  .story-body {
+    font-size: 15px;
+    color: #c4bfb8;   /* ← was #6b6b6b, now much more readable */
+    line-height: 1.85;
+    font-weight: 300;
+  }
+  .story-body p { margin-bottom: 18px; }
+  .story-body p:last-child { margin-bottom: 0; }
+  .story-body strong { color: var(--text); font-weight: 600; }
+  .story-body em { color: var(--accent); font-style: italic; font-weight: 400; }
+
+  .timeline { display: flex; flex-direction: column; }
+  .timeline-item {
+    display: flex; gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-flag { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .timeline-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+  .timeline-sub { font-size: 13px; color: #7a7672; line-height: 1.6; }
+  .timeline-period { font-family: var(--mono); font-size: 11px; color: var(--muted2); margin-top: 6px; }
+
+  /* ─── CTA ─── */
+  .cta-section {
+    padding: 88px 48px; background: var(--bg2);
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .cta-email {
+    display: inline-block;
+    font-size: clamp(20px, 3vw, 28px); font-weight: 600;
+    color: var(--accent); margin-top: 20px;
+    border-bottom: 1px solid rgba(232,197,71,0.25); padding-bottom: 4px;
+    transition: border-color 0.2s;
+  }
+  .cta-email:hover { border-color: var(--accent); }
+
+  
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--bg); border-top: 1px solid var(--border);
+    padding: 20px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-brand { font-size: 14px; font-weight: 600; color: var(--muted2); }
+  .footer-url { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    nav, .hero, .section, .stats-bar,
+    .meme-section, .cta-section,
+    .story-section, footer { padding-left: 20px; padding-right: 20px; }
+    .hero-grid, .two-col, .story-grid { grid-template-columns: 1fr; gap: 24px; }
+    .hero-photo-wrap { display: none; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .pillars { grid-template-columns: 1fr; }
+  }
+
+  /* ─── GIF MEME OVERLAYS ─── */
+  .gif-meme-wrap {
+    position: relative;
+    max-width: 460px; width: 100%;
+    border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--border2);
+    display: block; margin: 0 auto;
+  }
+  .gif-meme-wrap img,
+  .gif-meme-wrap .gif-meme-img {
+    width: 100%; display: block;
+  }
+  .gif-meme-text {
+    position: absolute;
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    text-shadow:
+      2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000, -2px  2px 0 #000,
+      0   2px 0 #000,  2px  0   0 #000,
+      0  -2px 0 #000, -2px  0   0 #000;
+    text-transform: uppercase;
+    line-height: 1.2;
+    pointer-events: none;
+  }
+  /* yes-meme: "AKSHUN X {COMPANY}" bottom-left */
+  .yes-meme-text {
+    bottom: 10%; left: 30%; right: 5%;
+    font-size: clamp(14px, 3.5vw, 25px);
+    text-align: left;
+  }
+  /* no-meme top: covers "RANDOM TEXT 1" at top-center */
+  .no-meme-text-top {
+    top: 3%; left: 5%; right: 5%;
+    font-size: clamp(12px, 3vw, 18px);
+    text-align: center;
+  }
+  /* no-meme bottom: covers "RANDOM TEXT 2" bottom-left */
+  .no-meme-text-bot {
+    bottom: 5%; left: 12%; right: 5%;
+    font-size: clamp(12px, 3vw, 18px);
+    text-align: left;
+  }
+
+</style>
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a0061a97-ba7d-4e78-8be3-5cf6a27eae14"></script>
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════════
+     NAV — Akshun × Company
+════════════════════════════════════════ -->
+<nav>
+  <div class="nav-collab">
+    <span class="nav-akshun">Akshun</span>
+    <span class="nav-x">×</span>
+    <img src="https://cdn.prod.website-files.com/688c600a3b1c552c4b8f2d2f/68906de082303e399af29e2c_Ingestro-logo-white.svg" class="nav-company-logo" alt="Ingestro" onerror="this.style.display='none'">
+  </div>
+  <div class="nav-url">hire.akshundogra.com/ingestro</div>
+</nav>
+
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="inner">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">
+          <img src="https://cdn.prod.website-files.com/688c600a3b1c552c4b8f2d2f/68906de082303e399af29e2c_Ingestro-logo-white.svg" class="hero-badge-logo" alt="Ingestro" onerror="this.style.display='none'"><div class="hero-badge-fallback" style="display:none">I</div>
+          <div class="hero-badge-dot"></div>
+          <span class="hero-badge-text">Built for Ingestro</span>
+        </div>
+        <div class="hero-label">A personal case · Growth Marketing Manager</div>
+        <h1 class="hero-h1">
+          I built 400% organic growth<br>
+          <span class="highlight">for B2B SaaS like Ingestro</span><br>
+          —let's scale yours.
+        </h1>
+        <p class="hero-sub">I'm a technical growth marketer who speaks both engineering and demand creation. At Ingestro, I'd own the full funnel—from paid demand (36x ROAS proven) through SEO scale and ABM automation—turning your data onboarding story into predictable pipeline.</p>
+        <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="Ingestro">
+          ✉&ensp;akshundogra@gmail.com
+        </a>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="/assets/hero-meme.gif" alt="Hi Ingestro, I have a proposition">
+        <div class="hero-meme-overlay">
+          HI Ingestro,<br>I HAVE A PROPOSITION
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     STATS BAR — Static, 4 pillars
+════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="inner">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-num"><span class="accent">36x</span>+</div>
+        <div class="stat-label">Peak ROAS achieved</div>
+        <div class="stat-channel">Performance</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="accent">400</span>%</div>
+        <div class="stat-label">Organic traffic growth</div>
+        <div class="stat-channel">SEO / GEO</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">−<span class="accent">80</span>%</div>
+        <div class="stat-label">Manual SDR effort saved</div>
+        <div class="stat-channel">Automation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="accent">6</span>+</div>
+        <div class="stat-label">Years across growth, paid & automation</div>
+        <div class="stat-channel">General</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     TOOLS CAROUSEL — infinite scroll marquee
+     Same style as akshundogra.com
+════════════════════════════════════════ -->
+<div class="tools-carousel">
+  <div class="carousel-track" id="carousel-track">
+    <!-- Set 1 -->
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
+    <div class="tool-chip">LinkedIn Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/make/ffffff" alt="">Make</div>
+    <div class="tool-chip"><span class="tool-emoji">🧱</span>Clay</div>
+    <div class="tool-chip"><span class="tool-emoji">🔗</span>Apollo</div>
+    <div class="tool-chip"><span class="tool-emoji">📧</span>Lemlist</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/hubspot/ffffff" alt="">HubSpot</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/webflow/ffffff" alt="">Webflow</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/wordpress/ffffff" alt="">WordPress</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="">GA4</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/semrush/ffffff" alt="">SEMrush</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googletagmanager/ffffff" alt="">GTM</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/python/ffffff" alt="">Python</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="">SQL</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/javascript/ffffff" alt="">JavaScript</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/html5/ffffff" alt="">HTML/CSS</div>
+    <div class="tool-chip">Pipedrive</div>
+    <!-- Set 2 — exact duplicate for seamless loop -->
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
+    <div class="tool-chip">LinkedIn Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/make/ffffff" alt="">Make</div>
+    <div class="tool-chip"><span class="tool-emoji">🧱</span>Clay</div>
+    <div class="tool-chip"><span class="tool-emoji">🔗</span>Apollo</div>
+    <div class="tool-chip"><span class="tool-emoji">📧</span>Lemlist</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/hubspot/ffffff" alt="">HubSpot</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/webflow/ffffff" alt="">Webflow</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/wordpress/ffffff" alt="">WordPress</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="">GA4</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/semrush/ffffff" alt="">SEMrush</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googletagmanager/ffffff" alt="">GTM</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/python/ffffff" alt="">Python</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="">SQL</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/javascript/ffffff" alt="">JavaScript</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/html5/ffffff" alt="">HTML/CSS</div>
+    <div class="tool-chip">Pipedrive</div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     WHY THIS COMPANY
+════════════════════════════════════════ -->
+<section class="section section-border">
+  <div class="inner">
+    <div class="two-col">
+      <div>
+        <div class="section-label">Why Ingestro</div>
+        <h2 class="section-h2">Ingestro solves a real, repetitive buyer pain.</h2>
+        <div class="body-text"><p>Every B2B SaaS company buying from you is drowning in manual data import work—perfect friction to attack with demand + education. You're ranked on 'import csv' (1.3k monthly clicks, $2.23 CPC) but only running 36 paid keywords on ~$251/month budget. There's massive white space to own the category with paid + organic + ABM.</p></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:6px;">
+        <div class="card">
+          <div class="card-label">Target Role</div>
+          <div class="card-value">Growth Marketing Manager</div>
+          <div class="card-sub">Open to discussion — I go where I make the most impact</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Location</div>
+          <div class="card-value">Nürnberg, Germany 🇩🇪</div>
+          <div class="card-sub">Open to hybrid / remote · EU work authorization</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Company</div>
+          <div class="card-value">Ingestro</div>
+          <div class="card-sub">Ingestro.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     WHAT I BRING — 4 PILLARS (interactive)
+════════════════════════════════════════ -->
+<section class="section section-alt section-border">
+  <div class="inner">
+    <div class="section-label">Full skillset</div>
+    <h2 class="section-h2">Part marketer,<br><em>part engineer.</em></h2>
+    <div class="body-text">
+      <p>I don't fit neatly in one box — and that's the point. I design systems that connect data to revenue across paid, organic, and automation channels.</p>
+    </div>
+
+    <div class="pillars-v2">
+
+      <!-- ── PILLAR 1: Performance Marketing ── -->
+      <div class="pillar-v2 featured">
+        <div class="pillar-badge">Most relevant for Ingestro</div>
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">📈</div>
+            <div class="pillar-title">Performance Marketing</div>
+            <div class="pillar-body">End-to-end paid media across Google, Meta, and LinkedIn. 36x+ ROAS, $50K+ monthly budgets managed. Demand creation and capture in one unified funnel.</div>
+            <div class="pillar-proof">At Ingestro — cut CPC 20%, raised CTR 30% via A/B testing across Google &amp; LinkedIn.</div>
+            <div class="tools-strip">
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleads/ffffff">Google Ads</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/meta/ffffff">Meta Ads</div>
+              <div class="tool-tag">LinkedIn Ads</div>
+              <div class="tool-tag">A/B Testing</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <!-- Funnel diagram -->
+            <div class="pv-diagram">
+              <div class="pv-label">Full-funnel architecture</div>
+              <div class="pv-funnel">
+                <div class="pv-funnel-stage" style="width:100%">
+                  <div class="pv-stage-bar" style="background:rgba(232,197,71,0.15);border-color:rgba(232,197,71,0.3);">
+                    <span class="pv-stage-icon"><img src="https://cdn.simpleicons.org/meta/ffffff" style="width:11px;opacity:0.7"> <img src="https://cdn.simpleicons.org/googleads/ffffff" style="width:11px;opacity:0.7"></span>
+                    <span class="pv-stage-name">Demand Creation</span>
+                    <span class="pv-stage-tag">LinkedIn · Meta</span>
+                  </div>
+                </div>
+                <div class="pv-arrow">↓</div>
+                <div class="pv-funnel-stage" style="width:80%">
+                  <div class="pv-stage-bar" style="background:rgba(232,197,71,0.1);border-color:rgba(232,197,71,0.25);">
+                    <span class="pv-stage-icon"><img src="https://cdn.simpleicons.org/googleads/ffffff" style="width:11px;opacity:0.7"></span>
+                    <span class="pv-stage-name">Demand Capture</span>
+                    <span class="pv-stage-tag">Google Search</span>
+                  </div>
+                </div>
+                <div class="pv-arrow">↓</div>
+                <div class="pv-funnel-stage" style="width:60%">
+                  <div class="pv-stage-bar" style="background:rgba(232,197,71,0.07);border-color:rgba(232,197,71,0.2);">
+                    <span class="pv-stage-name">Retargeting</span>
+                    <span class="pv-stage-tag">Display · Social</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">36x+</span>
+                <span class="pv-callout-label">Peak ROAS achieved</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 2: Marketing Automation ── -->
+      <div class="pillar-v2 ">
+        
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">⚡</div>
+            <div class="pillar-title">Marketing Automation</div>
+            <div class="pillar-body">Full pipelines from intent signal to outreach with human-in-the-loop gates. −80% manual SDR effort. Built on Make, Clay, Apollo, Lemlist.</div>
+            <div class="pillar-proof">At Ingestro — built RB2B → Clay → Lemlist pipeline. SDR effort cut 80% in 3 months.</div>
+            <div class="tools-strip">
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/make/ffffff">Make</div>
+              <div class="tool-tag">Clay</div>
+              <div class="tool-tag">Apollo</div>
+              <div class="tool-tag">Lemlist</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/hubspot/ffffff">HubSpot</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <!-- Pipeline flow diagram -->
+            <div class="pv-diagram">
+              <div class="pv-label">Intent signal pipeline</div>
+              <div class="pv-pipeline">
+                <div class="pv-pipe-node pv-pipe-source">
+                  <div class="pv-pipe-icon">🌐</div>
+                  <div class="pv-pipe-name">RB2B</div>
+                  <div class="pv-pipe-sub">Visitor ID</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node">
+                  <div class="pv-pipe-icon">🔗</div>
+                  <div class="pv-pipe-name">Apollo</div>
+                  <div class="pv-pipe-sub">Enrich</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node">
+                  <div class="pv-pipe-icon"><img src="https://cdn.simpleicons.org/make/ffffff" style="width:13px"></div>
+                  <div class="pv-pipe-name">Make</div>
+                  <div class="pv-pipe-sub">Route</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node pv-pipe-end">
+                  <div class="pv-pipe-icon">🧱</div>
+                  <div class="pv-pipe-name">Clay</div>
+                  <div class="pv-pipe-sub">ICP Score</div>
+                </div>
+              </div>
+              <div class="pv-routing">
+                <div class="pv-route pv-route-high">
+                  <div class="pv-route-label">HIGH</div>
+                  <div class="pv-route-dest">📧 Lemlist</div>
+                </div>
+                <div class="pv-route pv-route-mid">
+                  <div class="pv-route-label">MID</div>
+                  <div class="pv-route-dest">💬 SDR Review</div>
+                </div>
+                <div class="pv-route pv-route-low">
+                  <div class="pv-route-label">LOW</div>
+                  <div class="pv-route-dest">🗑 Discard</div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">−80%</span>
+                <span class="pv-callout-label">Manual SDR effort saved</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 3: SEO & GEO ── -->
+      <div class="pillar-v2 ">
+        
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">🔍</div>
+            <div class="pillar-title">SEO & GEO</div>
+            <div class="pillar-body">Technical SEO, schema markup, and LLM/GEO visibility strategy. 400% organic growth. Early practitioner of Generative Engine Optimisation.</div>
+            <div class="pillar-proof">At Ingestro — AI-sourced traffic from 1% → 20% of sessions. Now 10% of total pipeline.</div>
+            <div class="tools-strip">
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/semrush/ffffff">SEMrush</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff">GA4</div>
+              <div class="tool-tag">Schema</div>
+              <div class="tool-tag">GEO</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff">Python</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <!-- 4-pillar GEO strategy -->
+            <div class="pv-diagram">
+              <div class="pv-label">LLM visibility strategy</div>
+              <div class="pv-geo-grid">
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">📐</div>
+                  <div class="pv-geo-title">Dynamic Schema</div>
+                  <div class="pv-geo-sub">Per-page structured data, LLM-readable</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">🔎</div>
+                  <div class="pv-geo-title">Prompt Tracking</div>
+                  <div class="pv-geo-sub">Peec AI + Search Console gaps</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">💬</div>
+                  <div class="pv-geo-title">Community Signals</div>
+                  <div class="pv-geo-sub">Reddit + LinkedIn citations</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">⭐</div>
+                  <div class="pv-geo-title">Authority Profiles</div>
+                  <div class="pv-geo-sub">G2 + Crunchbase optimised</div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">400%</span>
+                <span class="pv-callout-label">Organic traffic growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 4: Technical Marketing ── -->
+      <div class="pillar-v2 ">
+        
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">💻</div>
+            <div class="pillar-title">Technical Marketing</div>
+            <div class="pillar-body">Webflow builds, GTM, conversion tracking, and ABM page generation at scale. I build and measure without needing a dev team.</div>
+            <div class="pillar-proof">At Ingestro — built personalised ABM pages at scale using Make + Clay + ChatGPT feeding Webflow.</div>
+            <div class="tools-strip">
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/webflow/ffffff">Webflow</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/googletagmanager/ffffff">GTM</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/html5/ffffff">HTML/CSS</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/javascript/ffffff">JS</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <!-- Tracking stack -->
+            <div class="pv-diagram">
+              <div class="pv-label">Tracking & measurement stack</div>
+              <div class="pv-stack">
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-top">
+                    <img src="https://cdn.simpleicons.org/webflow/ffffff" style="width:14px;opacity:0.8">
+                    <span>Webflow</span>
+                  </div>
+                  <div class="pv-stack-node pv-stack-top">
+                    <img src="https://cdn.simpleicons.org/html5/ffffff" style="width:14px;opacity:0.8">
+                    <span>HTML/CSS/JS</span>
+                  </div>
+                </div>
+                <div class="pv-stack-down">↓ events fire</div>
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-mid" style="width:100%">
+                    <img src="https://cdn.simpleicons.org/googletagmanager/ffffff" style="width:14px;opacity:0.8">
+                    <span>Google Tag Manager</span>
+                    <span class="pv-stack-badge">Central hub</span>
+                  </div>
+                </div>
+                <div class="pv-stack-down">↓ distributes to</div>
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-bot">
+                    <img src="https://cdn.simpleicons.org/googleanalytics/ffffff" style="width:12px;opacity:0.8">
+                    <span>GA4</span>
+                  </div>
+                  <div class="pv-stack-node pv-stack-bot">
+                    <img src="https://cdn.simpleicons.org/meta/ffffff" style="width:12px;opacity:0.8">
+                    <span>FB Pixel</span>
+                  </div>
+                  <div class="pv-stack-node pv-stack-bot">
+                    <img src="https://cdn.simpleicons.org/googleads/ffffff" style="width:12px;opacity:0.8">
+                    <span>Google Ads</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">0</span>
+                <span class="pv-callout-label">Dev team needed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end pillars-v2 -->
+  </div>
+</section>
+
+
+
+<!-- ════════════════════════════════════════
+     HOW I CAN HELP — COMPANY SPECIFIC
+════════════════════════════════════════ -->
+<section class="section section-border">
+  <div class="inner">
+    <div class="section-label">Specifically for Ingestro</div>
+    <h2 class="section-h2">What I'd do in the<br><em>first 90 days</em></h2>
+    <div class="body-text"><p>I've managed $50K+ AUD/month budgets across Google, LinkedIn, Meta—the exact channels Ingestro should dominate for developer and ops buyer intent. My 36x ROAS and 20% CPC reduction came from relentless creative + landing page testing; your core keyword 'import csv' is ripe for better ad angles and conversion-optimized destinations. I'll also layer in the ABM automation (Make, Clay, Apollo, Lemlist) to turn click traffic into qualified pipeline.</p></div>
+    <ul class="action-list">
+      <li class="action-item">
+        <div class="action-num">01</div>
+        <div class="action-text"><strong>Audit your paid keyword gaps</strong> — You're bidding 36 keywords but competitors like Flatfile own 344. I'll map your whitespace keywords and recommend high-intent buys.</div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">02</div>
+        <div class="action-text"><strong>Build conversion-optimized importer landing pages</strong> — Your current Importer SDK page is generic. I'll A/B test role-specific pages (engineers vs. ops vs. product) using dynamic Webflow + Make templates.</div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">03</div>
+        <div class="action-text"><strong>Scale organic visibility for import data</strong> — I grew one SaaS from 10K to 85K monthly sessions via schema + technical SEO. Ingestro's 'import data' keyword (630 clicks) has untapped organic potential.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     HOMEWORK / MINI AUDIT
+════════════════════════════════════════ -->
+<section class="section section-alt section-border">
+  <div class="inner">
+    <div class="section-label">Before reaching out</div>
+    <h2 class="section-h2">I already did some<br><em>homework.</em></h2>
+    <div class="body-text"><p>I analyzed Ingestro's paid ads, automation setup, and organic visibility across three angles. Here's what I'd fix to unlock your next growth phase.</p></div>
+    <div class="audit-card">
+      <div class="audit-header">
+        <span class="audit-header-left">⬡ Observations · Ingestro</span>
+        <span class="audit-header-right">Full analysis available on request</span>
+      </div>
+      <ul class="audit-findings">
+        <li class="audit-finding">
+          <div class="finding-icon" style="background:rgba(232,197,71,0.12);color:var(--accent);font-size:13px;">📈</div>
+          <div class="finding-text"><strong>Performance</strong> — You're spending ~$251/month on 36 keywords, driving est. 2 monthly PPC clicks—extremely low volume. Your top keyword 'import csv' gets 1.3k clicks/month at $2.23 CPC, but you're not bidding aggressively enough. Competitors (Flatfile: 344 keywords, Dromo: 212) are saturating intent. I'd expand keyword list 5–10x and test higher-intent queries like 'csv import sdk' and 'bulk data upload tool.'</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon" style="background:rgba(96,165,250,0.12);color:var(--blue);font-size:13px;">⚡</div>
+          <div class="finding-text"><strong>Automation</strong> — Your buyer journey has no visible nurture layer—no email sequencing signals, no account-based landing pages for inbound leads. I'd build an intent-signal pipeline (LinkedIn ads → Clay firmographic enrichment → Lemlist multi-touch sequences) to convert the traffic you're already buying into qualified meetings. This could reduce your CAC by 30–40% without increasing ad spend.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon" style="background:rgba(74,222,128,0.12);color:var(--green);font-size:13px;">🔍</div>
+          <div class="finding-text"><strong>SEO / GEO</strong> — Your Importer SDK page ranks well for 'import csv' but is missing structured data (JobPosting, FAQPage, SoftwareApplication schema) that would improve CTR and voice search visibility. 'Import data' (630 clicks/month) and 'data onboarding' have 0 apparent organic presence—big gap. Dynamic schema markup + category hub strategy could push 30–50% of paid traffic to free organic within 4 months.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon ok">✓</div>
+          <div class="finding-text">✓ Your ad copy is clear and benefit-driven ('Save your team weeks of error-fixing'). Ad position 1 rank shows strong relevance score—good foundation to build on.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon info">i</div>
+          <div class="finding-text" style="font-style:italic;color:#444;">I can share a Loom walkthrough with more detail — just ask.</div>
+        </li>
+      </ul>
+    </div>
+    <div style="margin-top:12px;display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(96,165,250,0.05);border:1px solid rgba(96,165,250,0.15);border-radius:8px;">
+      <div style="font-size:11px;color:var(--blue);flex-shrink:0;margin-top:1px;">ℹ</div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.6;">
+        <strong style="color:#7a9fc0;">Data transparency:</strong> Observations are based on publicly available data (SpyFu, Screaming Frog, page source analysis) and may not reflect actual budgets or internal metrics. Real spend, traffic, and performance figures are typically higher than what public tools report.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     PERSONAL STORY — Who is Akshun
+     bg slightly lifted for readability
+════════════════════════════════════════ -->
+<section class="story-section">
+  <div class="inner">
+    <div class="section-label">The person behind the marketer</div>
+    <h2 class="section-h2">Marketing, engineering,<br><em>and a lot of borders crossed.</em></h2>
+    <div class="story-grid">
+      <div class="story-body">
+        <p>My name, <em>Akshun</em>, means <strong>"undestructable"</strong> in Sanskrit. That's not a personal brand line — it genuinely shapes how I move. I don't quit on campaigns, goals, or challenges like learning German from scratch after landing in a new country.</p>
+        <p>I started freelancing in digital marketing at <strong>19</strong> in India — working with Punjabi music artists, Australian businesses, and tech clients before I'd ever left the country. That early pressure to figure things out without a team or a budget is where the technical + creative hybrid came from.</p>
+        <p>I moved to Nürnberg in 2022 for an M.Sc. at FAU, added an Erasmus semester in Madrid, hit German C1, and picked up enough Spanish to embarrass myself. Outside the dashboards, I run a YouTube channel documenting the unfiltered reality of being an Indian expat in Germany — no filters, real stories.</p>
+        <p>What I keep coming back to: the best marketing sits at the intersection of creativity, data, and technical execution. Most teams have one or two. I try to bring all three.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-flag">🇮🇳</div>
+          <div>
+            <div class="timeline-title">India — Where it started</div>
+            <div class="timeline-sub">Started freelancing at 19. Worked with music artists, Australian businesses, and tech clients. Taught myself SEO, PPC, and web development out of necessity.</div>
+            <div class="timeline-period">2016 – 2022</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-flag">🇩🇪</div>
+          <div>
+            <div class="timeline-title">Germany — The big leap</div>
+            <div class="timeline-sub">M.Sc. International Information Systems at FAU Erlangen-Nürnberg. Learned German to C1. Joined an AI startup as working student, built full growth stack from scratch.</div>
+            <div class="timeline-period">2022 – Present</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-flag">🇪🇸</div>
+          <div>
+            <div class="timeline-title">Spain — The bonus chapter</div>
+            <div class="timeline-sub">Erasmus at UPM Madrid. Picked up Spanish, got a fresh perspective, confirmed food in Madrid is genuinely incredible.</div>
+            <div class="timeline-period">Sep 2024 – Jan 2025</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-flag">▶</div>
+          <div>
+            <div class="timeline-title">On YouTube</div>
+            <div class="timeline-sub">The real experience of moving from India to Germany — visa stress, language barriers, cultural clashes, and small victories nobody talks about.</div>
+            <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="Ingestro">youtube.com/@akshundogra →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     INTERACTIVE DECISION — Yes / No
+     Question → Yes reveals CTA (normal)
+              → No reveals meme + CTA (alternate heading)
+════════════════════════════════════════ -->
+
+<!-- Inline styles for the decision block only -->
+<style>
+  .decision-section {
+    padding: 88px 48px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .decision-question {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .decision-h2 {
+    font-size: clamp(26px, 3.5vw, 42px); font-weight: 700;
+    line-height: 1.15; color: var(--text); margin-bottom: 10px;
+  }
+  .decision-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .decision-sub {
+    font-size: 15px; color: var(--muted); margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .decision-btns {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn-yes {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); color: #000;
+    padding: 15px 36px; border-radius: var(--r);
+    font-weight: 700; font-size: 16px; border: none; cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    font-family: var(--font);
+  }
+  .btn-yes:hover { background: var(--accent2); transform: translateY(-2px); }
+  .btn-no {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent; color: var(--muted);
+    padding: 15px 28px; border-radius: var(--r);
+    font-weight: 500; font-size: 15px;
+    border: 1px solid var(--border2); cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+    font-family: var(--font);
+  }
+  .btn-no:hover { border-color: var(--red); color: var(--red); }
+
+  /* ── Reveal panels — hidden until button click ── */
+  .reveal-panel {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.6s cubic-bezier(0.16,1,0.3,1),
+                opacity    0.4s ease;
+  }
+  .reveal-panel.open {
+    max-height: 2000px;
+    opacity: 1;
+  }
+
+  /* ── CTA shared styles ── */
+  .cta-inner {
+    padding: 72px 48px 80px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    background: var(--bg2);
+  }
+  .cta-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;
+  }
+  .cta-h2 {
+    font-size: clamp(24px, 3.2vw, 40px); font-weight: 700;
+    line-height: 1.15; color: var(--text); margin-bottom: 14px;
+  }
+  .cta-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .cta-body { font-size: 15px; color: var(--muted); font-weight: 300; margin-bottom: 0; }
+  .cta-email {
+    display: inline-block;
+    font-size: clamp(18px, 2.8vw, 26px); font-weight: 600;
+    color: var(--accent); margin-top: 22px;
+    border-bottom: 1px solid rgba(232,197,71,0.25); padding-bottom: 4px;
+    transition: border-color 0.2s;
+  }
+  .cta-email:hover { border-color: var(--accent); }
+  .cta-links {
+    margin-top: 18px; display: flex; align-items: center;
+    justify-content: center; gap: 20px;
+  }
+  .cta-links a { font-size: 13px; color: var(--muted); transition: color 0.15s; }
+  .cta-links a:hover { color: var(--text); }
+
+  /* ── No path: meme canvas ── */
+  .no-meme-wrap {
+    padding: 52px 48px 0;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    background: var(--bg);
+  }
+  .no-meme-label {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  #meme-wash {
+    max-width: 460px; width: 100%;
+    border-radius: 12px; border: 1px solid var(--border2); display: block;
+  }
+
+  /* Handshake canvas — only shown in yes path */
+  #meme-handshake {
+    max-width: 460px; width: 100%;
+    border-radius: 12px; border: 1px solid var(--border2); display: block;
+    margin: 0 auto 28px;
+  }
+  .yes-meme-wrap {
+    padding: 52px 48px 0;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    background: var(--bg2);
+  }
+  .yes-meme-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+
+  /* ── Mistake button — appears after clicking No ── */
+  .btn-mistake {
+    display: none;   /* hidden until lockNo() fires */
+    align-items: center; gap: 8px;
+    background: transparent; color: var(--muted);
+    padding: 10px 20px; border-radius: var(--r);
+    font-weight: 500; font-size: 14px;
+    border: 1px dashed var(--border2); cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, opacity 0.3s, transform 0.3s;
+    font-family: var(--font);
+    margin-top: 16px;
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  .btn-mistake.visible {
+    display: inline-flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-mistake:hover { border-color: var(--accent); color: var(--accent); }
+
+  @media (max-width: 768px) {
+    .decision-section, .cta-inner, .no-meme-wrap, .yes-meme-wrap {
+      padding-left: 20px; padding-right: 20px;
+    }
+  }
+</style>
+
+<!-- The question -->
+<div class="decision-section">
+  <div class="decision-question">One question before you go</div>
+  <h2 class="decision-h2">Did we just build<br><em>something worth pursuing?</em></h2>
+  <p class="decision-sub">Honest answers only. Both paths lead somewhere good.</p>
+  <div class="decision-btns" id="decision-btns" onmouseleave="onBtnsLeave()">
+    <button class="btn-yes" id="btn-yes" onmouseenter="chooseYes()" onclick="lockYes()">
+      🤝&ensp;Let's make it happen
+    </button>
+    <button class="btn-no" id="btn-no" onmouseenter="chooseNo()" onclick="lockNo()">
+      Not right now →
+    </button>
+  </div>
+  <!-- Appears only after clicking No -->
+  <button class="btn-mistake" id="btn-mistake" onclick="undoNo()">
+    ← I made a mistake
+  </button>
+</div>
+
+<!-- YES path -->
+<div class="reveal-panel" id="panel-yes">
+  <div class="yes-meme-wrap">
+    <div class="yes-meme-label">this is us right now</div>
+    <div class="gif-meme-wrap">
+      <img src="/assets/yes-meme.gif" alt="Akshun x Ingestro">
+      <div class="gif-meme-text yes-meme-text">AKSHUN X Ingestro</div>
+    </div>
+  </div>
+  <div class="cta-inner">
+    <div class="cta-label">Let's talk</div>
+    <h2 class="cta-h2" id="yes-heading">This page was built<br>specifically for <em>Ingestro.</em></h2>
+    <p class="cta-body">I'd love a 20-minute conversation. No pitch deck. Just a real chat about fit.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Ingestro">akshundogra@gmail.com →</a>
+    <div class="cta-links">
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Ingestro">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="website-click" data-umami-event-company="Ingestro">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="resume-click" data-umami-event-company="Ingestro">📄 Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- NO path -->
+<div class="reveal-panel" id="panel-no">
+  <div class="no-meme-wrap">
+    <div class="no-meme-label">every recruiter email you get vs. this one</div>
+    <div class="gif-meme-wrap">
+      <img src="/assets/no-meme.jpg" alt="cold emails vs this one">
+      <div class="gif-meme-text no-meme-text-top">every other<br>cold email</div>
+      <div class="gif-meme-text no-meme-text-bot">Hr &amp;<br>hiring managers</div>
+    </div>
+  </div>
+  <div class="cta-inner" style="background:var(--bg);">
+    <div class="cta-label">No hard feelings</div>
+    <h2 class="cta-h2">Glad you stopped by,<br><em>Ingestro.</em></h2>
+    <p class="cta-body">Timing isn't always right — but the details are here whenever it is.<br>No follow-up. No pressure. Just an open door.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Ingestro">akshundogra@gmail.com →</a>
+    <div class="cta-links">
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Ingestro">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="website-click" data-umami-event-company="Ingestro">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="resume-click" data-umami-event-company="Ingestro">📄 Resume</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// ─── Scroll reveal for hero meme ─────────────────────────────────────────────
+(function() {
+  const memeWrap = document.querySelector('.hero-photo-wrap');
+  if (!memeWrap) return;
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          memeWrap.classList.add('revealed');
+        }, 300);
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+  observer.observe(memeWrap);
+})();
+
+// ─── State ───────────────────────────────────────────────────────────────────
+let locked = false;
+
+// Default: yes panel open on load
+document.getElementById("panel-yes").classList.add("open");
+
+
+// ─── Hover — preview, fully reversible until click ───────────────────────────
+function chooseYes() {
+  if (locked) return;
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+}
+
+function chooseNo() {
+  if (locked) return;
+  document.getElementById("panel-no").classList.add("open");
+  document.getElementById("panel-yes").classList.remove("open");
+}
+
+// Mouse leaves button group — snap back to default Yes
+function onBtnsLeave() {
+  if (locked) return;
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+}
+
+// ─── Click — lock in the choice, fade out the other button ───────────────────
+function lockYes() {
+  if (typeof umami !== 'undefined') umami.track('yes-clicked', { company: 'Ingestro' });
+  locked = true;
+  const btn = document.getElementById("btn-no");
+  btn.style.transition  = "opacity 0.35s, transform 0.35s";
+  btn.style.opacity     = "0";
+  btn.style.transform   = "translateX(12px)";
+  btn.style.pointerEvents = "none";
+}
+
+function lockNo() {
+  if (typeof umami !== 'undefined') umami.track('no-clicked', { company: 'Ingestro' });
+  locked = true;
+  // Fade out Yes button
+  const btnYes = document.getElementById("btn-yes");
+  btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
+  btnYes.style.opacity      = "0";
+  btnYes.style.transform    = "translateX(-12px)";
+  btnYes.style.pointerEvents = "none";
+
+  // Show mistake button after a short delay
+  setTimeout(() => {
+    const btnMistake = document.getElementById("btn-mistake");
+    btnMistake.style.display = "inline-flex";
+    // Force reflow so transition fires
+    btnMistake.getBoundingClientRect();
+    btnMistake.classList.add("visible");
+  }, 400);
+}
+
+function undoNo() {
+  // Full reset — back to initial state
+  locked = false;
+
+  // Restore Yes button
+  const btnYes = document.getElementById("btn-yes");
+  btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
+  btnYes.style.opacity      = "1";
+  btnYes.style.transform    = "translateX(0)";
+  btnYes.style.pointerEvents = "auto";
+
+  // Hide mistake button
+  const btnMistake = document.getElementById("btn-mistake");
+  btnMistake.classList.remove("visible");
+  setTimeout(() => { btnMistake.style.display = "none"; }, 350);
+
+  // Swap panels back to Yes
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+
+  // Welcome back moment — swap heading text for 2s then restore
+  const heading = document.getElementById("yes-heading");
+  const original = heading.innerHTML;
+  heading.style.transition = "opacity 0.25s";
+  heading.style.opacity = "0";
+  setTimeout(() => {
+    heading.innerHTML = "Welcome back 👋<br><em>Good choice.</em>";
+    heading.style.opacity = "1";
+  }, 250);
+  setTimeout(() => {
+    heading.style.opacity = "0";
+  }, 2200);
+  setTimeout(() => {
+    heading.innerHTML = original;
+    heading.style.opacity = "1";
+  }, 2500);
+}
+</script>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">Akshun Dogra · Technical Growth Marketer</div>
+  <div class="footer-url">hire.akshundogra.com/ingestro</div>
+</footer>
+
+</body>
+</html>
