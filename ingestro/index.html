@@ -54,12 +54,10 @@
   .nav-collab { display: flex; align-items: center; gap: 10px; }
   .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
   .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
- .nav-company-logo { 
-  height: 22px; width: auto; max-width: 90px; object-fit: contain;
-  filter: brightness(0) invert(1); opacity: 0;
-  animation: fadeInLogo 0.3s ease 0.1s forwards;
-}
-@keyframes fadeInLogo { to { opacity: 0.85; } }
+  .nav-company-logo {
+    height: 22px; width: auto; max-width: 90px; object-fit: contain;
+    filter: brightness(0) invert(1); opacity: 0.85;
+  }
   .nav-company-name { font-weight: 700; font-size: 15px; color: var(--accent); }
   .nav-url {
     font-family: var(--mono); font-size: 11px; color: var(--muted);
@@ -91,10 +89,10 @@
     border-radius: 100px; padding: 6px 14px 6px 6px;
     margin-bottom: 26px;
   }
- .hero-badge-logo {
-  width: 24px; height: 24px; border-radius: 50%;
-  background: #1a1a1a; object-fit: contain; padding: 3px; flex-shrink: 0;
-}
+  .hero-badge-logo {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: #fff; object-fit: contain; padding: 3px; flex-shrink: 0;
+  }
   .hero-badge-fallback {
     width: 24px; height: 24px; border-radius: 50%;
     background: var(--accent); display: flex; align-items: center;
@@ -109,7 +107,7 @@
     letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px;
   }
   .hero-h1 {
-    font-size: clamp(2wpx, 2.8vw, 34px); font-weight: 700;
+    font-size: clamp(32px, 4.5vw, 52px); font-weight: 700;
     line-height: 1.1; margin-bottom: 20px;
   }
   .hero-h1 .highlight { color: var(--accent); }
@@ -129,13 +127,6 @@
     border-radius: 16px; overflow: hidden;
     border: 1px solid var(--border2);
     position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .hero-photo-wrap.revealed {
-    opacity: 1;
-    transform: translateY(0);
   }
   .hero-photo-wrap img {
     width: 100%; display: block;
@@ -331,12 +322,6 @@
   .pillar-icon { font-size: 20px; margin-bottom: 10px; }
   .pillar-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
   .pillar-body { font-size: 13px; color: #7a7672; line-height: 1.6; }
-  .pillar-proof {
-    font-size: 11px; color: var(--accent); opacity: 0.8;
-    margin-top: 10px; padding-top: 10px;
-    border-top: 1px solid rgba(232,197,71,0.15);
-    font-family: var(--mono); line-height: 1.5;
-  }
   .tools-strip { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
   .tool-tag {
     display: flex; align-items: center; gap: 5px;
@@ -465,15 +450,8 @@
   @media (max-width: 768px) {
     .pillar-v2-inner { grid-template-columns: 1fr; }
     .pillar-v2-left { border-right: none; border-bottom: 1px solid var(--border); }
-    .pv-pipeline { gap: 2px; }
-    .pv-pipe-node { min-width: 38px; padding: 5px 6px; }
-    .pv-pipe-name { font-size: 10px; }
-    .pv-pipe-sub { font-size: 9px; }
-    .pv-pipe-arrow { font-size: 11px; }
-    .pv-geo-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
-    .pv-geo-title { font-size: 11px; }
-    .pv-geo-sub { font-size: 10px; }
-    .pv-callout-num { font-size: 18px; }
+    .pv-pipeline { gap: 3px; }
+    .pv-pipe-node { min-width: 44px; padding: 6px 8px; }
   }
 
   /* ─── AUDIT CARD ─── */
@@ -491,7 +469,7 @@
   .audit-findings { list-style: none; }
   .audit-finding {
     display: flex; gap: 14px; align-items: flex-start;
-    padding: 18px 20px; border-bottom: 1px solid var(--border);
+    padding: 15px 20px; border-bottom: 1px solid var(--border);
     transition: background 0.15s;
   }
   .audit-finding:last-child { border-bottom: none; }
@@ -505,7 +483,7 @@
   .finding-icon.tip  { background: rgba(232,197,71,0.12);  color: var(--accent); }
   .finding-icon.ok   { background: rgba(74,222,128,0.12);  color: var(--green); }
   .finding-icon.info { background: rgba(96,165,250,0.12);  color: var(--blue); }
-  .finding-text { font-size: 14px; color: #bbb; line-height: 1.75; }
+  .finding-text { font-size: 13px; color: #aaa; line-height: 1.65; }
   .finding-text strong { color: var(--text); font-weight: 500; }
 
   /* ─── 90 DAY ACTIONS ─── */
@@ -572,8 +550,7 @@
   }
   .cta-email:hover { border-color: var(--accent); }
 
-  
-
+ 
   /* ─── FOOTER ─── */
   footer {
     background: var(--bg); border-top: 1px solid var(--border);
@@ -586,7 +563,7 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
     nav, .hero, .section, .stats-bar,
-    .meme-section, .cta-section,
+    .meme-section, .cta-section, .outreach-section,
     .story-section, footer { padding-left: 20px; padding-right: 20px; }
     .hero-grid, .two-col, .story-grid { grid-template-columns: 1fr; gap: 24px; }
     .hero-photo-wrap { display: none; }
@@ -624,7 +601,7 @@
   /* yes-meme: "AKSHUN X {COMPANY}" bottom-left */
   .yes-meme-text {
     bottom: 10%; left: 30%; right: 5%;
-    font-size: clamp(14px, 3.5vw, 25px);
+    font-size: clamp(25px, 3.5vw, 20px);
     text-align: left;
   }
   /* no-meme top: covers "RANDOM TEXT 1" at top-center */
@@ -641,8 +618,6 @@
   }
 
 </style>
-  <!-- Umami Analytics -->
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="a0061a97-ba7d-4e78-8be3-5cf6a27eae14"></script>
 </head>
 <body>
 
@@ -654,7 +629,16 @@
   <div class="nav-collab">
     <span class="nav-akshun">Akshun</span>
     <span class="nav-x">×</span>
-    <img src="https://cdn.prod.website-files.com/688c600a3b1c552c4b8f2d2f/68906de082303e399af29e2c_Ingestro-logo-white.svg" class="nav-company-logo" alt="Ingestro" onerror="this.style.display='none'">
+    <!--
+      OPTION A — Clearbit logo (auto-fetched from domain, no manual URL):
+      <img src="https://logo.clearbit.com/ingestro.com"
+           class="nav-company-logo" alt="Ingestro"
+           onerror="this.style.display='none';document.getElementById('nav-fb').style.display='block'">
+      <span id="nav-fb" style="display:none" class="nav-company-name">Ingestro</span>
+
+      OPTION B — name only (simpler, always works):
+    -->
+    <span class="nav-company-name">Ingestro</span>
   </div>
   <div class="nav-url">hire.akshundogra.com/ingestro</div>
 </nav>
@@ -668,19 +652,23 @@
     <div class="hero-grid">
       <div>
         <div class="hero-badge">
-          <img src="https://cdn.prod.website-files.com/688c600a3b1c552c4b8f2d2f/68906de082303e399af29e2c_Ingestro-logo-white.svg" class="hero-badge-logo" alt="Ingestro" onerror="this.style.display='none'"><div class="hero-badge-fallback" style="display:none">I</div>
+          <!--
+            With Clearbit: <img src="https://logo.clearbit.com/ingestro.com" class="hero-badge-logo">
+            Without logo:
+          -->
+          <div class="hero-badge-fallback">I</div>
           <div class="hero-badge-dot"></div>
           <span class="hero-badge-text">Built for Ingestro</span>
         </div>
-        <div class="hero-label">A personal case · Growth Marketing Manager</div>
+        <div class="hero-label">A personal case · Growth Marketing Manger</div>
         <h1 class="hero-h1">
-          I built growth engines<br>
-          <span class="highlight">for B2B data platforms like Ingestro</span><br>
-          —let's scale yours
+          Scale Ingestro's growth<br>
+          <span class="highlight">without scaling the chaos</span><br>
+          6+ years, proven systems
         </h1>
-        <p class="hero-sub">I've delivered 36x ROAS and 400% organic growth for B2B SaaS. At Ingestro, I'll own the full funnel—from intent capture through data-driven demand creation—to turn your CSV importer into the category leader.</p>
-        <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="Ingestro">
-          ✉&ensp;akshundogra@gmail.com
+        <p class="hero-sub">Ingestro helps teams ingest and process data at scale—but growth teams need the same efficiency. I've built automation pipelines that cut manual SDR work by 80%, driven 400% organic growth, and managed $50K+/month ad budgets hitting 36x ROAS. Your product deserves a growth strategy that scales as fast as your platform.</p>
+        <a href="mailto:akshun@akshundogra.com" class="hero-cta">
+          ✉&ensp;akshun@akshundogra.com
         </a>
       </div>
       <div class="hero-photo-wrap">
@@ -781,13 +769,13 @@
     <div class="two-col">
       <div>
         <div class="section-label">Why Ingestro</div>
-        <h2 class="section-h2">Data onboarding solves a real, expensive problem</h2>
-        <div class="body-text"><p>Ingestro eliminates weeks of manual data integration work for enterprise teams. I've spent 6 years optimizing conversion funnels for complex B2B products; your buyer journey—from awareness through deal closure—needs the same rigorous testing and attribution I've built at scale.</p></div>
+        <h2 class="section-h2">Your data infrastructure deserves growth infrastructure</h2>
+        <div class="body-text"><p>Ingestro solves a real problem—data ingestion at enterprise scale—which means your customers are technical, data-driven, and expect precision. I've spent 6 years building that exact rigor into growth: automating intent signals via RB2B → Apollo → Make pipelines, implementing schema markup that boosted CTR 30%, and running ABM campaigns for 50+ named accounts. That intersection of technical depth and growth velocity is where I thrive. I want to help Ingestro become the standard every data team reaches for.</p></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;padding-top:6px;">
         <div class="card">
           <div class="card-label">Target Role</div>
-          <div class="card-value">Growth Marketing Manager</div>
+          <div class="card-value">Growth Marketing Manger</div>
           <div class="card-sub">Open to discussion — I go where I make the most impact</div>
         </div>
         <div class="card">
@@ -798,7 +786,7 @@
         <div class="card">
           <div class="card-label">Company</div>
           <div class="card-value">Ingestro</div>
-          <div class="card-sub">Ingestro.com</div>
+          <div class="card-sub">https://ingestro.com/</div>
         </div>
       </div>
     </div>
@@ -820,14 +808,13 @@
     <div class="pillars-v2">
 
       <!-- ── PILLAR 1: Performance Marketing ── -->
-      <div class="pillar-v2 featured">
-        <div class="pillar-badge">Most relevant for Ingestro</div>
+      <div class="pillar-v2 ">
+        
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">📈</div>
             <div class="pillar-title">Performance Marketing</div>
             <div class="pillar-body">End-to-end paid media across Google, Meta, and LinkedIn. 36x+ ROAS, $50K+ monthly budgets managed. Demand creation and capture in one unified funnel.</div>
-            <div class="pillar-proof">At Ingestro — cut CPC 20%, raised CTR 30% via A/B testing across Google &amp; LinkedIn.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleads/ffffff">Google Ads</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/meta/ffffff">Meta Ads</div>
@@ -873,14 +860,13 @@
       </div>
 
       <!-- ── PILLAR 2: Marketing Automation ── -->
-      <div class="pillar-v2 ">
-        
+      <div class="pillar-v2 featured">
+        <div class="pillar-badge">Most relevant for Ingestro</div>
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">⚡</div>
             <div class="pillar-title">Marketing Automation</div>
             <div class="pillar-body">Full pipelines from intent signal to outreach with human-in-the-loop gates. −80% manual SDR effort. Built on Make, Clay, Apollo, Lemlist.</div>
-            <div class="pillar-proof">At Ingestro — built RB2B → Clay → Lemlist pipeline. SDR effort cut 80% in 3 months.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/make/ffffff">Make</div>
               <div class="tool-tag">Clay</div>
@@ -949,7 +935,6 @@
             <div class="pillar-icon">🔍</div>
             <div class="pillar-title">SEO & GEO</div>
             <div class="pillar-body">Technical SEO, schema markup, and LLM/GEO visibility strategy. 400% organic growth. Early practitioner of Generative Engine Optimisation.</div>
-            <div class="pillar-proof">At Ingestro — AI-sourced traffic from 1% → 20% of sessions. Now 10% of total pipeline.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/semrush/ffffff">SEMrush</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff">GA4</div>
@@ -1001,7 +986,6 @@
             <div class="pillar-icon">💻</div>
             <div class="pillar-title">Technical Marketing</div>
             <div class="pillar-body">Webflow builds, GTM, conversion tracking, and ABM page generation at scale. I build and measure without needing a dev team.</div>
-            <div class="pillar-proof">At Ingestro — built personalised ABM pages at scale using Make + Clay + ChatGPT feeding Webflow.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/webflow/ffffff">Webflow</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googletagmanager/ffffff">GTM</div>
@@ -1070,19 +1054,19 @@
   <div class="inner">
     <div class="section-label">Specifically for Ingestro</div>
     <h2 class="section-h2">What I'd do in the<br><em>first 90 days</em></h2>
-    <div class="body-text"><p>Your current PPC strategy (36 keywords, ~$251/month budget) is undersized relative to demand. I've managed $50K+ AUD/month budgets across Google and Meta; I'll expand your paid footprint while building the automation pipeline to nurture prospects through your sales cycle without burning SDR hours.</p></div>
+    <div class="body-text"><p>Your growth team needs someone who speaks both languages: technical enough to own GTM implementation and automation workflows, but growth-focused enough to hit revenue targets. I've reduced manual SDR effort by 80% through intent-signal automation, grown organic traffic 400% via technical SEO (schema markup, crawl optimization), and consistently delivered 36x+ ROAS on paid campaigns. For Ingestro, that means I'd immediately implement Apollo→Make→Lemlist pipelines to scale ABM, audit your on-page technical SEO to improve G2/Crunchbase visibility, and optimize your paid funnel across Google and LinkedIn.</p></div>
     <ul class="action-list">
       <li class="action-item">
         <div class="action-num">01</div>
-        <div class="action-text"><strong>Expand paid keyword coverage</strong> — You're bidding on 36 core keywords but competitors like Flatfile own 344. I'll map high-intent keywords ('import data', 'csv importer', 'data onboarding') and build demand-creation campaigns across Google, LinkedIn, and intent signals.</div>
+        <div class="action-text"><strong>Intent pipeline for ABM</strong> — Map Ingestro's ideal customer profile in Apollo, build a Make automation to sync signals into Lemlist, and launch 1:1 campaigns to 50+ named accounts. Week 1: audience build and sequence testing.</div>
       </li>
       <li class="action-item">
         <div class="action-num">02</div>
-        <div class="action-text"><strong>Build intent-signal ABM pipeline</strong> — I'll connect RB2B signals → Apollo intent data → Make automation → personalized Lemlist sequences. This reduced manual SDR effort 80% at my last role; for Ingestro, it means qualified leads feeding your sales team without additional headcount.</div>
+        <div class="action-text"><strong>Technical SEO audit + wins</strong> — Full site crawl, implement schema markup for SoftwareApplication and Organization, fix crawl errors. Target 40% improvement in search visibility within 90 days, especially G2 and category pages.</div>
       </li>
       <li class="action-item">
         <div class="action-num">03</div>
-        <div class="action-text"><strong>Optimize landing page conversion</strong> — Your current importer-sdk page is rank 1 for 'import csv' but lacks schema markup and conversion optimization. I'll add structured data, A/B test CTAs, and build dynamic landing page variants for each buyer persona—30% CTR lift is typical.</div>
+        <div class="action-text"><strong>Paid funnel optimization sprint</strong> — Audit Google Ads and LinkedIn performance, implement dynamic landing pages in Webflow, run A/B tests on messaging and CTAs. Lock in 25%+ CPC reduction and 20%+ CTR lift.</div>
       </li>
     </ul>
   </div>
@@ -1096,7 +1080,7 @@
   <div class="inner">
     <div class="section-label">Before reaching out</div>
     <h2 class="section-h2">I already did some<br><em>homework.</em></h2>
-    <div class="body-text"><p>Ingestro is winning on search intent but leaving revenue on the table across paid, automation, and technical layers. Here's what I see:</p></div>
+    <div class="body-text"><p>Ingestro's product is technically sophisticated, but most data platforms underinvest in SEO and automation—two areas where small changes compound fast. I'd expect to find quick wins across technical SEO, intent signal capture, and paid channel efficiency.</p></div>
     <div class="audit-card">
       <div class="audit-header">
         <span class="audit-header-left">⬡ Observations · Ingestro</span>
@@ -1104,32 +1088,26 @@
       </div>
       <ul class="audit-findings">
         <li class="audit-finding">
-          <div class="finding-icon" style="background:rgba(232,197,71,0.12);color:var(--accent);font-size:13px;">📈</div>
-          <div class="finding-text"><strong>Performance</strong> — You're spending ~$251/month on 36 keywords with 'import csv' at 1.3k clicks/month ($0.19 CPC). Competitors like Flatfile run 344 keywords. Your ad copy emphasizes 'error-fixing'—solid—but you're missing high-intent modifiers ('sap data import', 'salesforce csv sync'). Budget increase + keyword expansion could 3-5x lead volume.</div>
+          <div class="finding-icon warn">!</div>
+          <div class="finding-text">Schema markup likely missing or incomplete—SoftwareApplication, Organization, and FAQSchema aren't fully implemented. This costs visibility on G2, Crunchbase, and Google's rich results.</div>
         </li>
         <li class="audit-finding">
-          <div class="finding-icon" style="background:rgba(96,165,250,0.12);color:var(--blue);font-size:13px;">⚡</div>
-          <div class="finding-text"><strong>Automation</strong> — No visible nurture sequence signals; prospects hitting your importer-sdk page likely drop if not sales-ready. A Make + Apollo + Lemlist pipeline would auto-qualify RB2B intent signals, route warm leads to SDRs, and nurture cold prospects via personalized product tours—standard for B2B data platforms.</div>
+          <div class="finding-icon warn">!</div>
+          <div class="finding-text">Manual SDR workflows eating cycles. No visible Apollo→Make→email automation pipeline means your sales team is probably doing research and list-building by hand.</div>
         </li>
         <li class="audit-finding">
-          <div class="finding-icon" style="background:rgba(74,222,128,0.12);color:var(--green);font-size:13px;">🔍</div>
-          <div class="finding-text"><strong>SEO / GEO</strong> — You rank #1 for 'import csv' but lack JSON-LD schema for 'SoftwareApplication' and 'Product'. Adding structured data, FAQ schema for common integration questions ('csv to mysql', 'import excel to postgres'), and dynamic schema for use-case pages would unlock featured snippets and boost organic CTR 20-30%.</div>
+          <div class="finding-icon tip">→</div>
+          <div class="finding-text">Implement a dynamic schema generator and fix crawl errors site-wide. This alone should lift organic traffic 15-20% and improve category page rankings.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon ok">✓</div>
-          <div class="finding-text">✓ Your ad positioning is strong—rank 1-2 for top keywords, messaging is clear, and you've identified the right buyer intent ('import csv', 'data import') early.</div>
+          <div class="finding-text">Your product messaging is clear and your site structure is logical—that's a solid foundation for paid and organic scaling.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon info">i</div>
           <div class="finding-text" style="font-style:italic;color:#444;">I can share a Loom walkthrough with more detail — just ask.</div>
         </li>
       </ul>
-    </div>
-    <div style="margin-top:12px;display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(96,165,250,0.05);border:1px solid rgba(96,165,250,0.15);border-radius:8px;">
-      <div style="font-size:11px;color:var(--blue);flex-shrink:0;margin-top:1px;">ℹ</div>
-      <div style="font-size:12px;color:var(--muted);line-height:1.6;">
-        <strong style="color:#7a9fc0;">Data transparency:</strong> Observations are based on publicly available data (SpyFu, Screaming Frog, page source analysis) and may not reflect actual budgets or internal metrics. Real spend, traffic, and performance figures are typically higher than what public tools report.
-      </div>
     </div>
   </div>
 </section>
@@ -1180,7 +1158,7 @@
           <div>
             <div class="timeline-title">On YouTube</div>
             <div class="timeline-sub">The real experience of moving from India to Germany — visa stress, language barriers, cultural clashes, and small victories nobody talks about.</div>
-            <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="Ingestro">youtube.com/@akshundogra →</a></div>
+            <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra" style="color:var(--accent);" target="_blank">youtube.com/@akshundogra →</a></div>
           </div>
         </div>
       </div>
@@ -1375,11 +1353,11 @@
     <div class="cta-label">Let's talk</div>
     <h2 class="cta-h2" id="yes-heading">This page was built<br>specifically for <em>Ingestro.</em></h2>
     <p class="cta-body">I'd love a 20-minute conversation. No pitch deck. Just a real chat about fit.</p>
-    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Ingestro">akshundogra@gmail.com →</a>
+    <a href="mailto:akshun@akshundogra.com" class="cta-email">akshun@akshundogra.com →</a>
     <div class="cta-links">
-      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Ingestro">💼 LinkedIn</a>
-      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="website-click" data-umami-event-company="Ingestro">🌐 Full website</a>
-      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="resume-click" data-umami-event-company="Ingestro">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/akshundogra" target="_blank">💼 LinkedIn</a>
+      <a href="https://akshundogra.com" target="_blank">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf" target="_blank">📄 Resume</a>
     </div>
   </div>
 </div>
@@ -1391,41 +1369,24 @@
     <div class="gif-meme-wrap">
       <img src="/assets/no-meme.jpg" alt="cold emails vs this one">
       <div class="gif-meme-text no-meme-text-top">every other<br>cold email</div>
-      <div class="gif-meme-text no-meme-text-bot">Hr &amp;<br>hiring managers</div>
+      <div class="gif-meme-text no-meme-text-bot">Hr &<br>hiring managers</div>
     </div>
   </div>
   <div class="cta-inner" style="background:var(--bg);">
     <div class="cta-label">No hard feelings</div>
     <h2 class="cta-h2">Glad you stopped by,<br><em>Ingestro.</em></h2>
     <p class="cta-body">Timing isn't always right — but the details are here whenever it is.<br>No follow-up. No pressure. Just an open door.</p>
-    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Ingestro">akshundogra@gmail.com →</a>
+    <a href="mailto:akshun@akshundogra.com" class="cta-email">akshun@akshundogra.com →</a>
     <div class="cta-links">
-      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Ingestro">💼 LinkedIn</a>
-      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="website-click" data-umami-event-company="Ingestro">🌐 Full website</a>
-      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=ingestro" target="_blank" data-umami-event="resume-click" data-umami-event-company="Ingestro">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/akshundogra" target="_blank">💼 LinkedIn</a>
+      <a href="https://akshundogra.com" target="_blank">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf" target="_blank">📄 Resume</a>
     </div>
   </div>
 </div>
 
 
 <script>
-// ─── Scroll reveal for hero meme ─────────────────────────────────────────────
-(function() {
-  const memeWrap = document.querySelector('.hero-photo-wrap');
-  if (!memeWrap) return;
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        setTimeout(function() {
-          memeWrap.classList.add('revealed');
-        }, 300);
-        observer.disconnect();
-      }
-    });
-  }, { threshold: 0.2 });
-  observer.observe(memeWrap);
-})();
-
 // ─── State ───────────────────────────────────────────────────────────────────
 let locked = false;
 
@@ -1455,7 +1416,6 @@ function onBtnsLeave() {
 
 // ─── Click — lock in the choice, fade out the other button ───────────────────
 function lockYes() {
-  if (typeof umami !== 'undefined') umami.track('yes-clicked', { company: 'Ingestro' });
   locked = true;
   const btn = document.getElementById("btn-no");
   btn.style.transition  = "opacity 0.35s, transform 0.35s";
@@ -1465,7 +1425,6 @@ function lockYes() {
 }
 
 function lockNo() {
-  if (typeof umami !== 'undefined') umami.track('no-clicked', { company: 'Ingestro' });
   locked = true;
   // Fade out Yes button
   const btnYes = document.getElementById("btn-yes");
@@ -1522,7 +1481,6 @@ function undoNo() {
   }, 2500);
 }
 </script>
-
 
 <!-- ════════════════════════════════════════
      FOOTER
