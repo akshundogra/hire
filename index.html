@@ -8,7 +8,7 @@
   <meta name="description" content="I built a personalised page for every company I'm applying to. Technical Growth Marketer based in Nürnberg.">
   <meta property="og:title" content="Akshun Dogra — I built a page for every company I'm applying to">
   <meta property="og:description" content="Technical Growth Marketer. 36x ROAS. 400% organic growth. Based in Nürnberg, Germany.">
-  <meta property="og:url" content="https://hire.akshundogra.com">
+  <meta property="og:url" content="https://akshundogra.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -411,9 +411,143 @@
     .section { animation: fadeUp 0.6s ease 0.1s both; }
     .about-strip { animation: fadeUp 0.6s ease 0.2s both; }
 
+    /* ── WORKFLOW REQUEST ── */
+    .workflow-request {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto 32px;
+      padding: 0 32px;
+    }
+
+    .workflow-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .workflow-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .workflow-title em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .workflow-sub {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .workflow-form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .workflow-field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .workflow-field.workflow-full {
+      grid-column: 1 / -1;
+    }
+
+    .workflow-field label {
+      font-size: 11px;
+      font-family: var(--mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .workflow-field input {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 10px 12px;
+      font-family: var(--font);
+      font-size: 14px;
+      transition: border-color 0.2s;
+    }
+
+    .workflow-field input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .workflow-hint {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: var(--mono);
+      letter-spacing: 0.03em;
+      margin-top: -2px;
+    }
+
+    .workflow-consent {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .workflow-consent input[type="checkbox"] {
+      margin-top: 2px;
+      accent-color: var(--accent);
+    }
+
+    .workflow-consent a {
+      color: var(--text);
+    }
+
+    .workflow-consent a:hover {
+      color: var(--accent);
+    }
+
+    .workflow-submit {
+      grid-column: 1 / -1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #080808;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-family: var(--mono);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .workflow-submit:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
     @media (max-width: 600px) {
       nav { padding: 14px 20px; }
       .hero { padding: 120px 20px 60px; }
+      .workflow-request { padding: 0 20px; }
+      .workflow-card { padding: 20px; }
+      .workflow-form { grid-template-columns: 1fr; }
       .section, .about-strip { padding: 0 20px 60px; }
       .about-inner { grid-template-columns: 1fr; }
       .about-links { align-items: stretch; }
@@ -457,6 +591,45 @@
       <span class="stat-value">6+</span>
       <span class="stat-label">Years experience</span>
     </div>
+  </div>
+</section>
+
+<section class="workflow-request">
+  <div class="workflow-card">
+    <h2 class="workflow-title">Would you like to see how I can <em>improve your workflow?</em></h2>
+    <p class="workflow-sub">
+      Share a few details and I will prepare a focused workflow-improvement plan tailored to your team.
+    </p>
+    <form class="workflow-form" action="https://formspree.io/f/mlgqwdng" method="post" data-umami-event="workflow-request-submit">
+      <input type="hidden" name="_subject" value="New workflow improvement request">
+      <input type="hidden" name="_next" value="https://akshundogra.com/workflow-request/">
+      <div class="workflow-field">
+        <label for="company-name">Company name</label>
+        <input id="company-name" name="companyName" type="text" required>
+      </div>
+      <div class="workflow-field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="workflow-field">
+        <label for="person-name">Person name</label>
+        <input id="person-name" name="personName" type="text" required>
+      </div>
+      <div class="workflow-field">
+        <label for="mobile-number">Mobile number</label>
+        <p class="workflow-hint">Please include country code (e.g. +49 23123xxx)</p>
+        <input id="mobile-number" name="mobile" type="tel" placeholder="+49 23123xxx" required>
+      </div>
+      <div class="workflow-field workflow-full">
+        <label for="company-url">Company URL</label>
+        <input id="company-url" name="companyUrl" type="text" inputmode="url" placeholder="akshundogra.com or https://akshundogra.com" required>
+      </div>
+      <label class="workflow-consent" for="privacy-consent">
+        <input id="privacy-consent" name="privacyConsent" type="checkbox" value="accepted" required>
+        <span>I agree that my details can be used to contact me about workflow improvement. You can request deletion anytime by emailing <a href="mailto:businesskshun@gmail.com">businesskshun@gmail.com</a>.</span>
+      </label>
+      <button class="workflow-submit" type="submit">Show me the workflow plan →</button>
+    </form>
   </div>
 </section>
 
@@ -675,7 +848,7 @@
 </div>
 
 <footer>
-  <p>Built by <a href="https://akshundogra.com">Akshun Dogra</a> · hire.akshundogra.com · <a href="https://github.com/akshundogra" target="_blank">GitHub</a></p>
+  <p>Built by <a href="https://akshundogra.com">Akshun Dogra</a> · akshundogra.com · <a href="https://github.com/akshundogra" target="_blank">GitHub</a></p>
 </footer>
 
 </body>
