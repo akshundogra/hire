@@ -127,9 +127,9 @@
     }
 
     .hero h1 {
-      font-size: clamp(36px, 5vw, 64px);
+      font-size: clamp(30px, 3.8vw, 48px);
       font-weight: 700;
-      line-height: 1.1;
+      line-height: 1.15;
       letter-spacing: -0.02em;
       margin-bottom: 20px;
     }
@@ -543,12 +543,20 @@
       opacity: 0.95;
     }
 
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 8px;
+    }
+
     @media (max-width: 600px) {
       nav { padding: 14px 20px; }
       .hero { padding: 120px 20px 60px; }
       .workflow-request { padding: 0 20px; }
       .workflow-card { padding: 20px; }
       .workflow-form { grid-template-columns: 1fr; }
+      .pipeline-grid { grid-template-columns: 1fr; }
       .section, .about-strip { padding: 0 20px 60px; }
       .about-inner { grid-template-columns: 1fr; }
       .about-links { align-items: stretch; }
@@ -568,7 +576,7 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">Actively looking for full-time roles across Germany — based in Nuremberg & Berlin</div>
+  <div class="hero-badge">Actively looking for full-time GTM & Growth roles across Germany — based in Nuremberg & Berlin</div>
   <h1>I built a page<br>for every company<br>I'm applying to. <em>Yes, really.</em></h1>
   <p class="hero-sub">
     Instead of sending a CV, I applied my ABM playbook to my own job search.
@@ -581,16 +589,60 @@
       <span class="stat-label">Peak ROAS</span>
     </div>
     <div class="stat">
-      <span class="stat-value">400%</span>
-      <span class="stat-label">Organic growth</span>
+      <span class="stat-value">100%</span>
+      <span class="stat-label">Automated Lead Enrichment & Routing</span>
     </div>
     <div class="stat">
       <span class="stat-value">−80%</span>
       <span class="stat-label">SDR manual effort</span>
     </div>
     <div class="stat">
+      <span class="stat-value">400%</span>
+      <span class="stat-label">Organic growth</span>
+    </div>
+    <div class="stat">
       <span class="stat-value">6+</span>
-      <span class="stat-label">Years experience</span>
+      <span class="stat-label">Years GTM & Systems</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:32px;">
+  <div class="section-label">GTM Engineering Architecture · How This ABM Engine Works</div>
+  <div class="engine-card" style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;display:grid;gap:20px;">
+    <h2 style="font-size:20px;font-weight:700;">End-to-End Automated ABM & Telemetry Pipeline</h2>
+    <p style="font-size:14px;color:var(--muted);line-height:1.7;">
+      Each page below is part of an integrated, code-driven GTM pipeline designed to turn cold outreach into warm, data-backed conversations:
+    </p>
+
+    <div class="pipeline-grid">
+      <!-- Step 1 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:16px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--accent);margin-bottom:6px;text-transform:uppercase;">01 · Form & Ingestion</div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Single Form Trigger</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Input target company, domain, & funding stage (Series A/B/C) to initiate pipeline.</div>
+      </div>
+
+      <!-- Step 2 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:16px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--accent);margin-bottom:6px;text-transform:uppercase;">02 · Automated Audits</div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Screaming Frog & SpyFu</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Automated technical SEO crawl + paid media keyword & ad budget scraping.</div>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:16px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--accent);margin-bottom:6px;text-transform:uppercase;">03 · Dynamic Generation</div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Modular ABM Pages</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Combines 60% high-performing baseline with 40% hyper-personalized company insights.</div>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:16px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--accent);margin-bottom:6px;text-transform:uppercase;">04 · Telemetry</div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px;">UTM & Umami Tracking</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Monitors real-time recruiter & company engagement per application document.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -644,7 +696,7 @@
         <span class="company-arrow">↗</span>
       </div>
       <div class="company-name">hallo theo</div>
-      <div class="company-role">Growth Marketing Manager</div>
+      <div class="company-role">GTM Engineer</div>
       <div class="company-status live">Page live</div>
     </a>
 
