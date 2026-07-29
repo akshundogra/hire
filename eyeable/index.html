@@ -321,6 +321,40 @@
   .card-value { font-size: 16px; font-weight: 600; }
   .card-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
+  /* ─── PILLARS & TOOL TAGS ─── */
+  .pillar-icon { font-size: 20px; margin-bottom: 10px; }
+  .pillar-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .pillar-body { font-size: 13px; color: #7a7672; line-height: 1.6; }
+  .pillar-proof {
+    font-size: 11px; color: var(--accent); opacity: 0.8;
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid rgba(232,197,71,0.15);
+    font-family: var(--mono); line-height: 1.5;
+  }
+  .pillar-badge {
+    display: inline-block; font-size: 10px; font-family: var(--mono);
+    background: rgba(232,197,71,0.15); color: var(--accent);
+    border-radius: 4px; padding: 2px 7px; margin-bottom: 8px;
+    font-weight: 500; letter-spacing: 0.05em;
+  }
+  .tools-strip { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+  .tool-tag {
+    display: flex; align-items: center; gap: 5px;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 5px; padding: 4px 9px;
+    font-size: 11px; color: var(--muted); font-weight: 500;
+  }
+  .tool-tag img {
+    width: 14px !important;
+    height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    object-fit: contain !important;
+    opacity: 0.8;
+    flex-shrink: 0;
+    display: inline-block;
+  }
+
   /* ─── PILLARS V2 — interactive with diagrams ─── */
   .pillars-v2 { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
 
@@ -704,9 +738,9 @@
             <div class="pillar-body">Instead of burning expensive enrichment credits on cold accounts, I build custom Python crawlers that inspect target accounts' HTML source code and privacy policies for existing accessibility vendor tags (AccessiBe, UserWay, EqualWeb, Recite Me, AudioEye). Accounts with active tools are filtered out immediately; unaddressed accounts become priority targets.</div>
             <div class="pillar-proof">Inspired by the RB2B → Clay → Lemlist pipeline built at Ingestro.</div>
             <div class="tools-strip">
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff">Python Scraper</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">Python Scraper</div>
               <div class="tool-tag">Clay</div>
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/hubspot/ffffff">HubSpot</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/hubspot/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">HubSpot</div>
               <div class="tool-tag">Lemlist</div>
             </div>
           </div>
@@ -771,7 +805,7 @@
             <div class="pillar-body">Maximizing CRM-native scoring in HubSpot first using existing form inputs (domain, company size, role) before spending on third-party Clay credits — keeping GTM tooling spend efficient.</div>
             <div class="pillar-proof">At Theo — built native lead scoring directly in CRM, cutting paid credit costs to zero for initial rollout.</div>
             <div class="tools-strip">
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/hubspot/ffffff">HubSpot</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/hubspot/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">HubSpot</div>
               <div class="tool-tag">Clay</div>
               <div class="tool-tag">Calendly</div>
               <div class="tool-tag">Form Data</div>
@@ -820,9 +854,9 @@
             <div class="pillar-body">Building robust webhooks, n8n automation pipelines, and custom Python scrapers that route signals and trigger Slack 1-pager briefings directly to reps when a lead goes warm.</div>
             <div class="pillar-proof">At Ingestro & Theo — built automated Slack HITL briefing pipelines for instant rep notification.</div>
             <div class="tools-strip">
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff">n8n</div>
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/slack/ffffff">Slack</div>
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff">Python</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">n8n</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/slack/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">Slack</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">Python</div>
               <div class="tool-tag">APIs & Webhooks</div>
             </div>
           </div>
@@ -874,8 +908,8 @@
             <div class="pillar-proof">At Theo — 5 AI agents live, saving €32.7k in ad spend & manual ops.</div>
             <div class="tools-strip">
               <div class="tool-tag">Claude Code</div>
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff">Python</div>
-              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff">n8n</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">Python</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">n8n</div>
               <div class="tool-tag">AI Scrapers</div>
             </div>
           </div>
