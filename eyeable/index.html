@@ -974,7 +974,7 @@
           <div class="pillar-v2-left">
             <div class="pillar-icon">💻</div>
             <div class="pillar-title">Signal Routing & Workflow Automation</div>
-            <div class="pillar-body">Building robust webhooks, n8n automation pipelines, and custom Python scrapers. Each qualified account gets a concise evidence-backed brief, while ambiguous signals remain in a human-review queue.</div>
+            <div class="pillar-body">Building robust webhooks, n8n automation pipelines, and custom Python scrapers. When a demo is booked, Calendly/HubSpot triggers an n8n workflow that enriches the account and sends the assigned AE a concise Slack brief before the meeting — while ambiguous signals remain in a human-review queue.</div>
             <div class="pillar-proof">At Ingestro & Theo — built automated Slack HITL briefing pipelines for instant rep notification.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff" width="14" height="14" style="width:14px;height:14px;display:inline-block;vertical-align:middle;">n8n</div>
@@ -985,36 +985,36 @@
           </div>
           <div class="pillar-v2-right">
             <div class="pv-diagram">
-              <div class="pv-label">Real-time briefing stack</div>
+              <div class="pv-label">Demo-prep automation stack</div>
               <div class="pv-stack">
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-top">
                     <span>n8n Orchestrator</span>
                   </div>
                   <div class="pv-stack-node pv-stack-top">
-                    <span>Signal Webhook</span>
+                    <span>Demo Booked</span>
                   </div>
                 </div>
-                <div class="pv-stack-down">↓ processes payload</div>
+                <div class="pv-stack-down">↓ enriches & generates payload</div>
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-mid" style="width:100%">
-                    <span>1-Pager Briefing Generator</span>
+                    <span>Enrich + Meeting Brief Generator</span>
                     <span class="pv-stack-badge">Slack HITL</span>
                   </div>
                 </div>
                 <div class="pv-stack-down">↓ routes to</div>
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-bot">
-                    <span>Slack Alert</span>
+                    <span>AE Slack Alert</span>
                   </div>
                   <div class="pv-stack-node pv-stack-bot">
-                    <span>HubSpot Sync</span>
+                    <span>HubSpot Update</span>
                   </div>
                 </div>
               </div>
               <div class="pv-callout">
-                <span class="pv-callout-num">HITL</span>
-                <span class="pv-callout-label">Human-approved routing for qualified accounts</span>
+                <span class="pv-callout-num">Demo Booked</span>
+                <span class="pv-callout-label">AE prepared before the meeting</span>
               </div>
             </div>
           </div>
@@ -1027,7 +1027,7 @@
           <div class="pillar-v2-left">
             <div class="pillar-icon">🤖</div>
             <div class="pillar-title">AI-Assisted GTM Operations</div>
-            <div class="pillar-body">At Theo, I engineered a custom AI agent pattern (Python + Claude Code + n8n) that automatically crawls target accounts, parses tech signals, and executes TOFU workflows. I would adapt this pattern to Eye-Able's existing data and CRM architecture to run disqualification scans and deliver real-time Slack rep briefings.</div>
+            <div class="pillar-body">At Theo, I engineered a custom AI agent pattern (Python + Claude Code + n8n) that automatically crawls target accounts, parses tech signals, and executes TOFU workflows. AI helps classify public signals, draft research briefs, and maintain the feedback loop—while routing rules and human review prevent confident-looking mistakes from reaching sales.</div>
             <div class="pillar-proof">At Theo — 5 AI agents live, saving €32.7k in ad spend & manual ops.</div>
             <div class="tools-strip">
               <div class="tool-tag">Claude Code</div>
@@ -1048,22 +1048,13 @@
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">🧠</div>
                   <div class="pv-geo-title">Intent Analysis</div>
-                  <div class="pv-geo-sub">LLM signal parsing</div>
-                </div>
-                <div class="pv-geo-card">
-                  <div class="pv-geo-icon">⚡</div>
-                  <div class="pv-geo-title">CRM Enrichment</div>
-                  <div class="pv-geo-sub">HubSpot auto-sync</div>
-                </div>
-                <div class="pv-geo-card">
-                  <div class="pv-geo-icon">💬</div>
-                  <div class="pv-geo-title">Slack Briefing</div>
-                  <div class="pv-geo-sub">Rep alert generation</div>
+                  <div class="pv-geo-sub">Keyword & tag extraction</div>
                 </div>
               </div>
+              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);text-align:center;margin:6px 0;">Loop: classify → review → route → measure → refine</div>
               <div class="pv-callout">
-                <span class="pv-callout-num">5</span>
-                <span class="pv-callout-label">Live AI Agents (Theo Precedent)</span>
+                <span class="pv-callout-num">€32.7k</span>
+                <span class="pv-callout-label">Ad spend & ops saved at Theo</span>
               </div>
             </div>
           </div>
@@ -1097,8 +1088,8 @@
       </li>
       <li class="action-item">
         <div class="action-num">03</div>
-        <div class="action-text"><strong>Launch the signal-triggered TOFU outbound engine</strong> — Layer in real-time buying signals via n8n & Clay. Each warm account auto-generates a 1-page Slack briefing for AEs. Outbound sequence runs on a structured cadence:<br>
-        <span style="font-family:var(--mono);font-size:12px;color:var(--text);display:block;margin-top:6px;line-height:1.6;">Day 1: Email (BFSG liability hook + site audit snippet)<br>Day 3: LinkedIn (connection note with WCAG finding)<br>Day 6: Email (Free WCAG audit report offer)<br>Day 10: Call (AE briefed via Slack 1-pager)<br>Day 14: Break-up note</span>
+        <div class="action-text"><strong>Launch signal-triggered outbound & demo-prep workflows</strong> — <strong>Two connected workflows:</strong> qualified outbound accounts enter a concise, signal-led sequence; when a prospect books a demo, an automation enriches the record and sends the assigned AE a Slack meeting brief before the call.<br>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--text);display:block;margin-top:6px;line-height:1.6;">Day 1 — Email: relevant accessibility observation + tailored angle<br>Day 3 — LinkedIn: connection note referencing the same context<br>Day 6 — Email: offer a free WCAG audit/report offer<br>Day 10 — Email: practical follow-up or case-study angle<br>Day 14 — Break-up note</span>
         <span style="font-size:12px;color:var(--muted);display:block;margin-top:4px;">Success test: meetings per AE hour outperform the current cold-list baseline before scaling volume.</span></div>
       </li>
     </ul>
