@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>MDIS Consulting — Demand Generation GTM Engineering Pitch Deck | Akshun Dogra</title>
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://hire.akshundogra.com/mdis-pitch/">
+<meta property="og:title"       content="MDIS Consulting — Demand Generation GTM Engineering Pitch Deck">
+<meta property="og:description" content="Concise 9-slide presentation deck on scaling self-generated SQL pipeline for MDIS Consulting across Haufe X360 ERP, X.One AI Platform, and MDIS Velocity.">
+<meta property="og:image"       content="https://hire.akshundogra.com/assets/og-mdis.jpg">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="MDIS Growth Deck — Akshun × MDIS Consulting">
+<meta name="twitter:description" content="9-slide GTM engineering presentation deck covering pull/push demand engines, 90-day plan, and governed operations.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  :root {
+    --bg:      #0a0a0a;
+    --bg2:     #111111;
+    --bg3:     #161616;
+    --border:  #1f1f1f;
+    --border2: #2a2a2a;
+    --text:    #e8e3db;
+    --muted:   #6b6b6b;
+    --muted2:  #3a3a3a;
+    --accent:  #e8c547;
+    --accent2: #f0d060;
+    --green:   #4ade80;
+    --red:     #f87171;
+    --blue:    #60a5fa;
+    --font:    'Plus Jakarta Sans', sans-serif;
+    --mono:    'Geist Mono', monospace;
+    --r:       12px;
+  }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* ─── NAV BAR ─── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px; height: 58px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-left { display: flex; align-items: center; gap: 10px; }
+  .nav-title { font-weight: 700; font-size: 15px; color: var(--text); }
+  .nav-x { color: var(--muted); font-weight: 300; }
+  .nav-company { font-weight: 700; font-size: 15px; color: var(--accent); }
+  .nav-badge {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    background: var(--bg3); border: 1px solid var(--border);
+    padding: 4px 12px; border-radius: 100px;
+  }
+
+  .deck-container { max-width: 960px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* ─── SLIDE CARD STYLING ─── */
+  .slide {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 32px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    scroll-margin-top: 80px;
+  }
+  .slide-header {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px; margin-bottom: 24px;
+  }
+  .slide-num {
+    font-family: var(--mono); font-size: 12px; color: var(--accent);
+    background: rgba(232,197,71,0.1); border: 1px solid rgba(232,197,71,0.2);
+    padding: 4px 10px; border-radius: 6px; font-weight: 600;
+  }
+  .slide-category {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+
+  .slide-title { font-size: clamp(22px, 2.8vw, 30px); font-weight: 700; line-height: 1.25; margin-bottom: 12px; }
+  .slide-title em { color: var(--accent); font-style: normal; }
+  .slide-sub { font-size: 16px; color: #9a9490; font-weight: 300; line-height: 1.6; margin-bottom: 24px; }
+
+  /* ─── GRID LAYOUTS ─── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+  /* ─── CARDS & HIGHLIGHT BOXES ─── */
+  .card-box {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 20px;
+  }
+  .card-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .card-desc { font-size: 13px; color: #9a9490; line-height: 1.6; font-weight: 300; }
+
+  /* ─── TABLES ─── */
+  .pitch-table {
+    width: 100%; border-collapse: collapse; font-size: 13px; text-align: left;
+    margin-top: 12px; border-radius: var(--r); overflow: hidden; border: 1px solid var(--border);
+  }
+  .pitch-table th {
+    background: var(--bg3); padding: 12px 14px; color: var(--accent);
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+    border-bottom: 1px solid var(--border2);
+  }
+  .pitch-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); color: #c4bfb8; }
+  .pitch-table tr:last-child td { border-bottom: none; }
+  .pitch-table td:first-child { font-weight: 600; color: var(--text); width: 22%; }
+
+  /* ─── LISTS & FLOWS ─── */
+  .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .bullet-item { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: #c4bfb8; }
+  .bullet-icon { flex-shrink: 0; color: var(--accent); font-weight: 700; }
+
+  .pill-tag {
+    display: inline-block; font-family: var(--mono); font-size: 10px;
+    background: var(--bg3); border: 1px solid var(--border);
+    padding: 3px 8px; border-radius: 4px; color: var(--accent);
+  }
+
+  /* ─── NAV FOOTER & CTA ─── */
+  .deck-nav-bar {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: rgba(17,17,17,0.95); backdrop-filter: blur(12px);
+    border: 1px solid var(--border2); border-radius: 100px;
+    padding: 8px 20px; display: flex; gap: 12px; align-items: center; z-index: 100;
+  }
+  .deck-nav-btn {
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+    padding: 4px 12px; border-radius: 100px; transition: all 0.2s;
+  }
+  .deck-nav-btn:hover, .deck-nav-btn.active { color: var(--accent); background: var(--bg3); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .slide { padding: 24px; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .deck-nav-bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV BAR -->
+<nav>
+  <div class="nav-left">
+    <span class="nav-title">Akshun Dogra</span>
+    <span class="nav-x">×</span>
+    <span class="nav-company">MDIS Consulting</span>
+  </div>
+  <div class="nav-badge">Growth Pitch Deck</div>
+</nav>
+
+<div class="deck-container">
+
+  <!-- ════════════════════════════════════════
+       SLIDE 1: COVER
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-1">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 01 / 09</span>
+      <span class="slide-category">Executive Cover</span>
+    </div>
+    <h1 class="slide-title">One Demand Engine.<br><em>Three Commercial Motions.</em></h1>
+    <p class="slide-sub">A technical & commercial strategy to scale self-generated SQL pipeline for MDIS Consulting across Haufe X360 ERP, X.One AI Platform, and MDIS Velocity.</p>
+    
+    <div class="grid-3" style="margin-top:28px;">
+      <div class="card-box" style="border-color:rgba(232,197,71,0.3);">
+        <div class="pill-tag" style="margin-bottom:8px;">PULL MOTION</div>
+        <div class="card-title">Haufe X360 ERP</div>
+        <div class="card-desc">Capture existing search, comparison, and SAP ECC migration intent.</div>
+      </div>
+      <div class="card-box" style="border-color:rgba(74,222,128,0.3);">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">PUSH MOTION</div>
+        <div class="card-title">X.One AI Platform</div>
+        <div class="card-desc">Category education, executive LinkedIn demand creation, and account activation.</div>
+      </div>
+      <div class="card-box" style="border-color:rgba(96,165,250,0.3);">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">SECONDARY MOTION</div>
+        <div class="card-title">MDIS Velocity</div>
+        <div class="card-desc">Medium-term Integration-as-a-Service for product & engineering leaders.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;padding:12px 16px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.15);border-radius:8px;font-size:13px;color:#c4bfb8;">
+      <strong style="color:var(--text);">Presenter:</strong> Akshun Dogra · Candidate for Demand Generation GTM Engineer
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 2: MDIS BUSINESS MAP
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-2">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 02 / 09</span>
+      <span class="slide-category">Business Baseline</span>
+    </div>
+    <h2 class="slide-title">MDIS Business & Partner Context</h2>
+    <p class="slide-sub">MDIS Consulting enters this strategy with tier-1 market momentum and a proven implementation track record across DACH Mittelstand.</p>
+
+    <div class="grid-2">
+      <div class="card-box">
+        <div class="card-title" style="color:var(--accent);">🏆 Award-Winning Partner Standing</div>
+        <div class="card-desc" style="font-size:13.5px;line-height:1.7;">
+          MDIS is a Haufe X360 Gold Partner and multiple award-winning manufacturer partner.<br><br>
+          At the <strong>2026 Haufe X360 Summit</strong>, MDIS was recognized as:
+          <ul style="margin-top:8px;margin-left:18px;color:var(--text);">
+            <li>• Gold Partner</li>
+            <li>• Highest-Revenue Partner</li>
+            <li>• Fastest-Growing Partner</li>
+            <li>• Customer Project of the Year</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-box">
+        <div class="card-title" style="color:var(--green);">⚡ 250+ Implementation Ecosystem</div>
+        <div class="card-desc" style="font-size:13.5px;line-height:1.7;">
+          Deep domain authority across Haufe X360 Cloud ERP and X.One platform, alongside key DACH ecosystem integrations:
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;">
+            <span class="pill-tag">Haufe X360</span>
+            <span class="pill-tag">X.One Platform</span>
+            <span class="pill-tag">Personio</span>
+            <span class="pill-tag">d.velop</span>
+            <span class="pill-tag">Circula</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 3: COMMERCIAL GROWTH PROBLEM
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-3">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 03 / 09</span>
+      <span class="slide-category">Commercial Challenge</span>
+    </div>
+    <h2 class="slide-title">The Top-of-Funnel Bottleneck</h2>
+    <p class="slide-sub">Sales converts qualified discovery calls well — the growth constraint sits entirely at the top of the funnel.</p>
+
+    <div class="grid-2">
+      <div class="card-box" style="border-color:rgba(248,113,113,0.3);">
+        <div class="card-title" style="color:var(--red);">⚠️ The Referral Limit</div>
+        <div class="card-desc">
+          Partner referrals alone cannot reliably sustain <strong>20–30% YoY growth</strong> targets across ERP consulting and X.One ARR. Referral deal flow is unpredictable and lacks scalable volume control.
+        </div>
+      </div>
+      <div class="card-box" style="border-color:rgba(74,222,128,0.3);">
+        <div class="card-title" style="color:var(--green);">🎯 The Self-Generated Solution</div>
+        <div class="card-desc">
+          By building an in-house demand engine (paid intent + SEO/GEO + signal-based outbound), every incremental self-sourced SQL directly expands revenue without increasing sales headcount.
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;padding:16px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:#c4bfb8;">
+      <strong style="color:var(--text);">Core Objective:</strong> Generate consistent, predictable SQL pipeline independent of manufacturer referral channels.
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 4: DUAL ICP BUYER JOURNEY MATRIX
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-4">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 04 / 09</span>
+      <span class="slide-category">Strategy Architecture</span>
+    </div>
+    <h2 class="slide-title">Dual ICP Buyer Journey Matrix</h2>
+    <p class="slide-sub">Different motions require fundamentally different GTM playbooks, buyer targeting, and content architectures.</p>
+
+    <table class="pitch-table">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th style="color:var(--accent);">Haufe X360 / Consulting Stack (Pull)</th>
+          <th style="color:var(--green);">X.One Platform (Push)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Market Logic</td>
+          <td>Pull market: existing search & comparison demand</td>
+          <td>Push market: category education & demand creation</td>
+        </tr>
+        <tr>
+          <td>Core Buyer</td>
+          <td>Managing Director, CFO, CIO/IT leadership, HR leadership</td>
+          <td>CFO & Executive Management</td>
+        </tr>
+        <tr>
+          <td>Buying Trigger</td>
+          <td>SAP ECC migration, ERP replacement, fragmented processes</td>
+          <td>Fragmented systems, slow reporting, AI governance</td>
+        </tr>
+        <tr>
+          <td>Primary Channel</td>
+          <td>Search, SEO, comparisons, partner campaigns, references</td>
+          <td>Executive education, LinkedIn, workshops, account activation</td>
+        </tr>
+        <tr>
+          <td>Decision Cycle</td>
+          <td>6–12 months</td>
+          <td>6–12 months</td>
+        </tr>
+        <tr>
+          <td>Core Job</td>
+          <td>Capture existing demand</td>
+          <td>Create and qualify new demand</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:12px;font-size:11px;color:var(--muted);font-family:var(--mono);">
+      ℹ Note: MDIS Velocity serves as a secondary, medium-term Integration-as-a-Service motion for product and engineering leaders.
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 5: FIRST 90 DAYS (30/30/30)
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-5">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 05 / 09</span>
+      <span class="slide-category">Execution Roadmap</span>
+    </div>
+    <h2 class="slide-title">First 90 Days: 30 / 30 / 30 Roadmap</h2>
+    <p class="slide-sub">No campaigns start before there is a trustworthy attribution and measurement baseline.</p>
+
+    <ul class="bullet-list">
+      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">01</span>
+        <div>
+          <strong style="color:var(--accent);">Days 1–30: Measurement, Search & Signal Baseline</strong><br>
+          Audit CRM, lifecycle stages, lead sources, consent, Search Console, Google Ads search terms, and 24-month pipeline.
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:4px;">📦 Output: Prioritised measurement & tooling roadmap — not a tool-shopping list.</span>
+        </div>
+      </li>
+      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">02</span>
+        <div>
+          <strong style="color:var(--accent);">Days 31–60: Operating System & Lead Scoring</strong><br>
+          Deploy tracking plan and native lead/account scoring v1 in the selected CRM using firmographic fit (50–500 DACH accounts) and intent signals.
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:4px;">📦 Output: Scoring v1, rep routing SLA definition, daily target-to-SQL dashboard.</span>
+        </div>
+      </li>
+      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">03</span>
+        <div>
+          <strong style="color:var(--accent);">Days 61–90: First Controlled Test (ERP-Strategie 2030)</strong><br>
+          Launch SAP ECC migration campaign combining search capture, LinkedIn ICP demand creation, and approval-based outbound activation.
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:4px;">📦 Output: SAP 2030 landing page, target account list, approved outbound workflow, test results & stop criteria.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 6: OPERATING SYSTEM ARCHITECTURE
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-6">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 06 / 09</span>
+      <span class="slide-category">System Architecture</span>
+    </div>
+    <h2 class="slide-title">Aggregate → Enrich → Activate System</h2>
+    <p class="slide-sub">Governed GTM operations with human-in-the-loop approval before any external action.</p>
+
+    <div class="grid-3">
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;">STEP 1 · AGGREGATE</div>
+        <div class="card-title">Consented Signals</div>
+        <div class="card-desc">Capture search intent, form submissions, and consented account signals across mdis-consulting.de.</div>
+      </div>
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">STEP 2 · ENRICH</div>
+        <div class="card-title">Account Context</div>
+        <div class="card-desc">Enrich company size, legacy ERP stack, and decision-maker roles into the selected CRM.</div>
+      </div>
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">STEP 3 · ACTIVATE</div>
+        <div class="card-title">Approval-Based Activation</div>
+        <div class="card-desc">Generate pre-call Slack dossiers and account briefs. Reps approve all external outreach.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;padding:14px;background:rgba(232,197,71,0.06);border:1px solid rgba(232,197,71,0.2);border-radius:8px;font-size:13px;color:var(--accent);">
+      <strong>Governance Rule:</strong> Autonomous reading & analysis; strict human-in-the-loop approval required before any external contact, budget modification, or publishing action.
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 7: MEASUREMENT & CONSENT FOUNDATION
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-7">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 07 / 09</span>
+      <span class="slide-category">Data & Governance</span>
+    </div>
+    <h2 class="slide-title">Measurement & Consent-Safe Signal Foundation</h2>
+    <p class="slide-sub">Evaluating tooling against DACH data quality, consent compliance, CRM fit, and legal approval.</p>
+
+    <div class="grid-2">
+      <div class="card-box">
+        <div class="card-title" style="color:var(--accent);">🔍 Baseline Audit Focus (Days 1–30)</div>
+        <ul style="margin-top:8px;margin-left:18px;font-size:13px;color:#c4bfb8;line-height:1.7;">
+          <li>• GA4 & Google Search Console coverage</li>
+          <li>• Campaign & UTM naming standards</li>
+          <li>• Form attribution & self-reported source</li>
+          <li>• Consent-safe behavioral analytics</li>
+          <li>• Technical SEO & AI search visibility</li>
+        </ul>
+      </div>
+
+      <div class="card-box">
+        <div class="card-title" style="color:var(--green);">⚖️ Proposed Tool Assessment Criteria</div>
+        <div class="card-desc" style="font-size:13px;line-height:1.7;">
+          Tools such as Clarity, Dealfront, RB2B, server-side tracking, or Clay are evaluated strictly against:
+          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
+            <span class="pill-tag">DACH Data Quality</span>
+            <span class="pill-tag">GDPR Compliance</span>
+            <span class="pill-tag">CRM Integration</span>
+            <span class="pill-tag">Sales Utility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 8: RELEVANT PROOF & FIT
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-8">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 08 / 09</span>
+      <span class="slide-category">Verified Track Record</span>
+    </div>
+    <h2 class="slide-title">Relevant Proof & Operations</h2>
+    <p class="slide-sub">Grounded strictly in verified CV results and governed multi-agent GTM execution.</p>
+
+    <div class="grid-2">
+      <div class="card-box">
+        <div class="card-title" style="color:var(--accent);">📈 Verified Performance (Theo & Ingestro)</div>
+        <ul style="margin-top:8px;margin-left:18px;font-size:13px;color:#c4bfb8;line-height:1.7;">
+          <li>• <strong>Up to 36x peak ROAS</strong> on paid search intent</li>
+          <li>• <strong>400% organic traffic growth</strong> via technical SEO</li>
+          <li>• <strong>€22.7k conversion value recovered</strong> via HubSpot → Make → Google Ads offline pipeline</li>
+          <li>• <strong>80% reduction in manual effort</strong> via automation pipelines</li>
+          <li>• <strong>GEO traffic 1% → 20%</strong> (contributing 10% of leads)</li>
+        </ul>
+      </div>
+
+      <div class="card-box">
+        <div class="card-title" style="color:var(--green);">🤖 X.One Architecture Governance Mirror</div>
+        <div class="card-desc" style="font-size:13px;line-height:1.7;">
+          Built multi-agent GTM operations mirroring MDIS's X.One architecture model:
+          <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;font-family:var(--mono);">
+            <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">A.One (Analytics)</div>
+            <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">G.One (Governance)</div>
+            <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">S.One (Service)</div>
+            <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">MyAI Dashboard</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SLIDE 9: WHAT I NEED FROM MDIS TO SUCCEED
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-9">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 09 / 09</span>
+      <span class="slide-category">Onboarding & Alignment</span>
+    </div>
+    <h2 class="slide-title">What I Need From MDIS to Succeed</h2>
+    <p class="slide-sub">Four concrete inputs required in week one to guarantee rapid execution.</p>
+
+    <div class="grid-2">
+      <div class="card-box">
+        <div class="card-title" style="color:var(--accent);">1. Joint MQL/SQL Workshop</div>
+        <div class="card-desc">Collaborative alignment session with sales leadership to define non-negotiable lead handoff criteria and rep SLAs.</div>
+      </div>
+      <div class="card-box">
+        <div class="card-title" style="color:var(--accent);">2. System & Analytics Access</div>
+        <div class="card-desc">Read access to existing CRM, GA4, Search Console, Google Ads, and form setup to complete the 30-day baseline audit.</div>
+      </div>
+      <div class="card-box">
+        <div class="card-title" style="color:var(--green);">3. Pipeline Historical Data</div>
+        <div class="card-desc">24-month historical deal data to map win rates, cycle lengths, and deal sizes across pull vs push motions.</div>
+      </div>
+      <div class="card-box">
+        <div class="card-title" style="color:var(--green);">4. Closed Feedback Loop</div>
+        <div class="card-desc">Sales feedback on accepted vs rejected SQLs with reason codes to continuously optimize scoring thresholds.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;text-align:center;">
+      <a href="mailto:akshundogra@gmail.com" style="display:inline-block;background:var(--accent);color:#000;padding:14px 32px;border-radius:var(--r);font-weight:700;font-size:15px;">
+        ✉ Schedule Alignment Discussion · akshundogra@gmail.com
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<!-- BOTTOM SLIDE NAV BAR -->
+<div class="deck-nav-bar">
+  <a href="#slide-1" class="deck-nav-btn active">01 Cover</a>
+  <a href="#slide-2" class="deck-nav-btn">02 Context</a>
+  <a href="#slide-3" class="deck-nav-btn">03 Challenge</a>
+  <a href="#slide-4" class="deck-nav-btn">04 Dual ICP</a>
+  <a href="#slide-5" class="deck-nav-btn">05 90 Days</a>
+  <a href="#slide-6" class="deck-nav-btn">06 OS Arc</a>
+  <a href="#slide-7" class="deck-nav-btn">07 Signals</a>
+  <a href="#slide-8" class="deck-nav-btn">08 Proof</a>
+  <a href="#slide-9" class="deck-nav-btn">09 Alignment</a>
+</div>
+
+</body>
+</html>
