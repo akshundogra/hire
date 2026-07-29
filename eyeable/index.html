@@ -814,7 +814,8 @@
         </div>
         <div class="card" style="border-color:rgba(74,222,128,0.25);background:rgba(74,222,128,0.03);">
           <div class="card-label">Availability</div>
-          <div class="card-value" style="color:var(--green);">Actively looking for full-time builder roles — Immediate / August Start</div>
+          <div class="card-value" style="color:var(--green);"><strong style="color:#4ade80;">Verfügbar ab sofort</strong> · Vollzeit · Nürnberg / Berlin / Remote</div>
+          <div class="card-sub">Available immediately — open to hybrid or full remote</div>
         </div>
       </div>
     </div>
@@ -920,7 +921,7 @@
           </div>
           <div class="pillar-v2-right">
             <div class="pv-diagram">
-              <div class="pv-label">Native Scoring Hierarchy</div>
+              <div class="pv-label">Native Scoring & Signal Waterfall</div>
               <div class="pv-geo-grid">
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">🏢</div>
@@ -932,17 +933,33 @@
                   <div class="pv-geo-title">Role Persona</div>
                   <div class="pv-geo-sub">Stated activity & title</div>
                 </div>
-                <div class="pv-geo-card">
-                  <div class="pv-geo-icon">📋</div>
-                  <div class="pv-geo-title">Conversion Path</div>
-                  <div class="pv-geo-sub">WCAG test vs booking</div>
+              </div>
+
+              <!-- Signal Scoring Waterfall Table -->
+              <div style="display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-size:11px;margin-top:6px;background:var(--bg3);padding:8px 10px;border-radius:6px;border:1px solid var(--border);">
+                <div style="color:var(--text);font-weight:600;font-family:var(--mono);font-size:10px;text-transform:uppercase;border-bottom:1px solid var(--border);padding-bottom:3px;">Signal Trigger</div>
+                <div style="color:var(--accent);font-family:var(--mono);font-size:10px;text-transform:uppercase;text-align:right;border-bottom:1px solid var(--border);padding-bottom:3px;">Score</div>
+                <div style="color:#a0a0a0;">No accessibility tool tag</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+25</div>
+                <div style="color:#a0a0a0;">BFSG-liable vertical</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+20</div>
+                <div style="color:#a0a0a0;">Leadership change &lt;90d</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+15</div>
+                <div style="color:#a0a0a0;">Has competitor tool</div><div style="color:var(--red);font-family:var(--mono);text-align:right;">DISQUALIFY</div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;">
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">80+</div>
+                  <div style="font-size:9px;color:var(--muted);">Tier 1 · AE Now</div>
                 </div>
-                <div class="pv-geo-card">
-                  <div class="pv-geo-icon">💳</div>
-                  <div class="pv-geo-title">Credit Guard</div>
-                  <div class="pv-geo-sub">Clay enrichment secondary</div>
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">50–79</div>
+                  <div style="font-size:9px;color:var(--muted);">Tier 2 · Sequence</div>
+                </div>
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">&lt;50</div>
+                  <div style="font-size:9px;color:var(--muted);">Tier 3 · Nurture</div>
                 </div>
               </div>
+
               <div class="pv-callout">
                 <span class="pv-callout-num">80%+</span>
                 <span class="pv-callout-label">Sales-ready warm lead target</span>
@@ -1071,7 +1088,7 @@
     <ul class="action-list">
       <li class="action-item">
         <div class="action-num">01</div>
-        <div class="action-text"><strong>Map the existing lead-to-call workflow</strong> — Sit directly with sales ops and reps to audit the current CRM workflow in HubSpot. Identify manual research bottlenecks and pinpoint where reps waste time on unqualified or already-solved accounts before modifying any scoring model.</div>
+        <div class="action-text"><strong>Audit & upgrade existing lead-to-call workflow</strong> — Sit directly with Dennis & Özge to audit how lead data currently flows through HubSpot. Identify manual research bottlenecks and streamline existing lists before expanding scoring logic.</div>
       </li>
       <li class="action-item">
         <div class="action-num">02</div>
@@ -1079,9 +1096,20 @@
       </li>
       <li class="action-item">
         <div class="action-num">03</div>
-        <div class="action-text"><strong>Launch the signal-triggered TOFU outbound engine</strong> — Layer in real-time buying signals (leadership updates, funding rounds, BFSG compliance deadlines) via n8n & Clay workflows, automatically generating 1-page Slack briefings and routing warm accounts directly to sales reps.</div>
+        <div class="action-text"><strong>Launch the signal-triggered TOFU outbound engine</strong> — Layer in real-time buying signals via n8n & Clay. Each warm account auto-generates a 1-page Slack briefing for AEs. Outbound sequence runs on a structured cadence:<br>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--text);display:block;margin-top:6px;line-height:1.6;">Day 1: Email (BFSG liability hook + site audit snippet)<br>Day 3: LinkedIn (connection note with WCAG finding)<br>Day 6: Email (Free WCAG audit report offer)<br>Day 10: Call (AE briefed via Slack 1-pager)<br>Day 14: Break-up note</span>
+        <span style="font-size:12px;color:var(--muted);display:block;margin-top:4px;">Exit condition: reply at any step → routes to AE immediately.</span></div>
       </li>
     </ul>
+
+    <!-- ROI Business Case Box -->
+    <div style="margin-top:24px;padding:16px 20px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.2);border-radius:8px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">💡 ROI Business Case · The Math For Sales Ops</div>
+      <div style="font-size:13px;color:#c4bfb8;line-height:1.6;">
+        If AEs currently convert <strong>8% of cold outbound</strong> vs. <strong>30% of warm, pre-qualified accounts</strong> — and each AE spends <strong>3 hours/day on manual research</strong> — the negative-signal crawler and native HubSpot scoring model pays for itself in week one.
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1109,16 +1137,16 @@
           <div class="finding-text"><strong>High-Intent Conversion Inputs</strong> — Both Calendly demo bookings and free WCAG test report forms capture domain, company size, and role — rich firmographic data ready to power native account lead scoring.</div>
         </li>
         <li class="audit-finding">
-          <div class="finding-icon" style="background:rgba(74,222,128,0.12);color:var(--green);font-size:13px;">🔍</div>
-          <div class="finding-text"><strong>Anonymous Visitor Intent</strong> — No visitor-identification script (RB2B style) is active on the main marketing site — leaving high-intent visitors driven by BFSG compliance deadlines anonymous to reps.</div>
+          <div class="finding-icon warn">⚠️</div>
+          <div class="finding-text"><strong>BFSG Deadline Passed — 2M+ German Sites Are Already Liable</strong> — The private sector BFSG compliance deadline was June 28, 2025. These aren't prospects who <em>should</em> buy — they're companies already legally exposed to liability. Every week of delay increases risk. That's an urgency-driven outbound motion with a ticking legal clock.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon ok">✓</div>
           <div class="finding-text">Modern backend hosting on Scaleway, PlanetScale, and Bunny CDN demonstrates strong technical infrastructure ready for systems scaling.</div>
         </li>
         <li class="audit-finding">
-          <div class="finding-icon info">i</div>
-          <div class="finding-text" style="font-style:italic;color:#444;">I can share a detailed walkthrough with more detail — just ask.</div>
+          <div class="finding-icon info">📹</div>
+          <div class="finding-text" style="font-style:italic;color:#bbb;"><strong>Loom Walkthrough</strong> — I can share a 2-minute Loom walkthrough of the Theo AI agent & n8n pipeline on request — just ask.</div>
         </li>
       </ul>
     </div>
@@ -1244,7 +1272,7 @@
                   <div>
                     <div class="timeline-title">On YouTube</div>
                     <div class="timeline-sub">The unfiltered reality of moving from India to Germany — visa stress, language barriers, real stories.</div>
-                    <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=hallo-theo" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="hallo theo">youtube.com/@akshundogra →</a></div>
+                    <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=eyeable" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="Eye-Able">youtube.com/@akshundogra →</a></div>
                   </div>
                 </div>
               </div>
@@ -1606,8 +1634,8 @@ function undoNo() {
      FOOTER
 ════════════════════════════════════════ -->
 <footer>
-  <div class="footer-brand">Akshun Dogra · Technical Growth Marketer</div>
-  <div class="footer-url">hire.akshundogra.com/hallo-theo</div>
+  <div class="footer-brand">Akshun Dogra · GTM Engineer</div>
+  <div class="footer-url">hire.akshundogra.com/eyeable</div>
 </footer>
 
 </body>
