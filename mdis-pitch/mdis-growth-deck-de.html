@@ -317,6 +317,11 @@
           <td>CFO und Geschäftsführung</td>
         </tr>
         <tr>
+          <td>Kauf-Einheit</td>
+          <td>Buying Group scoring — Geschäftsführung, CFO, IT, Fachbereich bewertet als Einheit, nicht Einzel-Lead</td>
+          <td>Executive buying group — CFO + Geschäftsführung, ergänzt um IT bei technischer Prüfung</td>
+        </tr>
+        <tr>
           <td>Kaufauslöser</td>
           <td>SAP-ECC-Migration, ERP-Ablösung, fragmentierte Gesamtprozesse</td>
           <td>Fragmentierte Systeme, langsames Reporting, AI-Governance, Lizenzentscheidung</td>
@@ -363,6 +368,7 @@
           <strong style="color:var(--accent);">Tage 1–30: Messung, Search & Signal-Baseline</strong><br>
           Audit von CRM, Lifecycle-Stages, Lead-Quellen, Consent, Search Console, Google Ads Suchbegriffen und 24-Monate-Pipeline. Korrektur des standardmäßigen 30-Tage-Konvertierungs-Attributionsfensters von Google Ads auf 60–90+ Tage B2B-SaaS-Vertriebszyklen.
           <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:4px;">📦 Ergebnis: Priorisierte Mess- & Tooling-Roadmap — keine ungeprüfte Tool-Einkaufsliste. Korrigiertes Attributionsmodell.</span>
+          <span style="display:block;font-size:11.5px;color:var(--muted);font-style:italic;margin-top:3px;">Attributions-Methodik: Self-reported attribution field in jedem Formular, ergänzt um CRM-Herkunftserfassung und erste Inkrementalitätstests je Kanal.</span>
         </div>
       </li>
       <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
@@ -377,7 +383,7 @@
         <span class="bullet-icon">03</span>
         <div>
           <strong style="color:var(--accent);">Tage 61–90: Erster kontrollierter Test (ERP-Strategie 2030)</strong><br>
-          Start der SAP-ECC-Migrationskampagne mit Kombination aus Search-Abfang, LinkedIn-ICP-Demand-Creation und freigabebasierter Outbound-Aktivierung.
+          Start der SAP-ECC-Migrationskampagne mit Kombination aus Search-Abfang, LinkedIn-ICP-Demand-Creation und freigabebasierter Outbound-Aktivierung. Konkrete Themencluster: SAP HCM → Personio, SAP Concur → Circula, SAP SRM → Einkaufsmodul, SAP BusinessObjects → X.One Dashboard — jeweils als eigener Ablösepfad mit TCO-Vergleich gegen S/4HANA.
           <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:4px;">📦 Ergebnis: SAP 2030 Landingpage, Ziel-Account-Liste, freigegebener Outbound-Workflow, Testergebnisse & Stopp-Kriterien.</span>
         </div>
       </li>
@@ -398,29 +404,34 @@
       <span class="slide-num">SLIDE 06 / 10</span>
       <span class="slide-category">System-Architektur</span>
     </div>
-    <h2 class="slide-title">Aggregate → Enrich → Activate System</h2>
-    <p class="slide-sub">Governante GTM-Operationen mit Human-in-the-Loop-Freigabe vor jeder externen Aktion.</p>
+    <h2 class="slide-title">Governantes Multi-Agenten-Betriebssystem</h2>
+    <p class="slide-sub">Vier spezialisierte GTM-Agenten unter Human-in-the-Loop-Freigabe vor jeder externen Aktion.</p>
 
-    <div class="grid-3">
+    <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:14px;">
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;">SCHRITT 1 · AGGREGATE</div>
-        <div class="card-title">Einwilligungskonforme Signale</div>
-        <div class="card-desc">Erfassung von Suchabsichten, Formular-Eingaben und einwilligungskonformen Account-Signalen über mdis-consulting.de.</div>
+        <div class="pill-tag" style="margin-bottom:8px;">AGENT 1 · VISIBILITY</div>
+        <div class="card-title">Visibility Agent</div>
+        <div class="card-desc">Überwacht SEO-Rankings, AI-Suchsichtbarkeit (GEO) und Wettbewerbspositionierung kontinuierlich.</div>
       </div>
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">SCHRITT 2 · ENRICH</div>
-        <div class="card-title">Account-Kontext</div>
-        <div class="card-desc">Anreicherung von Unternehmensgröße, bestehendem ERP-Stack und Entscheider-Rollen direkt im gewählten CRM.</div>
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">AGENT 2 · PERFORMANCE</div>
+        <div class="card-title">Paid-Performance Agent</div>
+        <div class="card-desc">Erkennt Ad-Waste, Budget-Anomalien und Skalierungschancen in Echtzeit.</div>
       </div>
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">SCHRITT 3 · ACTIVATE</div>
-        <div class="card-title">Freigabebasierte Aktivierung</div>
-        <div class="card-desc">Erstellung von Pre-Call-Slack-Dossiers und Account-Briefings. Vertriebsmitarbeiter geben sämtlichen externen Outreach explizit frei.</div>
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">AGENT 3 · EXECUTION</div>
+        <div class="card-title">Execution Agent</div>
+        <div class="card-desc">Erstellt Landingpages, Content-Varianten und ABM-Assets in einem automatisierten Recycling-System.</div>
+      </div>
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--accent);">AGENT 4 · HANDOFF</div>
+        <div class="card-title">Handoff Agent</div>
+        <div class="card-desc">Erzeugt Pre-Call-Dossiers und übergibt qualifizierte Accounts an Sales mit SLA.</div>
       </div>
     </div>
 
     <div style="margin-top:20px;padding:14px;background:rgba(232,197,71,0.06);border:1px solid rgba(232,197,71,0.2);border-radius:8px;font-size:13px;color:var(--accent);">
-      <strong>Governance-Regel:</strong> Autonome Analyse & Aufbereitung; strikte Human-in-the-Loop-Freigabe erforderlich vor jedem externen Kontakt, jeder Budgetanpassung oder Veröffentlichung.
+      <strong>Governance-Regel:</strong> Autonome Analyse & Aufbereitung; strikte Human-in-the-Loop-Freigabe erforderlich vor jedem externen Kontakt, jeder Budgetanpassung oder Veröffentlichung. Jede externe Kontaktaufnahme ist zusätzlich DSGVO-konform dokumentiert — Einwilligungslogik, Widerrufsrecht und Kaltakquise-Regeln nach deutschem Recht sind fest im Freigabeprozess verankert.
     </div>
   </section>
 
@@ -445,6 +456,7 @@
           <li>• Formular-Attribution & selbst angegebene Lead-Quelle</li>
           <li>• Einwilligungskonforme Verhaltensanalytik</li>
           <li>• Technisches SEO & KI-Suchsichtbarkeit (GEO)</li>
+          <li>• Externe Intent- und Marktsignale (Technologie-Signale zur SAP-Bestandslandschaft, Trigger-Events wie Finanzierungsrunden, Führungswechsel oder ERP-/Finance-Stellenausschreibungen)</li>
         </ul>
       </div>
 
@@ -472,6 +484,13 @@
         </div>
       </div>
     </div>
+
+    <div class="card-box" style="margin-top:16px;">
+      <div class="card-title" style="color:var(--blue);">🇪🇺 Datensouveränität & EU-Hosting (Präzedenzfall Ingestro / Theo)</div>
+      <div class="card-desc" style="font-size:13px;line-height:1.7;">
+        Server-seitiges Tracking mit GTM und vollständigem Consent-Management wurde bereits bei Ingestro und Theo aufgebaut. Datenhosting und -verarbeitung ausschließlich innerhalb der EU — direkt übertragbar auf MDIS' 'Deutschland Cloud'-Positionierung und EU-AI-Act-Konformität.
+      </div>
+    </div>
   </section>
 
 
@@ -492,6 +511,8 @@
         <ul style="margin-top:8px;margin-left:18px;font-size:13px;color:#c4bfb8;line-height:1.7;">
           <li>• <strong>Bis zu 36x Peak-ROAS</strong> auf Wettbewerber-Abfang-Suchanfragen (eng abgestecktes, hoch-intentionales Segment mit niedrigem CPC relativ zur Deal-Größe)</li>
           <li>• <strong>3,2x–4,2x Blended-Account-ROAS</strong> Baseline (passend zu B2B-SaaS-Branchen-Benchmarks 2026 bei 3.000+ $/Monat Spend — WebFX 2026). First-Touch-ROAS nahe Break-Even; LTV:CAC ist das Hauptsignal (3:1 gesund, 5:1+ Top-Quartil)</li>
+          <li>• <strong>Server-side Tracking (GTM) & vollständiges Consent-Management</strong> end-to-end bei Ingestro und Theo aufgebaut — direkt wiederverwendbar für EU-Hosting & DSGVO-Anforderungen bei MDIS</li>
+          <li>• <strong>Self-reported attribution Feld</strong> in Lead-Formularen bei Ingestro implementiert zur sauberen Trennung von KI-Suche, Wettbewerber-Recherche und Paid-Kanälen</li>
           <li>• <strong>MDIS-Anwendung:</strong> Wettbewerber-Abfang für SAP ECC Migration & X.One Positionierung</li>
           <li>• <strong>400% organisches Traffic-Wachstum</strong> durch technisches SEO</li>
           <li>• <strong>22,7k € geretteter Conversion-Wert</strong> über HubSpot → Make → Google Ads Offline-Pipeline</li>
@@ -503,7 +524,7 @@
       <div class="card-box">
         <div class="card-title" style="color:var(--green);">🤖 X.One Architektur-Governance-Spiegel</div>
         <div class="card-desc" style="font-size:13px;line-height:1.7;">
-          Aufbau von Multi-Agenten-GTM-Operationen nach dem Vorbild der X.One-Architektur von MDIS — gesteuert über ein Starter-Tool-Budget unter 300 $/Monat (Lemlist, Clay, Apollo):
+          Multi-Agenten-GTM-System bei Theo spiegelt exakt diese Struktur wider — Visibility, Paid-Performance, Execution und Handoff Agenten unter Human-in-the-Loop-Freigabe, inkl. DSGVO-konformem Outreach:
           <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;font-family:var(--mono);">
             <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">A.One (Analytics)</div>
             <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">G.One (Governance)</div>
