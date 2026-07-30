@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Akshun Dogra × MDIS Consulting | hire.akshundogra.com/mdis</title>
+
+<!-- Open Graph — controls LinkedIn/WhatsApp/Slack preview -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://hire.akshundogra.com/mdis/">
+<meta property="og:title"       content="Akshun × MDIS Consulting — I built this page for you">
+<meta property="og:description" content="Hi team 👋 — I built a personalised page on how I'd approach demand generation GTM engineering for MDIS Consulting's Haufe X360 and X.One motions.">
+<meta property="og:image"       content="https://hire.akshundogra.com/assets/og-mdis.jpg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Akshun × MDIS Consulting — built specifically for you">
+<meta name="twitter:description" content="Hi team — personalised growth page covering Haufe X360 ERP, X.One AI platform, agentic GTM systems, and demand generation.">
+<meta name="twitter:image"       content="https://hire.akshundogra.com/assets/og-mdis.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  :root {
+    --bg:      #0a0a0a;
+    --bg2:     #111111;
+    --bg3:     #161616;
+    --border:  #1f1f1f;
+    --border2: #2a2a2a;
+    --text:    #e8e3db;
+    --muted:   #6b6b6b;
+    --muted2:  #3a3a3a;
+    --accent:  #e8c547;
+    --accent2: #f0d060;
+    --green:   #4ade80;
+    --red:     #f87171;
+    --blue:    #60a5fa;
+    --font:    'Plus Jakarta Sans', sans-serif;
+    --mono:    'Geist Mono', monospace;
+    --r:       10px;
+  }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,10,0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 48px;
+    height: 58px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-collab { display: flex; align-items: center; gap: 10px; }
+  .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
+  .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
+  .nav-company-logo {
+    height: 22px; width: auto; max-width: 140px; object-fit: contain;
+    filter: brightness(0) invert(1); opacity: 0.85;
+  }
+  .nav-company-name { font-weight: 700; font-size: 15px; color: var(--accent); }
+  .nav-url {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    background: var(--bg3); border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 100px;
+  }
+
+  .inner { max-width: 900px; margin: 0 auto; }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 80px 48px 88px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(232,197,71,0.05) 0%, transparent 65%);
+    top: -100px; right: -60px; pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 280px;
+    gap: 48px; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 100px; padding: 6px 14px 6px 6px;
+    margin-bottom: 26px;
+  }
+  .hero-badge-logo {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: #fff; object-fit: contain; padding: 3px; flex-shrink: 0;
+  }
+  .hero-badge-fallback {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); display: flex; align-items: center;
+    justify-content: center; font-size: 11px; font-weight: 700;
+    color: #000; flex-shrink: 0;
+  }
+  .hero-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
+  .hero-badge-text { font-size: 12px; color: var(--muted); font-weight: 500; }
+
+  .hero-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px;
+  }
+  .hero-h1 {
+    font-size: clamp(24px, 3.2vw, 38px); font-weight: 700;
+    line-height: 1.15; margin-bottom: 20px;
+  }
+  .hero-h1 .highlight { color: var(--accent); }
+  .hero-sub {
+    font-size: 17px; color: #9a9490; line-height: 1.75;
+    font-weight: 300; max-width: 540px; margin-bottom: 36px;
+  }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); color: #000;
+    padding: 13px 26px; border-radius: var(--r);
+    font-weight: 600; font-size: 14px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+  .hero-photo-wrap {
+    border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border2);
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .hero-photo-wrap.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-photo-wrap img {
+    width: 100%; display: block;
+  }
+  .hero-meme-overlay {
+    position: absolute;
+    bottom: 10%; left: 15%; right: 5%;
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: clamp(12px, 2.8vw, 16px);
+    font-weight: 900;
+    color: #fff;
+    text-shadow:
+      2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000, -2px  2px 0 #000,
+      0   2px 0 #000,  2px  0   0 #000,
+      0  -2px 0 #000, -2px  0   0 #000;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: left;
+    pointer-events: none;
+  }
+
+  /* ─── STATS BAR ─── */
+  .stats-bar {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 48px;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); text-align: center;
+  }
+  .stat { padding: 0 20px; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-size: 34px; font-weight: 700; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-num .accent { color: var(--accent); }
+  .stat-label { font-size: 12px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+  .stat-channel {
+    display: inline-block; font-family: var(--mono); font-size: 10px;
+    color: var(--muted2); background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 4px; padding: 2px 6px; margin-top: 6px;
+  }
+
+  /* ─── TOOLS CAROUSEL ─── */
+  .tools-carousel {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+  }
+  .tools-carousel::before,
+  .tools-carousel::after {
+    content: '';
+    position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2;
+    pointer-events: none;
+  }
+  .tools-carousel::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+  }
+  .tools-carousel::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+  }
+  .carousel-track {
+    display: flex; align-items: center; gap: 32px;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+  }
+  .carousel-track:hover { animation-play-state: paused; }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .tool-chip {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 14px;
+    font-size: 13px; color: #7a7672; font-weight: 500;
+    white-space: nowrap; transition: color 0.2s, border-color 0.2s;
+  }
+  .tool-chip:hover { color: var(--text); border-color: var(--border2); }
+  .tool-chip img { width: 16px; height: 16px; opacity: 0.6; }
+  .tool-chip .tool-emoji { font-size: 14px; }
+
+  /* ─── SECTIONS ─── */
+  .section { padding: 80px 48px; }
+  .section-alt { background: var(--bg2); }
+  .section-border { border-top: 1px solid var(--border); }
+
+  .section-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;
+  }
+  .section-h2 {
+    font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .body-text {
+    font-size: 15px; color: #9a9490; line-height: 1.8;
+    font-weight: 300; max-width: 640px;
+  }
+  .body-text p { margin-bottom: 14px; }
+  .body-text p:last-child { margin-bottom: 0; }
+
+  /* ─── TWO COL ─── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 22px;
+  }
+  .card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .card-value { font-size: 16px; font-weight: 600; }
+  .card-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* ─── PILLARS V2 ─── */
+  .pillars-v2 { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+
+  .pillar-v2 {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); overflow: hidden; transition: border-color 0.2s;
+  }
+  .pillar-v2.featured {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.03);
+  }
+  .pillar-badge {
+    display: inline-block; font-size: 10px; font-family: var(--mono);
+    background: rgba(232,197,71,0.15); color: var(--accent);
+    border-radius: 4px; padding: 4px 10px; margin: 16px 24px 0;
+    font-weight: 500; letter-spacing: 0.05em;
+  }
+  .pillar-v2-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    align-items: stretch;
+  }
+  .pillar-v2-left {
+    padding: 24px; border-right: 1px solid var(--border);
+  }
+  .pillar-v2-right {
+    padding: 20px; background: var(--bg);
+  }
+
+  .pillar-icon { font-size: 20px; margin-bottom: 10px; }
+  .pillar-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .pillar-body { font-size: 13px; color: #7a7672; line-height: 1.65; }
+  .pillar-proof {
+    font-size: 11px; color: var(--accent); opacity: 0.85;
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid rgba(232,197,71,0.15);
+    font-family: var(--mono); line-height: 1.5;
+  }
+  .tools-strip { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+  .tool-tag {
+    display: flex; align-items: center; gap: 5px;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 5px; padding: 4px 9px;
+    font-size: 11px; color: var(--muted); font-weight: 500;
+  }
+  .tool-tag img { width: 12px; height: 12px; opacity: 0.7; }
+
+  /* ─── Diagram shared styles ─── */
+  .pv-diagram { height: 100%; display: flex; flex-direction: column; gap: 12px; }
+  .pv-label {
+    font-family: var(--mono); font-size: 10px; color: var(--muted2);
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .pv-callout {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(232,197,71,0.06); border: 1px solid rgba(232,197,71,0.15);
+    border-radius: 7px; padding: 10px 14px; margin-top: auto;
+  }
+  .pv-callout-num {
+    font-family: var(--mono); font-size: 22px; font-weight: 700;
+    color: var(--accent); line-height: 1;
+  }
+  .pv-callout-label { font-size: 12px; color: var(--muted); line-height: 1.3; }
+
+  .pv-pipeline {
+    display: flex; align-items: center; gap: 4px; flex-wrap: nowrap;
+    overflow-x: auto; padding-bottom: 4px;
+  }
+  .pv-pipe-node {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px; min-width: 52px; flex-shrink: 0;
+  }
+  .pv-pipe-source { border-color: var(--accent); }
+  .pv-pipe-end { border-color: var(--blue); }
+  .pv-pipe-icon { font-size: 14px; display: flex; align-items: center; }
+  .pv-pipe-name { font-size: 11px; font-weight: 600; color: var(--text); }
+  .pv-pipe-sub { font-size: 10px; color: var(--muted); font-family: var(--mono); }
+  .pv-pipe-arrow { font-size: 14px; color: var(--muted2); flex-shrink: 0; }
+  .pv-routing { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+  .pv-route {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    border-radius: 7px; padding: 8px 6px; text-align: center;
+  }
+  .pv-route-high { background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); }
+  .pv-route-mid  { background: rgba(232,197,71,0.08); border: 1px solid rgba(232,197,71,0.2); }
+  .pv-route-low  { background: rgba(96,165,250,0.08); border: 1px solid rgba(96,165,250,0.2); }
+  .pv-route-label { font-size: 10px; font-weight: 700; font-family: var(--mono); color: var(--muted); }
+  .pv-route-high .pv-route-label { color: var(--green); }
+  .pv-route-mid  .pv-route-label { color: var(--accent); }
+  .pv-route-low  .pv-route-label { color: var(--blue); }
+  .pv-route-dest { font-size: 11px; color: var(--text); }
+
+  .pv-geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pv-geo-card {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px;
+    transition: border-color 0.2s;
+  }
+  .pv-geo-card:hover { border-color: var(--border2); }
+  .pv-geo-icon { font-size: 16px; margin-bottom: 5px; }
+  .pv-geo-title { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .pv-geo-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+  .pv-stack { display: flex; flex-direction: column; gap: 4px; }
+  .pv-stack-row { display: flex; gap: 6px; }
+  .pv-stack-node {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 7px; padding: 7px 10px; font-size: 12px; color: var(--text);
+    font-weight: 500; flex: 1;
+  }
+  .pv-stack-top { border-color: var(--border2); }
+  .pv-stack-mid { border-color: rgba(232,197,71,0.3); background: rgba(232,197,71,0.05); }
+  .pv-stack-bot { border-color: var(--border); font-size: 11px; }
+  .pv-stack-badge {
+    margin-left: auto; font-size: 10px; font-family: var(--mono);
+    color: var(--accent); background: rgba(232,197,71,0.1);
+    border-radius: 4px; padding: 2px 6px;
+  }
+  .pv-stack-down { font-size: 11px; color: var(--muted2); text-align: center; padding: 2px 0; }
+
+  /* ─── AUDIT CARD ─── */
+  .audit-card {
+    background: var(--bg); border: 1px solid var(--border2);
+    border-radius: var(--r); overflow: hidden; margin-top: 32px;
+  }
+  .audit-header {
+    background: var(--bg3); border-bottom: 1px solid var(--border);
+    padding: 13px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .audit-header-left { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+  .audit-header-right { font-size: 11px; color: var(--muted); }
+  .audit-findings { list-style: none; }
+  .audit-finding {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 18px 20px; border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .audit-finding:last-child { border-bottom: none; }
+  .audit-finding:hover { background: var(--bg3); }
+  .finding-icon {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700; flex-shrink: 0; margin-top: 1px;
+  }
+  .finding-icon.warn { background: rgba(248,113,113,0.12); color: var(--red); }
+  .finding-icon.tip  { background: rgba(232,197,71,0.12);  color: var(--accent); }
+  .finding-icon.ok   { background: rgba(74,222,128,0.12);  color: var(--green); }
+  .finding-icon.info { background: rgba(96,165,250,0.12);  color: var(--blue); }
+  .finding-text { font-size: 14px; color: #bbb; line-height: 1.75; }
+  .finding-text strong { color: var(--text); font-weight: 500; }
+
+  /* ─── 90 DAY ACTIONS ─── */
+  .action-list { list-style: none; margin-top: 24px; }
+  .action-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .action-item:last-child { border-bottom: none; }
+  .action-num {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    background: rgba(232,197,71,0.08); border: 1px solid rgba(232,197,71,0.2);
+    border-radius: 5px; padding: 3px 8px; flex-shrink: 0; margin-top: 1px;
+  }
+  .action-text { font-size: 14px; color: #9a9490; line-height: 1.65; }
+  .action-text strong { color: var(--text); font-weight: 500; }
+
+  /* ─── PERSONAL STORY ─── */
+  .story-section {
+    padding: 80px 48px;
+    background: #0f0f0f;
+    border-top: 1px solid var(--border);
+  }
+  .story-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
+    margin-top: 32px;
+  }
+  .story-body {
+    font-size: 15px;
+    color: #c4bfb8;
+    line-height: 1.85;
+    font-weight: 300;
+  }
+  .story-body p { margin-bottom: 18px; }
+  .story-body p:last-child { margin-bottom: 0; }
+  .story-body strong { color: var(--text); font-weight: 600; }
+  .story-body em { color: var(--accent); font-style: italic; font-weight: 400; }
+
+  .timeline { display: flex; flex-direction: column; }
+  .timeline-item {
+    display: flex; gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-flag { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .timeline-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+  .timeline-sub { font-size: 13px; color: #7a7672; line-height: 1.6; }
+  .timeline-period { font-family: var(--mono); font-size: 11px; color: var(--muted2); margin-top: 6px; }
+
+  /* ─── CTA & DECISION BLOCK ─── */
+  .decision-section {
+    padding: 88px 48px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .decision-question {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .decision-h2 {
+    font-size: clamp(26px, 3.5vw, 42px); font-weight: 700;
+    line-height: 1.15; color: var(--text); margin-bottom: 10px;
+  }
+  .decision-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .decision-sub {
+    font-size: 15px; color: var(--muted); margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .decision-btns {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn-yes {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); color: #000;
+    padding: 15px 36px; border-radius: var(--r);
+    font-weight: 700; font-size: 16px; border: none; cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    font-family: var(--font);
+  }
+  .btn-yes:hover { background: var(--accent2); transform: translateY(-2px); }
+  .btn-no {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent; color: var(--muted);
+    padding: 15px 28px; border-radius: var(--r);
+    font-weight: 500; font-size: 15px;
+    border: 1px solid var(--border2); cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+    font-family: var(--font);
+  }
+  .btn-no:hover { border-color: var(--red); color: var(--red); }
+
+  .reveal-panel {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.6s cubic-bezier(0.16,1,0.3,1),
+                opacity    0.4s ease;
+  }
+  .reveal-panel.open {
+    max-height: 2000px;
+    opacity: 1;
+  }
+
+  .cta-inner {
+    padding: 72px 48px 80px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    background: var(--bg2);
+  }
+  .cta-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;
+  }
+  .cta-h2 {
+    font-size: clamp(24px, 3.2vw, 40px); font-weight: 700;
+    line-height: 1.15; color: var(--text); margin-bottom: 14px;
+  }
+  .cta-h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
+  .cta-body { font-size: 15px; color: var(--muted); font-weight: 300; margin-bottom: 0; }
+  .cta-email {
+    display: inline-block;
+    font-size: clamp(18px, 2.8vw, 26px); font-weight: 600;
+    color: var(--accent); margin-top: 22px;
+    border-bottom: 1px solid rgba(232,197,71,0.25); padding-bottom: 4px;
+    transition: border-color 0.2s;
+  }
+  .cta-email:hover { border-color: var(--accent); }
+  .cta-links {
+    margin-top: 18px; display: flex; align-items: center;
+    justify-content: center; gap: 20px;
+  }
+  .cta-links a { font-size: 13px; color: var(--muted); transition: color 0.15s; }
+  .cta-links a:hover { color: var(--text); }
+
+  .no-meme-wrap {
+    padding: 52px 48px 0;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    background: var(--bg);
+  }
+  .no-meme-label {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .yes-meme-wrap {
+    padding: 52px 48px 0;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    background: var(--bg2);
+  }
+  .yes-meme-label {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+
+  .btn-mistake {
+    display: none;
+    align-items: center; gap: 8px;
+    background: transparent; color: var(--muted);
+    padding: 10px 20px; border-radius: var(--r);
+    font-weight: 500; font-size: 14px;
+    border: 1px dashed var(--border2); cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, opacity 0.3s, transform 0.3s;
+    font-family: var(--font);
+    margin-top: 16px;
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  .btn-mistake.visible {
+    display: inline-flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-mistake:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ─── GIF MEME OVERLAYS ─── */
+  .gif-meme-wrap {
+    position: relative;
+    max-width: 460px; width: 100%;
+    border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--border2);
+    display: block; margin: 0 auto;
+  }
+  .gif-meme-wrap img {
+    width: 100%; display: block;
+  }
+  .gif-meme-text {
+    position: absolute;
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    text-shadow:
+      2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000, -2px  2px 0 #000,
+      0   2px 0 #000,  2px  0   0 #000,
+      0  -2px 0 #000, -2px  0   0 #000;
+    text-transform: uppercase;
+    line-height: 1.2;
+    pointer-events: none;
+  }
+  .yes-meme-text {
+    bottom: 10%; left: 18%; right: 5%;
+    font-size: clamp(13px, 3.2vw, 22px);
+    text-align: left;
+  }
+  .no-meme-text-top {
+    top: 3%; left: 5%; right: 5%;
+    font-size: clamp(12px, 3vw, 18px);
+    text-align: center;
+  }
+  .no-meme-text-bot {
+    bottom: 5%; left: 12%; right: 5%;
+    font-size: clamp(12px, 3vw, 18px);
+    text-align: left;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--bg); border-top: 1px solid var(--border);
+    padding: 20px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-brand { font-size: 14px; font-weight: 600; color: var(--muted2); }
+  .footer-url { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    nav, .hero, .section, .stats-bar,
+    .cta-section, .story-section, .decision-section,
+    .cta-inner, .no-meme-wrap, .yes-meme-wrap, footer { padding-left: 20px; padding-right: 20px; }
+    .hero-grid, .two-col, .story-grid { grid-template-columns: 1fr; gap: 24px; }
+    .hero-photo-wrap { display: none; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .pillar-v2-inner { grid-template-columns: 1fr; }
+    .pillar-v2-left { border-right: none; border-bottom: 1px solid var(--border); }
+    .pv-pipeline { gap: 2px; }
+    .pv-pipe-node { min-width: 38px; padding: 5px 6px; }
+    .pv-pipe-name { font-size: 10px; }
+    .pv-pipe-sub { font-size: 9px; }
+    .pv-pipe-arrow { font-size: 11px; }
+    .pv-geo-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .pv-geo-title { font-size: 11px; }
+    .pv-geo-sub { font-size: 10px; }
+    .pv-callout-num { font-size: 18px; }
+  }
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="a0061a97-ba7d-4e78-8be3-5cf6a27eae14"></script>
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════════
+     NAV — Akshun × MDIS Consulting
+════════════════════════════════════════ -->
+<nav>
+  <div class="nav-collab">
+    <span class="nav-akshun">Akshun</span>
+    <span class="nav-x">×</span>
+    <span class="nav-company-name">MDIS Consulting</span>
+  </div>
+  <div class="nav-url">hire.akshundogra.com/mdis</div>
+</nav>
+
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="inner">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">
+          <div class="hero-badge-fallback">M</div>
+          <div class="hero-badge-dot"></div>
+          <span class="hero-badge-text">Built for MDIS Consulting</span>
+        </div>
+        <div class="hero-label">Case Study & Technical Strategy · Demand Generation GTM Engineering</div>
+        <h1 class="hero-h1">
+          One demand engine, three growth motions—<br>
+          <span class="highlight">performance, automation, SEO/GEO, and agentic GTM systems in one hire.</span>
+        </h1>
+        <p class="hero-sub">MDIS Consulting is a Haufe X360 Gold Partner transforming from a referral-driven ERP consultancy into a company with its own product platform, X.One. Growth is capped by one thing: top-of-funnel volume. Sales converts qualified leads well already — the gap is generating enough self-sourced SQLs across three distinct motions (ERP pull-demand, X.One push-demand, and integration-as-a-service) without adding headcount. I build the full-stack system for that: paid, SEO/GEO visibility, signal-based outbound, and agentic AI operations working together, not as separate hires.</p>
+        <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="MDIS">
+          ✉&ensp;akshundogra@gmail.com
+        </a>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="/assets/hero-meme.gif" alt="Hi MDIS Consulting, I have a proposition">
+        <div class="hero-meme-overlay">
+          HI MDIS CONSULTING,<br>I HAVE A PROPOSITION
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     STATS BAR — Static, 4 pillars
+════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="inner">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-num"><span class="accent">20–30%</span></div>
+        <div class="stat-label">YoY Target Pipeline Growth</div>
+        <div class="stat-channel">Growth Math</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="accent">36x+</span></div>
+        <div class="stat-label">Peak ROAS achieved</div>
+        <div class="stat-channel">Performance</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">−<span class="accent">80%</span></div>
+        <div class="stat-label">Manual SDR effort saved</div>
+        <div class="stat-channel">Automation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="accent">6</span>+</div>
+        <div class="stat-label">Years in Growth & GTM space</div>
+        <div class="stat-channel">Full-Stack GTM</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     TOOLS CAROUSEL — infinite scroll marquee
+════════════════════════════════════════ -->
+<div class="tools-carousel">
+  <div class="carousel-track" id="carousel-track">
+    <!-- Set 1 -->
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
+    <div class="tool-chip">LinkedIn Ads</div>
+    <div class="tool-chip">LinkedIn Sales Nav</div>
+    <div class="tool-chip">Bombora Intent</div>
+    <div class="tool-chip">G2 Intent</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/make/ffffff" alt="">Make</div>
+    <div class="tool-chip"><span class="tool-emoji">🧱</span>Clay</div>
+    <div class="tool-chip"><span class="tool-emoji">🔗</span>Apollo</div>
+    <div class="tool-chip"><span class="tool-emoji">📧</span>Lemlist</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/hubspot/ffffff" alt="">HubSpot</div>
+    <div class="tool-chip"><span class="tool-emoji">👁️</span>Leadfeeder</div>
+    <div class="tool-chip">Personio</div>
+    <div class="tool-chip">d.velop</div>
+    <div class="tool-chip">Circula</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/wordpress/ffffff" alt="">WordPress</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="">GA4</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/n8n/ffffff" alt="">n8n</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/python/ffffff" alt="">Python</div>
+    <div class="tool-chip">Haufe X360 / Acumatica</div>
+    <!-- Set 2 — exact duplicate for seamless loop -->
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
+    <div class="tool-chip">LinkedIn Ads</div>
+    <div class="tool-chip">LinkedIn Sales Nav</div>
+    <div class="tool-chip">Bombora Intent</div>
+    <div class="tool-chip">G2 Intent</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/make/ffffff" alt="">Make</div>
+    <div class="tool-chip"><span class="tool-emoji">🧱</span>Clay</div>
+    <div class="tool-chip"><span class="tool-emoji">🔗</span>Apollo</div>
+    <div class="tool-chip"><span class="tool-emoji">📧</span>Lemlist</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/hubspot/ffffff" alt="">HubSpot</div>
+    <div class="tool-chip"><span class="tool-emoji">👁️</span>Leadfeeder</div>
+    <div class="tool-chip">Personio</div>
+    <div class="tool-chip">d.velop</div>
+    <div class="tool-chip">Circula</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/wordpress/ffffff" alt="">WordPress</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="">GA4</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/n8n/ffffff" alt="">n8n</div>
+    <div class="tool-chip"><img src="https://cdn.simpleicons.org/python/ffffff" alt="">Python</div>
+    <div class="tool-chip">Haufe X360 / Acumatica</div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     WHY THIS COMPANY
+════════════════════════════════════════ -->
+<section class="section section-border">
+  <div class="inner">
+    <div class="two-col">
+      <div>
+        <div class="section-label">Why MDIS Consulting</div>
+        <h2 class="section-h2">Three motions, one gap—<em>enough self-generated SQLs.</em></h2>
+        <div class="body-text">
+          <p>MDIS is a Haufe X360 Gold Partner and a multiple award-winning manufacturer partner. At the 2026 Haufe X360 Summit, MDIS was recognised as Gold Partner, highest-revenue partner, fastest-growing partner, and for Customer Project of the Year — with over 250 implementations across Haufe X360, X.One, Personio, d.velop, and Circula ecosystem integrations.</p>
+          <p>The core challenge is scaling self-sourced SQLs across two primary commercial motions: ERP pull-demand and X.One push-demand, plus a secondary, medium-term Integration-as-a-Service motion (MDIS Velocity) for product and engineering leaders. Referral pipeline alone can't reliably sustain 20–30% YoY target growth without a dedicated, measurable SQL engine.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:6px;">
+        <div class="card">
+          <div class="card-label">Target Role</div>
+          <div class="card-value">Demand Generation GTM Engineer</div>
+          <div class="card-sub">Paid, SEO/GEO, Automation, Agentic AI Ops & Attribution</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Location</div>
+          <div class="card-value">Nürnberg, Berlin, Remote 🇩🇪</div>
+          <div class="card-sub">Open to hybrid / remote · EU work authorization</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Company & Awards</div>
+          <div class="card-value">MDIS Consulting GmbH</div>
+          <div class="card-sub">Multiple Award-Winning Haufe X360 Gold Partner · 2026 Summit Winner (Gold, Highest Revenue, Fastest Growing & Project of the Year)</div>
+        </div>
+        <div class="card" style="border-color:rgba(74,222,128,0.25);background:rgba(74,222,128,0.03);">
+          <div class="card-label">Availability</div>
+          <div class="card-value" style="color:var(--green);">Immediately available · full-time · across Germany</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dual ICP Buyer Journey Matrix (Full Width) -->
+    <div style="margin-top:32px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:24px;overflow-x:auto;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;display:flex;align-items:center;gap:6px;">
+        <span>🎯</span> Dual ICP Buyer Journey Matrix
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;text-align:left;min-width:600px;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border2);background:var(--bg2);">
+            <th style="padding:10px 14px;color:var(--text);width:20%;">Dimension</th>
+            <th style="padding:10px 14px;color:var(--accent);width:40%;">Haufe X360 / Consulting Stack (Pull Motion)</th>
+            <th style="padding:10px 14px;color:var(--green);width:40%;">X.One Platform (Push Motion)</th>
+          </tr>
+        </thead>
+        <tbody style="color:#c4bfb8;">
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Market Logic</td>
+            <td style="padding:10px 14px;">Pull market: existing search and comparison demand</td>
+            <td style="padding:10px 14px;">Push market: category education and demand creation</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Core Buyer</td>
+            <td style="padding:10px 14px;">Managing director, CFO, CIO/IT leadership, HR leadership as relevant</td>
+            <td style="padding:10px 14px;">CFO and executive management</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Buying Trigger</td>
+            <td style="padding:10px 14px;">SAP ECC migration, ERP replacement, fragmented business processes</td>
+            <td style="padding:10px 14px;">Fragmented systems, slow reporting, AI governance, data sovereignty</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Primary Channel</td>
+            <td style="padding:10px 14px;">Search, SEO, comparisons, partner campaigns, references</td>
+            <td style="padding:10px 14px;">Executive education, LinkedIn, workshops, account-led activation</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Decision Cycle</td>
+            <td style="padding:10px 14px;">6–12 months</td>
+            <td style="padding:10px 14px;">6–12 months</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;font-weight:600;color:var(--text);">Core Job</td>
+            <td style="padding:10px 14px;">Capture existing demand</td>
+            <td style="padding:10px 14px;">Create and qualify new demand</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top:12px;font-size:11px;color:var(--muted);font-family:var(--mono);">ℹ Note: MDIS Velocity serves as a secondary, medium-term Integration-as-a-Service motion for product and engineering leaders.</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     WHAT I BRING — 4 PILLARS (interactive)
+════════════════════════════════════════ -->
+<section class="section section-alt section-border">
+  <div class="inner">
+    <div class="section-label">Full skillset & GTM architecture</div>
+    <h2 class="section-h2">Not just automation—<br><em>paid, SEO/GEO, and agentic systems too.</em></h2>
+    <div class="body-text">
+      <p>Demand generation for MDIS spans three motions with different logics: a pull market (Haufe X360), an emerging push market (X.One), and a secondary Integration-as-a-Service motion (MDIS Velocity). That needs someone who runs paid, technical SEO/GEO, signal-based automation, and agentic AI systems together — not four separate specialists.</p>
+    </div>
+
+    <div style="font-family:var(--mono);font-size:11px;color:var(--accent);margin-top:20px;margin-bottom:14px;background:rgba(232,197,71,0.06);border:1px solid rgba(232,197,71,0.15);padding:8px 14px;border-radius:6px;">
+      Proposed stack — selected after tracking, consent, CRM, data-quality, and legal review.
+    </div>
+
+    <div class="pillars-v2">
+
+      <!-- ── PILLAR 1: Buying-Group & Signal Telemetry ── -->
+      <div class="pillar-v2">
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">⚡</div>
+            <div class="pillar-title">Buying-Group & Signal Telemetry</div>
+            <div class="pillar-body"><strong>What I build:</strong> Map buying groups across target accounts, identify missing decision-making roles, and generate approved account plans, enrichment briefs, and next-best-action recommendations. External outreach, budget changes, CRM write actions, and publishing remain approval-required.</div>
+            <div class="pillar-proof"><strong>Proof:</strong> At Theo, I built governed GTM operations using Claude Code, MCP servers, Notion, n8n, Make, and HubSpot — with run logs, approval gates, and audit trails.<br><span style="color:var(--accent);font-size:12px;margin-top:4px;display:block;">→ <strong>What it means at MDIS:</strong> Ensures multi-contact coverage for Haufe X360 and X.One enterprise consulting deals without unsupervised risk.</span></div>
+            <div class="tools-strip">
+              <div class="tool-tag">Intent Data Sources</div>
+              <div class="tool-tag">Account Intelligence</div>
+              <div class="tool-tag">LinkedIn Sales Nav</div>
+              <div class="tool-tag">Clay</div>
+              <div class="tool-tag">Selected CRM</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <div class="pv-diagram">
+              <div class="pv-label">Buying-Group Telemetry & Pipeline</div>
+              <div class="pv-pipeline">
+                <div class="pv-pipe-node pv-pipe-source">
+                  <div class="pv-pipe-icon">🎯</div>
+                  <div class="pv-pipe-name">Target ICP</div>
+                  <div class="pv-pipe-sub">50+ Employees</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node">
+                  <div class="pv-pipe-icon">👁️</div>
+                  <div class="pv-pipe-name">Consented Signals</div>
+                  <div class="pv-pipe-sub">Intent / Visitor</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node">
+                  <div class="pv-pipe-icon">🔍</div>
+                  <div class="pv-pipe-name">ERP Stack</div>
+                  <div class="pv-pipe-sub">SAP/Legacy?</div>
+                </div>
+                <div class="pv-pipe-arrow">→</div>
+                <div class="pv-pipe-node pv-pipe-end">
+                  <div class="pv-pipe-icon">🧱</div>
+                  <div class="pv-pipe-name">Enrichment</div>
+                  <div class="pv-pipe-sub">Clay / CRM</div>
+                </div>
+              </div>
+              <div class="pv-routing">
+                <div class="pv-route pv-route-high">
+                  <div class="pv-route-label">SAP END-OF-LIFE</div>
+                  <div class="pv-route-dest">🔥 Approved Migration Brief</div>
+                </div>
+                <div class="pv-route pv-route-mid">
+                  <div class="pv-route-label">HIGH INTENT SIGNAL</div>
+                  <div class="pv-route-dest">💬 Rep Activation Brief</div>
+                </div>
+                <div class="pv-route pv-route-low">
+                  <div class="pv-route-label">X.ONE PLATFORM FIT</div>
+                  <div class="pv-route-dest">🤖 Executive AI Nurture</div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">50–500</span>
+                <span class="pv-callout-label">Employee-range target accounts, buying group scored</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 2: CRM Lead & Account Scoring (Featured) ── -->
+      <div class="pillar-v2 featured">
+        <div class="pillar-badge">Most relevant for MDIS</div>
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">📈</div>
+            <div class="pillar-title">CRM Lead & Account Scoring</div>
+            <div class="pillar-body"><strong>What I build:</strong> Design lead and account scoring in the CRM MDIS already uses or selects after the audit. Score firmographic fit, declared intent, product-motion fit, engagement, technology context, and buying-group completeness. Then route accounts through sales-agreed MQL/SQL criteria, handoff SLAs, and nurture paths.</div>
+            <div class="pillar-proof"><strong>Proof:</strong> Engineered a HubSpot → Make → Google Ads offline-conversion pipeline at Theo that recovered €22.7k in suppressed conversion value and improved bidding signal quality.<br><span style="color:var(--accent);font-size:12px;margin-top:4px;display:block;">→ <strong>What it means at MDIS:</strong> Automated qualification separating self-generated MQLs from sales-ready SQLs inside your CRM.</span></div>
+            <div class="tools-strip">
+              <div class="tool-tag">Selected CRM</div>
+              <div class="tool-tag">Intent Data Sources</div>
+              <div class="tool-tag">Account Intelligence</div>
+              <div class="tool-tag">Enrichment Layer</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <div class="pv-diagram">
+              <div class="pv-label">Native SQL Qualification Waterfall</div>
+              <div class="pv-geo-grid">
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">🏢</div>
+                  <div class="pv-geo-title">Firmographic Fit</div>
+                  <div class="pv-geo-sub">50+ Employees · DACH Region</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">⚙️</div>
+                  <div class="pv-geo-title">Technographic Fit</div>
+                  <div class="pv-geo-sub">Legacy ERP or SAP ECC</div>
+                </div>
+              </div>
+
+              <!-- Signal Scoring Table -->
+              <div style="display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-size:11px;margin-top:6px;background:var(--bg3);padding:8px 10px;border-radius:6px;border:1px solid var(--border);">
+                <div style="color:var(--text);font-weight:600;font-family:var(--mono);font-size:10px;text-transform:uppercase;border-bottom:1px solid var(--border);padding-bottom:3px;">Signal Trigger</div>
+                <div style="color:var(--accent);font-family:var(--mono);font-size:10px;text-transform:uppercase;text-align:right;border-bottom:1px solid var(--border);padding-bottom:3px;">Score</div>
+                <div style="color:#a0a0a0;">SAP ECC End-of-Life signal</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+30</div>
+                <div style="color:#a0a0a0;">Company size 50–500 employees</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+25</div>
+                <div style="color:#a0a0a0;">Intent signal active (Bombora/G2)</div><div style="color:var(--green);font-family:var(--mono);text-align:right;">+20</div>
+                <div style="color:#a0a0a0;">X.One / integration interest</div><div style="color:var(--accent);font-family:var(--mono);text-align:right;">+15</div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;">
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">80+</div>
+                  <div style="font-size:9px;color:var(--muted);">SQL · Sales SLA</div>
+                </div>
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">50–79</div>
+                  <div style="font-size:9px;color:var(--muted);">MQL · Nurture Seq</div>
+                </div>
+                <div style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center;">
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;">&lt;50</div>
+                  <div style="font-size:9px;color:var(--muted);">Nurture · Content</div>
+                </div>
+              </div>
+
+              <div class="pv-callout">
+                <span class="pv-callout-num">Self-Generated</span>
+                <span class="pv-callout-label">SQLs created independent of partner channel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 3: Signal-Triggered Outbound & Automation ── -->
+      <div class="pillar-v2">
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">💻</div>
+            <div class="pillar-title">Paid, SEO/GEO & Signal-Triggered Outbound</div>
+            <div class="pillar-body"><strong>What I build:</strong> Paid search on buying intent, LinkedIn demand creation, organic executive thought leadership co-authored with marketing leadership, and technical SEO/GEO so MDIS ranks in AI search and Google comparisons. For inbound & intent signals, n8n webhooks enrich accounts instantly and deliver pre-call Slack dossiers to sales.</div>
+            <div class="pillar-proof"><strong>Proof:</strong> Up to 36x peak ROAS & 400% organic growth; 80% reduction in manual effort via automation pipelines; GEO traffic 1% → 20%.<br><span style="color:var(--accent);font-size:12px;margin-top:4px;display:block;">→ <strong>What it means at MDIS:</strong> Direct traffic and intent capture for the ERP-Strategie 2030 campaign.</span></div>
+            <div class="tools-strip">
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff" width="14" height="14">n8n</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/slack/ffffff" width="14" height="14">Slack</div>
+              <div class="tool-tag">Intent Signals</div>
+              <div class="tool-tag">LinkedIn Thought Leadership</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <div class="pv-diagram">
+              <div class="pv-label">Discovery-Prep Automation Stack</div>
+              <div class="pv-stack">
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-top">
+                    <span>n8n Orchestrator</span>
+                  </div>
+                  <div class="pv-stack-node pv-stack-top">
+                    <span>Inbound / Signal Trigger</span>
+                  </div>
+                </div>
+                <div class="pv-stack-down">↓ enriches & checks firmographics</div>
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-mid" style="width:100%">
+                    <span>Enrich + Pre-Call Dossier Generator</span>
+                    <span class="pv-stack-badge">Slack HITL</span>
+                  </div>
+                </div>
+                <div class="pv-stack-down">↓ routes to</div>
+                <div class="pv-stack-row">
+                  <div class="pv-stack-node pv-stack-bot">
+                    <span>AE Slack Alert</span>
+                  </div>
+                  <div class="pv-stack-node pv-stack-bot">
+                    <span>CRM Routing Sync</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">Instant Brief</span>
+                <span class="pv-callout-label">AE prepared with context before discovery call</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 4: Agentic GTM Systems ── -->
+      <div class="pillar-v2">
+        <div class="pillar-v2-inner">
+          <div class="pillar-v2-left">
+            <div class="pillar-icon">🤖</div>
+            <div class="pillar-title">Agentic GTM Systems, Not Automation Scripts</div>
+            <div class="pillar-body"><strong>What I build:</strong> Governed GTM agents operating across visibility, paid performance, execution, and sales handoff with human-in-the-loop approval gates before any external outreach, budget modification, or publishing action.</div>
+            <div class="pillar-proof"><strong>Proof:</strong> At Theo, I built governed GTM operations using Claude Code, MCP servers, Notion, n8n, Make, and HubSpot — with run logs, approval gates, and audit trails.<br><span style="color:var(--accent);font-size:12px;margin-top:4px;display:block;">→ <strong>What it means at MDIS:</strong> Mirrors the exact control and governance model MDIS expects from X.One's A.One, G.One, S.One, and MyAI architecture.</span></div>
+            <div class="tools-strip">
+              <div class="tool-tag">Claude Code</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/python/ffffff" width="14" height="14">Python</div>
+              <div class="tool-tag"><img src="https://cdn.simpleicons.org/n8n/ffffff" width="14" height="14">n8n</div>
+              <div class="tool-tag">AI Web Scraping</div>
+            </div>
+          </div>
+          <div class="pillar-v2-right">
+            <div class="pv-diagram">
+              <div class="pv-label">Governed Multi-Agent Execution Architecture</div>
+              <div class="pv-geo-grid">
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">🔍</div>
+                  <div class="pv-geo-title">A.One (Analytic)</div>
+                  <div class="pv-geo-sub">Signal & GEO Monitoring</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">⚖️</div>
+                  <div class="pv-geo-title">G.One (Governance)</div>
+                  <div class="pv-geo-sub">Rule & Consent Enforcement</div>
+                </div>
+              </div>
+              <div class="pv-geo-grid" style="margin-top:6px;">
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">🚀</div>
+                  <div class="pv-geo-title">S.One (Service)</div>
+                  <div class="pv-geo-sub">Execution & Routing</div>
+                </div>
+                <div class="pv-geo-card">
+                  <div class="pv-geo-icon">📊</div>
+                  <div class="pv-geo-title">MyAI Dashboard</div>
+                  <div class="pv-geo-sub">Executive Telemetry</div>
+                </div>
+              </div>
+              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);text-align:center;margin:6px 0;">Continuous loop: detect → score → enrich → report</div>
+              <div class="pv-callout">
+                <span class="pv-callout-num">€22.7k</span>
+                <span class="pv-callout-label">Suppressed value recovered & 80% manual effort reduced at Theo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end pillars-v2 -->
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     90-DAY ACTION PLAN (30/30/30 Operational Roadmap)
+════════════════════════════════════════ -->
+<section class="section section-border">
+  <div class="inner">
+    <div class="section-label">Operational Action Plan</div>
+    <h2 class="section-h2">First 90 Days:<br><em>30 / 30 / 30 Execution Roadmap.</em></h2>
+    <div class="body-text"><p>Per the briefing: no campaigns start before there's a measurable baseline. Here's how I structure the first 90 days to get from zero to a reliable, trustworthy attribution and scoring foundation:</p></div>
+    
+    <ul class="action-list">
+      <li class="action-item">
+        <div class="action-num">01</div>
+        <div class="action-text">
+          <strong style="color:var(--accent);">Days 1–30: Measurement, Search & Signal Baseline</strong> — Audit the existing CRM, lifecycle stages, lead sources, consent setup, analytics, forms, tags, Search Console, Google Ads search-term data, and 24-month pipeline history to identify measurement gaps:
+          <ul style="margin-top:6px;margin-left:18px;font-size:13px;color:#c4bfb8;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+            <li>• GA4 & Search Console coverage</li>
+            <li>• Campaign & UTM naming conventions</li>
+            <li>• Form attribution & self-reported source</li>
+            <li>• Consent-safe behaviour analysis</li>
+            <li>• Technical & on-page SEO</li>
+            <li>• Structured data & AI-search visibility</li>
+            <li>• Account-identification / enrichment feasibility</li>
+            <li>• MQL-to-SQL handoff & source quality</li>
+          </ul>
+          <span style="font-size:12px;color:var(--green);display:block;margin-top:8px;font-family:var(--mono);">📦 Output: A prioritised measurement and tooling roadmap — not a tool-shopping list.</span>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">02</div>
+        <div class="action-text">
+          <strong style="color:var(--accent);">Days 31–60: Operating System & Lead Scoring</strong> — Deploy the tracking implementation plan and native lead/account scoring v1 in the selected CRM using firmographic fit (50–500 DACH accounts) and intent signals (repeat visits, high-intent page behaviour, and identifiable SAP/ERP-stack signals).
+          <span style="font-size:12px;color:var(--green);display:block;margin-top:6px;font-family:var(--mono);">📦 Deliverables: Live scoring v1 in selected CRM, routing SLA definition, and daily dashboard tracking target vs. actual SQL run-rate.</span>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">03</div>
+        <div class="action-text">
+          <strong style="color:var(--accent);">Days 61–90: First Controlled Test (ERP-Strategie 2030)</strong> — Launch the ERP-Strategie 2030 pilot campaign targeting SAP ECC accounts. Execute search intent capture, LinkedIn ICP demand creation, and GDPR-compliant outbound sequence with human-in-the-loop approval before send.
+          <span style="font-size:12px;color:var(--green);display:block;margin-top:6px;font-family:var(--mono);">📦 Deliverables: SAP Strategy 2030 landing page, target account list, approved outbound workflow, paid/search test, documented success and stop criteria.</span>
+        </div>
+      </li>
+    </ul>
+
+    <!-- ROI Business Case Box -->
+    <div style="margin-top:24px;padding:16px 20px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.2);border-radius:8px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">💡 Growth Math & Performance Steering · MDIS Consulting</div>
+      <div style="font-size:13px;color:#c4bfb8;line-height:1.6;">
+        <strong>The target:</strong> MDIS is aiming for 20–30% YoY growth across both consulting and X.One ARR — a rate today's partner-referral pipeline alone can't reliably support. The gap sits entirely at the top of the funnel: sales already converts qualified leads well, so every additional self-generated SQL translates fairly directly into incremental growth toward that target.
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(232,197,71,0.15);display:flex;flex-wrap:wrap;gap:6px;font-family:var(--mono);font-size:10px;">
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">MQL-to-SQL Conversion Rate</span>
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">Cost-per-Pipeline-€</span>
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">Multi-Touch Channel Attribution</span>
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">Payback Period</span>
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">CAC</span>
+        <span style="background:var(--bg3);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--accent);">Forecast Accuracy</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     HOMEWORK / MINI AUDIT
+════════════════════════════════════════ -->
+<section class="section section-alt section-border">
+  <div class="inner">
+    <div class="section-label">Before we talk</div>
+    <h2 class="section-h2">I already did some<br><em>homework.</em></h2>
+    <div class="body-text"><p>I ran a public web audit of mdis-consulting.de and cross-checked it against your briefing to find concrete starting points:</p></div>
+    <div class="audit-card">
+      <div class="audit-header">
+        <span class="audit-header-left">⬡ Public Web & Content Audit · MDIS Consulting</span>
+        <span class="audit-header-right">Verified via public site observation</span>
+      </div>
+      <ul class="audit-findings">
+        <li class="audit-finding">
+          <div class="finding-icon tip">⚡</div>
+          <div class="finding-text"><strong>X.One Product Platform Live</strong> — <code>mdis-consulting.de</code> actively positions X.One (integration & AI platform) alongside Haufe X360 ERP, confirming two distinct demand-generation motions (pull vs push).</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon tip">⚡</div>
+          <div class="finding-text"><strong>2026 Haufe X360 Recognition</strong> — MDIS publicly presents its 2026 recognition as Gold Partner, highest-revenue partner, fastest-growing partner, and Customer Project of the Year. These are strong trust assets to connect deliberately to campaign pages, sales materials, partner campaigns, and relevant conversion paths.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon warn">💡</div>
+          <div class="finding-text"><strong>Proposed Conversion-Path Opportunity</strong> — The public contact form could become a more useful qualification event: capture declared intent and project context, enrich accounts through approved data sources, score fit in the selected CRM, and give sales a concise context brief. The goal is not more form fills; it is faster, better-qualified conversations.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon ok">✓</div>
+          <div class="finding-text"><strong>Active Video Content & MDIS Academy Hub</strong> — Turn each expert asset into a measurable content-to-nurture path: search page, retargeting audience, email sequence, and sales-assist brief.</div>
+        </li>
+        <li class="audit-finding">
+          <div class="finding-icon info">📹</div>
+          <div class="finding-text" style="font-style:italic;color:#bbb;"><strong>Loom Walkthrough</strong> — I can share a 2-minute video walkthrough demonstrating my live n8n workflows and AI agent telemetry on request.</div>
+        </li>
+      </ul>
+    </div>
+    <div style="margin-top:12px;display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(96,165,250,0.05);border:1px solid rgba(96,165,250,0.15);border-radius:8px;">
+      <div style="font-size:11px;color:var(--blue);flex-shrink:0;margin-top:1px;">ℹ</div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.6;">
+        <strong style="color:#7a9fc0;">Scope Note:</strong> Findings based on public site observations. Internal attribution, lead routing, and tracking configuration to be validated in week one.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     PERSONAL STORY — Who is Akshun
+════════════════════════════════════════ -->
+<section class="story-section">
+  <div class="inner">
+    <div class="section-label">The person behind the marketer</div>
+    <h2 class="section-h2">Engineering, growth,<br><em>and building for the long term.</em></h2>
+    <div class="story-grid">
+      <div class="story-body">
+        <p>My name, <em>Akshun</em>, means <strong>"indestructible"</strong> in Sanskrit. I don't give up on goals, technical challenges, or learning German from scratch after relocating to Bavaria.</p>
+        <p>I started freelancing in digital growth at <strong>19</strong> in India — managing campaigns for international clients and teaching myself web engineering and automation out of necessity. That hands-on technical foundation is why I bridge engineering and growth seamlessly.</p>
+        <p>I moved to Nürnberg in 2022 for an M.Sc. at FAU, completed an Erasmus semester in Madrid, reached German C1, and built the entire GTM engineering stack for an AI startup in Berlin.</p>
+        <p>I value long-term commitment and high performance, and I'm looking for a company where I can build real systems and grow over the next several years — not a short-term contract.</p>
+      </div>
+      <div>
+        <!-- Flip card -->
+        <style>
+          .flip-card { perspective: 1200px; width: 100%; cursor: pointer; }
+          .flip-card-inner {
+            position: relative; width: 100%;
+            transition: transform 0.65s cubic-bezier(0.4,0,0.2,1);
+            transform-style: preserve-3d;
+          }
+          .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+          .flip-card-front, .flip-card-back {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 14px; overflow: hidden;
+          }
+          .flip-card-front {
+            background: var(--bg3); border: 1px solid var(--border2);
+            padding: 4px 0 8px;
+          }
+          .flip-card-front .timeline { display: flex; flex-direction: column; }
+          .flip-card-front .timeline-item {
+            display: flex; gap: 14px; align-items: flex-start;
+            padding: 14px 18px; border-bottom: 1px solid var(--border);
+          }
+          .flip-card-front .timeline-item:last-child { border-bottom: none; }
+          .flip-card-front .timeline-flag { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+          .flip-card-front .timeline-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+          .flip-card-front .timeline-sub { font-size: 12px; color: #7a7672; line-height: 1.5; }
+          .flip-card-front .timeline-period { font-family: var(--mono); font-size: 10px; color: var(--muted2); margin-top: 4px; }
+          .flip-card-front .flip-hint {
+            font-family: var(--mono); font-size: 10px; color: var(--muted2);
+            text-align: center; padding: 8px; letter-spacing: 0.08em;
+          }
+          .flip-card-back {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            transform: rotateY(180deg);
+          }
+          .flip-card-back img { width: 100%; height: 100%; object-fit: cover; display: block; }
+          .flip-card-back-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, transparent 60%);
+            padding: 24px 20px 20px;
+          }
+          .flip-card-back-text { font-size: 18px; font-weight: 700; color: var(--text); line-height: 1.3; }
+          .flip-card-back-sub { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-top: 4px; letter-spacing: 0.05em; }
+        </style>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-flag">🇮🇳</div>
+                  <div>
+                    <div class="timeline-title">India — Early Growth Engineering</div>
+                    <div class="timeline-sub">Freelancing at 19. Managed multi-channel marketing, built custom websites, and mastered performance & automation.</div>
+                    <div class="timeline-period">2016 – 2022</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-flag">🇩🇪</div>
+                  <div>
+                    <div class="timeline-title">Nürnberg / Berlin — M.Sc. & Startup GTM</div>
+                    <div class="timeline-sub">M.Sc. at FAU Erlangen-Nürnberg. Reached German C1. Built full GTM engineering stack, AI agents & lead scoring.</div>
+                    <div class="timeline-period">2022 – Present</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-flag">🇪🇸</div>
+                  <div>
+                    <div class="timeline-title">Spain — Erasmus UPM Madrid</div>
+                    <div class="timeline-sub">Semester abroad at Universidad Politécnica de Madrid. Expanded global perspective and European networks.</div>
+                    <div class="timeline-period">Sep 2024 – Jan 2025</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-flag">▶</div>
+                  <div>
+                    <div class="timeline-title">YouTube Community</div>
+                    <div class="timeline-sub">Documenting student & professional life in Germany for 40,000+ subscribers.</div>
+                    <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="MDIS">youtube.com/@akshundogra →</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-hint">hover to meet the person behind the marketer →</div>
+            </div>
+            <div class="flip-card-back">
+              <img src="https://akshundogra.com/IMG_0812.jpeg" alt="Akshun Dogra">
+              <div class="flip-card-back-overlay">
+                <div class="flip-card-back-text">Akshun Dogra</div>
+                <div class="flip-card-back-sub">GTM Engineer & Technical Growth Specialist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     INTERACTIVE DECISION — Yes / No
+════════════════════════════════════════ -->
+<div class="decision-section">
+  <div class="decision-question">One question before you go</div>
+  <h2 class="decision-h2">Did we just build<br><em>something worth pursuing?</em></h2>
+  <p class="decision-sub">Honest answers only. Both paths lead somewhere good.</p>
+  <div class="decision-btns" id="decision-btns" onmouseleave="onBtnsLeave()">
+    <button class="btn-yes" id="btn-yes" onmouseenter="chooseYes()" onclick="lockYes()">
+      🤝&ensp;Let's make it happen
+    </button>
+    <button class="btn-no" id="btn-no" onmouseenter="chooseNo()" onclick="lockNo()">
+      Not right now →
+    </button>
+  </div>
+  <button class="btn-mistake" id="btn-mistake" onclick="undoNo()">
+    ← I made a mistake
+  </button>
+</div>
+
+<!-- YES path -->
+<div class="reveal-panel" id="panel-yes">
+  <div class="yes-meme-wrap">
+    <div class="yes-meme-label">this is us right now</div>
+    <div class="gif-meme-wrap">
+      <img src="/assets/yes-meme.gif" alt="Akshun x MDIS Consulting">
+      <div class="gif-meme-text yes-meme-text">AKSHUN X MDIS</div>
+    </div>
+  </div>
+  <div class="cta-inner">
+    <div class="cta-label">Let's connect</div>
+    <h2 class="cta-h2" id="yes-heading">This page was built<br>specifically for <em>MDIS Consulting.</em></h2>
+    <p class="cta-body">I'd love a 20-minute conversation. No pitch deck. Just a real chat about fit.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="MDIS">akshundogra@gmail.com →</a>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px;">Or simply reply to the message that brought you here.</p>
+    <div class="cta-links">
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="MDIS">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="website-click" data-umami-event-company="MDIS">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="resume-click" data-umami-event-company="MDIS">📄 Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- NO path -->
+<div class="reveal-panel" id="panel-no">
+  <div class="no-meme-wrap">
+    <div class="no-meme-label">every generic recruiter email vs. this pitch</div>
+    <div class="gif-meme-wrap">
+      <img src="/assets/no-meme.jpg" alt="cold emails vs this one">
+      <div class="gif-meme-text no-meme-text-top">every generic<br>applicant</div>
+      <div class="gif-meme-text no-meme-text-bot">Hiring managers<br>&amp; Founders</div>
+    </div>
+  </div>
+  <div class="cta-inner" style="background:var(--bg);">
+    <div class="cta-label">No hard feelings</div>
+    <h2 class="cta-h2">Glad you stopped by,<br><em>MDIS Consulting.</em></h2>
+    <p class="cta-body">Timing isn't always right — but the GTM architecture is here whenever you need it.<br>No follow-up pressure. Just an open door.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="MDIS">akshundogra@gmail.com →</a>
+    <div class="cta-links">
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="MDIS">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="website-click" data-umami-event-company="MDIS">🌐 Full website</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=mdis" target="_blank" data-umami-event="resume-click" data-umami-event-company="MDIS">📄 Resume</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const memeWrap = document.querySelector('.hero-photo-wrap');
+  if (!memeWrap) return;
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          memeWrap.classList.add('revealed');
+        }, 300);
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+  observer.observe(memeWrap);
+})();
+
+let locked = false;
+document.getElementById("panel-yes").classList.add("open");
+
+function chooseYes() {
+  if (locked) return;
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+}
+
+function chooseNo() {
+  if (locked) return;
+  document.getElementById("panel-no").classList.add("open");
+  document.getElementById("panel-yes").classList.remove("open");
+}
+
+function onBtnsLeave() {
+  if (locked) return;
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+}
+
+function lockYes() {
+  if (typeof umami !== 'undefined') umami.track('yes-clicked', { company: 'MDIS' });
+  locked = true;
+  const btn = document.getElementById("btn-no");
+  btn.style.transition  = "opacity 0.35s, transform 0.35s";
+  btn.style.opacity     = "0";
+  btn.style.transform   = "translateX(12px)";
+  btn.style.pointerEvents = "none";
+}
+
+function lockNo() {
+  if (typeof umami !== 'undefined') umami.track('no-clicked', { company: 'MDIS' });
+  locked = true;
+  const btnYes = document.getElementById("btn-yes");
+  btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
+  btnYes.style.opacity      = "0";
+  btnYes.style.transform    = "translateX(-12px)";
+  btnYes.style.pointerEvents = "none";
+
+  setTimeout(() => {
+    const btnMistake = document.getElementById("btn-mistake");
+    btnMistake.style.display = "inline-flex";
+    btnMistake.getBoundingClientRect();
+    btnMistake.classList.add("visible");
+  }, 400);
+}
+
+function undoNo() {
+  locked = false;
+  const btnYes = document.getElementById("btn-yes");
+  btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
+  btnYes.style.opacity      = "1";
+  btnYes.style.transform    = "translateX(0)";
+  btnYes.style.pointerEvents = "auto";
+
+  const btnMistake = document.getElementById("btn-mistake");
+  btnMistake.classList.remove("visible");
+  setTimeout(() => { btnMistake.style.display = "none"; }, 350);
+
+  document.getElementById("panel-yes").classList.add("open");
+  document.getElementById("panel-no").classList.remove("open");
+
+  const heading = document.getElementById("yes-heading");
+  const original = heading.innerHTML;
+  heading.style.transition = "opacity 0.25s";
+  heading.style.opacity = "0";
+  setTimeout(() => {
+    heading.innerHTML = "Welcome back 👋<br><em>Good choice.</em>";
+    heading.style.opacity = "1";
+  }, 250);
+  setTimeout(() => {
+    heading.style.opacity = "0";
+  }, 2200);
+  setTimeout(() => {
+    heading.innerHTML = original;
+    heading.style.opacity = "1";
+  }, 2500);
+}
+</script>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">Akshun Dogra · GTM Engineer</div>
+  <div class="footer-url">hire.akshundogra.com/mdis</div>
+</footer>
+
+</body>
+</html>
