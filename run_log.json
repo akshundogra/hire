@@ -230,5 +230,13 @@
     "domain": "impossiblecloud.com",
     "score": 94,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T20:06:41.940621+00:00",
+    "slug": "taxfix",
+    "company_name": "Taxfix",
+    "domain": "taxfix.de",
+    "score": 94,
+    "tier": "HIGH_FIT"
   }
 ]
