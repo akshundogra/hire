@@ -110,5 +110,13 @@
     "domain": "acto.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T18:47:55.487965+00:00",
+    "slug": "consultport",
+    "company_name": "Consultport",
+    "domain": "consultport.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
