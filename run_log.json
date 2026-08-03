@@ -206,5 +206,13 @@
     "domain": "consultport.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T19:10:14.418599+00:00",
+    "slug": "centric-software",
+    "company_name": "Centric Software",
+    "domain": "centricsoftware.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
