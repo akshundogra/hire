@@ -6,5 +6,13 @@
     "domain": "contentful.com",
     "score": 85,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T12:59:55.846251+00:00",
+    "slug": "contentful",
+    "company_name": "Contentful",
+    "domain": "contentful.com",
+    "score": 85,
+    "tier": "HIGH_FIT"
   }
 ]
