@@ -214,5 +214,13 @@
     "domain": "centricsoftware.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T19:10:36.369821+00:00",
+    "slug": "lovehoney-group",
+    "company_name": "Lovehoney Group",
+    "domain": "lovehoneygroup.com",
+    "score": 82,
+    "tier": "HIGH_FIT"
   }
 ]
