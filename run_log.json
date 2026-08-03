@@ -174,5 +174,13 @@
     "domain": "centricsoftware.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T18:57:49.689260+00:00",
+    "slug": "temedica",
+    "company_name": "Temedica",
+    "domain": "temedica.com",
+    "score": 82,
+    "tier": "HIGH_FIT"
   }
 ]
