@@ -46,5 +46,13 @@
     "domain": "eye-able.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T13:59:40.752138+00:00",
+    "slug": "contentful",
+    "company_name": "Contentful",
+    "domain": "contentful.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
