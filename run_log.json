@@ -30,5 +30,13 @@
     "domain": "apaleo.com",
     "score": 85,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T13:35:05.794538+00:00",
+    "slug": "apaleo",
+    "company_name": "Apaleo",
+    "domain": "apaleo.com",
+    "score": 85,
+    "tier": "HIGH_FIT"
   }
 ]
