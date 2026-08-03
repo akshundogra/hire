@@ -238,5 +238,13 @@
     "domain": "taxfix.de",
     "score": 94,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T20:07:08.173541+00:00",
+    "slug": "instaffo",
+    "company_name": "Instaffo",
+    "domain": "instaffo.com",
+    "score": 90,
+    "tier": "HIGH_FIT"
   }
 ]
