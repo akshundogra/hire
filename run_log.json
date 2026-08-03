@@ -38,5 +38,13 @@
     "domain": "apaleo.com",
     "score": 85,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T13:50:27.258853+00:00",
+    "slug": "eyeable",
+    "company_name": "Eye-Able",
+    "domain": "eye-able.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
