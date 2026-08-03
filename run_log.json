@@ -222,5 +222,13 @@
     "domain": "lovehoneygroup.com",
     "score": 82,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T20:06:16.794080+00:00",
+    "slug": "impossible-cloud",
+    "company_name": "Impossible Cloud",
+    "domain": "impossiblecloud.com",
+    "score": 94,
+    "tier": "HIGH_FIT"
   }
 ]
