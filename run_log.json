@@ -102,5 +102,13 @@
     "domain": "acto.com",
     "score": 84,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T18:47:30.817624+00:00",
+    "slug": "acto",
+    "company_name": "Acto",
+    "domain": "acto.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
