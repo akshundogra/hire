@@ -134,5 +134,13 @@
     "domain": "centricsoftware.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T18:54:04.287947+00:00",
+    "slug": "acto",
+    "company_name": "Acto",
+    "domain": "acto",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
