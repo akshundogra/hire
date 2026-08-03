@@ -1127,7 +1127,25 @@
     <div class="audit-card">
       <div class="audit-header">
         <span class="audit-header-left">⬡ Observations · Eye-Able</span>
-        <span class="audit-header-right">Full analysis available on request</span>
+        <span class="audit-header-right" style="color:var(--accent);font-family:var(--mono);">Fit Score: 85/100 (HIGH_FIT)</span>
+      </div>
+      <div style="padding:16px 20px;background:rgba(232,197,71,0.04);border-bottom:1px solid var(--border);">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+          <div>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;">ACCOUNT FIT SCORE</span>
+            <div style="font-size:22px;font-weight:700;color:var(--text);line-height:1.1;"><span style="color:var(--accent);">85</span><span style="font-size:14px;color:var(--muted);">/100</span> <span style="font-size:11px;font-family:var(--mono);padding:2px 8px;border-radius:100px;background:rgba(232,197,71,0.15);color:var(--accent);border:1px solid rgba(232,197,71,0.3);margin-left:6px;vertical-align:middle;">HIGH_FIT</span></div>
+          </div>
+          <button id="score-toggle-btn" style="background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.3);color:var(--accent);font-family:var(--mono);font-size:11px;padding:8px 14px;border-radius:6px;cursor:pointer;transition:all 0.2s;" onclick="toggleScoreBreakdown()" data-umami-event="score-breakdown-toggle" data-umami-event-company="Eye-Able">Learn how this score was calculated ↓</button>
+        </div>
+        <div id="score-breakdown-panel" style="display:none;width:100%;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
+          <div style="font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">🔍 Signal Evidence Breakdown &amp; Weighted Factors</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="padding:10px;background:rgba(0,0,0,0.3);border:1px solid var(--border);border-radius:6px;"><div style="font-size:11px;font-weight:600;color:var(--text);">Role &amp; Resume Skill Alignment (20%)</div><div style="font-size:12px;color:var(--accent);font-weight:700;margin-top:2px;">+18 pts</div><div style="font-size:10px;color:var(--muted);margin-top:4px;">Matched 12 resume skills: HubSpot, GA4, APIs, Make, Clay, Python, LinkedIn Ads</div></div>
+            <div style="padding:10px;background:rgba(0,0,0,0.3);border:1px solid var(--border);border-radius:6px;"><div style="font-size:11px;font-weight:600;color:var(--text);">Funding &amp; Stage Momentum (20%)</div><div style="font-size:12px;color:var(--accent);font-weight:700;margin-top:2px;">+18 pts</div><div style="font-size:10px;color:var(--muted);margin-top:4px;">Stage: Series A, Headcount: 11-50 employees</div></div>
+            <div style="padding:10px;background:rgba(0,0,0,0.3);border:1px solid var(--border);border-radius:6px;"><div style="font-size:11px;font-weight:600;color:var(--text);">Hiring Velocity (20%)</div><div style="font-size:12px;color:var(--accent);font-weight:700;margin-top:2px;">+20 pts</div><div style="font-size:10px;color:var(--muted);margin-top:4px;">Active hiring across Marketing (12) and Engineering (16)</div></div>
+            <div style="padding:10px;background:rgba(0,0,0,0.3);border:1px solid var(--border);border-radius:6px;"><div style="font-size:11px;font-weight:600;color:var(--text);">Paid Channel Footprint (20%)</div><div style="font-size:12px;color:var(--accent);font-weight:700;margin-top:2px;">+20 pts</div><div style="font-size:10px;color:var(--muted);margin-top:4px;">Active: Google Ads, LinkedIn Ads, GTM tag</div></div>
+          </div>
+        </div>
       </div>
       <ul class="audit-findings">
         <li class="audit-finding">
@@ -1628,6 +1646,18 @@ function undoNo() {
     heading.innerHTML = original;
     heading.style.opacity = "1";
   }, 2500);
+}
+function toggleScoreBreakdown() {
+  const panel = document.getElementById("score-breakdown-panel");
+  const btn = document.getElementById("score-toggle-btn");
+  if (!panel || !btn) return;
+  if (panel.style.display === "none" || panel.style.display === "") {
+    panel.style.display = "block";
+    btn.innerHTML = "Hide score evidence ↑";
+  } else {
+    panel.style.display = "none";
+    btn.innerHTML = "Learn how this score was calculated ↓";
+  }
 }
 </script>
 
