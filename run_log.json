@@ -54,5 +54,13 @@
     "domain": "contentful.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-03T14:00:51.381434+00:00",
+    "slug": "apaleo",
+    "company_name": "Apaleo",
+    "domain": "apaleo.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
