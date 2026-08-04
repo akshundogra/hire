@@ -254,5 +254,13 @@
     "domain": "taxfix.de",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-04T09:54:33.167567+00:00",
+    "slug": "retool",
+    "company_name": "Retool",
+    "domain": "retool.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
