@@ -69,8 +69,8 @@
   .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
   .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
   .nav-company-logo {
-    height: 22px; width: auto; max-width: 90px; object-fit: contain;
-    filter: brightness(0) invert(1); opacity: 0.85;
+    height: 18px; width: 18px; object-fit: contain;
+    border-radius: 4px; vertical-align: middle; margin-right: 4px; display: inline-block;
   }
   .nav-company-name { font-weight: 700; font-size: 15px; color: var(--accent); }
   .nav-url {
@@ -652,6 +652,18 @@
     text-align: left;
   }
 
+  .nav-company-logo {
+    height: 18px; width: 18px; border-radius: 4px; object-fit: contain;
+    vertical-align: middle; margin-right: 4px; display: inline-block;
+  }
+  .nav-company-name { font-weight: 700; font-size: 15px; color: var(--accent); display: inline-block; }
+  .nav-url {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    background: var(--bg3); border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 100px;
+  }
+
+  .inner { max-width: 900px; margin: 0 auto; }
 </style>
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a0061a97-ba7d-4e78-8be3-5cf6a27eae14"></script>
@@ -666,7 +678,7 @@
   <div class="nav-collab">
     <span class="nav-akshun">Akshun</span>
     <span class="nav-x">×</span>
-    <img src="https://www.google.com/s2/favicons?domain=taxfix.de&sz=64" class="nav-company-logo" alt="Taxfix" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span class="nav-company-name" style="display:none">Taxfix</span>
+    <img src="https://www.google.com/s2/favicons?domain=taxfix.de&sz=64" class="nav-company-logo" alt="Taxfix" onerror="this.style.display='none'"><span class="nav-company-name">Taxfix</span>
   </div>
   <div class="nav-url">hire.akshundogra.com/taxfix</div>
 </nav>
@@ -680,7 +692,7 @@
     <div class="hero-grid">
       <div>
         <div class="hero-badge">
-          <img src="https://www.google.com/s2/favicons?domain=taxfix.de&sz=64" class="hero-badge-logo" alt="Taxfix" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><div class="hero-badge-fallback" style="display:none">T</div><span class="hero-badge-text" style="margin-left:4px;">Taxfix</span>
+          <img src="https://www.google.com/s2/favicons?domain=taxfix.de&sz=64" class="hero-badge-logo" alt="Taxfix" onerror="this.style.display='none'"><div class="hero-badge-fallback" style="display:none">T</div><span class="hero-badge-text" style="margin-left:4px;">Taxfix</span>
           <div class="hero-badge-dot"></div>
           <span class="hero-badge-text">Built for Taxfix</span>
         </div>
