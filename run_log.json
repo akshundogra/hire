@@ -262,5 +262,13 @@
     "domain": "retool.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-04T11:13:49.975818+00:00",
+    "slug": "centric-software",
+    "company_name": "Centric Software",
+    "domain": "centricsoftware.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
