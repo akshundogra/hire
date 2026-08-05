@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/ronic", "destination": "/reonic/", "permanent": true },
+    { "source": "/reonic-de", "destination": "/reonic/", "permanent": true },
+    { "source": "/eyeable", "destination": "/eye-able/", "permanent": true },
+    { "source": "/mdis", "destination": "/mdis-pitch/", "permanent": true },
+    { "source": "/theo", "destination": "/hallo-theo/", "permanent": true },
+    { "source": "/hallotheo", "destination": "/hallo-theo/", "permanent": true },
+    { "source": "/lovehoney", "destination": "/lovehoney-group/", "permanent": true },
+    { "source": "/visionhealthcare", "destination": "/vision-healthcare-nv/", "permanent": true },
+    { "source": "/centric", "destination": "/centric-software/", "permanent": true },
+    { "source": "/impossiblecloud", "destination": "/impossible-cloud/", "permanent": true },
+    { "source": "/sevensenders", "destination": "/seven-senders/", "permanent": true },
+    { "source": "/quantumsystems", "destination": "/quantum-systems/", "permanent": true }
+  ]
+}
