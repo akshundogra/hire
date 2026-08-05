@@ -278,5 +278,13 @@
     "domain": "reonic.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-05T18:03:03.187022+00:00",
+    "slug": "superchat",
+    "company_name": "Superchat",
+    "domain": "superchat.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
