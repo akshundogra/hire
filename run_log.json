@@ -270,5 +270,13 @@
     "domain": "centricsoftware.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-05T18:02:32.925152+00:00",
+    "slug": "reonic",
+    "company_name": "Reonic",
+    "domain": "reonic.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
