@@ -310,5 +310,13 @@
     "domain": "jobgether.com",
     "score": 84,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-05T19:35:46.469063+00:00",
+    "slug": "glocomms",
+    "company_name": "Glocomms",
+    "domain": "glocomms.com",
+    "score": 80,
+    "tier": "HIGH_FIT"
   }
 ]
