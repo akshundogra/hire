@@ -302,5 +302,13 @@
     "domain": "connectad.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-05T19:35:11.274669+00:00",
+    "slug": "jobgether",
+    "company_name": "Jobgether",
+    "domain": "jobgether.com",
+    "score": 84,
+    "tier": "HIGH_FIT"
   }
 ]
