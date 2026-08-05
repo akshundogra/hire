@@ -635,14 +635,21 @@
     text-align: left;
   }
 
-  /* ─── FOOTER ─── */
+    /* ─── FOOTER ─── */
   footer {
     background: var(--bg); border-top: 1px solid var(--border);
-    padding: 20px 48px;
-    display: flex; justify-content: space-between; align-items: center;
+    padding: 32px 48px;
+    display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;
+  }
+  .footer-top {
+    width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px;
   }
   .footer-brand { font-size: 14px; font-weight: 600; color: var(--muted2); }
   .footer-url { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+  .footer-disclaimer {
+    font-size: 11px; color: var(--muted); max-width: 650px; margin: 0 auto;
+    line-height: 1.5; border-top: 1px solid var(--border); padding-top: 16px; text-align: center;
+  }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {

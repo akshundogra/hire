@@ -586,14 +586,21 @@
 
   
 
-  /* ─── FOOTER ─── */
+    /* ─── FOOTER ─── */
   footer {
     background: var(--bg); border-top: 1px solid var(--border);
-    padding: 20px 48px;
-    display: flex; justify-content: space-between; align-items: center;
+    padding: 32px 48px;
+    display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;
+  }
+  .footer-top {
+    width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px;
   }
   .footer-brand { font-size: 14px; font-weight: 600; color: var(--muted2); }
   .footer-url { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+  .footer-disclaimer {
+    font-size: 11px; color: var(--muted); max-width: 650px; margin: 0 auto;
+    line-height: 1.5; border-top: 1px solid var(--border); padding-top: 16px; text-align: center;
+  }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
@@ -605,6 +612,11 @@
     .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
     .stat { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
     .pillars { grid-template-columns: 1fr; }
+    footer { padding: 24px 20px; }
+    .footer-top { flex-direction: column; text-align: center; gap: 8px; }
+    .footer-brand { font-size: 13px; text-align: center; white-space: normal; }
+    .footer-url { font-size: 11px; text-align: center; }
+    .footer-disclaimer { font-size: 10px; line-height: 1.5; text-align: center; }
   }
 
   /* ─── GIF MEME OVERLAYS ─── */
@@ -1742,9 +1754,11 @@ function undoNo() {
      FOOTER
 ════════════════════════════════════════ -->
 <footer>
-  <div class="footer-brand">Akshun Dogra · Technical Growth Marketer</div>
-  <div class="footer-url">hire.akshundogra.com/riverty</div>
-  <div style="margin-top:16px;font-size:11px;color:var(--muted);max-width:650px;margin-left:auto;margin-right:auto;line-height:1.5;border-top:1px solid var(--border);padding-top:12px;">
+  <div class="footer-top">
+    <div class="footer-brand">Akshun Dogra · Technical Growth Marketer</div>
+    <div class="footer-url">hire.akshundogra.com/riverty</div>
+  </div>
+  <div class="footer-disclaimer">
     <strong>Portfolio & Non-Affiliation Disclaimer:</strong> This personalized landing page is an independent job application pitch and interactive portfolio created by Akshun Dogra. It is not affiliated with, sponsored by, or endorsed by Riverty. No personal credentials or user data are collected on this page.
   </div>
 </footer>
