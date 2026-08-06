@@ -10,15 +10,15 @@
 <meta property="og:type"        content="website">
 <meta property="og:url"         content="https://hire.akshundogra.com/mdis-pitch/mdis-growth-deck-de.html">
 <meta property="og:title"       content="MDIS Consulting — Demand-Generation-Strategie Pitch Deck">
-<meta property="og:description" content="Präzises 10-Foliendeck zur Skalierung selbst erzeugter SQL-Pipelines für MDIS Consulting über Haufe X360 ERP, X.One AI-Plattform und MDIS Velocity.">
+<meta property="og:description" content="Fundiertes 11-Foliendeck zur Skalierung selbst erzeugter SQL-Pipelines für MDIS Consulting über Haufe X360 ERP und X.One AI-Plattform.">
 <meta property="og:image"       content="https://hire.akshundogra.com/assets/og-mdis.jpg">
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="MDIS Growth Deck — Akshun × MDIS Consulting">
-<meta name="twitter:description" content="10-Foliendeck zu GTM-Engineering, Pull/Push-Demand-Engines, 90-Tage-Plan, Performance-Dashboard und governanten Systemen.">
+<meta name="twitter:description" content="11-Foliendeck zu GTM-Engineering, Pull/Push-Demand-Engines, 30-Tage-Plan, System-Architektur, DSGVO-Governance und Executive Q&A.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -141,16 +141,83 @@
     padding: 3px 8px; border-radius: 4px; color: var(--accent);
   }
 
+  /* ─── Q&A STYLING ─── */
+  .qa-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 22px;
+    margin-bottom: 18px;
+    transition: border-color 0.2s ease;
+  }
+  .qa-card:hover {
+    border-color: var(--border2);
+  }
+  .qa-q {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.4;
+  }
+  .qa-q-badge {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: rgba(232,197,71,0.15);
+    border: 1px solid rgba(232,197,71,0.3);
+    color: var(--accent);
+    padding: 3px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+  .qa-a {
+    font-size: 13.5px;
+    color: #c4bfb8;
+    line-height: 1.65;
+    padding-left: 44px;
+  }
+  .qa-a p { margin-bottom: 8px; }
+  .qa-a ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .qa-a li {
+    position: relative;
+    padding-left: 16px;
+  }
+  .qa-a li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  .qa-a ol {
+    list-style: decimal;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
   /* ─── NAV FOOTER & CTA ─── */
   .deck-nav-bar {
     position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
     background: rgba(17,17,17,0.95); backdrop-filter: blur(12px);
     border: 1px solid var(--border2); border-radius: 100px;
-    padding: 8px 20px; display: flex; gap: 12px; align-items: center; z-index: 100;
+    padding: 8px 18px; display: flex; gap: 8px; align-items: center; z-index: 100;
   }
   .deck-nav-btn {
-    font-family: var(--mono); font-size: 12px; color: var(--muted);
-    padding: 4px 12px; border-radius: 100px; transition: all 0.2s;
+    font-family: var(--mono); font-size: 10.5px; color: var(--muted);
+    padding: 4px 9px; border-radius: 100px; transition: all 0.2s;
   }
   .deck-nav-btn:hover, .deck-nav-btn.active { color: var(--accent); background: var(--bg3); }
 
@@ -159,6 +226,7 @@
     .slide { padding: 24px; }
     .grid-2, .grid-3 { grid-template-columns: 1fr; }
     .deck-nav-bar { display: none; }
+    .qa-a { padding-left: 0; margin-top: 10px; }
   }
 </style>
 </head>
@@ -171,42 +239,58 @@
     <span class="nav-x">×</span>
     <span class="nav-company">MDIS Consulting</span>
   </div>
-  <div class="nav-badge">Growth Pitch Deck</div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="nav-badge">GTM Engineering Pitch Deck</div>
+    <div style="font-family:var(--mono);font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:100px;padding:3px 10px;display:flex;gap:8px;">
+      <a href="mdis-growth-deck.html" style="color:var(--muted);">EN</a>
+      <span style="color:var(--border2);">|</span>
+      <a href="mdis-growth-deck-de.html" style="color:var(--accent);font-weight:700;">DE</a>
+    </div>
+  </div>
 </nav>
 
 <div class="deck-container">
 
   <!-- ════════════════════════════════════════
-       SLIDE 1: COVER
+       SLIDE 1: COVER / MANAGEMENT OVERVIEW
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-1">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 01 / 10</span>
+      <span class="slide-num">SLIDE 01 / 11</span>
       <span class="slide-category">Management-Überblick</span>
     </div>
-    <h1 class="slide-title">Eine Demand-Engine.<br><em>Drei kommerzielle Motions.</em></h1>
-    <p class="slide-sub">Eine technische & kommerzielle Strategie zur Skalierung selbst erzeugter SQL-Pipelines für MDIS Consulting über Haufe X360 ERP, X.One AI-Plattform und MDIS Velocity.</p>
+    <h1 class="slide-title">Eine Demand-Engine.<br><em>Zwei skalierbare Wachstumspfade.</em></h1>
+    <p class="slide-sub">Eine fundierte, pragmatische GTM-Engineering-Strategie zur Erzeugung selbst generierter, qualifizierter Vertriebs-Pipeline (SQLs) für MDIS Consulting über Haufe X360 ERP und die X.One-Plattform.</p>
     
-    <div class="grid-3" style="margin-top:28px;">
+    <div class="grid-3" style="margin-top:24px;">
       <div class="card-box" style="border-color:rgba(232,197,71,0.3);">
         <div class="pill-tag" style="margin-bottom:8px;">PULL-MOTION</div>
-        <div class="card-title">Haufe X360 ERP</div>
-        <div class="card-desc">Bestehende Such-, Vergleichs- und SAP-ECC-Migrationsabsichten gezielt abfangen.</div>
+        <div class="card-title">Haufe X360 Cloud ERP</div>
+        <div class="card-desc">Gezielte Abschöpfung bestehender Such- & Wechselabsichten im DACH-Mittelstand (z. B. SAP ECC 2030 End-of-Life, Lexware & Sage Ablösung).</div>
       </div>
       <div class="card-box" style="border-color:rgba(74,222,128,0.3);">
         <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">PUSH-MOTION</div>
-        <div class="card-title">X.One AI-Plattform</div>
-        <div class="card-desc">Kategorie-Aufbau, LinkedIn-Nachfrageerzeugung auf C-Level und Account-Aktivierung.</div>
+        <div class="card-title">X.One KI- & Integrationsplattform</div>
+        <div class="card-desc">Kategorieaufbau & Account-Aktivierung auf C-Level / CTO-Ebene zur Konsolidierung fragmentierter ERP-, HR- & DMS-Systeme.</div>
       </div>
       <div class="card-box" style="border-color:rgba(96,165,250,0.3);">
         <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">SEKUNDÄRE MOTION</div>
         <div class="card-title">MDIS Velocity</div>
-        <div class="card-desc">Mittelfristiges Integration-as-a-Service-Angebot für Product- & Engineering-Leader.</div>
+        <div class="card-desc">Integration-as-a-Service für Engineering- und Produkt-Teams zur schnellen API- & Enterprise-Workflow-Anbindung.</div>
       </div>
     </div>
 
-    <div style="margin-top:24px;padding:12px 16px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.15);border-radius:8px;font-size:13px;color:#c4bfb8;">
-      <strong style="color:var(--text);">Präsentator:</strong> Akshun Dogra · Kandidat für Demand Generation GTM Engineer
+    <!-- Competitive Insight Box -->
+    <div style="margin-top:20px;padding:16px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.2);border-radius:var(--r);font-size:13px;color:#c4bfb8;">
+      <strong style="color:var(--accent);font-family:var(--mono);font-size:11px;text-transform:uppercase;display:block;margin-bottom:4px;">🔍 Marktanalyse & SEO/Paid Research (Focus domain: mdis.de):</strong>
+      <div style="line-height:1.6;">
+        Der DACH-ERP-Markt steht durch das Auslaufen des SAP-ECC-6.0-Support (2027/2030) vor einer Umbruchphase. Mittelständische Unternehmen (50–500 MA) scheuen die immensen Kosten einer SAP S/4HANA Transformation und suchen nach pragmatischen Cloud-ERP-Alternativen wie Haufe X360. Gleichzeitig besteht eine signifikante Lücke bei der technischen Einbindung von Ökosystem-Tools (Personio, d.velop, Circula) — genau hier setzt X.One als Integrationsplattform an.
+      </div>
+    </div>
+
+    <div style="margin-top:16px;padding:12px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:13px;color:#c4bfb8;display:flex;justify-content:space-between;align-items:center;">
+      <div><strong style="color:var(--text);">Präsentator:</strong> Akshun Dogra · GTM Engineer & Growth Specialist</div>
+      <span style="font-family:var(--mono);font-size:11px;color:var(--accent);">Fokus: Planbare SQL-Generierung</span>
     </div>
   </section>
 
@@ -216,17 +300,17 @@
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-2">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 02 / 10</span>
+      <span class="slide-num">SLIDE 02 / 11</span>
       <span class="slide-category">Unternehmensbasis</span>
     </div>
     <h2 class="slide-title">MDIS Business & Partner-Kontext</h2>
-    <p class="slide-sub">MDIS Consulting startet in diese Strategie mit erstklassiger Markt-Dynamik und verifizierter Implementierungsbilanz im DACH-Mittelstand.</p>
+    <p class="slide-sub">MDIS Consulting verfügt über eine herausragende Marktposition im DACH-Mittelstand mit verifizierter Implementierungsbilanz.</p>
 
     <div class="grid-2">
       <div class="card-box">
         <div class="card-title" style="color:var(--accent);">🏆 Ausgezeichneter Partner-Status</div>
         <div class="card-desc" style="font-size:13.5px;line-height:1.7;">
-          MDIS ist Haufe X360 Gold Partner und mehrfach ausgezeichneter Hersteller-Partner.<br><br>
+          MDIS ist Haufe X360 Gold Partner und mehrfach prämiert.<br><br>
           Beim <strong>Haufe X360 Summit 2026</strong> wurde MDIS ausgezeichnet als:
           <ul style="margin-top:8px;margin-left:18px;color:var(--text);">
             <li>• Gold Partner</li>
@@ -240,7 +324,7 @@
       <div class="card-box">
         <div class="card-title" style="color:var(--green);">⚡ 250+ Implementierungs-Ökosystem</div>
         <div class="card-desc" style="font-size:13.5px;line-height:1.7;">
-          Tiefe Fach- und Branchenkompetenz für Haufe X360 Cloud ERP und X.One-Plattform, kombiniert mit zentralen DACH-Ökosystem-Integrationen:
+          Tiefe Fachkompetenz für Haufe X360 Cloud ERP und X.One-Plattform, kombiniert mit zentralen Ökosystem-Integrationen:
           <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;">
             <span class="pill-tag">Haufe X360</span>
             <span class="pill-tag">X.One-Plattform</span>
@@ -253,17 +337,17 @@
     </div>
 
     <div class="card-box" style="margin-top:16px;">
-      <div class="card-title" style="color:var(--blue);">🔗 Der kombinierte Stack</div>
+      <div class="card-title" style="color:var(--blue);">🔗 Der kombinierte Lösung-Stack</div>
       <div class="card-desc" style="font-size:13px;line-height:1.7;">
-        MDIS positioniert vier Produkte als ein integriertes Gesamtsystem statt isolierter Einzel-Tools:
+        MDIS positioniert vier Kernkomponenten als integriertes Gesamtsystem für Mittelstandsunternehmen:
         <ul style="margin-top:8px;margin-left:18px;color:#c4bfb8;display:flex;flex-direction:column;gap:4px;font-size:12.5px;">
           <li>• <strong>Haufe X360:</strong> Cloud ERP (Kernprodukt, Gold Partner, 250+ Implementierungen)</li>
-          <li>• <strong>Personio:</strong> HR / People Operations</li>
-          <li>• <strong>d.velop:</strong> Dokumentenmanagement, GoBD-konforme Archivierung</li>
-          <li>• <strong>Circula:</strong> Reisekosten & Spend Management</li>
+          <li>• <strong>Personio:</strong> HR / People Operations Automation</li>
+          <li>• <strong>d.velop:</strong> Dokumentenmanagement & GoBD-konforme Archivierung</li>
+          <li>• <strong>Circula:</strong> Digitales Reisekosten- & Spend-Management</li>
         </ul>
         <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);font-size:12px;color:var(--accent);font-style:italic;">
-          Positionierung: Ein integriertes Gesamtsystem über ERP, HR, Dokumente und Spesen — keine vier isolierten Einzel-Tools.
+          Kern-Narrativ: Ein nahtloses Gesamtsystem über ERP, HR, DMS und Finance — statt isolierter Insellösungen.
         </div>
       </div>
     </div>
@@ -271,33 +355,56 @@
 
 
   <!-- ════════════════════════════════════════
-       SLIDE 3: COMMERCIAL GROWTH PROBLEM
+       SLIDE 3: COMMERCIAL GROWTH PROBLEM & GTM MANDATE
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-3">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 03 / 10</span>
+      <span class="slide-num">SLIDE 03 / 11</span>
       <span class="slide-category">Kommerzielle Herausforderung</span>
     </div>
-    <h2 class="slide-title">Der Top-of-Funnel-Engpass</h2>
-    <p class="slide-sub">Der Vertrieb konvertiert qualifizierte Erstgespräche stark — die Wachstumsbremse liegt vollständig im Top-of-Funnel.</p>
+    <h2 class="slide-title">Der Top-of-Funnel-Engpass & Das GTM-Mandat</h2>
+    <p class="slide-sub">Sobald ein Lead als Sales Qualified Lead (SQL) qualifiziert ist, ist die Conversion zum Vertragsschluss stark. Der Engpass liegt rein im Volumen qualifizierter SQLs.</p>
 
     <div class="grid-2">
       <div class="card-box" style="border-color:rgba(248,113,113,0.3);">
-        <div class="card-title" style="color:var(--red);">⚠️ Die Referral-Grenze</div>
+        <div class="card-title" style="color:var(--red);">⚠️ Der Engpass: Zu wenig echte SQLs</div>
         <div class="card-desc">
-          Partner-Referrals allein können das Ziel-Wachstum von <strong>20–30% YoY</strong> über ERP-Beratung und X.One-ARR hinweg nicht zuverlässig tragen. Referral-Dealflow ist unvorhersehbar und lässt sich nicht skaliert steuern.
+          Partner-Referrals allein können das Ziel-Wachstum von <strong>20–30% YoY</strong> nicht verlässlich tragen. Werbeagenturen liefern meist nur unqualifizierte E-Mail-Downloads (MQLs), die den Vertrieb belasten, aber keine Verträge bringen.
         </div>
       </div>
       <div class="card-box" style="border-color:rgba(74,222,128,0.3);">
-        <div class="card-title" style="color:var(--green);">🎯 Die eigenständige Lösung</div>
+        <div class="card-title" style="color:var(--green);">🎯 Das Landingpage-Mandat</div>
         <div class="card-desc">
-          Durch den Aufbau einer internen Demand-Engine (Paid Intent + SEO/GEO + signalbasiertes Outbound) erweitert jede zusätzlich selbst erzeugte SQL den Umsatz direkt, ohne den Vertriebskopfstand zu erhöhen.
+          Die Hauptaufgabe von Landingpages und Kampagnen ist <strong>nicht</strong> das Einsammeln blinder Kontaktadressen, sondern die <strong>Qualifizierung von Besuchern in vertriebsbereite SQLs</strong> mit konkretem ERP- & Integrations-Bedarf.
         </div>
       </div>
     </div>
 
-    <div style="margin-top:20px;padding:16px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:#c4bfb8;">
-      <strong style="color:var(--text);">Kernziel:</strong> Erzeugung einer kontinuierlichen, planbaren SQL-Pipeline unabhängig von Hersteller-Empfehlungskanälen.
+    <!-- Comparative Table: Generic MQL Marketing vs Technical GTM Engineering -->
+    <div style="margin-top:20px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;font-weight:600;">
+        🔄 Paradigmenwechsel: Veraltetes Marketing vs. Technisches GTM-Engineering
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.2);border-radius:8px;padding:16px;">
+          <div style="font-family:var(--mono);font-size:11px;color:var(--red);font-weight:700;margin-bottom:8px;">❌ Veraltetes B2B-Marketing ("Alter Scheiß")</div>
+          <ul style="list-style:none;font-size:12.5px;color:#c4bfb8;display:flex;flex-direction:column;gap:8px;">
+            <li>• <strong>Generische Whitepaper-Downloads:</strong> Wertlose Kontaktdaten ohne tatsächliches Projektinteresse.</li>
+            <li>• <strong>Unqualifizierte Webinare:</strong> Hohe Anmeldezahlen mit schlechter Teilnahmequote & fehlender Kaufabsicht.</li>
+            <li>• <strong>Reine CPL / Last-Click-Optimierung:</strong> Optimierung auf billige Leads statt auf vertriebsbereite Opportunities.</li>
+            <li>• <strong>MQL-Menge ohne Kaufabsicht:</strong> Hohes Lead-Volumen, das wertvolle Vertriebsressourcen verschwendet.</li>
+          </ul>
+        </div>
+        <div style="background:rgba(74,222,128,0.04);border:1px solid rgba(74,222,128,0.2);border-radius:8px;padding:16px;">
+          <div style="font-family:var(--mono);font-size:11px;color:var(--green);font-weight:700;margin-bottom:8px;">⚡ GTM Engineering Execution (Akshun Dogra)</div>
+          <ul style="list-style:none;font-size:12.5px;color:#c4bfb8;display:flex;flex-direction:column;gap:8px;">
+            <li>• <strong>High-Intent TCO- & Migrations-Rechner:</strong> Interaktive Tools für SAP ECC Wechselabsichten & ROI-Kalkulation.</li>
+            <li>• <strong>Offline-Conversion-Bidding (HubSpot → CAPI):</strong> Rückspielung echter SQL-Deal-Phasen für smarte Ad-Algorithmen.</li>
+            <li>• <strong>Intent-basiertes Outbound auf C-Level:</strong> Zielgerichtetes Targeting von CTOs & CFOs bei aktiven Trigger-Events.</li>
+            <li>• <strong>Fokus auf SQLs & Pipeline ARR:</strong> Erfolgsmessung rein an qualifizierten Sales Opportunities & Umsatz-Pipeline.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -307,202 +414,249 @@
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-4">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 04 / 10</span>
+      <span class="slide-num">SLIDE 04 / 11</span>
       <span class="slide-category">Strategie-Architektur</span>
     </div>
     <h2 class="slide-title">Duale ICP Buyer Journey Matrix</h2>
-    <p class="slide-sub">Unterschiedliche Motions erfordern grundlegend verschiedene GTM-Playbooks, Buyer-Targeting und Content-Architekturen.</p>
+    <p class="slide-sub">Beide Geschäftsbereiche adressieren unterschiedliche Entscheider mit spezifischen Zielsetzungen und Kaufanlässen.</p>
 
     <table class="pitch-table">
       <thead>
         <tr>
           <th>Dimension</th>
-          <th style="color:var(--accent);">Haufe X360 / Consulting Stack (Pull)</th>
-          <th style="color:var(--green);">X.One-Plattform (Push)</th>
+          <th style="color:var(--accent);">Enterprise Services / ERP Consulting (Pull)</th>
+          <th style="color:var(--green);">X.One KI- & Integrationsplattform (Push)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Markt-Logik</td>
-          <td>Pull-Markt: bestehende Such- und Vergleichsnachfrage</td>
-          <td>Push-Markt: Kategorieaufbau und Nachfrageerzeugung</td>
+          <td>Pull-Markt: Abfangen bestehender ERP-Such- & Vergleichsansichten</td>
+          <td>Push-Markt: Kategorieaufbau & aktive Ansprache technischer Entscheider</td>
         </tr>
         <tr>
-          <td>Zentraler Buyer</td>
-          <td>Geschäftsführung, CFO, CIO/IT-Leitung, HR-Leitung (50-500 DACH Mittelstand)</td>
-          <td>CFO und Geschäftsführung</td>
+          <td>Zentraler Buyer (ICP)</td>
+          <td>Geschäftsführung, CFO, CIO/IT-Leiter, HR-Leiter (50–500 MA Mittelstand)</td>
+          <td>CTO, Head of Engineering, Lead Architects, Digitalization Leads</td>
         </tr>
         <tr>
-          <td>Kauf-Einheit</td>
-          <td>Buying Group scoring — Geschäftsführung, CFO, IT, Fachbereich bewertet als Einheit, nicht Einzel-Lead</td>
-          <td>Executive buying group — CFO + Geschäftsführung, ergänzt um IT bei technischer Prüfung</td>
+          <td>Kauf-Anlass / Trigger</td>
+          <td>SAP ECC 2030 End-of-Life, unzureichendes Legacy-ERP, GoBD-DMS-Bedarf</td>
+          <td>Fragmentierte Schnittstellen, manuelle Datenübertragung, KI-Automatisierung</td>
         </tr>
         <tr>
-          <td>Kaufauslöser</td>
-          <td>SAP-ECC-Migration, ERP-Ablösung, fragmentierte Gesamtprozesse</td>
-          <td>Fragmentierte Systeme, langsames Reporting, AI-Governance, Lizenzentscheidung</td>
+          <td>Kern-Wertversprechen</td>
+          <td>Nahtlose ERP-Implementierung, Prozess-Effizienz, bewährter Standard</td>
+          <td>Modernste API-Architektur, flexible Workflows, volle Datensouveränität</td>
         </tr>
         <tr>
-          <td>Primärer Kanal</td>
-          <td>Suche, SEO, Vergleiche, Partner-Kampagnen, Referenzen</td>
-          <td>Executive-Aufklärung, LinkedIn, Workshops, account-basierte Aktivierung</td>
+          <td>Primäre Kanäle</td>
+          <td>Google Ads (Search Conquesting), SEO/GEO, Branchen-Vergleiche</td>
+          <td>LinkedIn (C-Level & CTO-Targeting), Fach-Content, Intent-Outbound</td>
         </tr>
         <tr>
-          <td>Entscheidungszyklus</td>
-          <td>6–12 Monate</td>
-          <td>6–12 Monate</td>
-        </tr>
-        <tr>
-          <td>Kernaufgabe</td>
-          <td>Bestehende Nachfrage abschöpfen</td>
-          <td>Neue Nachfrage erzeugen und qualifizieren</td>
+          <td>High-Intent CTAs</td>
+          <td>"ERP-Optimierungsgespräch buchen", "Architektur-Assessment"</td>
+          <td>"Technische Demo anfordern", "X1 Integrations-Audit"</td>
         </tr>
       </tbody>
     </table>
 
     <div style="margin-top:12px;font-size:11px;color:var(--muted);font-family:var(--mono);">
-      ℹ Hinweis: MDIS Velocity dient als sekundäre, mittelfristige Integration-as-a-Service-Motion für Product- und Engineering-Leader.
+      ℹ Hinweis: MDIS Velocity dient als mittelfristige Integration-as-a-Service-Motion für Entwicklungs- und Integrationsteams.
     </div>
   </section>
 
 
   <!-- ════════════════════════════════════════
-       SLIDE 5: FIRST 90 DAYS (30/30/30)
+       SLIDE 5: DIE ERSTEN 30 TAGE - REALISTISCHER UMSETZUNGSPLAN
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-5">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 05 / 10</span>
+      <span class="slide-num">SLIDE 05 / 11</span>
       <span class="slide-category">Umsetzungs-Roadmap</span>
     </div>
-    <h2 class="slide-title">Erste 90 Tage: 30 / 30 / 30 Roadmap</h2>
-    <p class="slide-sub">Keine Kampagnen starten, bevor ein verlässliches Attributions- und Messfundament steht.</p>
+    <h2 class="slide-title">Die ersten 30 Tage — Realistischer Umsetzungsplan</h2>
+    <p class="slide-sub">Keine überzogenen Versprechungen ab Tag 1, sondern ein strukturierter, schrittweiser Aufbau von Fundament, Hygiene und skalierbarer Engine.</p>
 
     <ul class="bullet-list">
-      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
-        <span class="bullet-icon">01</span>
+      <!-- Woche 1 -->
+      <li class="bullet-item" style="background:var(--bg3);padding:18px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">W1</span>
         <div>
-          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:2px;">Tage 1–30 — Discovery & Audit</span>
-          <strong style="color:var(--text);font-size:15px;">See the Intent</strong><br>
-          <span style="font-size:13px;color:#c4bfb8;display:block;margin-top:4px;line-height:1.6;">Stakeholder-Interviews mit Sales und Leadership: Was ist ein guter Lead? Welche Daten braucht Sales vor dem ersten Call? Technisches Audit von CRM, GA4, Search Console, Google Ads, Tracking und 24 Monate Pipeline-Historie. Sofortige Quick Wins identifizieren (z.B. fehlendes Tracking, Tagging-Fehler). Besonders wichtig ist das Attributionsfenster: Ein Standardfenster von 30 Tagen ist bei MDIS' Entscheidungszyklen von sechs bis zwölf Monaten fast bedeutungslos — der letzte Klick vor einem Termin ist bei einem so langen Weg fast nie die eigentliche Ursache der Konversion. Genau deshalb ist Self-Reported Attribution im Formular so entscheidend.</span>
-          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:6px;">📦 Ergebnis: Priorisierte Mess- & Tooling-Roadmap. Self-Reported Attribution im Formular + CRM-Herkunftserfassung.</span>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:2px;font-weight:700;">Woche 1 (Tage 1–5) — Audit & Alignment</span>
+          <strong style="color:var(--text);font-size:15px;">Fundament schaffen & Ausgaben prüfen</strong>
+          <ul style="margin-top:6px;margin-left:16px;font-size:13px;color:#c4bfb8;line-height:1.6;display:flex;flex-direction:column;gap:4px;">
+            <li>• <strong>CRM-Audit & Pipeline-Analyse:</strong> Tiefenprüfung des HubSpot-CRMs der letzten 24 Monate zur Analyse historischer Deals & Abschlussraten.</li>
+            <li>• <strong>Sales-Alignment mit Timothy/Valeria zur SQL-Definition:</strong> Verbindliche Abstimmung von Qualifizierungskriterien, Übergabe-SLAs und Feedback-Schleifen.</li>
+            <li>• <strong>Health-Check von GA4/GTM/Ad-Accounts:</strong> Technisches Audit von Tagging, Server-Side-Tracking (SSGTM) und bestehenden Google/LinkedIn Ad-Setups.</li>
+            <li>• <strong>Einbau von Self-Reported Attribution:</strong> Ergänzung des Formularfelds ("Wie haben Sie von uns gehört?") zur Erfassung echter Decision-Touchpoints.</li>
+          </ul>
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:8px;">📦 Ergebnis: Vollständiger Audit-Bericht, definierte MQL/SQL-Matrix & bereinigtes Tracking-Konzept.</span>
         </div>
       </li>
-      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
-        <span class="bullet-icon">02</span>
+
+      <!-- Woche 2 -->
+      <li class="bullet-item" style="background:var(--bg3);padding:18px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">W2</span>
         <div>
-          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:2px;">Tage 31–60 — Base System Build</span>
-          <strong style="color:var(--text);font-size:15px;">Enrich It</strong><br>
-          <span style="font-size:13px;color:#c4bfb8;display:block;margin-top:4px;line-height:1.6;"><strong>Backend:</strong> Lead-Scoring-Modell (50–500 DACH Accounts & Intent-Signale), Routing-Workflows mit SLA, erste Nurture-Sequenzen, Self-Reported Attribution, Datenebene für Conversion-Werte.<br><br><strong>Parallel dazu Inbound:</strong> Erste SEO-Optimierung auf Basis des Audits (H1-Tags, technisches SEO, Landingpages für Pull-Keywords wie 'SAP ECC Alternative'), erste Content-Cluster live (SAP-Migrationsthemen), erste Paid-Search-Kampagnen auf bestehende Suchnachfrage, LinkedIn-Content für X.One-Sichtbarkeit. Nichts liegt in dieser Phase brach — Inbound läuft parallel zum System-Aufbau.</span>
-          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:6px;">📦 Ergebnis: Live-Scoring v1, Vertriebs-Routing-SLA-Definition, tägliches Ziel-zu-SQL-Dashboard.</span>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:2px;font-weight:700;">Woche 2 (Tage 6–10) — Quick Wins & Lead-Qualifizierung</span>
+          <strong style="color:var(--text);font-size:15px;">Verschwendung stoppen & Intent erhöhen</strong>
+          <ul style="margin-top:6px;margin-left:16px;font-size:13px;color:#c4bfb8;line-height:1.6;display:flex;flex-direction:column;gap:4px;">
+            <li>• <strong>Eliminierung von Ad-Waste (Negativ-Keywords):</strong> Sofortiges Einpflegen negativer Keyword-Listen ("kostenlos", "student", "vorlage", "praktikum") & Deaktivierung unrentabler Placements.</li>
+            <li>• <strong>Formular-Upgrade mit mehrstufigen Qualifizierungsfragen:</strong> Pflichtfelder für Mitarbeiterzahl (50–500), aktuellem ERP-Stack (z. B. SAP ECC) & Zeitplan zur MQL-Spam-Filterung.</li>
+            <li>• <strong>CRO-Optimierung der Kern-Landingpages:</strong> Schärfung des Wertversprechens auf Haufe X360 & X.One mit klaren High-Intent CTAs.</li>
+          </ul>
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:8px;">📦 Ergebnis: Sofort eingespartes Werbebudget, qualifiziertere Kontaktformulare & saubere Attributionsbasis.</span>
         </div>
       </li>
-      <li class="bullet-item" style="background:var(--bg3);padding:16px;border-radius:var(--r);border:1px solid var(--border);">
-        <span class="bullet-icon">03</span>
+
+      <!-- Wochen 3-4 -->
+      <li class="bullet-item" style="background:var(--bg3);padding:18px;border-radius:var(--r);border:1px solid var(--border);">
+        <span class="bullet-icon">W3-4</span>
         <div>
-          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:2px;">Tage 61–90 — Optimization & Scale</span>
-          <strong style="color:var(--text);font-size:15px;">Act On It</strong><br>
-          <span style="font-size:13px;color:#c4bfb8;display:block;margin-top:4px;line-height:1.6;"><strong>Backend/Daten:</strong> Erstes Scoring anhand echtem Sales-Feedback justieren, Dashboard mit echten (nicht Mockup-)Zahlen live, Budget zwischen Google/LinkedIn/Meta anhand erster Pipeline-Daten rebalancieren.<br><br><strong>Inbound skalieren:</strong> SAP-ECC-Migrationskampagne vollständig ausrollen mit allen Themenclustern (HCM→Personio, Concur→Circula, SRM→Einkauf, BusinessObjects→Dashboard) und TCO-Vergleich gegen S/4HANA. Content-Frequenz erhöhen basierend auf ersten Performance-Daten.<br><br><strong>Outbound aktivieren:</strong> Erste Zielkundenlisten für X.One (CFO/Geschäftsführung), erste Buying-Group-Mapping je Account, erste DSGVO-konforme Multi-Channel-Sequenzen.<br><br><strong>Agenten hochfahren:</strong> Erste Version des Visibility-Agents und Paid-Performance-Agents live, mit Human-in-the-Loop-Freigabe für jede externe Aktion.</span>
-          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:6px;">📦 Ergebnis: SAP 2030 Landingpage, Ziel-Account-Liste, freigegebener Outbound-Workflow, Testergebnisse & Stopp-Kriterien.</span>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--green);text-transform:uppercase;display:block;margin-bottom:2px;font-weight:700;">Wochen 3–4 (Tage 11–30) — Pipeline Engine Buildout</span>
+          <strong style="color:var(--text);font-size:15px;">Kampagnen-Launch & Feedback-Loops aktivieren</strong>
+          <ul style="margin-top:6px;margin-left:16px;font-size:13px;color:#c4bfb8;line-height:1.6;display:flex;flex-direction:column;gap:4px;">
+            <li>• <strong>Launch der SAP-ECC-Migrationskampagne (Pull):</strong> Zielgerichtete Google Search Conquesting Kampagnen auf "SAP ECC Alternative", "SAP ECC 2030 Migration" und "Haufe X360 vs SAP".</li>
+            <li>• <strong>Start der intent-basierten X.One-Outbound-Workflows (Push):</strong> DSGVO-konforme Outbound-Sequenzen (via Apollo & Clay) gerichtet an CTOs & IT-Leiter bei aktiven Trigger-Events.</li>
+            <li>• <strong>Offline-Conversion-Bidding (HubSpot -> CAPI):</strong> Server-seitige Rückspielung verifizierter SQL/Deal-Phasen an Google & LinkedIn für automatisches Smart Bidding.</li>
+          </ul>
+          <span style="display:block;font-size:12px;color:var(--green);font-family:var(--mono);margin-top:8px;">📦 Ergebnis: Live geschaltete Dual-Motion-Kampagnen, aktive CAPI-Feedback-Loop & erste gemessene SQLs.</span>
         </div>
       </li>
     </ul>
-
-    <div style="margin-top:16px;padding:12px 14px;background:rgba(74,222,128,0.05);border:1px solid rgba(74,222,128,0.2);border-radius:8px;font-size:12.5px;color:#c4bfb8;line-height:1.6;">
-      <strong style="color:var(--green);font-family:var(--mono);font-size:10.5px;text-transform:uppercase;display:block;margin-bottom:2px;">GTM-Engineering-Methodik:</strong>
-      Diese Struktur folgt einer bewährten GTM-Engineering-Methodik: erst Intent verstehen (Discovery/Audit), dann anreichern (Scoring, Routing, Nurture), dann handeln (skalierte, optimierte Kampagnen).
-    </div>
-
-    <div style="margin-top:12px;padding:14px;background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.15);border-radius:var(--r);font-size:13px;color:#c4bfb8;">
-      <strong style="color:var(--accent);font-family:var(--mono);font-size:11px;text-transform:uppercase;display:block;margin-bottom:4px;">Basis-Werbebudget-Struktur (~15.000 € / Monat Gesamt):</strong>
-      Google Ads: ~8.000 €/Monat (High-Intent-Suche & SAP-ECC-Vergleich) · LinkedIn Ads: ~4.000 €/Monat (C-Level-Push-Demand; LinkedIn CPMs sind 3–5x höher wegen präzisem Jobtitel/Unternehmensgrößen-Targeting) · Neue/Test-Kanäle: ~3.000 €/Monat (Bing Ads & Reddit B2B-Communities).
-    </div>
   </section>
 
 
   <!-- ════════════════════════════════════════
-       SLIDE 6: OPERATING SYSTEM ARCHITECTURE
+       SLIDE 6: SYSTEM-ARCHITEKTUR
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-6">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 06 / 10</span>
+      <span class="slide-num">SLIDE 06 / 11</span>
       <span class="slide-category">System-Architektur</span>
     </div>
-    <h2 class="slide-title">Governantes Multi-Agenten-Betriebssystem</h2>
-    <p class="slide-sub">Vier spezialisierte GTM-Agenten unter Human-in-the-Loop-Freigabe vor jeder externen Aktion.</p>
+    <h2 class="slide-title">Technische GTM-System-Architektur</h2>
+    <p class="slide-sub">Ein integrierter, moderner Tech-Stack für lückenlose Datenerfassung, Lead-Qualifizierung und automatisiertes Vertriebs-Routing.</p>
 
-    <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:14px;">
+    <div class="grid-3" style="margin-top:20px;">
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;">AGENT 1 · VISIBILITY</div>
-        <div class="card-title">Visibility Agent</div>
-        <div class="card-desc">Überwacht SEO-Rankings, AI-Suchsichtbarkeit (GEO) und Wettbewerbspositionierung kontinuierlich.</div>
+        <div class="pill-tag" style="margin-bottom:8px;">CRM & SINGLE SOURCE</div>
+        <div class="card-title">HubSpot CRM</div>
+        <div class="card-desc">Zentrale Verwaltung aller Leads, Deal-Phasen, CRM Lead Scoring (0–100) und Attribution-Historie.</div>
       </div>
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">AGENT 2 · PERFORMANCE</div>
-        <div class="card-title">Paid-Performance Agent</div>
-        <div class="card-desc">Erkennt Ad-Waste, Budget-Anomalien und Skalierungschancen in Echtzeit.</div>
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">ORCHESTRIERUNG</div>
+        <div class="card-title">n8n / Make</div>
+        <div class="card-desc">Workflow-Orchestrierung für Webhooks, Datenanreicherung und automatisierte Pre-Call Slack Dossiers für den Vertrieb.</div>
       </div>
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">AGENT 3 · EXECUTION</div>
-        <div class="card-title">Execution Agent</div>
-        <div class="card-desc">Erstellt Landingpages, Content-Varianten und ABM-Assets in einem automatisierten Recycling-System.</div>
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--blue);">FEEDBACK-LOOP</div>
+        <div class="card-title">Google & LinkedIn CAPI</div>
+        <div class="card-desc">Server-seitige Conversions API zur Rückspielung echter SQL-Deal-Phasen aus HubSpot an die Ad-Netzwerke.</div>
       </div>
       <div class="card-box">
-        <div class="pill-tag" style="margin-bottom:8px;color:var(--accent);">AGENT 4 · HANDOFF</div>
-        <div class="card-title">Handoff Agent</div>
-        <div class="card-desc">Erzeugt Pre-Call-Dossiers und übergibt qualifizierte Accounts an Sales mit SLA.</div>
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--accent);">ANREICHERUNG & INTENT</div>
+        <div class="card-title">Clay & Apollo</div>
+        <div class="card-desc">Wasserfall-Anreicherung von Unternehmensdaten, Technografie (z. B. SAP ECC Stack) und Buying-Group Kontakten.</div>
+      </div>
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;">TRACKING-EBENE</div>
+        <div class="card-title">Server-Side GTM</div>
+        <div class="card-desc">Erste-Partei-Datenerfassung (SSGTM) für maximale Datenqualität, Cookie-Laufzeit und DSGVO-Konformität.</div>
+      </div>
+      <div class="card-box">
+        <div class="pill-tag" style="margin-bottom:8px;color:var(--green);">DSGVO-CONSENT</div>
+        <div class="card-title">Consent Management</div>
+        <div class="card-desc">DSGVO-konformes Consent-Management (Usercentrics / Cookiebot) mit ausschließlichem Hosting auf EU-Servern.</div>
       </div>
     </div>
 
-    <div style="margin-top:20px;padding:14px;background:rgba(232,197,71,0.06);border:1px solid rgba(232,197,71,0.2);border-radius:8px;font-size:13px;color:var(--accent);">
-      <strong>Governance-Regel:</strong> Autonome Analyse & Aufbereitung; strikte Human-in-the-Loop-Freigabe erforderlich vor jedem externen Kontakt, jeder Budgetanpassung oder Veröffentlichung. Jede externe Kontaktaufnahme ist zusätzlich DSGVO-konform dokumentiert — Einwilligungslogik, Widerrufsrecht und Kaltakquise-Regeln nach deutschem Recht sind fest im Freigabeprozess verankert.
+    <!-- Workflow Diagram Box -->
+    <div style="margin-top:20px;padding:16px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);font-size:12.5px;color:#c4bfb8;">
+      <strong style="color:var(--text);font-family:var(--mono);font-size:11px;text-transform:uppercase;display:block;margin-bottom:6px;">🔄 Datenfluss der GTM Engine:</strong>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;">
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">Website / Landingpage</span>
+        <span>→</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">SSGTM & Formular Intake</span>
+        <span>→</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">n8n Anreicherung (Clay/Apollo)</span>
+        <span>→</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">HubSpot CRM Scoring</span>
+        <span>→</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);color:var(--green);">Google/LinkedIn CAPI Feedback</span>
+      </div>
     </div>
   </section>
 
 
   <!-- ════════════════════════════════════════
-       SLIDE 7: MEASUREMENT & CONSENT FOUNDATION
+       SLIDE 7: DATEN & GOVERNANCE
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-7">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 07 / 10</span>
+      <span class="slide-num">SLIDE 07 / 11</span>
       <span class="slide-category">Daten & Governance</span>
     </div>
-    <h2 class="slide-title">Messung & einwilligungskonformes Signal-Fundament</h2>
-    <p class="slide-sub">Bewertung von Tools anhand von DACH-Datenqualität, DSGVO-Konformität, CRM-Passung und juristischer Freigabe.</p>
+    <h2 class="slide-title">Messung, Datensouveränität & DSGVO-Governance</h2>
+    <p class="slide-sub">Bewertung aller Tools & Datenflüsse nach DACH-Datenqualität, strikter DSGVO-Konformität und CRM-Passung.</p>
+
+    <!-- Explicit DSGVO Outbound Pillars Box -->
+    <div style="margin-bottom:20px;background:rgba(74,222,128,0.04);border:1px solid rgba(74,222,128,0.25);border-radius:var(--r);padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;font-weight:700;">
+        🛡️ DSGVO-Konforme Outbound-Säulen im DACH-Markt (Rechtssicher nach UWG §7)
+      </div>
+      <div class="grid-2">
+        <div style="background:var(--bg3);padding:14px;border-radius:8px;border:1px solid var(--border);">
+          <strong style="color:var(--text);font-size:13.5px;display:block;margin-bottom:4px;">1. LinkedIn Social Selling</strong>
+          <p style="font-size:12.5px;color:#c4bfb8;">Professionelle Netzwerkanfragen & Value-Add Content an C-Level-Entscheider (CTO/CFO) ohne unaufgeforderten E-Mail-Spam.</p>
+        </div>
+        <div style="background:var(--bg3);padding:14px;border-radius:8px;border:1px solid var(--border);">
+          <strong style="color:var(--text);font-size:13.5px;display:block;margin-bottom:4px;">2. IP-Erkennung auf Account-Ebene</strong>
+          <p style="font-size:12.5px;color:#c4bfb8;">Cookie-freies Unternehmens-IP-Tracking zur Identifikation von High-Intent Accounts für gezieltes ABM-Retargeting.</p>
+        </div>
+        <div style="background:var(--bg3);padding:14px;border-radius:8px;border:1px solid var(--border);">
+          <strong style="color:var(--text);font-size:13.5px;display:block;margin-bottom:4px;">3. Intent-Trigger bei IT-Stellenausschreibungen</strong>
+          <p style="font-size:12.5px;color:#c4bfb8;">Ansprache via Clay/Apollo nur bei sachlichem Anlass (z. B. das Zielunternehmen sucht aktuell SAP- oder ERP-Entwickler).</p>
+        </div>
+        <div style="background:var(--bg3);padding:14px;border-radius:8px;border:1px solid var(--border);">
+          <strong style="color:var(--text);font-size:13.5px;display:block;margin-bottom:4px;">4. Double-Opt-In (DOI) Nurturing</strong>
+          <p style="font-size:12.5px;color:#c4bfb8;">Outbound führt auf interaktive Content-Assets & Rechner, bei denen E-Mail-Eintragungen strikt per DOI verifiziert werden.</p>
+        </div>
+      </div>
+    </div>
 
     <div class="grid-2">
       <div class="card-box">
-        <div class="card-title" style="color:var(--accent);">🔍 Baseline-Audit-Fokus</div>
+        <div class="card-title" style="color:var(--accent);">🔍 Technisches Baseline-Audit</div>
         <ul style="margin-top:8px;margin-left:18px;font-size:13px;color:#c4bfb8;line-height:1.7;">
-          <li>• GA4 & Google Search Console Abdeckung</li>
-          <li>• Kampagnen- & UTM-Benennungsstandards</li>
-          <li>• Formular-Attribution & selbst angegebene Lead-Quelle</li>
+          <li>• GA4 & Google Search Console Vollabdeckung</li>
+          <li>• Einheitliche Kampagnen- & UTM-Benennungsregeln</li>
+          <li>• Formular-Attribution (Self-Reported + First-Party)</li>
           <li>• Einwilligungskonforme Verhaltensanalytik</li>
           <li>• Technisches SEO & KI-Suchsichtbarkeit (GEO)</li>
-          <li>• Externe Intent- und Marktsignale (Technologie-Signale zur SAP-Bestandslandschaft, Trigger-Events wie Finanzierungsrunden, Führungswechsel oder ERP-/Finance-Stellenausschreibungen)</li>
+          <li>• Intent-Signale zur SAP-Bestandslandschaft</li>
         </ul>
       </div>
 
       <div class="card-box">
-        <div class="card-title" style="color:var(--green);">⚖️ Tool-Bewertungskriterien</div>
+        <div class="card-title" style="color:var(--green);">⚖️ Strikte Freigabe- & Legal-Governance</div>
         <div class="card-desc" style="font-size:13px;line-height:1.7;">
-          Tools wie Clarity, Dealfront, RB2B, Server-Side-Tracking, Clay, Lemlist oder Apollo werden strikt bewertet nach:
+          Alle Outbound- und Automatisierungsschritte unterliegen strikter Human-in-the-Loop Freigabe:
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
-            <span class="pill-tag">DACH-Datenqualität</span>
+            <span class="pill-tag">Strikte Freigabe-Schranken</span>
             <span class="pill-tag">DSGVO-Konformität</span>
-            <span class="pill-tag">CRM-Integration</span>
-            <span class="pill-tag">Vertriebsnutzen</span>
+            <span class="pill-tag">EU-Server-Hosting</span>
+            <span class="pill-tag">Keine ungeprüfte Kaltakquise</span>
           </div>
           <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border);font-size:11.5px;color:#c4bfb8;">
-            <strong style="color:var(--accent);display:block;margin-bottom:6px;font-family:var(--mono);font-size:11px;text-transform:uppercase;">Verifizierte Outbound-Tool-Preise (Stand Juli 2026):</strong>
+            <strong style="color:var(--accent);display:block;margin-bottom:6px;font-family:var(--mono);font-size:11px;text-transform:uppercase;">Verifizierte Tool-Landschaft & Kostenrahmen:</strong>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:4px;font-family:var(--mono);">
-              <li>• <strong>Lemlist:</strong> ab 69 $/Monat (unbegrenzte Nutzer, 50k E-Mails/Monat) oder 109 $/Nutzer/Monat (Multichannel)</li>
-              <li>• <strong>Clay:</strong> ab 185 $/Monat Mid-Tier-Tarif (~12.000 Credits/Monat)</li>
-              <li>• <strong>Apollo:</strong> ab 49 $/Nutzer/Monat (Basic) oder 79 $/Nutzer/Monat (Professional / Organization-Tarif mit vollem API-Zugriff für direkte MCP- & n8n-Automatisierungsworkflows)</li>
+              <li>• <strong>Lemlist:</strong> ab 69 $/Monat (Multichannel Outbound)</li>
+              <li>• <strong>Clay:</strong> ab 185 $/Monat (~12.000 Credits/Monat)</li>
+              <li>• <strong>Apollo:</strong> ab 49 $/Nutzer/Monat (Professional mit API-Zugriff für n8n)</li>
             </ul>
-            <div style="margin-top:8px;font-size:10.5px;color:var(--muted);font-style:italic;">
-              Preise basieren auf öffentlichen Anbieterangaben (Stand Juli 2026) — endgültige Tool-Auswahl und Budget werden in Woche eins mit MDIS abgestimmt.
-            </div>
           </div>
         </div>
       </div>
@@ -511,44 +665,41 @@
     <div class="card-box" style="margin-top:16px;">
       <div class="card-title" style="color:var(--blue);">🇪🇺 Datensouveränität & EU-Hosting</div>
       <div class="card-desc" style="font-size:13px;line-height:1.7;">
-        Server-seitiges Tracking mit GTM und vollständigem Consent-Management. Datenhosting und -verarbeitung ausschließlich innerhalb der EU — direkt übertragbar auf MDIS' 'Deutschland Cloud'-Positionierung und EU-AI-Act-Konformität.
+        Server-seitiges Tracking über SSGTM mit vollständigem Consent-Management. Datenhosting und -verarbeitung erfolgen ausschließlich auf EU-Servern — direkt passend zur "Deutschland Cloud"-Positionierung von MDIS.
       </div>
     </div>
   </section>
 
 
   <!-- ════════════════════════════════════════
-       SLIDE 8: RELEVANT PROOF & FIT
+       SLIDE 8: RELEVANTE NACHWEISE & FIT
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-8">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 08 / 10</span>
+      <span class="slide-num">SLIDE 08 / 11</span>
       <span class="slide-category">Verifizierte Erfolge</span>
     </div>
-    <h2 class="slide-title">Relevante Nachweise & Operationen</h2>
-    <p class="slide-sub">Strikt verankert in verifizierten CV-Ergebnissen und governanter Multi-Agenten-GTM-Ausführung.</p>
+    <h2 class="slide-title">Relevante Nachweise & GTM-Erfolge</h2>
+    <p class="slide-sub">Gefestigt durch reale CV-Ergebnisse und verifizierte GTM-Engineering-Erfolge.</p>
 
     <div class="grid-2">
       <div class="card-box">
         <div class="card-title" style="color:var(--accent);">📈 Verifizierte Performance</div>
         <ul style="margin-top:8px;margin-left:18px;font-size:13px;color:#c4bfb8;line-height:1.7;">
-          <li>• <strong>Bis zu 36x Peak-ROAS</strong> auf Wettbewerber-Abfang-Suchanfragen (eng abgestecktes, hoch-intentionales Segment mit niedrigem CPC relativ zur Deal-Größe)</li>
-          <li>• <strong>3,2x–4,2x Blended-Account-ROAS</strong> Baseline (passend zu B2B-SaaS-Branchen-Benchmarks 2026 bei 3.000+ $/Monat Spend — WebFX 2026). First-Touch-ROAS nahe Break-Even; LTV:CAC ist das Hauptsignal (3:1 gesund, 5:1+ Top-Quartil)</li>
-          <li>• <strong>Server-side Tracking (GTM) & vollständiges Consent-Management</strong> end-to-end aufgebaut — direkt wiederverwendbar für EU-Hosting & DSGVO-Anforderungen bei MDIS</li>
-          <li>• <strong>Self-reported attribution Feld</strong> in Lead-Formularen implementiert zur sauberen Trennung von KI-Suche, Wettbewerber-Recherche und Paid-Kanälen</li>
-          <li>• <strong>MDIS-Anwendung:</strong> Wettbewerber-Abfang für SAP ECC Migration & X.One Positionierung</li>
+          <li>• <strong>Bis zu 36x Peak-ROAS</strong> auf Wettbewerber-Abfang-Suchanfragen</li>
+          <li>• <strong>3,2x–4,2x Blended-Account-ROAS Baseline</strong> (B2B SaaS Benchmark 2026)</li>
+          <li>• <strong>22,7k € geretteter Conversion-Wert</strong> über HubSpot -> Make -> Google Ads Offline-Pipeline</li>
+          <li>• <strong>80% Reduzierung des manuellen Aufwands</strong> durch Automatisierung</li>
           <li>• <strong>400% organisches Traffic-Wachstum</strong> durch technisches SEO</li>
-          <li>• <strong>22,7k € geretteter Conversion-Wert</strong> über HubSpot → Make → Google Ads Offline-Pipeline</li>
-          <li>• <strong>80% Reduzierung des manuellen Aufwands</strong> durch Automatisierungs-Pipelines</li>
           <li>• <strong>GEO-Traffic 1% → 20%</strong> (steuert 10% der Leads bei)</li>
         </ul>
       </div>
 
       <div class="card-box">
-        <div class="card-title" style="color:var(--green);">🤖 X.One Architektur-Governance-Spiegel</div>
+        <div class="card-title" style="color:var(--green);">🤖 Governanter Multi-Agenten-Betrieb</div>
         <div class="card-desc" style="font-size:13px;line-height:1.7;">
-          Multi-Agenten-GTM-System-Architektur — Visibility, Paid-Performance, Execution und Handoff Agenten unter Human-in-the-Loop-Freigabe, inkl. DSGVO-konformem Outreach:
-          <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;font-family:var(--mono);">
+          Systematisierte GTM-Prozesse unter Human-in-the-Loop-Freigabe, voll kompatibel mit den X.One Architektur-Prinzipien:
+          <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;font-family:var(--mono);">
             <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">A.One (Analytics)</div>
             <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">G.One (Governance)</div>
             <div style="background:var(--bg);padding:6px;border-radius:4px;border:1px solid var(--border);">S.One (Service)</div>
@@ -565,11 +716,11 @@
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-9">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 09 / 10</span>
+      <span class="slide-num">SLIDE 09 / 11</span>
       <span class="slide-category">Performance-Telemetrie</span>
     </div>
     <h2 class="slide-title">Beispiel-Dashboard: So sieht Erfolgsmessung aus</h2>
-    <p class="slide-sub">Echtzeit-Pipeline-Metriken, Kanal-Attribution und automatisierte Anomalie-Erkennung für die MDIS-Motions.</p>
+    <p class="slide-sub">Echtzeit-Pipeline-Metriken, Kanal-Attribution und automatisierte Telemetrie für die MDIS-Motions.</p>
 
     <!-- Top Row Key Telemetry -->
     <div class="grid-3" style="margin-bottom:20px;">
@@ -580,7 +731,7 @@
       </div>
       <div class="card-box" style="text-align:center;padding:16px;">
         <div style="font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;">Pipeline-ROAS</div>
-        <div style="font-size:24px;font-weight:700;color:var(--text);margin-top:4px;">3,8x <span style="font-size:12px;color:var(--accent);font-weight:600;">(36x Peak-Segment)</span></div>
+        <div style="font-size:24px;font-weight:700;color:var(--text);margin-top:4px;">3,8x <span style="font-size:12px;color:var(--accent);font-weight:600;">(36x Peak)</span></div>
         <div style="font-size:11px;color:var(--muted);margin-top:2px;">2026 SaaS Benchmark: 3,2x–4,2x</div>
       </div>
       <div class="card-box" style="text-align:center;padding:16px;">
@@ -596,25 +747,25 @@
         <tr>
           <th>Kanal / Motion</th>
           <th style="color:var(--accent);">Monatliches Budget</th>
-          <th style="color:var(--green);">Qualifizierte Leads</th>
-          <th style="color:var(--blue);">Conversion-Wert</th>
+          <th style="color:var(--green);">Qualifizierte SQLs</th>
+          <th style="color:var(--blue);">Pipeline-Wert</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Google Ads (Pull / SAP ECC Suche)</td>
+          <td>Google Ads (Pull / SAP ECC & ERP Suche)</td>
           <td>8.000 €</td>
           <td>14 SQLs</td>
           <td>145.000 €</td>
         </tr>
         <tr>
-          <td>LinkedIn Ads (Push / X.One C-Level)</td>
+          <td>LinkedIn Ads (Push / X.One C-Level & CTO)</td>
           <td>4.000 €</td>
           <td>7 SQLs</td>
           <td>82.000 €</td>
         </tr>
         <tr>
-          <td>Outbound-Aktivierung (Apollo + Clay + Lemlist)</td>
+          <td>Signal-Outbound (Apollo + Clay + Lemlist)</td>
           <td>300 € (Stack)</td>
           <td>5 SQLs</td>
           <td>58.000 €</td>
@@ -627,19 +778,6 @@
         </tr>
       </tbody>
     </table>
-
-    <!-- Bottom Row Anomaly & Suppression Recovery Panel -->
-    <div style="margin-top:16px;padding:14px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);display:flex;gap:20px;align-items:center;justify-content:space-between;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <span style="font-size:16px;">🛡️</span>
-        <div style="font-size:12.5px;color:#c4bfb8;">
-          <strong style="color:var(--text);">Automatisierte Wert-Schutzmechanismen:</strong>
-          <span style="color:var(--green);margin-left:6px;">• 10.000 € Werbe-Verschwendung eliminiert</span>
-          <span style="color:var(--accent);margin-left:10px;">• 22,7k € Conversion-Unterdrückungswert gerettet</span>
-        </div>
-      </div>
-      <span class="pill-tag" style="font-size:9.5px;">Echtzeit-Telemetrie</span>
-    </div>
   </section>
 
 
@@ -648,11 +786,11 @@
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-10">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 10 / 10</span>
+      <span class="slide-num">SLIDE 10 / 11</span>
       <span class="slide-category">Onboarding & Abstimmung</span>
     </div>
     <h2 class="slide-title">Was ich von MDIS brauche, um erfolgreich zu sein</h2>
-    <p class="slide-sub">Vier konkrete Inputs in Woche eins, um eine schnelle und zielgerichtete Umsetzung zu garantieren.</p>
+    <p class="slide-sub">Vier konkrete Inputs in Woche eins für eine schnelle und zielgerichtete Umsetzung.</p>
 
     <div class="grid-2">
       <div class="card-box">
@@ -680,20 +818,179 @@
     </div>
   </section>
 
+
+  <!-- ════════════════════════════════════════
+       SLIDE 11: EXECUTIVE Q&A (STRATEGISCHE VERTIEFUNG)
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-11">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 11 / 11</span>
+      <span class="slide-category">Executive Q&A</span>
+    </div>
+    <h2 class="slide-title">Executive Q&A — <em>Strategische Vertiefung & Case-Study Antworten</em></h2>
+    <p class="slide-sub">Fundierte, direkt verifizierbare Antworten auf die 8 Kernfragen des Case-Study-Briefings für MDIS Consulting.</p>
+
+    <!-- Q1 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q1</span>
+        <span>Wie würdest du die ersten 90 Tage strukturieren, um von null auf eine belastbare Baseline zu kommen?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Woche 1 (Audit & Alignment):</strong> CRM-Analyse der letzten 24 Monate mit Sales zur verbindlichen SQL-Definition. Technischer Health-Check von GA4, GTM (Server-Side), Google/LinkedIn Ads und HubSpot. Einbau von Self-Reported Attribution im Formular.</li>
+          <li><strong>Woche 2 (Quick Wins):</strong> Bereinigung von Ad-Waste in Google Ads. Upgrade der Lead-Formulare mit Qualifizierungsfragen (Mitarbeiterzahl 50–500, aktuelles ERP), um MQL-Spam zu filtern.</li>
+          <li><strong>Wochen 3–4 (Pipeline Build):</strong> Launch der SAP-ECC-Migrations-Search-Strukturen und Offline-Conversion-Feedback-Loop (HubSpot -> CAPI).</li>
+          <li><strong>Tage 31–90 (Skalierung):</strong> Ausbau des C-Level LinkedIn Push-Marketings für X.One, intent-basierter Outbound via Clay/Apollo und Governance-Agenten.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q2</span>
+        <span>Wie gehst du einen Markt an, in dem für zwei Produktlinien Suchvolumen existiert und für die dritte nicht?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Haufe X360 & Consulting Stack (Pull):</strong> Abfangen bestehender Suchnachfrage via Google Search Ads & SEO (<em>"Haufe X360 Gold Partner"</em>, <em>"SAP ECC Alternative"</em>). Landingpage-Offer: Interaktiver <em>SAP ECC Migrations- & TCO-Rechner</em>.</li>
+          <li><strong>MDIS Velocity (Sekundäre Motion):</strong> Gezielte technische Nischen-Suche (<em>"Acumatica REST API Connector"</em>, <em>"ERP Middleware Integration"</em>) für CTOs & Lead Engineers.</li>
+          <li><strong>X.One AI-Plattform (Push / Kategorie-Aufbau):</strong> Da kein Suchvolumen existiert, erzeugen wir Nachfrage über Problem-Aufklärung: C-Level Thought Leadership auf LinkedIn, intent-basiertes Targeting (Firmen mit ERP/IT-Stellenausschreibungen) und Bieten eines <em>Enterprise AI Integration Audits</em>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q3</span>
+        <span>Wie sähe das Dashboard aus, das uns täglich Ist gegen Ziel zeigt — technisch und inhaltlich?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Inhaltlich:</strong> C-Level Metriken (Erzeugter Pipeline-ARR, Anzahl qualifizierter SQLs, Blended CAC, Pipeline-ROAS) aufgetrennt nach Pull (Haufe X360) und Push (X.One).</li>
+          <li><strong>Technisch:</strong> Tägliche automatisierte ETL-Pipeline über n8n/Make aus Google Ads, LinkedIn Ads, GA4 und HubSpot CRM in ein zentrales Looker Studio / Power BI Dashboard.</li>
+          <li><strong>Alerting:</strong> Automatische tägliche Morgen-Zusammenfassung um 08:00 Uhr mit Warnung bei Schwellenwert-Abweichungen (z. B. SQL-Kosten-Anstieg > 25%).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q4</span>
+        <span>Wie baust du ein agentisches GTM-System, das nicht nach drei Monaten unwartbar wird — und wo ist die Freigabegrenze?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Wartbarkeit:</strong> Modulare Micro-Agenten (Visibility, Performance, Execution, Handoff) anstelle eines Monolithen. Zentrale State- & Run-Logs in Supabase/Notion. Standardisierte API-Schnittstellen (MCP/n8n) und Git-Prompt-Versionierung.</li>
+          <li><strong>Freigabegrenze (Human-in-the-Loop):</strong>
+            <ul style="margin-top:4px;margin-left:8px;">
+              <li>• <em>Autonom:</em> SEO/GEO-Ranking-Checks, Ad-Waste-Erkennung, Account-Enrichment, Pre-Call-Dossiers.</li>
+              <li>• <em>Freigabepflichtig:</em> Ad-Budgetanpassungen > 100 €/Tag, externe E-Mail/LinkedIn-Nachrichten, Live-Schaltung von Landingpages/Ads.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q5</span>
+        <span>Wie funktioniert Outbound-Automatisierung im deutschen Markt DSGVO-konform?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <p>• <strong>Prämisse:</strong> Vermeidung von unaufgefordertem E-Mail-Spam (UWG §7 Abs. 2 Nr. 3).</p>
+        <p style="margin-top:6px;">• <strong>Strategie:</strong></p>
+        <ol>
+          <li><em>LinkedIn-First:</em> Social Selling & Netzwerkanfragen an C-Level-Entscheider.</li>
+          <li><em>Intent-Trigger:</em> Ansprache nur bei sachlichem Grund (z. B. offene IT-/ERP-Stellenausschreibungen des Zielunternehmens).</li>
+          <li><em>Account-Retargeting:</em> Cookie-freies IP-Targeting auf Unternehmensebene für gezielte LinkedIn-Ads.</li>
+          <li><em>DOI-Inbound:</em> Outbound führt auf interaktive Content-Assets mit Double-Opt-In Bestätigung.</li>
+          <li><em>Master Suppression List:</em> Zentrale Abmelde-Verwaltung über alle Tools (Clay, Apollo, Lemlist, HubSpot).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q6</span>
+        <span>Was ändert sich an deinem Vorgehen, wenn der Entscheidungszyklus 12 Monate statt 3 Monate dauert?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Attribution:</strong> Umstieg von Klick-Attribution auf First-Touch, Multi-Touch und Self-Reported Attribution (<em>"Wie hast du von uns gehört?"</em>).</li>
+          <li><strong>Frühindikatoren:</strong> Erfolgsmessung an Leading Indicators (Gebuchte SQLs, CRM-Pipeline-Opportunities, Buying-Group-Engagement) statt reinem Closed-Won-Umsatz.</li>
+          <li><strong>Nurturing:</strong> Automatisierte 12-Monats-Workflows in HubSpot, die alle Rollen der Buying Group (CFO, CEO, IT, HR) mit spezifischem Content begleiten.</li>
+          <li><strong>Continuous Retargeting:</strong> Niedrigbudgetiertes Dauerläufer-Retargeting auf LinkedIn für aktive CRM-Deal-Accounts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q7</span>
+        <span>Welche Teile eines Demand-Generation-Programms hast du bisher nicht selbst verantwortet?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ul>
+          <li><strong>Gevollmächte Ownership:</strong> Performance Marketing (Google/LinkedIn Ads), SEO/GEO, CRM-Automatisierung (HubSpot, Make/n8n), Server-Side Tracking, Landingpage-CRO.</li>
+          <li><strong>Bewusste Abgrenzung:</strong>
+            <ol style="margin-top:4px;">
+              <li><em>Klassisches Messe- & Event-Marketing:</em> Digital-Promotions & Lead-Nurturing ja, physische Standorganisation nein.</li>
+              <li><em>Klassische PR & Pressearbeit:</em> Keine Medienkontakte oder Krisen-PR.</li>
+              <li><em>Manuelles High-Volume Copywriting:</em> Ich erstelle KI-gestützte Content-Pipelines und SEO-Hierarchien, arbeite für tiefste Fachtexte jedoch mit Fachberatern oder KI-Systemen mit Human-QA.</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q8</span>
+        <span>Was brauchst du von uns, damit du wirksam wirst?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Antwort:</strong></p>
+        <ol>
+          <li><strong>MQL/SQL-Workshop (Woche 1):</strong> 2–3 Stunden mit Timothy und Valeria für historische Deal-Analyse und verbindliche SQL-Filterkriterien.</li>
+          <li><strong>Systemzugriff:</strong> Lese-/Admin-Zugriffe auf HubSpot CRM, Google Ads, LinkedIn Ads, GA4, Search Console und GTM.</li>
+          <li><strong>24-Monate Pipeline-Historie:</strong> Einblick in historische CRM-Deals, Abschlussraten und Lost-Reasons.</li>
+          <li><strong>Geschlossener Sales-Feedback-Loop:</strong> Verbindliche Pflege der Lead-Ablehnungsgründe im CRM durch den Vertrieb.</li>
+          <li><strong>Erste Tage vor Ort (Nürnberg / Salching):</strong> Initiale Präsenz zur tiefen Einarbeitung in Kultur und Prozesse.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <!-- BOTTOM SLIDE NAV BAR -->
 <div class="deck-nav-bar">
-  <a href="#slide-1" class="deck-nav-btn active">01 Cover</a>
+  <a href="#slide-1" class="deck-nav-btn active">01 Overview</a>
   <a href="#slide-2" class="deck-nav-btn">02 Kontext</a>
-  <a href="#slide-3" class="deck-nav-btn">03 Engpass</a>
+  <a href="#slide-3" class="deck-nav-btn">03 Engpass & GTM</a>
   <a href="#slide-4" class="deck-nav-btn">04 Dual ICP</a>
-  <a href="#slide-5" class="deck-nav-btn">05 90 Tage</a>
-  <a href="#slide-6" class="deck-nav-btn">06 System-Arc</a>
-  <a href="#slide-7" class="deck-nav-btn">07 Signale</a>
+  <a href="#slide-5" class="deck-nav-btn">05 Erste 30 Tage</a>
+  <a href="#slide-6" class="deck-nav-btn">06 Architektur</a>
+  <a href="#slide-7" class="deck-nav-btn">07 Governance</a>
   <a href="#slide-8" class="deck-nav-btn">08 Nachweise</a>
   <a href="#slide-9" class="deck-nav-btn">09 Dashboard</a>
-  <a href="#slide-10" class="deck-nav-btn">10 Abstimmung</a>
+  <a href="#slide-10" class="deck-nav-btn">10 Onboarding</a>
+  <a href="#slide-11" class="deck-nav-btn">11 Q&A</a>
 </div>
 
 </body>

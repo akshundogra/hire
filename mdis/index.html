@@ -688,7 +688,14 @@
     <span class="nav-x">×</span>
     <span class="nav-company-name">MDIS Consulting</span>
   </div>
-  <div class="nav-url">hire.akshundogra.com/mdis</div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="nav-url">hire.akshundogra.com/mdis</div>
+    <div style="font-family:var(--mono);font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:100px;padding:3px 10px;display:flex;gap:8px;">
+      <a href="index.html" style="color:var(--accent);font-weight:700;">EN</a>
+      <span style="color:var(--border2);">|</span>
+      <a href="index-de.html" style="color:var(--muted);">DE</a>
+    </div>
+  </div>
 </nav>
 
 
@@ -709,7 +716,61 @@
           One demand engine, three growth motions—<br>
           <span class="highlight">performance, automation, SEO/GEO, and agentic GTM systems in one hire.</span>
         </h1>
-        <p class="hero-sub">MDIS Consulting is a Haufe X360 Gold Partner transforming from a referral-driven ERP consultancy into a company with its own product platform, X.One. Growth is capped by one thing: top-of-funnel volume. Sales converts qualified leads well already — the gap is generating enough self-sourced SQLs across three distinct motions (ERP pull-demand, X.One push-demand, and integration-as-a-service) without adding headcount. I build the full-stack system for that: paid, SEO/GEO visibility, signal-based outbound, and agentic AI operations working together, not as separate hires.</p>
+        <p class="hero-sub">MDIS Consulting is a Haufe X360 Gold Partner transforming from a referral-driven ERP consultancy into a company with its own product platform, X.One. Growth is capped by one thing: top-of-funnel volume. Sales converts qualified leads well already — the gap is generating enough self-sourced SQLs across three distinct motions (ERP pull-demand, X.One push-demand, and integration-as-a-service) without adding headcount. I build the full-stack system for that: paid, SEO/GEO visibility, signal-based outbound, and agentic AI operations working together, not as separate hires.
+        <!-- DUAL-PATH ICP SWITCHER (GBG Motion Segmentation) -->
+        <div style="margin-top:24px;background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:20px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+            <span style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;font-weight:600;">🔀 Select GBG Business Motion / Ideal Customer Profile</span>
+            <span style="font-size:11px;color:var(--muted);">Toggle to view tailored value proposition & CTAs</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;" id="hero-path-buttons">
+            <button id="path-btn-erp" onclick="switchPath('erp')" style="background:var(--bg3);border:2px solid var(--accent);color:var(--text);padding:12px 14px;border-radius:8px;cursor:pointer;text-align:left;transition:all 0.2s;">
+              <div style="font-family:var(--mono);font-size:10px;color:var(--accent);text-transform:uppercase;font-weight:700;margin-bottom:2px;">MOTION 1 · PULL DEMAND</div>
+              <div style="font-size:13px;font-weight:700;">Enterprise Services & ERP Consulting</div>
+              <div style="font-size:11px;color:var(--muted);margin-top:2px;">CEOs, CFOs, Ops Directors, HR Heads, IT Directors</div>
+            </button>
+            <button id="path-btn-x1" onclick="switchPath('x1')" style="background:var(--bg3);border:1px solid var(--border);color:var(--muted);padding:12px 14px;border-radius:8px;cursor:pointer;text-align:left;transition:all 0.2s;">
+              <div style="font-family:var(--mono);font-size:10px;color:var(--green);text-transform:uppercase;font-weight:700;margin-bottom:2px;">MOTION 2 · PUSH DEMAND</div>
+              <div style="font-size:13px;font-weight:700;color:var(--text);">X1 AI & Integration Platform</div>
+              <div style="font-size:11px;color:var(--muted);margin-top:2px;">CTOs, Lead Engineers, Technical Decision Makers</div>
+            </button>
+          </div>
+
+          <!-- Dynamic Detail Box for ERP -->
+          <div id="path-detail-erp" style="margin-top:14px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;">
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;">Core Offerings & Value Prop</div>
+                <p style="font-size:12px;color:#c4bfb8;line-height:1.5;">Haufe X360 ERP, Personio, d.velop (Document Management), Circula. Delivering seamless ERP implementation, process efficiency, document governance, and measurable ROI.</p>
+              </div>
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:6px;">High-Intent Conversion Points (SQL-Focused)</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                  <a href="mailto:akshundogra@gmail.com?subject=ERP%20Optimization%20Call" class="hero-cta" style="font-size:11px;padding:7px 12px;">📅 Schedule ERP Optimization Call</a>
+                  <a href="#sql-qualifier" class="hero-cta" style="font-size:11px;padding:7px 12px;background:transparent;border:1px solid var(--accent);color:var(--accent);">📐 Book Architecture Assessment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Detail Box for X1 -->
+          <div id="path-detail-x1" style="display:none;margin-top:14px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;">
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--green);margin-bottom:4px;">Core Offerings & Value Prop</div>
+                <p style="font-size:12px;color:#c4bfb8;line-height:1.5;">X1 / X.One Platform, Workflow Automation, AI Integration (A.One, G.One, S.One, MyAI). Cutting-edge architecture, API integrations, and enterprise AI automation workflows.</p>
+              </div>
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--green);margin-bottom:6px;">High-Intent Conversion Points (SQL-Focused)</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                  <a href="mailto:akshundogra@gmail.com?subject=X1%20Technical%20Demo%20Request" class="hero-cta" style="font-size:11px;padding:7px 12px;background:var(--green);color:#000;">⚡ Request a Technical Demo</a>
+                  <a href="#sql-qualifier" class="hero-cta" style="font-size:11px;padding:7px 12px;background:transparent;border:1px solid var(--green);color:var(--green);">🛠️ Evaluate X1 Architecture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="MDIS">
           ✉&ensp;akshundogra@gmail.com
         </a>
@@ -900,6 +961,42 @@
 <!-- ════════════════════════════════════════
      WHAT I BRING — 4 PILLARS (interactive)
 ════════════════════════════════════════ -->
+
+<!-- ════════════════════════════════════════
+     STRATEGIC ALIGNMENT: REJECT "ALTER SCHEIß" VS TECHNICAL GTM
+════════════════════════════════════════ -->
+<section class="section section-border" style="background:var(--bg2);">
+  <div class="inner">
+    <div class="section-label">Strategic Positioning & Quality Mandate</div>
+    <h2 class="section-h2">No Outdated Marketing Tactics—<br><em>Technical Precision Aimed Direct at Decision-Makers.</em></h2>
+    <p class="body-text" style="margin-bottom:24px;">Traditional agency marketing relies on weak, low-intent tactics that capture unread lead lists. GBG requires a modern, technical GTM engine built for engineers and C-level executives.</p>
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <!-- Rejected side -->
+      <div style="background:rgba(248,113,113,0.04);border:1px solid rgba(248,113,113,0.25);border-radius:12px;padding:24px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--red);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;margin-bottom:8px;">❌ Outdated Tactics ("Alter Scheiß") — EXPLICITLY REJECTED</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;font-size:13px;color:#c4bfb8;margin-top:12px;">
+          <li style="display:flex;gap:8px;"><span style="color:var(--red);font-weight:700;">✕</span> <span><strong>Static Whitepaper Downloads:</strong> Captures low-intent personal emails without qualifying budget or stack.</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--red);font-weight:700;">✕</span> <span><strong>Standard Generic Webinars:</strong> High attendance drop-off, minimal SQL conversion, heavy manual overhead.</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--red);font-weight:700;">✕</span> <span><strong>Passive Retargeting Banners:</strong> Generic impressions without intent signaling or technographic scoring.</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--red);font-weight:700;">✕</span> <span><strong>High-Level Agency Fluff:</strong> Vague growth promises disconnected from ERP & API technical realities.</span></li>
+        </ul>
+      </div>
+
+      <!-- Valued side -->
+      <div style="background:rgba(74,222,128,0.04);border:1px solid rgba(74,222,128,0.25);border-radius:12px;padding:24px;">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;margin-bottom:8px;">⚡ Modern Technical Strategy — WHAT THOMAS VALUES</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;font-size:13px;color:#c4bfb8;margin-top:12px;">
+          <li style="display:flex;gap:8px;"><span style="color:var(--green);font-weight:700;">✓</span> <span><strong>Intent Signaling & Search Conquesting:</strong> Capture active SAP ECC 2030 end-of-life and Haufe X360 queries.</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--green);font-weight:700;">✓</span> <span><strong>Technical Workflow Pipelines:</strong> Automated account enrichment, API integrations (Clay, n8n, Python, HubSpot).</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--green);font-weight:700;">✓</span> <span><strong>Multi-Step SQL Lead Qualification:</strong> Dynamic intake scoring filtering high-intent buyers before discovery calls.</span></li>
+          <li style="display:flex;gap:8px;"><span style="color:var(--green);font-weight:700;">✓</span> <span><strong>AE Pre-Call Slack Dossiers:</strong> Automated briefs delivered instantly to sales reps with technographic context.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section-alt section-border">
   <div class="inner">
     <div class="section-label">Full skillset & GTM architecture</div>
@@ -1218,6 +1315,134 @@
   </div>
 </section>
 
+
+
+<!-- ════════════════════════════════════════
+     INTERACTIVE SQL LEAD QUALIFICATION ENGINE
+════════════════════════════════════════ -->
+<section class="section section-border" id="sql-qualifier" style="background:var(--bg3);">
+  <div class="inner">
+    <div class="section-label">High-Intent Lead Qualification</div>
+    <h2 class="section-h2">Multi-Step Intent Signaling—<br><em>Filtering Visitors into Sales-Ready SQLs.</em></h2>
+    <p class="body-text" style="margin-bottom:24px;">Instead of weak email forms, GBG landing pages need qualified intake forms that score firmographic fit, current ERP stack, and integration requirements before booking a call.</p>
+
+    <div style="background:var(--bg2);border:1px solid var(--border2);border-radius:14px;padding:28px;">
+      <div style="display:grid;grid-template-columns:1fr 280px;gap:28px;align-items:start;">
+        <div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;">Interactive SQL Scoring Intake Simulator</div>
+          
+          <!-- Step 1: Solution Area -->
+          <div style="margin-bottom:18px;">
+            <label style="font-size:12px;font-weight:600;color:var(--text);display:block;margin-bottom:6px;">1. Primary Focus Area</label>
+            <select id="qual-motion" onchange="calcSqlScore()" style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:6px;font-family:var(--font);font-size:13px;">
+              <option value="erp_x360">Haufe X360 ERP Implementation (ERP Consulting)</option>
+              <option value="x1_platform">X1 Integration & AI Platform (X1 Motion)</option>
+              <option value="doc_hr">Enterprise Doc & HR (d.velop / Personio / Circula)</option>
+            </select>
+          </div>
+
+          <!-- Step 2: System Context -->
+          <div style="margin-bottom:18px;">
+            <label style="font-size:12px;font-weight:600;color:var(--text);display:block;margin-bottom:6px;">2. Current ERP / Technology Stack</label>
+            <select id="qual-stack" onchange="calcSqlScore()" style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:6px;font-family:var(--font);font-size:13px;">
+              <option value="sap_ecc">SAP ECC / Legacy SAP (ECC 2030 End-of-Life)</option>
+              <option value="legacy_erp">Legacy On-Prem ERP (Sage, Lexware, Datev, Infor)</option>
+              <option value="apis">Custom APIs / Fragmented Systems</option>
+              <option value="greenfield">New Implementation / Expansion</option>
+            </select>
+          </div>
+
+          <!-- Step 3: Company Scale -->
+          <div style="margin-bottom:18px;">
+            <label style="font-size:12px;font-weight:600;color:var(--text);display:block;margin-bottom:6px;">3. Organization Size (DACH Region)</label>
+            <select id="qual-size" onchange="calcSqlScore()" style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:6px;font-family:var(--font);font-size:13px;">
+              <option value="50_250">50 – 250 Employees (Prime ICP Target)</option>
+              <option value="250_1000">250 – 1,000 Employees (Enterprise Target)</option>
+              <option value="1000_plus">1,000+ Employees (Large Enterprise)</option>
+              <option value="under_50">&lt; 50 Employees (Emerging Growth)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Score & CTA Panel -->
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">Calculated Lead Intent</div>
+          <div id="qual-score-val" style="font-size:42px;font-weight:800;color:var(--green);line-height:1;margin:8px 0;">95/100</div>
+          <div id="qual-status-badge" style="font-family:var(--mono);font-size:11px;background:rgba(74,222,128,0.15);color:var(--green);border:1px solid rgba(74,222,128,0.3);padding:4px 10px;border-radius:100px;display:inline-block;margin-bottom:16px;">HIGH-INTENT SQL</div>
+          
+          <div style="font-size:12px;color:#c4bfb8;margin-bottom:16px;line-height:1.5;" id="qual-recommendation">
+            Qualifies directly for a technical discovery call with MDIS enterprise architects.
+          </div>
+
+          <a id="qual-cta-btn" href="mailto:akshundogra@gmail.com?subject=Technical%20Demo%20Request%20(Qualified%20SQL)" class="hero-cta" style="width:100%;justify-content:center;font-size:13px;padding:12px;">
+            ⚡ Request a Technical Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TAG 1 ACTION PLAN: "WAS MACHST DU AB TAG 1 BEI UNS?"
+════════════════════════════════════════ -->
+<section class="section section-border" style="background:var(--bg2);">
+  <div class="inner">
+    <div class="section-label">Execution Strategy · Day 1 Action Plan</div>
+    <h2 class="section-h2">"Was machst du ab Tag 1 bei uns?"<br><em>Concrete Technical Deliverables From Week 1.</em></h2>
+    <p class="body-text" style="margin-bottom:28px;">No generic whitepapers, no basic webinars, no empty retargeting. Here is the exact technical execution roadmap I execute starting on Day 1 to build GBG's self-generated SQL pipeline.</p>
+
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <!-- Week 1 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:start;">
+        <div>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);background:rgba(232,197,71,0.1);padding:4px 8px;border-radius:4px;font-weight:700;">DAY 1 – 7</span>
+          <div style="font-size:13px;font-weight:700;margin-top:8px;">Diagnostic Baseline</div>
+        </div>
+        <div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;">Technical Stack Audit & Intent Signal Setup</div>
+          <p style="font-size:13px;color:#c4bfb8;line-height:1.6;">Audit GA4, Search Console, CRM tags, Search query history for SAP ECC 2030 & Haufe X360 comparisons. Establish consent-safe visitor identification and intent tracking before spending a single euro on campaigns.</p>
+        </div>
+      </div>
+
+      <!-- Days 8-30 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:start;">
+        <div>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--accent);background:rgba(232,197,71,0.1);padding:4px 8px;border-radius:4px;font-weight:700;">DAYS 8 – 30</span>
+          <div style="font-size:13px;font-weight:700;margin-top:8px;">SQL Infrastructure</div>
+        </div>
+        <div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;">CRM SQL Lead Scoring & Pre-Call AE Slack Dossiers</div>
+          <p style="font-size:13px;color:#c4bfb8;line-height:1.6;">Deploy native lead & account scoring matrix (scoring firmographics, technographics, intent signals). Build n8n webhook pipeline delivering instant pre-call dossiers to sales reps in Slack with account background, current ERP stack, and decision-maker roles.</p>
+        </div>
+      </div>
+
+      <!-- Days 31-60 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:start;">
+        <div>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--green);background:rgba(74,222,128,0.1);padding:4px 8px;border-radius:4px;font-weight:700;color:var(--green);">DAYS 31 – 60</span>
+          <div style="font-size:13px;font-weight:700;margin-top:8px;">Dual-Path Launch</div>
+        </div>
+        <div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;">SAP ECC Conquesting & CTO API Outreach Pilots</div>
+          <p style="font-size:13px;color:#c4bfb8;line-height:1.6;">Launch search intent capture targeting SAP ECC 2030 migration keywords (ERP Pull Motion) + CTO-focused LinkedIn API integration campaign (X1 Push Motion). Deploy multi-step intent intake qualification on landing pages.</p>
+        </div>
+      </div>
+
+      <!-- Days 61-90 -->
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:20px;display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:start;">
+        <div>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--blue);background:rgba(96,165,250,0.1);padding:4px 8px;border-radius:4px;font-weight:700;color:var(--blue);">DAYS 61 – 90</span>
+          <div style="font-size:13px;font-weight:700;margin-top:8px;">Agentic Scaling</div>
+        </div>
+        <div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;">Governed Agent Operations & SQL Revenue Steering</div>
+          <p style="font-size:13px;color:#c4bfb8;line-height:1.6;">Deploy governed GTM agents (A.One analytics, G.One compliance, S.One routing) with human-in-the-loop approval. Track SQL conversion velocity, CAC, and pipeline growth target (20–30% YoY).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ════════════════════════════════════════
      90-DAY ACTION PLAN (30/30/30 Operational Roadmap)
@@ -1620,6 +1845,83 @@ function undoNo() {
     <strong>Portfolio & Non-Affiliation Disclaimer:</strong> This personalized landing page is an independent job application pitch and interactive portfolio created by Akshun Dogra. It is not affiliated with, sponsored by, or endorsed by any third-party company mentioned. No personal credentials or user data are collected on this page.
   </div>
 </footer>
+
+
+<script>
+function switchPath(motion) {
+  const btnErp = document.getElementById('path-btn-erp');
+  const btnX1 = document.getElementById('path-btn-x1');
+  const detailErp = document.getElementById('path-detail-erp');
+  const detailX1 = document.getElementById('path-detail-x1');
+
+  if (motion === 'erp') {
+    btnErp.style.border = '2px solid var(--accent)';
+    btnErp.style.color = 'var(--text)';
+    btnX1.style.border = '1px solid var(--border)';
+    btnX1.style.color = 'var(--muted)';
+    detailErp.style.display = 'block';
+    detailX1.style.display = 'none';
+  } else {
+    btnX1.style.border = '2px solid var(--green)';
+    btnX1.style.color = 'var(--text)';
+    btnErp.style.border = '1px solid var(--border)';
+    btnErp.style.color = 'var(--muted)';
+    detailX1.style.display = 'block';
+    detailErp.style.display = 'none';
+  }
+}
+
+function calcSqlScore() {
+  const motion = document.getElementById('qual-motion').value;
+  const stack = document.getElementById('qual-stack').value;
+  const size = document.getElementById('qual-size').value;
+
+  let score = 50;
+
+  if (stack === 'sap_ecc') score += 30;
+  else if (stack === 'legacy_erp') score += 20;
+  else if (stack === 'apis') score += 15;
+
+  if (size === '50_250') score += 20;
+  else if (size === '250_1000') score += 15;
+  else if (size === '1000_plus') score += 10;
+
+  if (motion === 'erp_x360') score += 10;
+  else if (motion === 'x1_platform') score += 15;
+
+  if (score > 98) score = 98;
+
+  const valElem = document.getElementById('qual-score-val');
+  const badgeElem = document.getElementById('qual-status-badge');
+  const recElem = document.getElementById('qual-recommendation');
+  const ctaElem = document.getElementById('qual-cta-btn');
+
+  valElem.innerText = score + '/100';
+
+  if (score >= 80) {
+    badgeElem.innerText = 'HIGH-INTENT SQL';
+    badgeElem.style.background = 'rgba(74,222,128,0.15)';
+    badgeElem.style.color = 'var(--green)';
+    recElem.innerText = 'Qualifies directly for a technical discovery call with MDIS enterprise architects.';
+    ctaElem.innerText = '⚡ Request a Technical Demo';
+    ctaElem.href = 'mailto:akshundogra@gmail.com?subject=Technical%20Demo%20Request%20(Qualified%20SQL)';
+  } else if (score >= 60) {
+    badgeElem.innerText = 'MQL · NURTURE PATH';
+    badgeElem.style.background = 'rgba(232,197,71,0.15)';
+    badgeElem.style.color = 'var(--accent)';
+    recElem.innerText = 'Good fit — recommended for architectural assessment before discovery.';
+    ctaElem.innerText = '📐 Book Architecture Assessment';
+    ctaElem.href = 'mailto:akshundogra@gmail.com?subject=Architecture%20Assessment%20Request';
+  } else {
+    badgeElem.innerText = 'NURTURE';
+    badgeElem.style.background = 'rgba(96,165,250,0.15)';
+    badgeElem.style.color = 'var(--blue)';
+    recElem.innerText = 'General context fit — scheduling ERP optimization review.';
+    ctaElem.innerText = '📅 Schedule ERP Optimization Review';
+    ctaElem.href = 'mailto:akshundogra@gmail.com?subject=ERP%20Optimization%20Review';
+  }
+}
+</script>
 
 </body>
 </html>
