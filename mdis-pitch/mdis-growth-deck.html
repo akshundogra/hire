@@ -10,11 +10,11 @@
 <meta property="og:type"        content="website">
 <meta property="og:url"         content="https://hire.akshundogra.com/mdis-pitch/">
 <meta property="og:title"       content="MDIS Consulting — Demand Generation GTM Engineering Pitch Deck">
-<meta property="og:description" content="Concise 9-slide presentation deck on scaling self-generated SQL pipeline for MDIS Consulting across Haufe X360 ERP, X.One AI Platform, and MDIS Velocity.">
+<meta property="og:description" content="Comprehensive 11-slide presentation deck on scaling self-generated SQL pipeline for MDIS Consulting across Haufe X360 ERP, X.One AI Platform, and MDIS Velocity.">
 <meta property="og:image"       content="https://hire.akshundogra.com/assets/og-mdis.jpg">
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="MDIS Growth Deck — Akshun × MDIS Consulting">
-<meta name="twitter:description" content="9-slide GTM engineering presentation deck covering pull/push demand engines, 90-day plan, and governed operations.">
+<meta name="twitter:description" content="11-slide GTM engineering presentation deck covering pull/push demand engines, 90-day plan, executive Q&A, and governed operations.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,6 +141,73 @@
     padding: 3px 8px; border-radius: 4px; color: var(--accent);
   }
 
+  /* ─── Q&A STYLING ─── */
+  .qa-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 22px;
+    margin-bottom: 18px;
+    transition: border-color 0.2s ease;
+  }
+  .qa-card:hover {
+    border-color: var(--border2);
+  }
+  .qa-q {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.4;
+  }
+  .qa-q-badge {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: rgba(232,197,71,0.15);
+    border: 1px solid rgba(232,197,71,0.3);
+    color: var(--accent);
+    padding: 3px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+  .qa-a {
+    font-size: 13.5px;
+    color: #c4bfb8;
+    line-height: 1.65;
+    padding-left: 44px;
+  }
+  .qa-a p { margin-bottom: 8px; }
+  .qa-a ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .qa-a li {
+    position: relative;
+    padding-left: 16px;
+  }
+  .qa-a li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  .qa-a ol {
+    list-style: decimal;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
   /* ─── NAV FOOTER & CTA ─── */
   .deck-nav-bar {
     position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
@@ -171,7 +238,14 @@
     <span class="nav-x">×</span>
     <span class="nav-company">MDIS Consulting</span>
   </div>
-  <div class="nav-badge">Growth Pitch Deck</div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="nav-badge">GTM Engineering Pitch Deck</div>
+    <div style="font-family:var(--mono);font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:100px;padding:3px 10px;display:flex;gap:8px;">
+      <a href="index.html" style="color:var(--accent);font-weight:700;">EN</a>
+      <span style="color:var(--border2);">|</span>
+      <a href="mdis-growth-deck-de.html" style="color:var(--muted);">DE</a>
+    </div>
+  </div>
 </nav>
 
 <div class="deck-container">
@@ -684,7 +758,7 @@
   ════════════════════════════════════════ -->
   <section class="slide" id="slide-10">
     <div class="slide-header">
-      <span class="slide-num">SLIDE 10 / 10</span>
+      <span class="slide-num">SLIDE 10 / 11</span>
       <span class="slide-category">Onboarding & Alignment</span>
     </div>
     <h2 class="slide-title">What I Need From MDIS to Succeed</h2>
@@ -716,6 +790,163 @@
     </div>
   </section>
 
+
+  <!-- ════════════════════════════════════════
+       SLIDE 11: EXECUTIVE Q&A (STRATEGIC DEEP DIVE)
+  ════════════════════════════════════════ -->
+  <section class="slide" id="slide-11">
+    <div class="slide-header">
+      <span class="slide-num">SLIDE 11 / 11</span>
+      <span class="slide-category">Executive Q&A</span>
+    </div>
+    <h2 class="slide-title">Executive Q&A — <em>Strategic Deep Dive & Case Study Responses</em></h2>
+    <p class="slide-sub">Grounded, directly verifiable answers to the 8 core questions from the MDIS Consulting case study briefing.</p>
+
+    <!-- Q1 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q1</span>
+        <span>How would you structure the first 90 days to build a reliable baseline from scratch?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Week 1 (Audit & Alignment):</strong> 24-month CRM deal analysis with sales leadership to establish a non-negotiable SQL definition. Technical health check of GA4, GTM (Server-Side), Google/LinkedIn Ads, and HubSpot CRM. Embedded Self-Reported Attribution in lead forms.</li>
+          <li><strong>Week 2 (Quick Wins):</strong> Eliminate Google Ads budget waste. Upgrade lead intake forms with qualification fields (Headcount 50–500, existing ERP) to filter MQL spam.</li>
+          <li><strong>Weeks 3–4 (Pipeline Build):</strong> Launch SAP ECC migration search structures and offline conversion feedback loop (HubSpot CRM → Google/LinkedIn CAPI).</li>
+          <li><strong>Days 31–90 (Scaling):</strong> Expand C-Level LinkedIn push marketing for X.One, intent-driven outbound via Clay/Apollo, and automated governance agents.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q2</span>
+        <span>How do you tackle a market where search volume exists for two product lines but not the third?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Haufe X360 & Consulting Stack (Pull):</strong> Capture active search demand via Google Search Ads & SEO (<em>"Haufe X360 Gold Partner"</em>, <em>"SAP ECC Alternative"</em>). Offer asset: Interactive <em>SAP ECC Migration & TCO Calculator</em>.</li>
+          <li><strong>MDIS Velocity (Secondary Motion):</strong> Target niche technical queries (<em>"Acumatica REST API Connector"</em>, <em>"ERP Middleware Integration"</em>) aimed at CTOs & Lead Engineers.</li>
+          <li><strong>X.One AI Platform (Push / Category Creation):</strong> Since search volume does not yet exist, generate demand through problem education: C-Level thought leadership on LinkedIn, intent targeting (tracking companies with open ERP/IT job posts), and offering an <em>Enterprise AI Integration Audit</em>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q3</span>
+        <span>What would the daily actual-vs-target dashboard look like technically and structurally?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Structural Content:</strong> C-Level executive metrics (Generated Pipeline ARR, Qualified SQL count, Blended CAC, Pipeline ROAS) segmented by Pull (Haufe X360) and Push (X.One) motions.</li>
+          <li><strong>Technical Architecture:</strong> Daily automated ETL pipeline via n8n/Make pulling from Google Ads, LinkedIn Ads, GA4, and HubSpot CRM into a central Looker Studio / Power BI dashboard.</li>
+          <li><strong>Alerting:</strong> Automated morning summary delivered at 08:00 AM with threshold anomaly alerts (e.g., CPL/SQL cost spike > 25%).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q4</span>
+        <span>How do you build an agentic GTM system that doesn't become unmaintainable after 3 months — and where is the human approval boundary?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Maintainability Architecture:</strong> Modular micro-agents (Visibility, Performance, Execution, Handoff) rather than a monolith. Central state & run logs stored in Supabase/Notion. Standardized API contracts (MCP/n8n) and Git-based prompt versioning.</li>
+          <li><strong>Approval Boundaries (Human-in-the-Loop):</strong>
+            <ul style="margin-top:4px;margin-left:8px;">
+              <li>• <em>Autonomous:</em> SEO/GEO ranking monitoring, ad waste detection, account enrichment, pre-call intelligence dossiers.</li>
+              <li>• <em>Approval Required:</em> Ad budget modifications > €100/day, external email/LinkedIn messages, publishing live landing pages or ad campaigns.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q5</span>
+        <span>How does outbound automation work in compliance with GDPR in the DACH market?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Premise:</strong> Strict adherence to German fair trade & data privacy law (UWG §7 Abs. 2 Nr. 3 - prevention of unsolicited email spam).</p>
+        <p style="margin-top:6px;"><strong>Strategy:</strong></p>
+        <ol>
+          <li><em>LinkedIn-First:</em> Social selling & professional connection requests to C-Level decision makers.</li>
+          <li><em>Intent Triggers:</em> Outreach triggered only by objective business reasons (e.g., target company hiring for ERP/IT roles).</li>
+          <li><em>Account Retargeting:</em> Cookie-less company IP targeting for account-level LinkedIn Ads.</li>
+          <li><em>DOI Inbound:</em> Outbound directs to interactive high-value content requiring Double Opt-In confirmation.</li>
+          <li><em>Master Suppression List:</em> Centralized unsubscribe management synced across all tools (Clay, Apollo, Lemlist, HubSpot).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q6</span>
+        <span>What changes in your approach if the buying cycle is 12 months instead of 3 months?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Attribution Model:</strong> Shift from single-click attribution to multi-touch and Self-Reported Attribution (<em>"How did you hear about us?"</em> field).</li>
+          <li><strong>Leading Indicators:</strong> Track success against leading indicators (Booked SQLs, CRM pipeline opportunities created, Buying Group engagement) rather than relying solely on lagging closed-won revenue.</li>
+          <li><strong>Multi-Touch Nurturing:</strong> Automated 12-month HubSpot workflows nurturing every role in the Buying Group (CFO, CEO, IT, HR) with tailored content tracks.</li>
+          <li><strong>Continuous Account Retargeting:</strong> Low-budget evergreen retargeting on LinkedIn directed exclusively at active CRM deal accounts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q7</span>
+        <span>What parts of a demand generation program have you NOT personally owned in the past?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ul>
+          <li><strong>Full Hands-On Ownership:</strong> Performance Marketing (Google/LinkedIn Ads), SEO/GEO, CRM Automation (HubSpot, Make/n8n), Server-Side Tracking, Landing Page CRO.</li>
+          <li><strong>Explicit Boundaries:</strong>
+            <ol style="margin-top:4px;">
+              <li><em>Traditional Trade Shows & Events:</em> Digital promotion & lead nurturing yes; physical booth logistics no.</li>
+              <li><em>Traditional PR & Press Relations:</em> No media pitch lists or crisis PR.</li>
+              <li><em>Manual High-Volume Copywriting:</em> Build AI content pipelines and SEO topic trees; for deep domain whitepapers, collaborate with subject matter experts or AI with human QA.</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-card">
+      <div class="qa-q">
+        <span class="qa-q-badge">Q8</span>
+        <span>What do you need from us to be effective from day one?</span>
+      </div>
+      <div class="qa-a">
+        <p><strong>Response:</strong></p>
+        <ol>
+          <li><strong>MQL/SQL Workshop (Week 1):</strong> 2–3 hours with sales leadership for historical deal review and binding SQL handoff criteria.</li>
+          <li><strong>System Access:</strong> Read/Admin access to HubSpot CRM, Google Ads, LinkedIn Ads, GA4, Search Console, and GTM.</li>
+          <li><strong>24-Month Pipeline Data:</strong> Historical deal logs, win rates, and stage loss reasons.</li>
+          <li><strong>Closed Sales Feedback Loop:</strong> Mandatory entry of lead rejection reason codes in CRM by the sales team.</li>
+          <li><strong>Initial On-Site Days (Nuremberg / Salching):</strong> Initial in-person presence for deep cultural & operational integration.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <!-- BOTTOM SLIDE NAV BAR -->
@@ -729,7 +960,8 @@
   <a href="#slide-7" class="deck-nav-btn">07 Signals</a>
   <a href="#slide-8" class="deck-nav-btn">08 Proof</a>
   <a href="#slide-9" class="deck-nav-btn">09 Dashboard</a>
-  <a href="#slide-10" class="deck-nav-btn">10 Alignment</a>
+  <a href="#slide-10" class="deck-nav-btn">10 Onboarding</a>
+  <a href="#slide-11" class="deck-nav-btn">11 Q&A</a>
 </div>
 
 </body>
