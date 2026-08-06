@@ -342,5 +342,13 @@
     "domain": "consultport.com",
     "score": 80,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-06T18:44:08.374227+00:00",
+    "slug": "dandy",
+    "company_name": "Dandy",
+    "domain": "dandy.com",
+    "score": 97,
+    "tier": "HIGH_FIT"
   }
 ]
