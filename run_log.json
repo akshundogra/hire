@@ -510,5 +510,13 @@
     "domain": "truemetrics.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T18:05:16.924295+00:00",
+    "slug": "opus",
+    "company_name": "opus",
+    "domain": "opus.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
