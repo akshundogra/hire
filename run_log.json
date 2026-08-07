@@ -406,5 +406,13 @@
     "domain": "infineontechnologies.com",
     "score": 95,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T11:46:30.421277+00:00",
+    "slug": "distribusion-technologies",
+    "company_name": "Distribusion Technologies",
+    "domain": "distribusiontechnologies.com",
+    "score": 95,
+    "tier": "HIGH_FIT"
   }
 ]
