@@ -374,5 +374,13 @@
     "domain": "alasco.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T09:45:05.286091+00:00",
+    "slug": "salesplaybook",
+    "company_name": "SalesPlaybook",
+    "domain": "salesplaybook.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
