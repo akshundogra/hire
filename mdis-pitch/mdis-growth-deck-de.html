@@ -25,19 +25,20 @@
   html { scroll-behavior: smooth; }
 
   :root {
-    --bg:      #0a0a0a;
-    --bg2:     #111111;
-    --bg3:     #161616;
-    --border:  #1f1f1f;
-    --border2: #2a2a2a;
-    --text:    #e8e3db;
-    --muted:   #6b6b6b;
-    --muted2:  #3a3a3a;
-    --accent:  #e8c547;
-    --accent2: #f0d060;
-    --green:   #4ade80;
+    --bg:      #0b0f19;
+    --bg2:     #111827;
+    --bg3:     #1f293b;
+    --border:  #1e293b;
+    --border2: #334155;
+    --text:    #f8fafc;
+    --muted:   #94a3b8;
+    --muted2:  #475569;
+    --accent:  #38bdf8;
+    --accent2: #7dd3fc;
+    --blue:    #38bdf8;
+    --teal:    #2dd4bf;
+    --green:   #2dd4bf;
     --red:     #f87171;
-    --blue:    #60a5fa;
     --font:    'Plus Jakarta Sans', sans-serif;
     --mono:    'Geist Mono', monospace;
     --r:       12px;
@@ -574,19 +575,53 @@
       </div>
     </div>
 
-    <!-- Workflow Diagram Box -->
+    <!-- Workflow Diagram Box: Data Flow -->
     <div style="margin-top:20px;padding:16px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);font-size:12.5px;color:#c4bfb8;">
       <strong style="color:var(--text);font-family:var(--mono);font-size:11px;text-transform:uppercase;display:block;margin-bottom:6px;">🔄 Datenfluss der GTM Engine:</strong>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;">
         <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">Website / Landingpage</span>
         <span>→</span>
-        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">SSGTM & Formular Intake</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">SSGTM &amp; Formular Intake</span>
         <span>→</span>
         <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">n8n Anreicherung (Clay/Apollo)</span>
         <span>→</span>
         <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);">HubSpot CRM Scoring</span>
         <span>→</span>
-        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);color:var(--green);">Google/LinkedIn CAPI Feedback</span>
+        <span style="background:var(--bg);padding:4px 8px;border-radius:4px;border:1px solid var(--border);color:var(--teal);">Google/LinkedIn CAPI Feedback</span>
+      </div>
+    </div>
+
+    <!-- SAP ECC Sunset Migration Campaign Workflow Diagram -->
+    <div style="margin-top:16px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:20px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;font-weight:700;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+        <span>⚡ End-to-End Pipeline: SAP ECC Sunset Migrations-Kampagne</span>
+        <span class="pill-tag" style="color:var(--blue);border-color:rgba(56,189,248,0.3);background:rgba(56,189,248,0.1);">Automated Outbound Workflow</span>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;">
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--blue);font-weight:700;margin-bottom:6px;background:rgba(56,189,248,0.12);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 1</div>
+          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Target Discovery</strong>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Google Maps / Firmenwissen Crawling + Job-Board SAP ECC Hiring-Signale.</p>
+        </div>
+        
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);font-weight:700;margin-bottom:6px;background:rgba(45,212,191,0.12);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 2</div>
+          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Datenschutz Crawling</strong>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Scraping von <code>/datenschutz</code> URLs auf SAP SE Signaturen &amp; ERP-Spuren.</p>
+        </div>
+
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--blue);font-weight:700;margin-bottom:6px;background:rgba(56,189,248,0.12);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 3</div>
+          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Clay Enrichment</strong>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Auto-Anreicherung von CFO / IT-Director Kontakten via Apollo/Hunter (50–500 MA ICP).</p>
+        </div>
+
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);font-weight:700;margin-bottom:6px;background:rgba(45,212,191,0.12);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 4</div>
+          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Automated Campaign</strong>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Personalisierter <em>"SAP ECC vs. Haufe X360 TCO Audit"</em> Outreach (LinkedIn/DOI-Mail).</p>
+        </div>
       </div>
     </div>
   </section>
@@ -788,32 +823,32 @@
   <section class="slide" id="slide-10">
     <div class="slide-header">
       <span class="slide-num">SLIDE 10 / 11</span>
-      <span class="slide-category">Onboarding & Abstimmung</span>
+      <span class="slide-category">Onboarding &amp; Abstimmung</span>
     </div>
     <h2 class="slide-title">Was ich von MDIS brauche, um erfolgreich zu sein</h2>
     <p class="slide-sub">Vier konkrete Inputs in Woche eins für eine schnelle und zielgerichtete Umsetzung.</p>
 
     <div class="grid-2">
       <div class="card-box">
-        <div class="card-title" style="color:var(--accent);">1. Funnel- & Call-Intelligence</div>
-        <div class="card-desc">Sales-Recordings, Demo-Transkripte und historische Loss-Reasons zur Customer Pain-Point-Analyse.</div>
+        <div class="card-title" style="color:var(--accent);">1. Funnel- &amp; Call-Intelligence</div>
+        <div class="card-desc">Zugriff auf Sales-Recordings, Gong/Fathom Call-Transkripte und CRM Win/Loss-Reasons zur tiefen Pain-Point-Analyse.</div>
       </div>
       <div class="card-box">
-        <div class="card-title" style="color:var(--accent);">2. System- & Data-Access</div>
+        <div class="card-title" style="color:var(--accent);">2. System- &amp; Tool-Zugang</div>
         <div class="card-desc">Admin-/Lese-Zugriffe auf HubSpot CRM, Google Ads, LinkedIn Ads, GA4, GTM und Search Console.</div>
       </div>
       <div class="card-box">
-        <div class="card-title" style="color:var(--green);">3. Hardware & Compute Setup</div>
-        <div class="card-desc">Leistungsstarke Hardware (32GB+ RAM) zur schattenfreien Ausführung lokaler AI-Agenten, Claude Code / MCP Server und Daten-Pipelines.</div>
+        <div class="card-title" style="color:var(--teal);">3. Workstation &amp; Compute Setup</div>
+        <div class="card-desc">Leistungsstarke Workstation (Laptop mit 32GB+ RAM) zur schattenfreien Ausführung lokaler AI-Agenten, Claude Code, MCP &amp; RAG-Instanzen.</div>
       </div>
       <div class="card-box">
-        <div class="card-title" style="color:var(--green);">4. AI- & Automation-Tooling</div>
-        <div class="card-desc">Freigabe / Lizenzen für GTM-Developer-Tools (Claude Code, Cursor, Clay, n8n/Make, Apollo).</div>
+        <div class="card-title" style="color:var(--teal);">4. AI- &amp; Automation-Tooling Linsen</div>
+        <div class="card-desc">Bereitstellung / Lizenzen für GTM-Developer-Tools (Claude Code API, Cursor, Clay, n8n/Make, Apollo).</div>
       </div>
     </div>
 
     <div style="margin-top:28px;text-align:center;">
-      <a href="mailto:akshundogra@gmail.com" style="display:inline-block;background:var(--accent);color:#000;padding:14px 32px;border-radius:var(--r);font-weight:700;font-size:15px;">
+      <a href="mailto:akshundogra@gmail.com" style="display:inline-block;background:var(--accent);color:#0b0f19;padding:14px 32px;border-radius:var(--r);font-weight:700;font-size:15px;">
         ✉ Abstimmungsgespräch vereinbaren · akshundogra@gmail.com
       </a>
     </div>
@@ -947,11 +982,11 @@
         <p><strong>Antwort:</strong></p>
         <ul>
           <li><strong>Gevollmächtigte Ownership:</strong> Performance Marketing (Google/LinkedIn Ads), SEO/GEO, CRM-Automatisierung (HubSpot, Make/n8n), Server-Side Tracking, Clay Data Enrichment &amp; GTM Engineering.</li>
-          <li><strong>Bewusste Abgrenzung:</strong>
+          <li><strong>Bewusste Abgrenzung (Bisher nicht selbst verantwortet):</strong>
             <ol style="margin-top:4px;margin-left:20px;display:flex;flex-direction:column;gap:6px;">
-              <li><em>Klassische PR &amp; Pressearbeit:</em> Pressemitteilungen, Medienkontakte oder Journalisten-Relationen.</li>
-              <li><em>Physisches Event- &amp; Messestand-Management:</em> Digital-Event-Promotions und Lead-Nurturing vor/nach Messen ja; physische Standorganisation und Logistik vor Ort nein.</li>
-              <li><em>Manuelles High-Volume Copywriting:</em> KI-gestützte Pipelines &amp; SEO-Hierarchien erstelle ich selbst; für tiefste redaktionelle Fachtexte nutze ich KI-Systeme mit Human-QA oder arbeite mit Fachberatern.</li>
+              <li><em>Klassische PR &amp; Marken-Pressearbeit:</em> Pressemitteilungen, Medienkontakte und traditionelle Marken-PR.</li>
+              <li><em>Physische Messestände &amp; Event-Logistik:</em> Standorganisation, Hardware-Aufbau und physische Messelogistik vor Ort (Digital-Event-Promotions &amp; Lead-Nurturing davor/danach ja; physische Standlogistik nein).</li>
+              <li><em>Manuelles High-Volume Copywriting ohne Tools:</em> KI-gestützte Pipelines &amp; SEO-Hierarchien erstelle ich selbst; für tiefste redaktionelle Fachtexte nutze ich KI-Systeme mit Human-QA oder arbeite mit Fachberatern.</li>
             </ol>
           </li>
         </ul>
@@ -967,10 +1002,10 @@
       <div class="qa-a">
         <p><strong>Antwort:</strong></p>
         <ol style="margin-left:20px;display:flex;flex-direction:column;gap:6px;">
-          <li><strong>Volle Funnel- &amp; Call-Intelligence:</strong> Zugriff auf historische Sales-Call-Recordings (Demo- / Discovery-Calls), Transkripte und CRM-Loss-Reasons zur Customer-Pain-Point-Analyse.</li>
+          <li><strong>Volle Funnel- &amp; Call-Intelligence:</strong> Zugriff auf historische Sales-Call-Recordings (Gong / Fathom Transkripte, Demo- &amp; Discovery-Calls) und CRM Win/Loss-Reasons zur Customer-Pain-Point-Analyse.</li>
           <li><strong>System- &amp; Tool-Zugang:</strong> Admin-/Lesezugriffe auf HubSpot CRM, Google Ads, LinkedIn Ads, GA4, GTM und Google Search Console.</li>
-          <li><strong>Hardware- &amp; Compute-Infrastructure:</strong> Ein leistungsstarkes Arbeitsgerät (Laptop mit 32GB+ RAM), um lokale AI-Entwicklungsumgebungen (Claude Code, MCP-Server, lokale RAG-Instanzen) ohne Performance-Flaschenhälse auszuführen.</li>
-          <li><strong>AI- &amp; Automation-Tooling:</strong> Bereitstellung von GTM-Engineering-Lizenzen (Claude Code API, Cursor, Clay, n8n/Make, Apollo).</li>
+          <li><strong>Workstation &amp; Compute Setup:</strong> Ein leistungsstarkes Arbeitsgerät (Laptop mit 32GB+ RAM), um lokale AI-Agenten, Claude Code, MCP-Server &amp; lokale RAG-Instanzen schattenfrei und ohne Performance-Flaschenhälse auszuführen.</li>
+          <li><strong>AI- &amp; Automation-Tooling Linsen:</strong> Bereitstellung von GTM-Engineering-Lizenzen (Claude Code API, Cursor, Clay, n8n/Make, Apollo).</li>
           <li><strong>Kommerzielle Transparenz:</strong> Einsicht in die historische Pipeline-Entwicklung der letzten 24 Monate sowie Konversionsraten von der Discovery Phase bis zum Vertragsschluss.</li>
         </ol>
       </div>
