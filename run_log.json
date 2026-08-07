@@ -478,5 +478,13 @@
     "domain": "mallia.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T13:49:03.849133+00:00",
+    "slug": "frieda-health",
+    "company_name": "Frieda Health",
+    "domain": "friedahealth.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
