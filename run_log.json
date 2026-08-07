@@ -358,5 +358,13 @@
     "domain": "roimarketinggmbh.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T09:44:18.099721+00:00",
+    "slug": "v001",
+    "company_name": "v001",
+    "domain": "v001.com",
+    "score": 94,
+    "tier": "HIGH_FIT"
   }
 ]
