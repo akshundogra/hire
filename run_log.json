@@ -534,5 +534,13 @@
     "domain": "merantixcapital.com",
     "score": 96,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T18:06:37.980291+00:00",
+    "slug": "leapsome",
+    "company_name": "Leapsome",
+    "domain": "leapsome.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
