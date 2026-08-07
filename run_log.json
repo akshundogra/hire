@@ -558,5 +558,13 @@
     "domain": "kayzen.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T18:07:57.442282+00:00",
+    "slug": "ai-coustics",
+    "company_name": "ai-coustics",
+    "domain": "ai-coustics.com",
+    "score": 98,
+    "tier": "HIGH_FIT"
   }
 ]
