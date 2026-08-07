@@ -574,5 +574,13 @@
     "domain": "rematiq.com",
     "score": 98,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T18:14:30.802309+00:00",
+    "slug": "horatio",
+    "company_name": "Horatio",
+    "domain": "horatio.com",
+    "score": 96,
+    "tier": "HIGH_FIT"
   }
 ]
