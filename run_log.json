@@ -382,5 +382,13 @@
     "domain": "salesplaybook.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T09:45:27.006330+00:00",
+    "slug": "apaleo",
+    "company_name": "Apaleo",
+    "domain": "apaleo.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
