@@ -390,5 +390,13 @@
     "domain": "apaleo.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T09:45:49.044566+00:00",
+    "slug": "sonova-group",
+    "company_name": "Sonova Group",
+    "domain": "sonovagroup.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
