@@ -25,20 +25,20 @@
   html { scroll-behavior: smooth; }
 
   :root {
-    --bg:      #0a0a0a;
-    --bg2:     #111111;
-    --bg3:     #161616;
-    --border:  #1f1f1f;
-    --border2: #2a2a2a;
-    --text:    #e8e3db;
-    --muted:   #6b6b6b;
-    --muted2:  #3a3a3a;
-    --accent:  #e8c547;
-    --accent2: #f0d060;
-    --green:   #4ade80;
-    --red:     #f87171;
-    --blue:    #60a5fa;
+    --bg:      #0b0f19;
+    --bg2:     #111827;
+    --bg3:     #1e293b;
+    --border:  #1e293b;
+    --border2: #334155;
+    --text:    #f8fafc;
+    --muted:   #94a3b8;
+    --muted2:  #475569;
+    --accent:  #38bdf8;
+    --accent2: #7dd3fc;
+    --blue:    #38bdf8;
     --teal:    #2dd4bf;
+    --green:   #2dd4bf;
+    --red:     #f87171;
     --font:    'Plus Jakarta Sans', sans-serif;
     --mono:    'Geist Mono', monospace;
     --r:       12px;
@@ -419,53 +419,77 @@
       <span class="slide-num">SLIDE 04 / 11</span>
       <span class="slide-category">Strategie-Architektur</span>
     </div>
-    <h2 class="slide-title">Duale ICP Buyer Journey Matrix</h2>
-    <p class="slide-sub">Beide Geschäftsbereiche adressieren unterschiedliche Entscheider mit spezifischen Zielsetzungen und Kaufanlässen.</p>
+    <h2 class="slide-title">Zwei klare Geschäftsfelder — Duale ICP Matrix</h2>
+    <p class="slide-sub">Explizite Differenzierung der beiden MDIS-Geschäftsbereiche für maßgeschneiderte Go-To-Market Motions.</p>
 
+    <!-- Two Core Business Lines Highlights -->
+    <div class="grid-2" style="margin-bottom:20px;">
+      <div class="card-box" style="border-color:rgba(56,189,248,0.3);background:rgba(56,189,248,0.03);">
+        <div class="pill-tag" style="margin-bottom:10px;color:var(--accent);border-color:rgba(56,189,248,0.3);background:rgba(56,189,248,0.1);">BUSINESS LINE 1 · PULL MOTION</div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;">Haufe X360 &amp; Consulting Stack</h3>
+        <p style="font-size:13px;color:#c4bfb8;line-height:1.6;margin-bottom:10px;">
+          <strong style="color:var(--text);">Zielgruppe (ICP):</strong> CFOs, Geschäftsführung (CEO), CIOs &amp; IT-Leiter im DACH-Mittelstand (50–500 MA).<br>
+          <strong style="color:var(--text);">Kaufanlass &amp; Trigger:</strong> Aktive Suche nach Cloud-ERP-Lösungen oder Handlungsdruck durch SAP ECC 2027/2030 Sunset.<br>
+          <strong style="color:var(--text);">Kanal-Strategie:</strong> Google Search Ads Conquesting (*"Haufe X360 Gold Partner"*, *"SAP ECC Alternative"*), SEO &amp; TCO-Rechner.
+        </p>
+      </div>
+
+      <div class="card-box" style="border-color:rgba(45,212,191,0.3);background:rgba(45,212,191,0.03);">
+        <div class="pill-tag" style="margin-bottom:10px;color:var(--teal);border-color:rgba(45,212,191,0.3);background:rgba(45,212,191,0.1);">BUSINESS LINE 2 · PUSH &amp; DEMAND CREATION</div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;">X.One AI-Plattform &amp; MDIS Velocity</h3>
+        <p style="font-size:13px;color:#c4bfb8;line-height:1.6;margin-bottom:10px;">
+          <strong style="color:var(--text);">Zielgruppe (ICP):</strong> CTOs, Heads of Engineering, Lead Architects, Digitalisierungsverantwortliche.<br>
+          <strong style="color:var(--text);">Kaufanlass &amp; Trigger:</strong> Fragmentierte Schnittstellen über ERP, HR (Personio), DMS (d.velop), Spend (Circula), Bedarf an AI-Integrationslayern.<br>
+          <strong style="color:var(--text);">Kanal-Strategie:</strong> LinkedIn C-Level Thought Leadership, Intent-Signal Outreach (Clay + Apollo) &amp; Enterprise AI Audits.
+        </p>
+      </div>
+    </div>
+
+    <!-- Comparative Table -->
     <table class="pitch-table">
       <thead>
         <tr>
           <th>Dimension</th>
-          <th style="color:var(--accent);">Enterprise Services / ERP Consulting (Pull)</th>
-          <th style="color:var(--green);">X.One KI- & Integrationsplattform (Push)</th>
+          <th style="color:var(--accent);">Business Line 1: Haufe X360 &amp; ERP Stack (Pull)</th>
+          <th style="color:var(--teal);">Business Line 2: X.One AI &amp; Velocity (Push)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Markt-Logik</td>
-          <td>Pull-Markt: Abfangen bestehender ERP-Such- & Vergleichsansichten</td>
-          <td>Push-Markt: Kategorieaufbau & aktive Ansprache technischer Entscheider</td>
+          <td>Pull-Markt: Abfangen bestehender Suchanfragen &amp; Wechselabsichten</td>
+          <td>Push-Markt: Erzeugen neuer Nachfrage auf CTO-/C-Level Ebene</td>
         </tr>
         <tr>
           <td>Zentraler Buyer (ICP)</td>
-          <td>Geschäftsführung, CFO, CIO/IT-Leiter, HR-Leiter (50–500 MA Mittelstand)</td>
+          <td>CFO, CEO / Geschäftsführung, CIO (50–500 MA Mittelstand)</td>
           <td>CTO, Head of Engineering, Lead Architects, Digitalization Leads</td>
         </tr>
         <tr>
           <td>Kauf-Anlass / Trigger</td>
-          <td>SAP ECC 2030 End-of-Life, unzureichendes Legacy-ERP, GoBD-DMS-Bedarf</td>
-          <td>Fragmentierte Schnittstellen, manuelle Datenübertragung, KI-Automatisierung</td>
+          <td>SAP ECC 2030 End-of-Life, unzureichendes Legacy-ERP, GoBD-Bedarf</td>
+          <td>Fragmentierte APIs, isolierte Ökosystem-Tools, AI-Workflow Bedarf</td>
         </tr>
         <tr>
           <td>Kern-Wertversprechen</td>
-          <td>Nahtlose ERP-Implementierung, Prozess-Effizienz, bewährter Standard</td>
+          <td>Nahtlose Cloud-ERP Implementierung, bewährter Mittelstands-Standard</td>
           <td>Modernste API-Architektur, flexible Workflows, volle Datensouveränität</td>
         </tr>
         <tr>
           <td>Primäre Kanäle</td>
-          <td>Google Ads (Search Conquesting), SEO/GEO, Branchen-Vergleiche</td>
-          <td>LinkedIn (C-Level & CTO-Targeting), Fach-Content, Intent-Outbound</td>
+          <td>Google Search Ads (Conquesting), SEO/GEO, ERP-Vergleiche</td>
+          <td>LinkedIn (CTO-Targeting), Thought Leadership, Intent-Outbound</td>
         </tr>
         <tr>
           <td>High-Intent CTAs</td>
-          <td>"ERP-Optimierungsgespräch buchen", "Architektur-Assessment"</td>
-          <td>"Technische Demo anfordern", "X1 Integrations-Audit"</td>
+          <td>"ERP-Optimierungsgespräch buchen", "SAP ECC TCO-Rechner"</td>
+          <td>"Technische Demo anfordern", "Enterprise AI Integration Audit"</td>
         </tr>
       </tbody>
     </table>
 
     <div style="margin-top:12px;font-size:11px;color:var(--muted);font-family:var(--mono);">
-      ℹ Hinweis: MDIS Velocity dient als mittelfristige Integration-as-a-Service-Motion für Entwicklungs- und Integrationsteams.
+      ℹ MDIS Velocity ergänzt Business Line 2 als Integration-as-a-Service-Motion für Entwicklungs- und Integrationsteams.
     </div>
   </section>
 
@@ -593,34 +617,34 @@
 
     <!-- SAP ECC Sunset Migration Campaign Workflow Diagram -->
     <div style="margin-top:16px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:20px;">
-      <div style="font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;font-weight:700;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;font-weight:700;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
         <span>⚡ End-to-End Pipeline: SAP ECC Sunset Migrations-Kampagne</span>
-        <span class="pill-tag" style="color:var(--accent);border-color:rgba(232,197,71,0.3);background:rgba(232,197,71,0.1);">Automated Outbound Workflow</span>
+        <span class="pill-tag" style="color:var(--accent);border-color:rgba(56,189,248,0.3);background:rgba(56,189,248,0.1);">Automated Outbound Workflow</span>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;">
         <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);font-weight:700;margin-bottom:6px;background:rgba(232,197,71,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 1</div>
-          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Target Discovery</strong>
-          <p style="font-size:11.5px;color:#c4bfb8;line-height:1.5;">Google Maps / Firmenwissen Crawling + Job-Board SAP ECC Hiring-Signale.</p>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);font-weight:700;margin-bottom:6px;background:rgba(56,189,248,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">PHASE 1 · DISCOVERY</div>
+          <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Signal Discovery</strong>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Google Maps &amp; Firmenwissen Crawling + Job Board SAP ECC Hiring-Signale.</p>
         </div>
         
         <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--green);font-weight:700;margin-bottom:6px;background:rgba(74,222,128,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 2</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);font-weight:700;margin-bottom:6px;background:rgba(45,212,191,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">PHASE 2 · SCRAPING</div>
           <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Datenschutz Crawling</strong>
-          <p style="font-size:11.5px;color:#c4bfb8;line-height:1.5;">Scraping von <code>/datenschutz</code> URLs auf SAP SE Signaturen &amp; ERP-Spuren.</p>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Scraping von <code>/datenschutz</code> URLs der Ziel-Accounts auf SAP SE Signaturen.</p>
         </div>
 
         <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--blue);font-weight:700;margin-bottom:6px;background:rgba(96,165,250,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 3</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);font-weight:700;margin-bottom:6px;background:rgba(56,189,248,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">PHASE 3 · ENRICHMENT</div>
           <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Clay Enrichment</strong>
-          <p style="font-size:11.5px;color:#c4bfb8;line-height:1.5;">Auto-Anreicherung von CFO / IT-Director Kontakten via Apollo/Hunter (50–500 MA ICP).</p>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Auto-Anreicherung von CFO / IT-Director Kontakten via Apollo/Hunter (50–500 MA ICP).</p>
         </div>
 
         <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);font-weight:700;margin-bottom:6px;background:rgba(232,197,71,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">SCHRITT 4</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);font-weight:700;margin-bottom:6px;background:rgba(45,212,191,0.15);padding:2px 6px;border-radius:4px;display:inline-block;">PHASE 4 · OUTREACH</div>
           <strong style="color:var(--text);font-size:12.5px;display:block;margin-bottom:4px;">Automated Campaign</strong>
-          <p style="font-size:11.5px;color:#c4bfb8;line-height:1.5;">Personalisierter <em>"SAP ECC vs. Haufe X360 TCO Audit"</em> Outreach (LinkedIn/DOI-Mail).</p>
+          <p style="font-size:11.5px;color:var(--muted);line-height:1.5;">Personalisierter <em>"SAP ECC vs. Haufe X360 TCO Audit"</em> Outreach (LinkedIn &amp; DOI Mail).</p>
         </div>
       </div>
     </div>
