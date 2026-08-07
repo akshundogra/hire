@@ -462,5 +462,13 @@
     "domain": "vidalytics.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T13:47:53.728452+00:00",
+    "slug": "sundayy",
+    "company_name": "Sundayy",
+    "domain": "sundayy.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
