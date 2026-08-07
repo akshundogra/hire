@@ -446,5 +446,13 @@
     "domain": "almedia.com",
     "score": 92,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T12:34:25.626885+00:00",
+    "slug": "arvana",
+    "company_name": "Arvana",
+    "domain": "arvana.de",
+    "score": 99,
+    "tier": "HIGH_FIT"
   }
 ]
