@@ -470,5 +470,13 @@
     "domain": "sundayy.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T13:48:31.511556+00:00",
+    "slug": "mallia",
+    "company_name": "Mallia",
+    "domain": "mallia.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
