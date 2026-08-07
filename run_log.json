@@ -438,5 +438,13 @@
     "domain": "freda.com",
     "score": 97,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-07T11:48:30.646486+00:00",
+    "slug": "almedia",
+    "company_name": "Almedia",
+    "domain": "almedia.com",
+    "score": 92,
+    "tier": "HIGH_FIT"
   }
 ]
