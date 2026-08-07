@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://hire.akshundogra.com/arvana/">
-<title>Akshun Dogra × Arvana | hire.akshundogra.com/arvana</title>
+<link rel="canonical" href="https://hire.akshundogra.com/arvana/de/">
+<title>Akshun Dogra × Arvana | GTM Engineer (m/w/d) | hire.akshundogra.com/arvana/de</title>
 
-<!-- Open Graph — controls LinkedIn/WhatsApp/Slack preview -->
+<!-- Open Graph — LinkedIn / WhatsApp / Slack Vorschau -->
 <meta property="og:type"        content="website">
-<meta property="og:url"         content="https://hire.akshundogra.com/arvana/">
-<meta property="og:title"       content="Akshun × Arvana — I built this page for you">
-<meta property="og:description" content="Hi Arvana 👋 — I built a personalised page covering how I'd approach your growth in the first 90 days. Take a look.">
+<meta property="og:url"         content="https://hire.akshundogra.com/arvana/de/">
+<meta property="og:title"       content="Akshun × Arvana — Ich habe diese Seite für euch gebaut">
+<meta property="og:description" content="Hi Arvana 👋 — Ich habe eine persönliche Landingpage für euch gebaut. Meine ersten 90 Tage als GTM Engineer im Überblick.">
 <meta property="og:image"       content="https://hire.akshundogra.com/assets/og-arvana.jpg">
 <meta property="og:image:width"  content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="Akshun × Arvana — built specifically for you">
-<meta name="twitter:description" content="Hi Arvana — personalised growth page covering paid, SEO, and automation. First 90 days mapped out.">
+<meta name="twitter:title"       content="Akshun × Arvana — Speziell für Arvana entwickelt">
+<meta name="twitter:description" content="Hi Arvana — Persönliche Growth & GTM Engineer Seite. Erste 90 Tage im Detail kartiert.">
 <meta name="twitter:image"       content="https://hire.akshundogra.com/assets/og-arvana.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,7 +137,7 @@
   }
   .hero-h1 {
     font-size: clamp(24px, 3.2vw, 38px); font-weight: 700;
-    line-height: 1.1; margin-bottom: 20px;
+    line-height: 1.15; margin-bottom: 20px;
   }
   .hero-h1 .highlight { color: var(--accent); }
   .hero-sub {
@@ -185,7 +185,7 @@
     pointer-events: none;
   }
 
-  /* ─── STATS BAR — Static, never changes ─── */
+  /* ─── STATS BAR ─── */
   .stats-bar {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -209,7 +209,7 @@
     border-radius: 4px; padding: 2px 6px; margin-top: 6px;
   }
 
-  /* ─── TOOLS CAROUSEL (infinite scroll marquee) ─── */
+  /* ─── TOOLS CAROUSEL ─── */
   .tools-carousel {
     padding: 24px 0;
     border-bottom: 1px solid var(--border);
@@ -251,64 +251,6 @@
   .tool-chip img { width: 16px; height: 16px; opacity: 0.6; }
   .tool-chip .tool-emoji { font-size: 14px; }
 
-  /* ─── MEME SECTION — hover swap ─── */
-  .meme-section {
-    padding: 52px 48px;
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-  }
-  .meme-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-  .meme-label {
-    font-family: var(--mono); font-size: 11px; color: var(--muted);
-    letter-spacing: 0.1em; text-transform: uppercase;
-  }
-
-  /* The hover swap container */
-  .meme-hover-container {
-    position: relative;
-    max-width: 480px; width: 100%;
-    cursor: pointer;
-  }
-  /* Both images occupy same space */
-  .meme-hover-container img {
-    display: block;
-    width: 100%; border-radius: 12px;
-    border: 1px solid var(--border2);
-    transition: opacity 0.25s ease, transform 0.25s ease;
-  }
-  /* Default image: hand washing (rejection / not yet) */
-  .meme-default {
-    opacity: 1;
-    transform: scale(1);
-  }
-  /* Hover image: handshake (let's connect) — hidden by default */
-  .meme-hover {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transform: scale(0.97);
-  }
-  /* On hover: swap */
-  .meme-hover-container:hover .meme-default {
-    opacity: 0;
-    transform: scale(1.02);
-  }
-  .meme-hover-container:hover .meme-hover {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .meme-hint {
-    font-size: 12px; color: var(--muted); text-align: center;
-    font-family: var(--mono);
-    display: flex; align-items: center; gap: 6px;
-  }
-  .meme-hint-dot {
-    width: 5px; height: 5px; border-radius: 50%;
-    background: var(--muted2); display: inline-block;
-    animation: blink 2s ease-in-out infinite;
-  }
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
-
   /* ─── SECTIONS ─── */
   .section { padding: 80px 48px; }
   .section-alt { background: var(--bg2); }
@@ -342,13 +284,27 @@
   .card-value { font-size: 16px; font-weight: 600; }
   .card-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
-  /* ─── PILLARS ─── */
-  .pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 28px; }
-  .pillar {
+  /* ─── PILLARS V2 ─── */
+  .pillars-v2 { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+
+  .pillar-v2 {
     background: var(--bg3); border: 1px solid var(--border);
-    border-radius: var(--r); padding: 20px; transition: border-color 0.2s;
+    border-radius: var(--r); overflow: hidden; transition: border-color 0.2s;
   }
-  .pillar.featured { border-color: var(--accent); background: rgba(232,197,71,0.04); }
+  .pillar-v2.featured {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.03);
+  }
+  .pillar-v2-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    align-items: stretch;
+  }
+  .pillar-v2-left {
+    padding: 24px; border-right: 1px solid var(--border);
+  }
+  .pillar-v2-right {
+    padding: 20px; background: var(--bg);
+  }
   .pillar-badge {
     display: inline-block; font-size: 10px; font-family: var(--mono);
     background: rgba(232,197,71,0.15); color: var(--accent);
@@ -373,30 +329,7 @@
   }
   .tool-tag img { width: 12px; height: 12px; opacity: 0.7; }
 
-
-  /* ─── PILLARS V2 — interactive with diagrams ─── */
-  .pillars-v2 { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
-
-  .pillar-v2 {
-    background: var(--bg3); border: 1px solid var(--border);
-    border-radius: var(--r); overflow: hidden; transition: border-color 0.2s;
-  }
-  .pillar-v2.featured {
-    border-color: var(--accent);
-    background: rgba(232,197,71,0.03);
-  }
-  .pillar-v2-inner {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-    align-items: stretch;
-  }
-  .pillar-v2-left {
-    padding: 24px; border-right: 1px solid var(--border);
-  }
-  .pillar-v2-right {
-    padding: 20px; background: var(--bg);
-  }
-
-  /* ─── Diagram shared styles ─── */
+  /* Diagram styles */
   .pv-diagram { height: 100%; display: flex; flex-direction: column; gap: 12px; }
   .pv-label {
     font-family: var(--mono); font-size: 10px; color: var(--muted2);
@@ -413,7 +346,6 @@
   }
   .pv-callout-label { font-size: 12px; color: var(--muted); line-height: 1.3; }
 
-  /* ─── Performance: Funnel ─── */
   .pv-funnel { display: flex; flex-direction: column; align-items: center; gap: 4px; }
   .pv-funnel-stage { display: flex; justify-content: center; }
   .pv-stage-bar {
@@ -427,7 +359,6 @@
   .pv-stage-tag { font-size: 10px; color: var(--muted); font-family: var(--mono); }
   .pv-arrow { font-size: 12px; color: var(--muted2); }
 
-  /* ─── Automation: Pipeline ─── */
   .pv-pipeline {
     display: flex; align-items: center; gap: 4px; flex-wrap: nowrap;
     overflow-x: auto; padding-bottom: 4px;
@@ -457,7 +388,6 @@
   .pv-route-low  .pv-route-label { color: var(--red); }
   .pv-route-dest { font-size: 11px; color: var(--text); }
 
-  /* ─── SEO: GEO grid ─── */
   .pv-geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .pv-geo-card {
     background: var(--bg3); border: 1px solid var(--border);
@@ -469,7 +399,6 @@
   .pv-geo-title { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
   .pv-geo-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-  /* ─── Technical: Stack ─── */
   .pv-stack { display: flex; flex-direction: column; gap: 4px; }
   .pv-stack-row { display: flex; gap: 6px; }
   .pv-stack-node {
@@ -487,21 +416,6 @@
     border-radius: 4px; padding: 2px 6px;
   }
   .pv-stack-down { font-size: 11px; color: var(--muted2); text-align: center; padding: 2px 0; }
-
-  /* ─── Responsive ─── */
-  @media (max-width: 768px) {
-    .pillar-v2-inner { grid-template-columns: 1fr; }
-    .pillar-v2-left { border-right: none; border-bottom: 1px solid var(--border); }
-    .pv-pipeline { gap: 2px; }
-    .pv-pipe-node { min-width: 38px; padding: 5px 6px; }
-    .pv-pipe-name { font-size: 10px; }
-    .pv-pipe-sub { font-size: 9px; }
-    .pv-pipe-arrow { font-size: 11px; }
-    .pv-geo-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
-    .pv-geo-title { font-size: 11px; }
-    .pv-geo-sub { font-size: 10px; }
-    .pv-callout-num { font-size: 18px; }
-  }
 
   /* ─── AUDIT CARD ─── */
   .audit-card {
@@ -551,7 +465,6 @@
   .action-text strong { color: var(--text); font-weight: 500; }
 
   /* ─── PERSONAL STORY ─── */
-  /* Slightly lighter bg so text is more readable */
   .story-section {
     padding: 80px 48px;
     background: #0f0f0f;
@@ -561,10 +474,9 @@
     display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
     margin-top: 32px;
   }
-  /* Readable paragraph text — notably brighter than .body-text */
   .story-body {
     font-size: 15px;
-    color: #c4bfb8;   /* ← was #6b6b6b, now much more readable */
+    color: #c4bfb8;
     line-height: 1.85;
     font-weight: 300;
   }
@@ -584,22 +496,6 @@
   .timeline-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
   .timeline-sub { font-size: 13px; color: #7a7672; line-height: 1.6; }
   .timeline-period { font-family: var(--mono); font-size: 11px; color: var(--muted2); margin-top: 6px; }
-
-  /* ─── CTA ─── */
-  .cta-section {
-    padding: 88px 48px; background: var(--bg2);
-    border-top: 1px solid var(--border); text-align: center;
-  }
-  .cta-email {
-    display: inline-block;
-    font-size: clamp(20px, 3vw, 28px); font-weight: 600;
-    color: var(--accent); margin-top: 20px;
-    border-bottom: 1px solid rgba(232,197,71,0.25); padding-bottom: 4px;
-    transition: border-color 0.2s;
-  }
-  .cta-email:hover { border-color: var(--accent); }
-
-  
 
   /* ─── FOOTER ─── */
   footer {
@@ -626,7 +522,8 @@
     .hero-photo-wrap { display: none; }
     .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
     .stat { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
-    .pillars { grid-template-columns: 1fr; }
+    .pillars-v2-inner { grid-template-columns: 1fr; }
+    .pillar-v2-left { border-right: none; border-bottom: 1px solid var(--border); }
     footer { padding: 24px 20px; }
     .footer-top { flex-direction: column; text-align: center; gap: 8px; }
     .footer-brand { font-size: 13px; text-align: center; white-space: normal; }
@@ -660,19 +557,16 @@
     line-height: 1.2;
     pointer-events: none;
   }
-  /* yes-meme: "AKSHUN X {COMPANY}" bottom-left */
   .yes-meme-text {
     bottom: 10%; left: 30%; right: 5%;
     font-size: clamp(14px, 3.5vw, 25px);
     text-align: left;
   }
-  /* no-meme top: covers "RANDOM TEXT 1" at top-center */
   .no-meme-text-top {
     top: 3%; left: 5%; right: 5%;
     font-size: clamp(12px, 3vw, 18px);
     text-align: center;
   }
-  /* no-meme bottom: covers "RANDOM TEXT 2" bottom-left */
   .no-meme-text-bot {
     bottom: 5%; left: 12%; right: 5%;
     font-size: clamp(12px, 3vw, 18px);
@@ -687,7 +581,7 @@
 
 
 <!-- ════════════════════════════════════════
-     NAV — Akshun × Company
+     NAV — Akshun × Arvana (German)
 ════════════════════════════════════════ -->
 <nav>
   <div class="nav-collab">
@@ -697,10 +591,10 @@
   </div>
   <div style="display:flex;align-items:center;gap:12px;">
     <div class="lang-toggle">
-      <a href="/arvana/" class="lang-btn active">🇬🇧 EN</a>
-      <a href="/arvana/de/" class="lang-btn">🇩🇪 DE</a>
+      <a href="/arvana/" class="lang-btn">🇬🇧 EN</a>
+      <a href="/arvana/de/" class="lang-btn active">🇩🇪 DE</a>
     </div>
-    <div class="nav-url">hire.akshundogra.com/arvana</div>
+    <div class="nav-url">hire.akshundogra.com/arvana/de</div>
   </div>
 </nav>
 
@@ -715,16 +609,16 @@
         <div class="hero-badge">
           <img src="https://www.google.com/s2/favicons?domain=arvana.de&sz=64" class="hero-badge-logo" alt="Arvana" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><div class="hero-badge-fallback" style="display:none">A</div><span class="hero-badge-text" style="margin-left:4px;">Arvana</span>
           <div class="hero-badge-dot"></div>
-          <span class="hero-badge-text">Built for Arvana</span>
+          <span class="hero-badge-text">Für Arvana entwickelt</span>
         </div>
-        <div class="hero-label">A personal case · GTM Engineer (m/w/d)</div>
+        <div class="hero-label">Persönlicher Pitch · GTM Engineer (m/w/d)</div>
         <h1 class="hero-h1">
-          36x ROAS and automated pipelines,<br>
-          <span class="highlight">scaling AI-native GTM for Arvana,</span><br>
-          let's drive pipeline.
+          36x ROAS und automatisierte Systeme,<br>
+          <span class="highlight">skalierbares AI-native GTM für Arvana,</span><br>
+          lasst uns Pipeline bauen.
         </h1>
-        <p class="hero-sub">I reduced manual SDR effort by 80% using Clay, Apollo, and custom automation workflows. For Arvana, I will build autonomous signal-driven outbound systems and deploy Claude Code tools to fuel client growth across DACH.</p>
-        <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="Arvana">
+        <p class="hero-sub">Ich habe manuelle SDR-Aufgaben durch Clay, Apollo und maßgeschneiderte Automatisierungen um 80% reduziert. Für Arvana baue ich skalierbare, signalgetriebene Outbound-Systeme und entwickle eigene Claude Code Tools, um das Wachstum eurer Kunden in DACH voranzutreiben.</p>
+        <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="Arvana-DE">
           ✉&ensp;akshundogra@gmail.com
         </a>
       </div>
@@ -740,30 +634,30 @@
 
 
 <!-- ════════════════════════════════════════
-     STATS BAR — Static, 4 pillars
+     STATS BAR
 ════════════════════════════════════════ -->
 <div class="stats-bar">
   <div class="inner">
     <div class="stats-grid">
       <div class="stat">
         <div class="stat-num"><span class="accent">36x</span>+</div>
-        <div class="stat-label">Peak ROAS achieved</div>
+        <div class="stat-label">Spitzen-ROAS erzielt</div>
         <div class="stat-channel">Performance</div>
       </div>
       <div class="stat">
         <div class="stat-num"><span class="accent">400</span>%</div>
-        <div class="stat-label">Organic traffic growth</div>
+        <div class="stat-label">Organisches Traffic-Wachstum</div>
         <div class="stat-channel">SEO / GEO</div>
       </div>
       <div class="stat">
         <div class="stat-num">−<span class="accent">80</span>%</div>
-        <div class="stat-label">Manual SDR effort saved</div>
-        <div class="stat-channel">Automation</div>
+        <div class="stat-label">Manuelle SDR-Arbeitszeit gespart</div>
+        <div class="stat-channel">Automatisierung</div>
       </div>
       <div class="stat">
         <div class="stat-num"><span class="accent">6</span>+</div>
-        <div class="stat-label">Years across growth, paid & automation</div>
-        <div class="stat-channel">General</div>
+        <div class="stat-label">Jahre Erfahrung in Growth, Paid Ads &amp; AI-Stack</div>
+        <div class="stat-channel">Allgemein</div>
       </div>
     </div>
   </div>
@@ -771,12 +665,10 @@
 
 
 <!-- ════════════════════════════════════════
-     TOOLS CAROUSEL — infinite scroll marquee
-     Same style as akshundogra.com
+     TOOLS CAROUSEL
 ════════════════════════════════════════ -->
 <div class="tools-carousel">
   <div class="carousel-track" id="carousel-track">
-    <!-- Set 1 -->
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
     <div class="tool-chip">LinkedIn Ads</div>
@@ -795,7 +687,7 @@
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/javascript/ffffff" alt="">JavaScript</div>
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/html5/ffffff" alt="">HTML/CSS</div>
     <div class="tool-chip">Pipedrive</div>
-    <!-- Set 2 — exact duplicate for seamless loop -->
+    <!-- Set 2 -->
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/googleads/ffffff" alt="">Google Ads</div>
     <div class="tool-chip"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="">Meta Ads</div>
     <div class="tool-chip">LinkedIn Ads</div>
@@ -819,36 +711,36 @@
 
 
 <!-- ════════════════════════════════════════
-     WHY THIS COMPANY
+     WARUM ARVANA
 ════════════════════════════════════════ -->
 <section class="section section-border">
   <div class="inner">
     <div class="two-col">
       <div>
-        <div class="section-label">Why Arvana</div>
-        <h2 class="section-h2">Building the premier AI-native GTM engine in DACH</h2>
-        <div class="body-text"><p>Arvana is redefining B2B outbound by replacing manual effort with intelligent systems for over 200 tech leaders. My background in building intent-signal engines with Clay and Claude Code aligns directly with your mission to scale ARR efficiently. I am excited to help Arne, Mirco, and the team establish Arvana as DACH's GTM benchmark.</p></div>
+        <div class="section-label">Warum Arvana</div>
+        <h2 class="section-h2">Der Aufbau der führenden AI-nativen GTM-Firma in DACH</h2>
+        <div class="body-text"><p>Arvana definiert B2B-Outbound neu, indem manuelle Fleißarbeit durch intelligente Systeme für über 200 Tech-Unternehmen wie FreeNow, Swisscom, SmapOne, Telli und Ivy ersetzt wird. Meine Erfahrung im Aufbau von Intent-Signal-Engines mit Clay und Claude Code passt exakt zu eurer Mission, ARR effizient zu skalieren. Ich freue mich darauf, Arne, Mirco und das gesamte Team dabei zu unterstützen, Arvana als GTM-Standard in DACH weiter auszubauen.</p></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;padding-top:6px;">
         <div class="card">
-          <div class="card-label">Target Role</div>
+          <div class="card-label">Zielrolle</div>
           <div class="card-value">GTM Engineer (m/w/d)</div>
-          <div class="card-sub">Open to discussion — I go where I make the most impact</div>
+          <div class="card-sub">Offen für Diskussionen – Impact steht an erster Stelle</div>
         </div>
         <div class="card">
-          <div class="card-label">Location &amp; Mobility</div>
+          <div class="card-label">Standort &amp; Mobilität</div>
           <div class="card-value">Nürnberg / Berlin 🇩🇪</div>
-          <div class="card-sub">Relocation anywhere in Germany · Remote / Hybrid · EU Work Auth</div>
+          <div class="card-sub">Reise- &amp; umzugsbereit in Deutschland · 3+2 Hybrid (Rosenthaler Platz) / Remote · EU-Arbeitserlaubnis</div>
         </div>
         <div class="card">
-          <div class="card-label">Company</div>
+          <div class="card-label">Unternehmen</div>
           <div class="card-value">Arvana</div>
           <div class="card-sub">arvana.de</div>
         </div>
         <div class="card" style="border-color:rgba(74,222,128,0.25);background:rgba(74,222,128,0.03);">
-          <div class="card-label">Availability</div>
-          <div class="card-value" style="color:var(--green);">Available for hire</div>
-          <div class="card-sub">Open to conversations now · Notice period negotiable</div>
+          <div class="card-label">Verfügbarkeit</div>
+          <div class="card-value" style="color:var(--green);">Verfügbar für Einstieg</div>
+          <div class="card-sub">Offen für Gespräche · Kündigungsfrist verhandelbar</div>
         </div>
       </div>
     </div>
@@ -857,27 +749,26 @@
 
 
 <!-- ════════════════════════════════════════
-     WHAT I BRING — 4 PILLARS (interactive)
+     WAS ICH MITBRINGE — 4 PILLARS
 ════════════════════════════════════════ -->
 <section class="section section-alt section-border">
   <div class="inner">
-    <div class="section-label">Full skillset</div>
-    <h2 class="section-h2">Part marketer,<br><em>part engineer.</em></h2>
+    <div class="section-label">Gesamtes Skillset</div>
+    <h2 class="section-h2">Teils Marketer,<br><em>teils Engineer.</em></h2>
     <div class="body-text">
-      <p>I don't fit neatly in one box — and that's the point. I design systems that connect data to revenue across paid, organic, automation, and full-funnel GTM intelligence.</p>
+      <p>Ich passe nicht in eine einzige Schublade – und genau das ist der Vorteil. Ich entwickle Systeme, die Daten direkt mit Umsatz verbinden: über Paid Ads, organische Reichweite, Automatisierung und GTM-Signal-Intelligenz.</p>
     </div>
 
     <div class="pillars-v2">
 
       <!-- ── PILLAR 1: Performance Marketing ── -->
-      <div class="pillar-v2 ">
-        
+      <div class="pillar-v2">
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">📈</div>
             <div class="pillar-title">Performance Marketing</div>
-            <div class="pillar-body">End-to-end paid media across Google, Meta, and LinkedIn. 36x+ ROAS, $50K+ monthly budgets managed. Demand creation and capture in one unified funnel.</div>
-            <div class="pillar-proof">At Ingestro &amp; Theo — cut CPC 20%, raised CTR 30%, and recovered €32.7k in suppressed conversion value &amp; ad waste.</div>
+            <div class="pillar-body">End-to-End Paid Media auf Google, Meta und LinkedIn. 36x+ ROAS, über $50K monatlich verwaltetes Budget. Demand Creation und Capture in einem geschlossenen Funnel.</div>
+            <div class="pillar-proof">Bei Ingestro &amp; Theo — CPC um 20% gesenkt, CTR um 30% gesteigert und €32.7k an unterdrücktem Konversionswert gerettet.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleads/ffffff">Google Ads</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/meta/ffffff">Meta Ads</div>
@@ -886,9 +777,8 @@
             </div>
           </div>
           <div class="pillar-v2-right">
-            <!-- Funnel diagram -->
             <div class="pv-diagram">
-              <div class="pv-label">Full-funnel architecture</div>
+              <div class="pv-label">Full-Funnel Architektur</div>
               <div class="pv-funnel">
                 <div class="pv-funnel-stage" style="width:100%">
                   <div class="pv-stage-bar" style="background:rgba(232,197,71,0.15);border-color:rgba(232,197,71,0.3);">
@@ -915,7 +805,7 @@
               </div>
               <div class="pv-callout">
                 <span class="pv-callout-num">36x+</span>
-                <span class="pv-callout-label">Peak ROAS achieved</span>
+                <span class="pv-callout-label">Spitzen-ROAS erzielt</span>
               </div>
             </div>
           </div>
@@ -923,14 +813,13 @@
       </div>
 
       <!-- ── PILLAR 2: Marketing Automation ── -->
-      <div class="pillar-v2 ">
-        
+      <div class="pillar-v2">
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">⚡</div>
             <div class="pillar-title">Marketing Automation</div>
-            <div class="pillar-body">Full pipelines from intent signal to outreach with human-in-the-loop gates. −80% manual SDR effort. Built on Make, Clay, Apollo, Lemlist.</div>
-            <div class="pillar-proof">At Ingestro &amp; Theo — built RB2B → Clay → Lemlist pipeline and native CRM lead scoring, cutting SDR effort 80%.</div>
+            <div class="pillar-body">Vollständige Outbound-Pipelines von Intent-Signalen bis zur Outreach-Sequenz mit Human-in-the-Loop Gates. −80% manuelle SDR-Arbeitszeit. Gebaut mit Make, Clay, Apollo &amp; Lemlist.</div>
+            <div class="pillar-proof">Bei Ingestro &amp; Theo — RB2B → Clay → Lemlist Pipeline &amp; natives CRM Lead-Scoring aufgebaut.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/make/ffffff">Make</div>
               <div class="tool-tag">Clay</div>
@@ -940,87 +829,85 @@
             </div>
           </div>
           <div class="pillar-v2-right">
-            <!-- Pipeline flow diagram -->
             <div class="pv-diagram">
-              <div class="pv-label">Intent signal pipeline</div>
+              <div class="pv-label">Intent-Signal Pipeline</div>
               <div class="pv-pipeline">
                 <div class="pv-pipe-node pv-pipe-source">
                   <div class="pv-pipe-icon">🌐</div>
                   <div class="pv-pipe-name">RB2B</div>
-                  <div class="pv-pipe-sub">Visitor ID</div>
+                  <div class="pv-pipe-sub">Besucher-ID</div>
                 </div>
                 <div class="pv-pipe-arrow">→</div>
                 <div class="pv-pipe-node">
                   <div class="pv-pipe-icon">🔗</div>
                   <div class="pv-pipe-name">Apollo</div>
-                  <div class="pv-pipe-sub">Enrich</div>
+                  <div class="pv-pipe-sub">Enrichment</div>
                 </div>
                 <div class="pv-pipe-arrow">→</div>
                 <div class="pv-pipe-node">
                   <div class="pv-pipe-icon"><img src="https://cdn.simpleicons.org/make/ffffff" style="width:13px"></div>
                   <div class="pv-pipe-name">Make</div>
-                  <div class="pv-pipe-sub">Route</div>
+                  <div class="pv-pipe-sub">Routing</div>
                 </div>
                 <div class="pv-pipe-arrow">→</div>
                 <div class="pv-pipe-node pv-pipe-end">
                   <div class="pv-pipe-icon">🧱</div>
                   <div class="pv-pipe-name">Clay</div>
-                  <div class="pv-pipe-sub">ICP Score</div>
+                  <div class="pv-pipe-sub">ICP-Score</div>
                 </div>
               </div>
               <div class="pv-routing">
                 <div class="pv-route pv-route-high">
-                  <div class="pv-route-label">HIGH</div>
+                  <div class="pv-route-label">HOCH</div>
                   <div class="pv-route-dest">📧 Lemlist</div>
                 </div>
                 <div class="pv-route pv-route-mid">
-                  <div class="pv-route-label">MID</div>
-                  <div class="pv-route-dest">💬 SDR Review</div>
+                  <div class="pv-route-label">MITTEL</div>
+                  <div class="pv-route-dest">💬 SDR-Review</div>
                 </div>
                 <div class="pv-route pv-route-low">
-                  <div class="pv-route-label">LOW</div>
-                  <div class="pv-route-dest">🗑 Discard</div>
+                  <div class="pv-route-label">NIEDRIG</div>
+                  <div class="pv-route-dest">🗑 Verwerfen</div>
                 </div>
               </div>
               <div class="pv-callout">
                 <span class="pv-callout-num">−80%</span>
-                <span class="pv-callout-label">Manual SDR effort saved</span>
+                <span class="pv-callout-label">Manuelle SDR-Arbeitszeit gespart</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      
-      <!-- ── PILLAR: GTM Signal Intelligence ── -->
+      <!-- ── PILLAR 3: GTM Signal Intelligence (Featured for Arvana) ── -->
       <div class="pillar-v2 featured">
-        <div class="pillar-badge">Most relevant for Arvana</div>
+        <div class="pillar-badge">Besonders relevant für Arvana</div>
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">🎯</div>
             <div class="pillar-title">GTM Signal Intelligence</div>
-            <div class="pillar-body">Full-pipeline value capture — from raw public signals to scored, routed accounts. I built an autonomous research agent that turns funding, hiring, ad-presence, and tech-stack signals into a live fit score before a single outbound message goes out.</div>
-            <div class="pillar-proof">At Ingestro &amp; Theo — built signal-scoring engine evaluating funding stage, hiring velocity, and channel gaps to prioritize account outreach.</div>
+            <div class="pillar-body">Volle Value Capture — von rohen öffentlichen Signalen bis zu bewerteten, gerouteten Accounts. Ich habe einen autonomen Research-Agenten entwickelt, der Funding, Hiring, Ads und Stack-Signale in einen Live-Fit-Score verwandelt, bevor eine Outreach-Nachricht rausgeht.</div>
+            <div class="pillar-proof">Bei Ingestro &amp; Theo — Signal-Scoring-Engine für Funding, Hiring-Geschwindigkeit und Kanal-Lücken aufgebaut, um Outreach gezielt zu priorisieren.</div>
             <div class="tools-strip">
-              <div class=tool-tag>Signal Scoring</div>
-              <div class=tool-tag>Fit Tiering</div>
-              <div class=tool-tag>Evidence Routing</div>
-              <div class=tool-tag>Autonomous Research</div>
+              <div class="tool-tag">Signal-Scoring</div>
+              <div class="tool-tag">Fit-Tiering</div>
+              <div class="tool-tag">Evidence-Routing</div>
+              <div class="tool-tag">Autonomer Agent</div>
             </div>
           </div>
           <div class="pillar-v2-right">
             <div class="pv-diagram">
-              <div class="pv-label">Signal-to-pipeline engine</div>
+              <div class="pv-label">Signal-zu-Pipeline Engine</div>
               <div class="pv-pipeline">
                 <div class="pv-pipe-node pv-pipe-source">
                   <div class="pv-pipe-icon">🌐</div>
                   <div class="pv-pipe-name">Scraper</div>
-                  <div class="pv-pipe-sub">6 Modules</div>
+                  <div class="pv-pipe-sub">6 Module</div>
                 </div>
                 <div class="pv-pipe-arrow">→</div>
                 <div class="pv-pipe-node">
                   <div class="pv-pipe-icon">💼</div>
-                  <div class="pv-pipe-name">Signals</div>
+                  <div class="pv-pipe-name">Signale</div>
                   <div class="pv-pipe-sub">Jobs &amp; Stack</div>
                 </div>
                 <div class="pv-pipe-arrow">→</div>
@@ -1038,36 +925,35 @@
               </div>
               <div class="pv-routing">
                 <div class="pv-route" style="background:rgba(167,139,250,0.08);border-color:rgba(167,139,250,0.25);">
-                  <div class="pv-route-label" style="background:rgba(167,139,250,0.2);color:#a78bfa;">HIGH (80+)</div>
+                  <div class="pv-route-label" style="background:rgba(167,139,250,0.2);color:#a78bfa;">HOCH (80+)</div>
                   <div class="pv-route-dest">⚡ Auto-Publish &amp; AE Route</div>
                 </div>
                 <div class="pv-route" style="background:rgba(232,197,71,0.08);border-color:rgba(232,197,71,0.25);">
-                  <div class="pv-route-label" style="background:rgba(232,197,71,0.2);color:var(--accent);">MID (55-79)</div>
+                  <div class="pv-route-label" style="background:rgba(232,197,71,0.2);color:var(--accent);">MITTEL (55-79)</div>
                   <div class="pv-route-dest">💬 SDR Approval Review</div>
                 </div>
                 <div class="pv-route" style="background:rgba(255,255,255,0.03);border-color:var(--border);">
-                  <div class="pv-route-label" style="background:rgba(255,255,255,0.08);color:var(--muted);">LOW (&lt;55)</div>
-                  <div class="pv-route-dest">⏳ Nurture / Hold</div>
+                  <div class="pv-route-label" style="background:rgba(255,255,255,0.08);color:var(--muted);">NIEDRIG (&lt;55)</div>
+                  <div class="pv-route-dest">⏳ Nurture / Halten</div>
                 </div>
               </div>
               <div class="pv-callout" style="border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.05);">
                 <span class="pv-callout-num" style="color:#a78bfa;">100%</span>
-                <span class="pv-callout-label">Signal-traceable, zero guesswork</span>
+                <span class="pv-callout-label">Signal-nachvollziehbar, null Raten</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-<!-- ── PILLAR 3: SEO & GEO ── -->
-      <div class="pillar-v2 ">
-        
+      <!-- ── PILLAR 4: SEO & GEO ── -->
+      <div class="pillar-v2">
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">🔍</div>
-            <div class="pillar-title">SEO & GEO</div>
-            <div class="pillar-body">Technical SEO, schema markup, and LLM/GEO visibility strategy. 400% organic growth. Early practitioner of Generative Engine Optimisation.</div>
-            <div class="pillar-proof">At Ingestro &amp; Theo — AI-sourced traffic scaled 1% → 20% of sessions, contributing 10% of total pipeline.</div>
+            <div class="pillar-title">SEO &amp; GEO</div>
+            <div class="pillar-body">Technisches SEO, Schema Markup und Strategien für LLM/GEO-Sichtbarkeit (ChatGPT, Perplexity). 400% organischer Zuwachs.</div>
+            <div class="pillar-proof">Bei Ingestro &amp; Theo — AI-Traffic stieg von 1% auf 20% aller Sitzungen und lieferte 10% der Gesamt-Pipeline.</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/semrush/ffffff">SEMrush</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googleanalytics/ffffff">GA4</div>
@@ -1077,49 +963,47 @@
             </div>
           </div>
           <div class="pillar-v2-right">
-            <!-- 4-pillar GEO strategy -->
             <div class="pv-diagram">
-              <div class="pv-label">LLM visibility strategy</div>
+              <div class="pv-label">LLM Sichtbarkeits-Strategie</div>
               <div class="pv-geo-grid">
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">📐</div>
-                  <div class="pv-geo-title">Dynamic Schema</div>
-                  <div class="pv-geo-sub">Per-page structured data, LLM-readable</div>
+                  <div class="pv-geo-title">Dynamisches Schema</div>
+                  <div class="pv-geo-sub">Strukturierte Daten für LLMs optimiert</div>
                 </div>
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">🔎</div>
-                  <div class="pv-geo-title">Prompt Tracking</div>
-                  <div class="pv-geo-sub">Peec AI + Search Console gaps</div>
+                  <div class="pv-geo-title">Prompt-Tracking</div>
+                  <div class="pv-geo-sub">Analyse via Peec AI &amp; Search Console</div>
                 </div>
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">💬</div>
-                  <div class="pv-geo-title">Community Signals</div>
-                  <div class="pv-geo-sub">Reddit + LinkedIn citations</div>
+                  <div class="pv-geo-title">Community-Signale</div>
+                  <div class="pv-geo-sub">Reddit &amp; LinkedIn Erwähnungen</div>
                 </div>
                 <div class="pv-geo-card">
                   <div class="pv-geo-icon">⭐</div>
-                  <div class="pv-geo-title">Authority Profiles</div>
-                  <div class="pv-geo-sub">G2 + Crunchbase optimised</div>
+                  <div class="pv-geo-title">Autoritäts-Profile</div>
+                  <div class="pv-geo-sub">G2 &amp; Crunchbase Optimierung</div>
                 </div>
               </div>
               <div class="pv-callout">
                 <span class="pv-callout-num">400%</span>
-                <span class="pv-callout-label">Organic traffic growth</span>
+                <span class="pv-callout-label">Organisches Traffic-Wachstum</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ── PILLAR 4: Technical Marketing ── -->
-      <div class="pillar-v2 ">
-        
+      <!-- ── PILLAR 5: Technical Marketing ── -->
+      <div class="pillar-v2">
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">💻</div>
             <div class="pillar-title">Technical Marketing</div>
-            <div class="pillar-body">Webflow builds, GTM, conversion tracking, and ABM page generation at scale. I build and measure without needing a dev team.</div>
-            <div class="pillar-proof">At Ingestro &amp; Theo — built personalized ABM pages &amp; 5 governed GTM AI agents (Python + Claude + n8n + HubSpot).</div>
+            <div class="pillar-body">Webflow-Entwicklung, GTM-Tracking, Event-Attribution und ABM-Landingpages in Scale. Eigenständige Umsetzung ohne Dev-Team-Engpass.</div>
+            <div class="pillar-proof">Bei Ingestro &amp; Theo — ABM-Landingpages &amp; 5 KI-Agenten gebaut (Python + Claude + n8n + HubSpot).</div>
             <div class="tools-strip">
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/webflow/ffffff">Webflow</div>
               <div class="tool-tag"><img src="https://cdn.simpleicons.org/googletagmanager/ffffff">GTM</div>
@@ -1128,9 +1012,8 @@
             </div>
           </div>
           <div class="pillar-v2-right">
-            <!-- Tracking stack -->
             <div class="pv-diagram">
-              <div class="pv-label">Tracking & measurement stack</div>
+              <div class="pv-label">Tracking &amp; Mess-Stack</div>
               <div class="pv-stack">
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-top">
@@ -1142,15 +1025,15 @@
                     <span>HTML/CSS/JS</span>
                   </div>
                 </div>
-                <div class="pv-stack-down">↓ events fire</div>
+                <div class="pv-stack-down">↓ Events feuern</div>
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-mid" style="width:100%">
                     <img src="https://cdn.simpleicons.org/googletagmanager/ffffff" style="width:14px;opacity:0.8">
                     <span>Google Tag Manager</span>
-                    <span class="pv-stack-badge">Central hub</span>
+                    <span class="pv-stack-badge">Zentrale</span>
                   </div>
                 </div>
-                <div class="pv-stack-down">↓ distributes to</div>
+                <div class="pv-stack-down">↓ verteilt an</div>
                 <div class="pv-stack-row">
                   <div class="pv-stack-node pv-stack-bot">
                     <img src="https://cdn.simpleicons.org/googleanalytics/ffffff" style="width:12px;opacity:0.8">
@@ -1168,43 +1051,42 @@
               </div>
               <div class="pv-callout">
                 <span class="pv-callout-num">0</span>
-                <span class="pv-callout-label">Dev team needed</span>
+                <span class="pv-callout-label">Entwickler-Bedarf für Marketing-Builds</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    </div><!-- end pillars-v2 -->
+    </div>
   </div>
 </section>
 
 
-
 <!-- ════════════════════════════════════════
-     HOW I CAN HELP — COMPANY SPECIFIC
+     ERSTE 90 TAGE BEI ARVANA
 ════════════════════════════════════════ -->
 <section class="section section-border">
   <div class="inner">
-    <div class="section-label">Specifically for Arvana</div>
-    <h2 class="section-h2">What I'd do in the<br><em>first 90 days</em></h2>
-    <div class="body-text"><p>With a 36x peak ROAS and −80% manual SDR effort via custom automation stacks, I turn raw market signals into predictable revenue. Having built autonomous research tools with Python and Claude Code, I will expand Arvana's outbound playbooks and AI tech stack.</p></div>
+    <div class="section-label">Speziell für Arvana</div>
+    <h2 class="section-h2">Was ich in den<br><em>ersten 90 Tagen umsetze</em></h2>
+    <div class="body-text"><p>Mit 36x Spitzen-ROAS und −80% manueller SDR-Arbeitszeit verwandle ich Marktsignale in planbare Pipeline. Aufbauend auf meinen Erfahrungen mit Python und Claude Code erweitere ich Arvanas Outbound-Playbooks.</p></div>
     <ul class="action-list">
       <li class="action-item">
         <div class="action-num">01</div>
-        <div class="action-text"><strong>Deploy Clay Intent Signal Engines</strong> — I will connect intent, funding, and web visit signals via Clay and Apollo into hyper-personalized outreach sequences. This converts cold prospects into qualified pipeline for Arvana's client portfolio.</div>
+        <div class="action-text"><strong>Clay Intent Signal Engines aufbauen</strong> — Ich verbinde Intent-, Funding- und Website-Besuchssignale über Clay und Apollo in hochpersonalisierte Outreach-Sequenzen. Das wandelt kalte Prospects in qualifizierte Pipeline für Arvanas 200+ B2B-Kunden.</div>
       </li>
       <li class="action-item">
         <div class="action-num">02</div>
-        <div class="action-text"><strong>Build Custom Claude Code Workflows</strong> — I will engineer internal AI tools using Claude Code to automate prospect research and sequence creation. This empowers the team to launch high-converting GTM campaigns faster.</div>
+        <div class="action-text"><strong>Eigene Claude Code Workflows entwickeln</strong> — Ich entwickle interne AI-Tools mit Claude Code, um Account-Research und Sequenz-Erstellung zu automatisieren. Damit startet das Team noch schneller hochkonvertierende GTM-Kampagnen.</div>
       </li>
       <li class="action-item">
         <div class="action-num">03</div>
-        <div class="action-text"><strong>Optimize Paid Demand Generation Channels</strong> — I will launch targeted LinkedIn and Google Ads funnels to capture high-intent B2B tech buyers. Applying my 36x peak ROAS playbook will lower CAC while scaling pipeline.</div>
+        <div class="action-text"><strong>Paid Demand Generation Kanäle optimieren</strong> — Ich starte gezielte LinkedIn- und Google Ads-Funnels für B2B-Tech-Entscheidungsträger. Mein 36x-ROAS-Playbook senkt den CAC bei steigendem Pipeline-Volumen.</div>
       </li>
       <li class="action-item">
         <div class="action-num">04</div>
-        <div class="action-text"><strong>Build Autonomous Fit-Scoring Signal Engine</strong> — I will build a live signal engine for Arvana that scores target accounts based on tech stack, hiring velocity, and funding updates before outbound routing. This ensures sales reps only speak with top-tier, high-intent accounts.</div>
+        <div class="action-text"><strong>Autonome Signal-Scoring Engine etablieren</strong> — Ich baue ein Live-Signal-System für Arvana, das Ziel-Accounts anhand von Tech-Stack, Hiring-Velocity und Funding priorisiert, bevor das Sales-Team anspricht. So sprechen AEs nur mit Top-Tier Accounts.</div>
       </li>
     </ul>
 
@@ -1212,7 +1094,7 @@
     <div style="margin-top:24px;padding:18px 22px;background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.25);border-radius:10px;">
       <div style="font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">💡 ROI Business Case · Pilot Benchmark</div>
       <div style="font-size:13px;color:var(--text);line-height:1.6;">
-        Pilot target: 80 sales-ready accounts per month, measured against meeting rate, AE acceptance rate, and research time saved per qualified account. If AEs convert 8% of cold outbound vs. 30% of warm, pre-qualified accounts, signal-led native scoring pays for itself in week one.
+        Pilot-Ziel: 80 vertriebsbereite Accounts pro Monat, gemessen an der Meeting-Rate, AE-Akzeptanzrate und eingesparter Recherchezeit pro qualifiziertem Account. Wenn AEs 8% kalter Outbound-Leads vs. 30% warm vorqualifizierter Signal-Leads abschließen, macht sich die Signal-Engine bereits in Woche 1 bezahlt.
       </div>
     </div>
   </div>
@@ -1220,16 +1102,16 @@
 
 
 <!-- ════════════════════════════════════════
-     HOMEWORK / MINI AUDIT
+     HAUSAUFGABEN / MINI AUDIT
 ════════════════════════════════════════ -->
 <section class="section section-alt section-border">
   <div class="inner">
-    <div class="section-label">Before reaching out</div>
-    <h2 class="section-h2">I already did some<br><em>homework.</em></h2>
-    <div class="body-text"><p>Here is an audit of Arvana's public GTM signals and expansion opportunities across paid acquisition, automation, and signal intelligence.</p></div>
+    <div class="section-label">Vor dem ersten Gespräch</div>
+    <h2 class="section-h2">Ich habe bereits<br><em>Hausaufgaben gemacht.</em></h2>
+    <div class="body-text"><p>Hier ist eine Analyse von Arvanas öffentlichen GTM-Signalen und Skalierungschancen über Performance, Automatisierung und AI-Stack.</p></div>
     <div class="audit-card">
       <div class="audit-header">
-        <span class="audit-header-left">⬡ Observations · Arvana</span>
+        <span class="audit-header-left">⬡ Beobachtungen · Arvana</span>
         <span class="audit-header-right" style="color:var(--accent);font-family:var(--mono);">Fit Score: 99/100 (HIGH_FIT)</span>
       </div>
       <div style="padding:16px 20px;background:rgba(232,197,71,0.04);border-bottom:1px solid var(--border);">
@@ -1238,73 +1120,65 @@
             <span style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;">ACCOUNT FIT SCORE</span>
             <div style="font-size:22px;font-weight:700;color:var(--text);line-height:1.1;"><span style="color:var(--accent);">99</span><span style="font-size:14px;color:var(--muted);">/100</span> <span style="font-size:11px;font-family:var(--mono);padding:2px 8px;border-radius:100px;background:rgba(232,197,71,0.15);color:var(--accent);border:1px solid rgba(232,197,71,0.3);margin-left:6px;vertical-align:middle;">HIGH_FIT</span></div>
           </div>
-          <button id="score-toggle-btn" style="background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.3);color:var(--accent);font-family:var(--mono);font-size:11px;padding:8px 14px;border-radius:6px;cursor:pointer;transition:all 0.2s;" onclick="toggleScoreBreakdown()" data-umami-event="score-breakdown-toggle" data-umami-event-company="Arvana">Learn how this score was calculated ↓</button>
+          <button id="score-toggle-btn" style="background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.3);color:var(--accent);font-family:var(--mono);font-size:11px;padding:8px 14px;border-radius:6px;cursor:pointer;transition:all 0.2s;" onclick="toggleScoreBreakdown()" data-umami-event="score-breakdown-toggle" data-umami-event-company="Arvana-DE">Berechnung des Fit Scores anzeigen ↓</button>
         </div>
         <div id="score-breakdown-panel" style="display:none;width:100%;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
-          <div style="font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">🔍 Signal Evidence Breakdown &amp; Weighted Factors</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">🔍 Signal-Nachweise &amp; Gewichtung</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Job Description & Skill Overlap</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+55 pts (40% (Primary))</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Matched 5 resume skills (Clay, Revops, Gtm, Outbound, Claude Code) + Direct Role Title Alignment.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Paid Channel Footprint & Gaps</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+13 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Active ad channels: none; Untapped channels: Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Funding & Stage Momentum</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+13 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Stage: Series D, Employee Count: 250-500</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.crunchbase.com/organization/arvana-9a6d" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Market & Social Validation</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+8 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Market signals: 0 review platform hits, 0 recent news/announcement mentions.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.g2.com/search?query=Arvana" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Hiring & Role Scaling Context</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+10 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Hiring counts — sales: 0, marketing: 0, revops: 0, engineering: 0; GTM roles: 0.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Job Description & Skill Overlap</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+55 pts (40% (Primary))</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Exakte Übereinstimmung in 5 Schlüssel-Skills (Clay, RevOps, GTM, Outbound, Claude Code) + direkte Rollenausrichtung.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Quelle ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Paid Channel Footprint</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+13 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Aktive Ads: Keine; Erschließbares Potenzial: Google Search, Meta Ads, LinkedIn B2B Targeting.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de" target="_blank" style="color:var(--accent);text-decoration:underline;">Quelle ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Unternehmens-Wachstum</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+13 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">>€5M ARR, 30+ Teammitglieder, über 200 B2B-Kunden seit 2024.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de" target="_blank" style="color:var(--accent);text-decoration:underline;">Quelle ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Markt-Validation</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+8 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Starke Kunden-Referenzen (FreeNow, Swisscom, SmapOne, Telli, Ivy).</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de" target="_blank" style="color:var(--accent);text-decoration:underline;">Quelle ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Hiring & Scaling Context</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+10 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Aktive Skalierung des GTM-Teams in Berlin am Rosenthaler Platz.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://arvana.de/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Quelle ↗</a></div></div>
           </div>
         </div>
       </div>
       <ul class="audit-findings">
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(232,197,71,0.12);color:var(--accent);font-size:13px;">📈</div>
-          <div class="finding-text"><strong>Performance</strong> — Arvana currently runs no active paid campaigns on LinkedIn or Google Ads, missing targeted B2B capture.</div>
+          <div class="finding-text"><strong>Performance</strong> — Arvana schaltet derzeit keine aktiven Paid Campaigns auf LinkedIn oder Google Search – Chance für gezieltes B2B-Demand-Capture.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(96,165,250,0.12);color:var(--blue);font-size:13px;">⚡</div>
-          <div class="finding-text"><strong>Automation</strong> — Automated lead routing will scale lead processing efficiently alongside team growth without increasing manual SDR workload.</div>
+          <div class="finding-text"><strong>Automatisierung</strong> — Automatisierte Lead-Routing-Pipelines entlasten das Team nachhaltig bei schnellem Mitarbeiter-Wachstum.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(74,222,128,0.12);color:var(--green);font-size:13px;">🔍</div>
-          <div class="finding-text"><strong>GTM AI & Data</strong> — Signal infrastructure can automatically map intent, funding, and web visits directly into Claude Code for personalized outreach.</div>
+          <div class="finding-text"><strong>GTM AI &amp; Data</strong> — Signal-Infrastruktur kann Web-Visits, Job-Changes und Funding-Updates direkt in Claude Code einspeisen.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(167,139,250,0.12);color:#a78bfa;font-size:13px;">🎯</div>
-          <div class="finding-text"><strong>Signal Intelligence</strong> — Combining hiring velocity and ad-presence signals into live fit scores will prioritize high-intent target accounts for outreach.</div>
+          <div class="finding-text"><strong>Signal Intelligence</strong> — Kombination aus Hiring-Velocity und Stack-Daten zur Priorisierung von High-Intent Accounts.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon ok">✓</div>
-          <div class="finding-text">Strong market position with 200+ top-tier B2B clients across DACH.</div>
+          <div class="finding-text">Starke Marktposition mit über 200 renommierten B2B-Tech-Kunden (FreeNow, Swisscom, SmapOne, Telli, Ivy).</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon info">i</div>
-          <div class="finding-text" style="font-style:italic;color:#444;">I can share a Loom walkthrough with more detail — just ask.</div>
+          <div class="finding-text" style="font-style:italic;color:#444;">Auf Wunsch teile ich gerne eine kurze Loom-Videodemo mit weiteren Details.</div>
         </li>
       </ul>
-    </div>
-    <div style="margin-top:12px;display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(96,165,250,0.05);border:1px solid rgba(96,165,250,0.15);border-radius:8px;">
-      <div style="font-size:11px;color:var(--blue);flex-shrink:0;margin-top:1px;">ℹ</div>
-      <div style="font-size:12px;color:var(--muted);line-height:1.6;">
-        <strong style="color:#7a9fc0;">Data Transparency:</strong> Observations are generated autonomously by my 6-module GTM Signal Research Agent (evaluating SpyFu PPC/SEO indices, Screaming Frog crawls, live DOM tag footprints, careers board velocity, and public funding data). Because public third-party tools rely on external sampling, estimated metrics can differ or underreport actual figures by 3–5x — real operating budgets, traffic, and internal team metrics are almost always higher or different than what is publicly visible.
-      </div>
     </div>
   </div>
 </section>
 
 
 <!-- ════════════════════════════════════════
-     PERSONAL STORY — Who is Akshun
-     bg slightly lifted for readability
+     DER MENSCH HINTER DEM MARKETER
 ════════════════════════════════════════ -->
 <section class="story-section">
   <div class="inner">
-    <div class="section-label">The person behind the marketer</div>
-    <h2 class="section-h2">Marketing, engineering,<br><em>and a lot of borders crossed.</em></h2>
+    <div class="section-label">Der Mensch hinter dem Marketer</div>
+    <h2 class="section-h2">Marketing, Engineering,<br><em>und viele überquerte Grenzen.</em></h2>
     <div class="story-grid">
       <div class="story-body">
-        <p>My name, <em>Akshun</em>, means <strong>"undestructable"</strong> in Sanskrit. That's not a personal brand line — it genuinely shapes how I move. I don't quit on campaigns, goals, or challenges like learning German from scratch after landing in a new country.</p>
-        <p>I started freelancing in digital marketing at <strong>19</strong> in India — working with Punjabi music artists, Australian businesses, and tech clients before I'd ever left the country. That early pressure to figure things out without a team or a budget is where the technical + creative hybrid came from.</p>
-        <p>I moved to Nürnberg in 2022 for an M.Sc. at FAU, added an Erasmus semester in Madrid, hit German C1, and picked up enough Spanish to embarrass myself. Outside the dashboards, I run a YouTube channel documenting the unfiltered reality of being an Indian expat in Germany — no filters, real stories.</p>
-        <p>What I keep coming back to: the best marketing sits at the intersection of creativity, data, and technical execution. Most teams have one or two. I try to bring all three.</p>
+        <p>Mein Name, <em>Akshun</em>, bedeutet auf Sanskrit <strong>"unzerstörbar"</strong>. Das ist kein Marketing-Slogan – es prägt meine Arbeitsweise. Ich gebe bei Kampagnen, Zielen oder Herausforderungen wie dem Erlernen der deutschen Sprache bis zum C1-Niveau nicht auf.</p>
+        <p>Mit <strong>19</strong> habe ich in Indien als Freelancer angefangen – für Musiker, australische Unternehmen und Tech-Kunden. Dieser frühe Druck, Ergebnisse ohne großes Budget zu liefern, hat mein technisch-kreatives Mindset geformt.</p>
+        <p>2022 bin ich für mein Masterstudium (M.Sc.) an der FAU nach Nürnberg gezogen, habe ein Erasmus-Semester in Madrid absolviert, Deutsch C1 gemeistert und spreche Spanisch. Auf meinem YouTube-Kanal dokumentiere ich das echte Leben als Expat in Deutschland – ohne Filter, echte Erfahrungen.</p>
+        <p>Was mich antreibt: Das beste Marketing entsteht an der Schnittstelle von Kreativität, Daten und technischer Exzellenz.</p>
       </div>
       <div>
-        <!-- Flip card — timeline front, photo back on hover -->
         <style>
           .flip-card {
             perspective: 1200px;
@@ -1374,43 +1248,43 @@
                 <div class="timeline-item">
                   <div class="timeline-flag">🇮🇳</div>
                   <div>
-                    <div class="timeline-title">India — Where it started</div>
-                    <div class="timeline-sub">Started freelancing at 19. Music artists, Australian businesses, tech clients. Taught myself SEO, PPC, and web dev out of necessity.</div>
+                    <div class="timeline-title">Indien — Der Start</div>
+                    <div class="timeline-sub">Freelancing mit 19 gestartet. Musiker, australische Firmen &amp; Tech-Kunden. Autodidakt in SEO, PPC &amp; Webdev.</div>
                     <div class="timeline-period">2016 – 2022</div>
                   </div>
                 </div>
                 <div class="timeline-item">
                   <div class="timeline-flag">🇩🇪</div>
                   <div>
-                    <div class="timeline-title">Germany — The big leap</div>
-                    <div class="timeline-sub">M.Sc. at FAU Erlangen-Nürnberg. German to C1. Joined an AI startup, built full growth stack from scratch.</div>
-                    <div class="timeline-period">2022 – Present</div>
+                    <div class="timeline-title">Deutschland — Der große Schritt</div>
+                    <div class="timeline-sub">M.Sc. an der FAU Erlangen-Nürnberg. Deutsch auf C1. Eintritt in KI-Startup, kompletten Growth-Stack aufgebaut.</div>
+                    <div class="timeline-period">2022 – Heute</div>
                   </div>
                 </div>
                 <div class="timeline-item">
                   <div class="timeline-flag">🇪🇸</div>
                   <div>
-                    <div class="timeline-title">Spain — The bonus chapter</div>
-                    <div class="timeline-sub">Erasmus at UPM Madrid. Picked up Spanish, confirmed food in Madrid is genuinely incredible.</div>
+                    <div class="timeline-title">Spanien — Das Erasmus-Kapitel</div>
+                    <div class="timeline-sub">Erasmus an der UPM Madrid. Spanisch gelernt &amp; die Madrider Gastronomie schätzen gelernt.</div>
                     <div class="timeline-period">Sep 2024 – Jan 2025</div>
                   </div>
                 </div>
                 <div class="timeline-item">
                   <div class="timeline-flag">▶</div>
                   <div>
-                    <div class="timeline-title">On YouTube</div>
-                    <div class="timeline-sub">The unfiltered reality of moving from India to Germany — visa stress, language barriers, real stories.</div>
-                    <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="Arvana">youtube.com/@akshundogra →</a></div>
+                    <div class="timeline-title">Auf YouTube</div>
+                    <div class="timeline-sub">Ungefilterte Einblicke in den Alltag als Expat in Deutschland — Visa, Sprache, echte Geschichten.</div>
+                    <div class="timeline-period"><a href="https://www.youtube.com/@akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" style="color:var(--accent);" target="_blank" data-umami-event="youtube-click" data-umami-event-company="Arvana-DE">youtube.com/@akshundogra →</a></div>
                   </div>
                 </div>
               </div>
-              <div class="flip-hint">hover to meet the person behind the marketer →</div>
+              <div class="flip-hint">Hovern für ein Foto →</div>
             </div>
             <!-- BACK: Photo -->
             <div class="flip-card-back">
               <img src="https://akshundogra.com/IMG_0812.jpeg" alt="Akshun Dogra">
               <div class="flip-card-back-overlay">
-                <div class="flip-card-back-text">The man behind all of this.</div>
+                <div class="flip-card-back-text">Der Mensch hinter all dem.</div>
                 <div class="flip-card-back-sub">Akshun Dogra · Technical Growth Marketer</div>
               </div>
             </div>
@@ -1423,12 +1297,8 @@
 
 
 <!-- ════════════════════════════════════════
-     INTERACTIVE DECISION — Yes / No
-     Question → Yes reveals CTA (normal)
-              → No reveals meme + CTA (alternate heading)
+     INTERAKTIVE ENTSCHEIDUNG — Ja / Nein
 ════════════════════════════════════════ -->
-
-<!-- Inline styles for the decision block only -->
 <style>
   .decision-section {
     padding: 88px 48px;
@@ -1472,7 +1342,6 @@
   }
   .btn-no:hover { border-color: var(--red); color: var(--red); }
 
-  /* ── Reveal panels — hidden until button click ── */
   .reveal-panel {
     overflow: hidden;
     max-height: 0;
@@ -1485,7 +1354,6 @@
     opacity: 1;
   }
 
-  /* ── CTA shared styles ── */
   .cta-inner {
     padding: 72px 48px 80px;
     border-top: 1px solid var(--border);
@@ -1517,7 +1385,6 @@
   .cta-links a { font-size: 13px; color: var(--muted); transition: color 0.15s; }
   .cta-links a:hover { color: var(--text); }
 
-  /* ── No path: meme canvas ── */
   .no-meme-wrap {
     padding: 52px 48px 0;
     display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1526,17 +1393,6 @@
   .no-meme-label {
     font-family: var(--mono); font-size: 11px; color: var(--muted);
     letter-spacing: 0.1em; text-transform: uppercase;
-  }
-  #meme-wash {
-    max-width: 460px; width: 100%;
-    border-radius: 12px; border: 1px solid var(--border2); display: block;
-  }
-
-  /* Handshake canvas — only shown in yes path */
-  #meme-handshake {
-    max-width: 460px; width: 100%;
-    border-radius: 12px; border: 1px solid var(--border2); display: block;
-    margin: 0 auto 28px;
   }
   .yes-meme-wrap {
     padding: 52px 48px 0;
@@ -1548,9 +1404,8 @@
     letter-spacing: 0.1em; text-transform: uppercase;
   }
 
-  /* ── Mistake button — appears after clicking No ── */
   .btn-mistake {
-    display: none;   /* hidden until lockNo() fires */
+    display: none;
     align-items: center; gap: 8px;
     background: transparent; color: var(--muted);
     padding: 10px 20px; border-radius: var(--r);
@@ -1576,74 +1431,71 @@
   }
 </style>
 
-<!-- The question -->
 <div class="decision-section">
-  <div class="decision-question">One question before you go</div>
-  <h2 class="decision-h2">Did we just build<br><em>something worth pursuing?</em></h2>
-  <p class="decision-sub">Honest answers only. Both paths lead somewhere good.</p>
+  <div class="decision-question">Eine Frage vor dem Abschluss</div>
+  <h2 class="decision-h2">Haben wir etwas gebaut,<br><em>das es wert ist, verfolgt zu werden?</em></h2>
+  <p class="decision-sub">Ehrliche Antworten erwünscht. Beide Wege führen zu etwas Gutem.</p>
   <div class="decision-btns" id="decision-btns" onmouseleave="onBtnsLeave()">
     <button class="btn-yes" id="btn-yes" onmouseenter="chooseYes()" onclick="lockYes()">
-      🤝&ensp;Let's make it happen
+      🤝&ensp;Lasst uns sprechen
     </button>
     <button class="btn-no" id="btn-no" onmouseenter="chooseNo()" onclick="lockNo()">
-      Not right now →
+      Aktuell nicht →
     </button>
   </div>
-  <!-- Appears only after clicking No -->
   <button class="btn-mistake" id="btn-mistake" onclick="undoNo()">
-    ← I made a mistake
+    ← Ich habe mich verklickt
   </button>
 </div>
 
-<!-- YES path -->
+<!-- JA PFAD -->
 <div class="reveal-panel" id="panel-yes">
   <div class="yes-meme-wrap">
-    <div class="yes-meme-label">this is us right now</div>
+    <div class="yes-meme-label">Das sind wir in Zukunft</div>
     <div class="gif-meme-wrap">
       <img src="/assets/yes-meme.gif" alt="Akshun x Arvana">
       <div class="gif-meme-text yes-meme-text">AKSHUN X Arvana</div>
     </div>
   </div>
   <div class="cta-inner">
-    <div class="cta-label">Let's talk</div>
-    <h2 class="cta-h2" id="yes-heading">This page was built<br>specifically for <em>Arvana.</em></h2>
-    <p class="cta-body">I'd love a 20-minute conversation. No pitch deck. Just a real chat about fit.</p>
-    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Arvana">akshundogra@gmail.com →</a>
-    <p style="font-size:13px;color:var(--muted);margin-top:10px;">Or simply reply to the message that brought you here.</p>
+    <div class="cta-label">Lasst uns austauschen</div>
+    <h2 class="cta-h2" id="yes-heading">Diese Seite wurde speziell<br>für <em>Arvana</em> gebaut.</h2>
+    <p class="cta-body">Ich freue mich auf ein 20-minütiges Gespräch – zum Beispiel direkt im Kick-Off Call oder auf einen Kaffee am Rosenthaler Platz mit Arne und Mirco.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Arvana-DE">akshundogra@gmail.com →</a>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px;">Oder antwortet einfach direkt auf die Nachricht, über die ihr hierher gelangt seid.</p>
     <div class="cta-links">
-      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Arvana">💼 LinkedIn</a>
-      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="website-click" data-umami-event-company="Arvana">🌐 Full website</a>
-      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="resume-click" data-umami-event-company="Arvana">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Arvana-DE">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="website-click" data-umami-event-company="Arvana-DE">🌐 Webseite</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="resume-click" data-umami-event-company="Arvana-DE">📄 Lebenslauf</a>
     </div>
   </div>
 </div>
 
-<!-- NO path -->
+<!-- NEIN PFAD -->
 <div class="reveal-panel" id="panel-no">
   <div class="no-meme-wrap">
-    <div class="no-meme-label">every recruiter email you get vs. this one</div>
+    <div class="no-meme-label">Jede andere E-Mail vs. diese Seite</div>
     <div class="gif-meme-wrap">
       <img src="/assets/no-meme.jpg" alt="cold emails vs this one">
-      <div class="gif-meme-text no-meme-text-top">every other<br>cold email</div>
-      <div class="gif-meme-text no-meme-text-bot">Hr &amp;<br>hiring managers</div>
+      <div class="gif-meme-text no-meme-text-top">jede andere<br>Bewerbung</div>
+      <div class="gif-meme-text no-meme-text-bot">Gründer &amp;<br>Hiring Manager</div>
     </div>
   </div>
   <div class="cta-inner" style="background:var(--bg);">
-    <div class="cta-label">No hard feelings</div>
-    <h2 class="cta-h2">Glad you stopped by,<br><em>Arvana.</em></h2>
-    <p class="cta-body">Timing isn't always right — but the details are here whenever it is.<br>No follow-up. No pressure. Just an open door.</p>
-    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Arvana">akshundogra@gmail.com →</a>
+    <div class="cta-label">Kein Problem</div>
+    <h2 class="cta-h2">Schön, dass ihr vorbeigeschaut habt,<br><em>Arvana.</em></h2>
+    <p class="cta-body">Timing passt nicht immer – aber die Informationen bleiben hier. Kein Nachfassen, kein Druck. Meine Tür steht offen.</p>
+    <a href="mailto:akshundogra@gmail.com" class="cta-email" data-umami-event="cta-email-click" data-umami-event-company="Arvana-DE">akshundogra@gmail.com →</a>
     <div class="cta-links">
-      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Arvana">💼 LinkedIn</a>
-      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="website-click" data-umami-event-company="Arvana">🌐 Full website</a>
-      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana" target="_blank" data-umami-event="resume-click" data-umami-event-company="Arvana">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/akshundogra?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="linkedin-click" data-umami-event-company="Arvana-DE">💼 LinkedIn</a>
+      <a href="https://akshundogra.com?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="website-click" data-umami-event-company="Arvana-DE">🌐 Webseite</a>
+      <a href="https://akshundogra.com/Akshun-EN.pdf?utm_source=abm&utm_medium=landing-page&utm_campaign=arvana-de" target="_blank" data-umami-event="resume-click" data-umami-event-company="Arvana-DE">📄 Lebenslauf</a>
     </div>
   </div>
 </div>
 
 
 <script>
-// ─── Scroll reveal for hero meme ─────────────────────────────────────────────
 (function() {
   const memeWrap = document.querySelector('.hero-photo-wrap');
   if (!memeWrap) return;
@@ -1660,14 +1512,9 @@
   observer.observe(memeWrap);
 })();
 
-// ─── State ───────────────────────────────────────────────────────────────────
 let locked = false;
-
-// Default: yes panel open on load
 document.getElementById("panel-yes").classList.add("open");
 
-
-// ─── Hover — preview, fully reversible until click ───────────────────────────
 function chooseYes() {
   if (locked) return;
   document.getElementById("panel-yes").classList.add("open");
@@ -1680,29 +1527,27 @@ function chooseNo() {
   document.getElementById("panel-yes").classList.remove("open");
 }
 
-// Mouse leaves button group — snap back to default Yes
 function onBtnsLeave() {
   if (locked) return;
   document.getElementById("panel-yes").classList.add("open");
   document.getElementById("panel-no").classList.remove("open");
 }
 
-// ─── Click — lock in the choice, fade out the other button ───────────────────
 function toggleScoreBreakdown() {
   const panel = document.getElementById("score-breakdown-panel");
   const btn = document.getElementById("score-toggle-btn");
   if (!panel || !btn) return;
   if (panel.style.display === "none" || !panel.style.display) {
     panel.style.display = "block";
-    btn.innerHTML = "Hide score evidence ↑";
+    btn.innerHTML = "Fit Score Nachweise verbergen ↑";
   } else {
     panel.style.display = "none";
-    btn.innerHTML = "Learn how this score was calculated ↓";
+    btn.innerHTML = "Berechnung des Fit Scores anzeigen ↓";
   }
 }
 
 function lockYes() {
-  if (typeof umami !== 'undefined') umami.track('yes-clicked', { company: 'Arvana' });
+  if (typeof umami !== 'undefined') umami.track('yes-clicked', { company: 'Arvana-DE' });
   locked = true;
   const btn = document.getElementById("btn-no");
   btn.style.transition  = "opacity 0.35s, transform 0.35s";
@@ -1712,52 +1557,43 @@ function lockYes() {
 }
 
 function lockNo() {
-  if (typeof umami !== 'undefined') umami.track('no-clicked', { company: 'Arvana' });
+  if (typeof umami !== 'undefined') umami.track('no-clicked', { company: 'Arvana-DE' });
   locked = true;
-  // Fade out Yes button
   const btnYes = document.getElementById("btn-yes");
   btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
   btnYes.style.opacity      = "0";
   btnYes.style.transform    = "translateX(-12px)";
   btnYes.style.pointerEvents = "none";
 
-  // Show mistake button after a short delay
   setTimeout(() => {
     const btnMistake = document.getElementById("btn-mistake");
     btnMistake.style.display = "inline-flex";
-    // Force reflow so transition fires
     btnMistake.getBoundingClientRect();
     btnMistake.classList.add("visible");
   }, 400);
 }
 
 function undoNo() {
-  // Full reset — back to initial state
   locked = false;
-
-  // Restore Yes button
   const btnYes = document.getElementById("btn-yes");
   btnYes.style.transition   = "opacity 0.35s, transform 0.35s";
   btnYes.style.opacity      = "1";
   btnYes.style.transform    = "translateX(0)";
   btnYes.style.pointerEvents = "auto";
 
-  // Hide mistake button
   const btnMistake = document.getElementById("btn-mistake");
   btnMistake.classList.remove("visible");
   setTimeout(() => { btnMistake.style.display = "none"; }, 350);
 
-  // Swap panels back to Yes
   document.getElementById("panel-yes").classList.add("open");
   document.getElementById("panel-no").classList.remove("open");
 
-  // Welcome back moment — swap heading text for 2s then restore
   const heading = document.getElementById("yes-heading");
   const original = heading.innerHTML;
   heading.style.transition = "opacity 0.25s";
   heading.style.opacity = "0";
   setTimeout(() => {
-    heading.innerHTML = "Welcome back 👋<br><em>Good choice.</em>";
+    heading.innerHTML = "Willkommen zurück 👋<br><em>Gute Wahl.</em>";
     heading.style.opacity = "1";
   }, 250);
   setTimeout(() => {
@@ -1777,11 +1613,12 @@ function undoNo() {
 <footer>
   <div class="footer-top">
     <div class="footer-brand">Akshun Dogra · Technical Growth Lead &amp; GTM Engineer</div>
-    <div class="footer-url">hire.akshundogra.com/arvana</div>
+    <div class="footer-url">hire.akshundogra.com/arvana/de</div>
   </div>
   <div class="footer-disclaimer">
-    <strong>Portfolio &amp; Non-Affiliation Disclaimer:</strong> This personalized landing page is an independent job application pitch and interactive portfolio created by Akshun Dogra. It is not affiliated with, sponsored by, or endorsed by Arvana. No personal credentials or user data are collected on this page.
+    <strong>Portfolio- &amp; Unabhängigkeitshinweis:</strong> Diese personalisierte Landingpage ist eine unabhängige Bewerbung und ein interaktives Portfolio von Akshun Dogra. Sie steht in keiner offiziellen Verbindung zu Arvana. Es werden keine personenbezogenen Daten erfasst.
   </div>
 </footer>
 
 </body>
+</html>
