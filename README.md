@@ -119,7 +119,7 @@ sequenceDiagram
     participant Telegram as Telegram Alert Bot
 
     Leader->>Channel: Receives personalized outreach with tracked URL
-    Leader->>Host: Clicks link (hire.akshundogra.com/robco/?utm_content=mona)
+    Leader->>Host: Clicks link (hire.akshundogra.com/[company_slug]/?utm_content=[first_name])
     Host->>GA4: Fires PageView event with UTM campaign metadata
     Host-->>Leader: Renders 90-day roadmap, 4 Growth Pillars (Performance, Stack, SEO) & Fit Score
     GA4->>Telegram: Triggers instant Telegram notification to Akshun
