@@ -630,5 +630,13 @@
     "domain": "sipgate.com",
     "score": 97,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T07:47:10.376057+00:00",
+    "slug": "politico-europe",
+    "company_name": "POLITICO Europe",
+    "domain": "politicoeurope.com",
+    "score": 94,
+    "tier": "HIGH_FIT"
   }
 ]
