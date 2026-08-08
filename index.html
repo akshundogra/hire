@@ -243,54 +243,26 @@
     .company-card:hover::before { opacity: 1; }
 
     
-    .company-logo-wrapper {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bg3, #161a23);
-      border: 1px solid var(--border, rgba(255,255,255,0.08));
-      flex-shrink: 0;
-    }
-    .company-logo {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
-    }
-    .company-logo-fallback {
-      font-family: var(--mono, monospace);
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--accent, #e8c547);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-    }
+    
+    
+    
     .company-card-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-
-    .company-logo-fallback {
+    .company-logo {
       width: 36px;
       height: 36px;
       border-radius: 8px;
+      object-fit: contain;
       background: var(--bg3);
-      border: 1px solid var(--border2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent);
+      padding: 4px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
     }
+
+    
 
     .company-arrow {
       font-size: 16px;
@@ -704,10 +676,7 @@
 
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="urlaubstracker" href="/urlaubstracker">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Urlaubstracker" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://urlaubstracker.de&amp;size=64"/>
-<div class="company-logo-fallback">U</div>
-</div>
+<img alt="Urlaubstracker" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://urlaubstracker.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Urlaubstracker</div>
@@ -716,10 +685,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="embelly" href="/embelly">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="embelly" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://embelly.de&amp;size=64"/>
-<div class="company-logo-fallback">E</div>
-</div>
+<img alt="embelly" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://embelly.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">embelly</div>
@@ -728,10 +694,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="trendai" href="/trendai">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="TrendAI" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://trend.ai&amp;size=64"/>
-<div class="company-logo-fallback">T</div>
-</div>
+<img alt="TrendAI" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://trend.ai&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">TrendAI</div>
@@ -740,10 +703,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="politico-europe" href="/politico-europe">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="POLITICO Europe" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://politico.eu&amp;size=64"/>
-<div class="company-logo-fallback">P</div>
-</div>
+<img alt="POLITICO Europe" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://politico.eu&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">POLITICO Europe</div>
@@ -752,10 +712,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sipgate" href="/sipgate">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="sipgate" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sipgate.de&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="sipgate" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sipgate.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">sipgate</div>
@@ -764,10 +721,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="aufgesang-gmbh" href="/aufgesang-gmbh">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Aufgesang GmbH" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://aufgesang.de&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Aufgesang GmbH" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://aufgesang.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Aufgesang GmbH</div>
@@ -776,10 +730,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="beglaubigtde-(yc-f24)" href="/beglaubigtde-(yc-f24)">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Beglaubigt.de (YC F24)" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://beglaubigt.de&amp;size=64"/>
-<div class="company-logo-fallback">B</div>
-</div>
+<img alt="Beglaubigt.de (YC F24)" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://beglaubigt.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Beglaubigt.de (YC F24)</div>
@@ -788,10 +739,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kostal-group" href="/kostal-group">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="KOSTAL Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kostal.com&amp;size=64"/>
-<div class="company-logo-fallback">K</div>
-</div>
+<img alt="KOSTAL Group" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kostal.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">KOSTAL Group</div>
@@ -800,10 +748,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="synthflow-ai" href="/synthflow-ai">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Synthflow AI" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://synthflow.ai&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="Synthflow AI" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://synthflow.ai&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Synthflow AI</div>
@@ -812,10 +757,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="horatio" href="/horatio">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Horatio" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://hirehoratio.com&amp;size=64"/>
-<div class="company-logo-fallback">H</div>
-</div>
+<img alt="Horatio" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://hirehoratio.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Horatio</div>
@@ -824,10 +766,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="rematiq" href="/rematiq">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="REMATIQ" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://rematiq.de&amp;size=64"/>
-<div class="company-logo-fallback">R</div>
-</div>
+<img alt="REMATIQ" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://rematiq.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">REMATIQ</div>
@@ -836,10 +775,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kayzen" href="/kayzen">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Kayzen" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kayzen.io&amp;size=64"/>
-<div class="company-logo-fallback">K</div>
-</div>
+<img alt="Kayzen" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kayzen.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Kayzen</div>
@@ -848,10 +784,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="gigs" href="/gigs">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Gigs" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://gigs.com&amp;size=64"/>
-<div class="company-logo-fallback">G</div>
-</div>
+<img alt="Gigs" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://gigs.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Gigs</div>
@@ -860,10 +793,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="merantix-capital" href="/merantix-capital">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Merantix Capital" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://merantix.com&amp;size=64"/>
-<div class="company-logo-fallback">M</div>
-</div>
+<img alt="Merantix Capital" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://merantix.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Merantix Capital</div>
@@ -872,10 +802,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="green-mining" href="/green-mining">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Green Mining" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://green-mining.de&amp;size=64"/>
-<div class="company-logo-fallback">G</div>
-</div>
+<img alt="Green Mining" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://green-mining.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Green Mining</div>
@@ -884,10 +811,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="opus" href="/opus">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="opus" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://opus.pro&amp;size=64"/>
-<div class="company-logo-fallback">O</div>
-</div>
+<img alt="opus" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://opus.pro&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">opus</div>
@@ -896,10 +820,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="tabula" href="/tabula">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Tabula" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://tabula.io&amp;size=64"/>
-<div class="company-logo-fallback">T</div>
-</div>
+<img alt="Tabula" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://tabula.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Tabula</div>
@@ -908,10 +829,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="evernest" href="/evernest">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Evernest" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://evernest.de&amp;size=64"/>
-<div class="company-logo-fallback">E</div>
-</div>
+<img alt="Evernest" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://evernest.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Evernest</div>
@@ -920,10 +838,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="frieda-health" href="/frieda-health">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Frieda Health" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://frieda.health&amp;size=64"/>
-<div class="company-logo-fallback">F</div>
-</div>
+<img alt="Frieda Health" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://frieda.health&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Frieda Health</div>
@@ -932,10 +847,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sundayy" href="/sundayy">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Sundayy" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sunday.de&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="Sundayy" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sunday.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sundayy</div>
@@ -944,10 +856,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="vidalytics" href="/vidalytics">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Vidalytics" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://vidalytics.com&amp;size=64"/>
-<div class="company-logo-fallback">V</div>
-</div>
+<img alt="Vidalytics" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://vidalytics.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Vidalytics</div>
@@ -956,10 +865,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="arvana" href="/arvana">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Arvana" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://arvana.de&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Arvana" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://arvana.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Arvana</div>
@@ -968,10 +874,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="almedia" href="/almedia">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Almedia" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://almedia.co&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Almedia" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://almedia.co&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Almedia</div>
@@ -980,10 +883,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="infineon-technologies" href="/infineon-technologies">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Infineon Technologies" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://infineon.com&amp;size=64"/>
-<div class="company-logo-fallback">I</div>
-</div>
+<img alt="Infineon Technologies" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://infineon.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Infineon Technologies</div>
@@ -992,10 +892,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sonova-group" href="/sonova-group">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Sonova Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sonova.com&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="Sonova Group" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sonova.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sonova Group</div>
@@ -1004,10 +901,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="salesplaybook" href="/salesplaybook">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="SalesPlaybook" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://thesalesplaybook.io&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="SalesPlaybook" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://thesalesplaybook.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">SalesPlaybook</div>
@@ -1016,10 +910,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="alasco" href="/alasco">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Alasco" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://alasco.de&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Alasco" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://alasco.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Alasco</div>
@@ -1028,10 +919,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="dandy" href="/dandy">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Dandy" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://meetdandy.com&amp;size=64"/>
-<div class="company-logo-fallback">D</div>
-</div>
+<img alt="Dandy" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://meetdandy.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Dandy</div>
@@ -1040,10 +928,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sharpist" href="/sharpist">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Sharpist" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sharpist.com&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="Sharpist" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://sharpist.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sharpist</div>
@@ -1052,10 +937,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="riverty" href="/riverty">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Riverty" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://riverty.com&amp;size=64"/>
-<div class="company-logo-fallback">R</div>
-</div>
+<img alt="Riverty" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://riverty.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Riverty</div>
@@ -1064,10 +946,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="connect-ad" href="/connect-ad">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Connect AD" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://connect-ad.de&amp;size=64"/>
-<div class="company-logo-fallback">C</div>
-</div>
+<img alt="Connect AD" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://connect-ad.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Connect AD</div>
@@ -1076,10 +955,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="reonic" href="/reonic">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Reonic" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://reonic.com&amp;size=64"/>
-<div class="company-logo-fallback">R</div>
-</div>
+<img alt="Reonic" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://reonic.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Reonic</div>
@@ -1088,10 +964,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="taxfix" href="/taxfix">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Taxfix" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://taxfix.de&amp;size=64"/>
-<div class="company-logo-fallback">T</div>
-</div>
+<img alt="Taxfix" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://taxfix.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Taxfix</div>
@@ -1100,10 +973,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="impossible-cloud" href="/impossible-cloud">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Impossible Cloud" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://impossiblecloud.com&amp;size=64"/>
-<div class="company-logo-fallback">I</div>
-</div>
+<img alt="Impossible Cloud" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://impossiblecloud.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Impossible Cloud</div>
@@ -1112,10 +982,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="temedica" href="/temedica">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Temedica" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://temedica.com&amp;size=64"/>
-<div class="company-logo-fallback">T</div>
-</div>
+<img alt="Temedica" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://temedica.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Temedica</div>
@@ -1124,10 +991,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="acto" href="/acto">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Acto" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://heyacto.com&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Acto" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://heyacto.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Acto</div>
@@ -1136,10 +1000,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="centric-software" href="/centric-software">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Centric Software" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://centricsoftware.com&amp;size=64"/>
-<div class="company-logo-fallback">C</div>
-</div>
+<img alt="Centric Software" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://centricsoftware.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Centric Software</div>
@@ -1148,10 +1009,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="consultport" href="/consultport">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Consultport" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://consultport.com&amp;size=64"/>
-<div class="company-logo-fallback">C</div>
-</div>
+<img alt="Consultport" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://consultport.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Consultport</div>
@@ -1160,10 +1018,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="apaleo" href="/apaleo">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Apaleo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://apaleo.com&amp;size=64"/>
-<div class="company-logo-fallback">A</div>
-</div>
+<img alt="Apaleo" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://apaleo.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Apaleo</div>
@@ -1172,10 +1027,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="contentful" href="/contentful">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Contentful" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://contentful.com&amp;size=64"/>
-<div class="company-logo-fallback">C</div>
-</div>
+<img alt="Contentful" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://contentful.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Contentful</div>
@@ -1184,10 +1036,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="mdis" href="/mdis">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Großbusiness Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://mdis.de&amp;size=64"/>
-<div class="company-logo-fallback">G</div>
-</div>
+<img alt="Großbusiness Group" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://mdis.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Großbusiness Group</div>
@@ -1196,10 +1045,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="eyeable" href="/eyeable">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Eye-Able" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://eye-able.com&amp;size=64"/>
-<div class="company-logo-fallback">E</div>
-</div>
+<img alt="Eye-Able" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://eye-able.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Eye-Able</div>
@@ -1208,10 +1054,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="hallo-theo" href="/hallo-theo">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="hallo theo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://hallotheo.de&amp;size=64"/>
-<div class="company-logo-fallback">H</div>
-</div>
+<img alt="hallo theo" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://hallotheo.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">hallo theo</div>
@@ -1220,10 +1063,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="quantum-systems" href="/quantum-systems">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Quantum Systems" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://quantum-systems.com&amp;size=64"/>
-<div class="company-logo-fallback">Q</div>
-</div>
+<img alt="Quantum Systems" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://quantum-systems.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Quantum Systems</div>
@@ -1232,10 +1072,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="buynomics" href="/buynomics">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Buynomics" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://buynomics.com&amp;size=64"/>
-<div class="company-logo-fallback">B</div>
-</div>
+<img alt="Buynomics" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://buynomics.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Buynomics</div>
@@ -1244,10 +1081,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kombo" href="/kombo">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Kombo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kombo.dev&amp;size=64"/>
-<div class="company-logo-fallback">K</div>
-</div>
+<img alt="Kombo" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://kombo.dev&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Kombo</div>
@@ -1256,10 +1090,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="constructor" href="/constructor">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Constructor" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://constructor.io&amp;size=64"/>
-<div class="company-logo-fallback">C</div>
-</div>
+<img alt="Constructor" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://constructor.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Constructor</div>
@@ -1268,10 +1099,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="makersite" href="/makersite">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Makersite" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://makersite.io&amp;size=64"/>
-<div class="company-logo-fallback">M</div>
-</div>
+<img alt="Makersite" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://makersite.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Makersite</div>
@@ -1280,10 +1108,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="knowunity" href="/knowunity">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Knowunity" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://knowunity.de&amp;size=64"/>
-<div class="company-logo-fallback">K</div>
-</div>
+<img alt="Knowunity" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://knowunity.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Knowunity</div>
@@ -1292,10 +1117,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="donnerstagai" href="/donnerstagai">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="donnerstag.ai" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://donnerstag.ai&amp;size=64"/>
-<div class="company-logo-fallback">D</div>
-</div>
+<img alt="donnerstag.ai" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://donnerstag.ai&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">donnerstag.ai</div>
@@ -1304,10 +1126,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="rencore" href="/rencore">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Rencore" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://rencore.com&amp;size=64"/>
-<div class="company-logo-fallback">R</div>
-</div>
+<img alt="Rencore" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://rencore.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Rencore</div>
@@ -1316,10 +1135,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="ingestro" href="/ingestro">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Ingestro" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://ingestro.de&amp;size=64"/>
-<div class="company-logo-fallback">I</div>
-</div>
+<img alt="Ingestro" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://ingestro.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Ingestro</div>
@@ -1328,10 +1144,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="secfix" href="/secfix">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Secfix" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://secfix.com&amp;size=64"/>
-<div class="company-logo-fallback">S</div>
-</div>
+<img alt="Secfix" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://secfix.com&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Secfix</div>
@@ -1340,10 +1153,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="paricon" href="/paricon">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="paricon" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://paricon.de&amp;size=64"/>
-<div class="company-logo-fallback">P</div>
-</div>
+<img alt="paricon" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://paricon.de&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">paricon</div>
@@ -1352,10 +1162,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="netbird" href="/netbird">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="netbird" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://netbird.io&amp;size=64"/>
-<div class="company-logo-fallback">N</div>
-</div>
+<img alt="netbird" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://netbird.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">netbird</div>
@@ -1364,10 +1171,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="traide" href="/traide">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="Traide" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://traide.ai&amp;size=64"/>
-<div class="company-logo-fallback">T</div>
-</div>
+<img alt="Traide" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://traide.ai&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Traide</div>
@@ -1376,10 +1180,7 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="ecog" href="/ecog">
 <div class="company-card-top">
-<div class="company-logo-wrapper">
-<img alt="EcoG" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://ecog.io&amp;size=64"/>
-<div class="company-logo-fallback">E</div>
-</div>
+<img alt="EcoG" class="company-logo" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=https://ecog.io&amp;size=64"/>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">EcoG</div>
