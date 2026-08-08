@@ -670,5 +670,13 @@
     "domain": "maigroup.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T11:48:12.651773+00:00",
+    "slug": "cribl",
+    "company_name": "Cribl",
+    "domain": "cribl.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
