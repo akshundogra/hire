@@ -670,5 +670,13 @@
     "domain": "premium-gruppe.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T13:45:54.442753+00:00",
+    "slug": "enpal",
+    "company_name": "Enpal",
+    "domain": "enpal.com",
+    "score": 98,
+    "tier": "HIGH_FIT"
   }
 ]
