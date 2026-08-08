@@ -68,6 +68,8 @@
   .nav-collab { display: flex; align-items: center; gap: 10px; }
   .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
   .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
+  
+  .nav-company-fallback { width: 20px; height: 20px; border-radius: 4px; background: var(--bg3); border: 1px solid var(--border); color: var(--accent); font-family: var(--mono); font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; margin-right: 4px; }
   .nav-company-logo {
     height: 18px; width: 18px; object-fit: contain;
     border-radius: 4px; vertical-align: middle; margin-right: 4px; display: inline-block;
@@ -731,9 +733,7 @@
     <span class="nav-x">×</span>
     <!--
       OPTION A — Clearbit logo (auto-fetched from domain, no manual URL):
-      <img src="https://logo.clearbit.com/ingestro.com"
-           class="nav-company-logo" alt="Ingestro"
-           onerror="this.style.display='none';document.getElementById('nav-fb').style.display='block'">
+      <img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ingestro.de&size=64" class="nav-company-logo" alt="Ingestro" onerror="this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='inline-flex';"><div class="nav-company-fallback" style="display:none">I</div>
       <span id="nav-fb" style="display:none" class="nav-company-name">Ingestro</span>
 
       OPTION B — name only (simpler, always works):
