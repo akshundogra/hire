@@ -654,5 +654,13 @@
     "domain": "embelly.com",
     "score": 97,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T09:49:48.503153+00:00",
+    "slug": "urlaubstracker",
+    "company_name": "Urlaubstracker",
+    "domain": "urlaubstracker.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
