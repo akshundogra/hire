@@ -662,5 +662,13 @@
     "domain": "neurarobotics.com",
     "score": 95,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T13:45:19.474615+00:00",
+    "slug": "premium-gruppe",
+    "company_name": "PREMIUM-GRUPPE",
+    "domain": "premium-gruppe.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
