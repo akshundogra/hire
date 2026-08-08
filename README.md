@@ -158,7 +158,7 @@ Below is an index of company landing pages deployed on this host:
 | Target Company | Open Role | Route | Infrastructure |
 | :--- | :--- | :--- | :--- |
 | **RobCo** | Marketing Operations Specialist | [`hire.akshundogra.com/robco/`](https://hire.akshundogra.com/robco/) | 🟢 RevPilot AI (Fit: 100/100) |
-| **Alasco** | Revenue Operations & Growth Manager | [`hire.akshundogra.com/alasco/`](https://hire.akshundogra.com/alasco/) | 🟢 RevPilot AI |
+| **Alasco** | GTM Engineer | [`hire.akshundogra.com/alasco/`](https://hire.akshundogra.com/alasco/) | 🟢 RevPilot AI |
 | **Eye-Able** | GTM Engineer | [`hire.akshundogra.com/eye-able/`](https://hire.akshundogra.com/eye-able/) | 🟢 RevPilot AI |
 | **Celonis** | Enterprise Growth Specialist | [`hire.akshundogra.com/celonis/`](https://hire.akshundogra.com/celonis/) | 🟢 n8n + Flask |
 | **Vercel** | Developer Experience Lead | [`hire.akshundogra.com/vercel/`](https://hire.akshundogra.com/vercel/) | 🟢 n8n + Flask |
