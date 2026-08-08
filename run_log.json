@@ -678,5 +678,13 @@
     "domain": "enpal.com",
     "score": 98,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T19:44:55.022951+00:00",
+    "slug": "robco",
+    "company_name": "RobCo",
+    "domain": "robco.de",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
