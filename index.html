@@ -242,6 +242,36 @@
 
     .company-card:hover::before { opacity: 1; }
 
+    
+    .company-logo-wrapper {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg3, #161a23);
+      border: 1px solid var(--border, rgba(255,255,255,0.08));
+      flex-shrink: 0;
+    }
+    .company-logo {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    .company-logo-fallback {
+      font-family: var(--mono, monospace);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent, #e8c547);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
     .company-card-top {
       display: flex;
       align-items: center;
@@ -684,7 +714,10 @@
 
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="urlaubstracker" href="/urlaubstracker">
 <div class="company-card-top">
-<img alt="Urlaubstracker" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=urlaubstracker.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Urlaubstracker" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=urlaubstracker.de&amp;sz=64"/>
+<div class="company-logo-fallback">U</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Urlaubstracker</div>
@@ -693,7 +726,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="embelly" href="/embelly">
 <div class="company-card-top">
-<img alt="embelly" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=embelly.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="embelly" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=embelly.de&amp;sz=64"/>
+<div class="company-logo-fallback">E</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">embelly</div>
@@ -702,7 +738,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="trendai" href="/trendai">
 <div class="company-card-top">
-<img alt="TrendAI" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=trendai.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="TrendAI" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=trend.ai&amp;sz=64"/>
+<div class="company-logo-fallback">T</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">TrendAI</div>
@@ -711,7 +750,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="politico-europe" href="/politico-europe">
 <div class="company-card-top">
-<img alt="POLITICO Europe" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=politicoeurope.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="POLITICO Europe" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=politico.eu&amp;sz=64"/>
+<div class="company-logo-fallback">P</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">POLITICO Europe</div>
@@ -720,7 +762,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sipgate" href="/sipgate">
 <div class="company-card-top">
-<img alt="sipgate" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=sipgate.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="sipgate" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=sipgate.de&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">sipgate</div>
@@ -729,7 +774,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="aufgesang-gmbh" href="/aufgesang-gmbh">
 <div class="company-card-top">
-<img alt="Aufgesang GmbH" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=aufgesanggmbh.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Aufgesang GmbH" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=aufgesang.de&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Aufgesang GmbH</div>
@@ -738,7 +786,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="beglaubigtde-(yc-f24)" href="/beglaubigtde-(yc-f24)">
 <div class="company-card-top">
-<img alt="Beglaubigt.de (YC F24)" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=beglaubigtde(ycf24).com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Beglaubigt.de (YC F24)" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=beglaubigt.de&amp;sz=64"/>
+<div class="company-logo-fallback">B</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Beglaubigt.de (YC F24)</div>
@@ -747,7 +798,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kostal-group" href="/kostal-group">
 <div class="company-card-top">
-<img alt="KOSTAL Group" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=kostalgroup.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="KOSTAL Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=kostal.com&amp;sz=64"/>
+<div class="company-logo-fallback">K</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">KOSTAL Group</div>
@@ -756,7 +810,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="synthflow-ai" href="/synthflow-ai">
 <div class="company-card-top">
-<img alt="Synthflow AI" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=synthflowai.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Synthflow AI" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=synthflow.ai&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Synthflow AI</div>
@@ -765,7 +822,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="horatio" href="/horatio">
 <div class="company-card-top">
-<img alt="Horatio" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=horatio.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Horatio" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=hirehoratio.com&amp;sz=64"/>
+<div class="company-logo-fallback">H</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Horatio</div>
@@ -774,7 +834,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="rematiq" href="/rematiq">
 <div class="company-card-top">
-<img alt="REMATIQ" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=rematiq.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="REMATIQ" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=rematiq.de&amp;sz=64"/>
+<div class="company-logo-fallback">R</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">REMATIQ</div>
@@ -783,7 +846,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kayzen" href="/kayzen">
 <div class="company-card-top">
-<img alt="Kayzen" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=kayzen.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Kayzen" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=kayzen.io&amp;sz=64"/>
+<div class="company-logo-fallback">K</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Kayzen</div>
@@ -792,7 +858,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="gigs" href="/gigs">
 <div class="company-card-top">
-<img alt="Gigs" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=gigs.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Gigs" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=gigs.com&amp;sz=64"/>
+<div class="company-logo-fallback">G</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Gigs</div>
@@ -801,7 +870,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="merantix-capital" href="/merantix-capital">
 <div class="company-card-top">
-<img alt="Merantix Capital" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=merantixcapital.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Merantix Capital" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=merantix.com&amp;sz=64"/>
+<div class="company-logo-fallback">M</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Merantix Capital</div>
@@ -810,7 +882,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="green-mining" href="/green-mining">
 <div class="company-card-top">
-<img alt="Green Mining" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=greenmining.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Green Mining" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=green-mining.de&amp;sz=64"/>
+<div class="company-logo-fallback">G</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Green Mining</div>
@@ -819,7 +894,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="opus" href="/opus">
 <div class="company-card-top">
-<img alt="opus" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=opus.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="opus" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=opus.pro&amp;sz=64"/>
+<div class="company-logo-fallback">O</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">opus</div>
@@ -828,7 +906,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="tabula" href="/tabula">
 <div class="company-card-top">
-<img alt="Tabula" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=tabula.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Tabula" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=tabula.io&amp;sz=64"/>
+<div class="company-logo-fallback">T</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Tabula</div>
@@ -837,7 +918,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="evernest" href="/evernest">
 <div class="company-card-top">
-<img alt="Evernest" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=evernest.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Evernest" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=evernest.de&amp;sz=64"/>
+<div class="company-logo-fallback">E</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Evernest</div>
@@ -846,7 +930,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="frieda-health" href="/frieda-health">
 <div class="company-card-top">
-<img alt="Frieda Health" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=friedahealth.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Frieda Health" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=frieda.health&amp;sz=64"/>
+<div class="company-logo-fallback">F</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Frieda Health</div>
@@ -855,7 +942,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sundayy" href="/sundayy">
 <div class="company-card-top">
-<img alt="Sundayy" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=sundayy.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Sundayy" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=sunday.de&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sundayy</div>
@@ -864,7 +954,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="vidalytics" href="/vidalytics">
 <div class="company-card-top">
-<img alt="Vidalytics" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=vidalytics.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Vidalytics" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=vidalytics.com&amp;sz=64"/>
+<div class="company-logo-fallback">V</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Vidalytics</div>
@@ -873,7 +966,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="arvana" href="/arvana">
 <div class="company-card-top">
-<img alt="Arvana" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=arvana.de&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Arvana" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=arvana.de&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Arvana</div>
@@ -882,7 +978,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="almedia" href="/almedia">
 <div class="company-card-top">
-<img alt="Almedia" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=almedia.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Almedia" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=almedia.co&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Almedia</div>
@@ -891,7 +990,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="infineon-technologies" href="/infineon-technologies">
 <div class="company-card-top">
-<img alt="Infineon Technologies" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=infineontechnologies.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Infineon Technologies" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=infineon.com&amp;sz=64"/>
+<div class="company-logo-fallback">I</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Infineon Technologies</div>
@@ -900,7 +1002,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sonova-group" href="/sonova-group">
 <div class="company-card-top">
-<img alt="Sonova Group" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=sonovagroup.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Sonova Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=sonova.com&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sonova Group</div>
@@ -909,7 +1014,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="salesplaybook" href="/salesplaybook">
 <div class="company-card-top">
-<img alt="SalesPlaybook" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=salesplaybook.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="SalesPlaybook" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=thesalesplaybook.io&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">SalesPlaybook</div>
@@ -918,7 +1026,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="alasco" href="/alasco">
 <div class="company-card-top">
-<img alt="Alasco" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=alasco.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Alasco" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=alasco.de&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Alasco</div>
@@ -927,7 +1038,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="dandy" href="/dandy">
 <div class="company-card-top">
-<img alt="Dandy" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=dandy.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Dandy" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=meetdandy.com&amp;sz=64"/>
+<div class="company-logo-fallback">D</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Dandy</div>
@@ -936,7 +1050,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="sharpist" href="/sharpist">
 <div class="company-card-top">
-<img alt="Sharpist" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=sharpist.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Sharpist" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=sharpist.com&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Sharpist</div>
@@ -945,7 +1062,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="riverty" href="/riverty">
 <div class="company-card-top">
-<img alt="Riverty" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=riverty.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Riverty" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=riverty.com&amp;sz=64"/>
+<div class="company-logo-fallback">R</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Riverty</div>
@@ -954,7 +1074,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="connect-ad" href="/connect-ad">
 <div class="company-card-top">
-<img alt="Connect AD" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=connectad.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Connect AD" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=connect-ad.de&amp;sz=64"/>
+<div class="company-logo-fallback">C</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Connect AD</div>
@@ -963,7 +1086,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="reonic" href="/reonic">
 <div class="company-card-top">
-<img alt="Reonic" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=reonic.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Reonic" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=reonic.com&amp;sz=64"/>
+<div class="company-logo-fallback">R</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Reonic</div>
@@ -972,7 +1098,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="taxfix" href="/taxfix">
 <div class="company-card-top">
-<img alt="Taxfix" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=taxfix.de&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Taxfix" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=taxfix.de&amp;sz=64"/>
+<div class="company-logo-fallback">T</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Taxfix</div>
@@ -981,7 +1110,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="impossible-cloud" href="/impossible-cloud">
 <div class="company-card-top">
-<img alt="Impossible Cloud" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=impossiblecloud.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Impossible Cloud" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=impossiblecloud.com&amp;sz=64"/>
+<div class="company-logo-fallback">I</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Impossible Cloud</div>
@@ -990,7 +1122,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="temedica" href="/temedica">
 <div class="company-card-top">
-<img alt="Temedica" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=temedica.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Temedica" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=temedica.com&amp;sz=64"/>
+<div class="company-logo-fallback">T</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Temedica</div>
@@ -999,7 +1134,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="acto" href="/acto">
 <div class="company-card-top">
-<img alt="Acto" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=heyacto.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Acto" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=heyacto.com&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Acto</div>
@@ -1008,7 +1146,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="centric-software" href="/centric-software">
 <div class="company-card-top">
-<img alt="Centric Software" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=centricsoftware.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Centric Software" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=centricsoftware.com&amp;sz=64"/>
+<div class="company-logo-fallback">C</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Centric Software</div>
@@ -1017,7 +1158,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="consultport" href="/consultport">
 <div class="company-card-top">
-<img alt="Consultport" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=consultport.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Consultport" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=consultport.com&amp;sz=64"/>
+<div class="company-logo-fallback">C</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Consultport</div>
@@ -1026,7 +1170,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="apaleo" href="/apaleo">
 <div class="company-card-top">
-<img alt="Apaleo" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=apaleo.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Apaleo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=apaleo.com&amp;sz=64"/>
+<div class="company-logo-fallback">A</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Apaleo</div>
@@ -1035,7 +1182,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="contentful" href="/contentful">
 <div class="company-card-top">
-<img alt="Contentful" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=contentful.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Contentful" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=contentful.com&amp;sz=64"/>
+<div class="company-logo-fallback">C</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Contentful</div>
@@ -1044,7 +1194,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="mdis" href="/mdis">
 <div class="company-card-top">
-<img alt="Großbusiness Group" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=gross-businessgroup.de&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Großbusiness Group" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=mdis.de&amp;sz=64"/>
+<div class="company-logo-fallback">G</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Großbusiness Group</div>
@@ -1053,7 +1206,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="eyeable" href="/eyeable">
 <div class="company-card-top">
-<img alt="Eye-Able" class="company-logo" onerror="this.style.display='none'" src="https://a2.storyblok.com/f/259811/224x40/0de4343280/logo.svg"/>
+<div class="company-logo-wrapper">
+<img alt="Eye-Able" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=eye-able.com&amp;sz=64"/>
+<div class="company-logo-fallback">E</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Eye-Able</div>
@@ -1062,7 +1218,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="hallo-theo" href="/hallo-theo">
 <div class="company-card-top">
-<img alt="hallo theo" class="company-logo" onerror="this.style.display='none'" src="https://www.hallotheo.de/wp-content/uploads/2024/12/Logo.webp"/>
+<div class="company-logo-wrapper">
+<img alt="hallo theo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=hallotheo.de&amp;sz=64"/>
+<div class="company-logo-fallback">H</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">hallo theo</div>
@@ -1071,7 +1230,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="quantum-systems" href="/quantum-systems">
 <div class="company-card-top">
-<img alt="Quantum Systems" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=quantum-systems.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Quantum Systems" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=quantum-systems.com&amp;sz=64"/>
+<div class="company-logo-fallback">Q</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Quantum Systems</div>
@@ -1080,7 +1242,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="buynomics" href="/buynomics">
 <div class="company-card-top">
-<img alt="Buynomics" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=buynomics.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Buynomics" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=buynomics.com&amp;sz=64"/>
+<div class="company-logo-fallback">B</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Buynomics</div>
@@ -1089,7 +1254,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="kombo" href="/kombo">
 <div class="company-card-top">
-<img alt="Kombo" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=kombo.dev&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Kombo" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=kombo.dev&amp;sz=64"/>
+<div class="company-logo-fallback">K</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Kombo</div>
@@ -1098,7 +1266,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="constructor" href="/constructor">
 <div class="company-card-top">
-<img alt="Constructor" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=constructor.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Constructor" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=constructor.io&amp;sz=64"/>
+<div class="company-logo-fallback">C</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Constructor</div>
@@ -1107,7 +1278,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="makersite" href="/makersite">
 <div class="company-card-top">
-<img alt="Makersite" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=makersite.io&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Makersite" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=makersite.io&amp;sz=64"/>
+<div class="company-logo-fallback">M</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Makersite</div>
@@ -1116,16 +1290,22 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="knowunity" href="/knowunity">
 <div class="company-card-top">
-<img alt="Knowunity" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=knowunity.de&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Knowunity" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=knowunity.de&amp;sz=64"/>
+<div class="company-logo-fallback">K</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
-<div class="company-name">knowunity</div>
+<div class="company-name">Knowunity</div>
 <div class="company-role">AI Operational Marketing Manager</div>
 <div class="company-status live">Page live</div>
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="donnerstagai" href="/donnerstagai">
 <div class="company-card-top">
-<img alt="donnerstag.ai" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=donnerstag.ai&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="donnerstag.ai" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=donnerstag.ai&amp;sz=64"/>
+<div class="company-logo-fallback">D</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">donnerstag.ai</div>
@@ -1134,7 +1314,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="rencore" href="/rencore">
 <div class="company-card-top">
-<img alt="Rencore" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=rencore.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Rencore" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=rencore.com&amp;sz=64"/>
+<div class="company-logo-fallback">R</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Rencore</div>
@@ -1143,7 +1326,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="ingestro" href="/ingestro">
 <div class="company-card-top">
-<img alt="Ingestro" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=ingestro.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Ingestro" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=ingestro.de&amp;sz=64"/>
+<div class="company-logo-fallback">I</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Ingestro</div>
@@ -1152,7 +1338,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="secfix" href="/secfix">
 <div class="company-card-top">
-<img alt="Secfix" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=secfix.com&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Secfix" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=secfix.com&amp;sz=64"/>
+<div class="company-logo-fallback">S</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Secfix</div>
@@ -1161,24 +1350,22 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="paricon" href="/paricon">
 <div class="company-card-top">
-<img alt="paricon" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=paricon.de&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="paricon" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=paricon.de&amp;sz=64"/>
+<div class="company-logo-fallback">P</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">paricon</div>
 <div class="company-role">Performance Marketing Manager | B2B Software</div>
 <div class="company-status live">Page live</div>
-<a class="company-card" data-umami-event="index-card-click" data-umami-event-company="seven-senders" href="/seven-senders">
-<div class="company-card-top">
-<img alt="Seven Senders" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=sevensenders.com&amp;sz=64"/>
-<span class="company-arrow">↗</span>
-</div>
-<div class="company-name">Seven Senders</div>
-<div class="company-role">Go-to-Market (GTM) Manager</div>
-<div class="company-status live">Page live</div>
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="netbird" href="/netbird">
 <div class="company-card-top">
-<img alt="netbird" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=netbird.io&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="netbird" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=netbird.io&amp;sz=64"/>
+<div class="company-logo-fallback">N</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">netbird</div>
@@ -1187,7 +1374,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="traide" href="/traide">
 <div class="company-card-top">
-<img alt="Traide" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=traide.ai&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="Traide" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=traide.ai&amp;sz=64"/>
+<div class="company-logo-fallback">T</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">Traide</div>
@@ -1196,7 +1386,10 @@
 </a>
 <a class="company-card" data-umami-event="index-card-click" data-umami-event-company="ecog" href="/ecog">
 <div class="company-card-top">
-<img alt="EcoG" class="company-logo" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=ecog.io&amp;sz=64"/>
+<div class="company-logo-wrapper">
+<img alt="EcoG" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" src="https://www.google.com/s2/favicons?domain=ecog.io&amp;sz=64"/>
+<div class="company-logo-fallback">E</div>
+</div>
 <span class="company-arrow">↗</span>
 </div>
 <div class="company-name">EcoG</div>
