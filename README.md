@@ -25,6 +25,7 @@ timeline
             : GitHub API Automated Page Commits
     Phase 2 : RevPilot AI (Chatur) Agentic Engine
             : Single-Repo Python 3.11 + FastAPI Architecture
+            : Native Technical SEO Auditor (SERP Titles, Meta Descriptions, Alt Text Ratios, OG Cards)
             : Multi-Agent Intelligence Network (Discovery, Qualification, Research, Scoring, Outreach)
             : 33/33/33 Hybrid JD-Resume Skill Matcher
             : Bottom-Up Confidence Scoring & PII Sanitizer
@@ -67,7 +68,8 @@ graph TD
     subgraph Signal Intelligence Engine ["🧠 RevPilot AI (Chatur Engine)"]
         JD[Job Alert / Job Description] --> Discovery[Discovery & Qualification Agent]
         Discovery --> Research[Research Agent - DDGS / Glassdoor / Funding]
-        Research --> Intel[Intelligence Agent - PII Scrubbing]
+        Research --> SEOAudit[Native SEO Auditor - app/scrapers/seo_auditor.py]
+        SEOAudit --> Intel[Intelligence Agent - PII Scrubbing]
         Intel --> Scoring[Lead Scoring Agent - 100-pt Fit Matrix]
         Scoring --> Matcher[33/33/33 Hybrid JD Matcher]
     end
@@ -100,7 +102,7 @@ sequenceDiagram
     Leader->>Channel: Receives personalized outreach with tracked URL
     Leader->>Host: Clicks link (hire.akshundogra.com/robco/?utm_content=mona)
     Host->>GA4: Fires PageView event with UTM campaign metadata
-    Host-->>Leader: Renders 90-day roadmap, tech stack matrix & interactive fit score
+    Host-->>Leader: Renders 90-day roadmap, SEO audit findings & fit score
     GA4->>Telegram: Triggers instant Telegram notification to Akshun
 ```
 
@@ -118,6 +120,13 @@ sequenceDiagram
 
 ### Phase 2: Agentic Engine ([Chatur / RevPilot AI](https://github.com/akshundogra/Chatur))
 * **FastAPI Orchestrator**: Async single-repo engine running 8 specialized AI sub-agents.
+* **`app/scrapers/seo_auditor.py`**: Native Technical SEO & GTM Stack Auditor:
+  * **Title Tag SERP Bounds**: Detects missing titles, titles <30 chars, or SERP truncations (>60 chars).
+  * **Meta Description Inspection**: Validates presence and SERP snippet length (70–160 chars).
+  * **Heading Hierarchy**: Identifies missing H1s or duplicate H1 tag conflicts.
+  * **Image Alt Text Ratios**: Calculates exact ratio of images missing `alt` text.
+  * **Open Graph / Social Preview Cards**: Checks for missing `og:image` or `og:title` metadata.
+  * **Tech Stack Fingerprinting**: Detects `HubSpot`, `Salesforce`, `GA4`, `PostHog`, `Segment`, `Intercom`, `Drift`.
 * **`app/gtm_pipeline/email_finder.py`**: Multi-key Hunter.io API pool with live SMTP email verification.
 * **`app/gtm_pipeline/telegram.py`**: Role-title regex sanitizer (`clean_role_title`) & Telegram bot dispatcher.
 * **`app/utils/confidence.py`**: Bottom-up evidence, signal, and lead score confidence algorithms.
