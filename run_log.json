@@ -638,5 +638,13 @@
     "domain": "politicoeurope.com",
     "score": 94,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-08T09:48:49.312118+00:00",
+    "slug": "trendai",
+    "company_name": "TrendAI",
+    "domain": "trendai.com",
+    "score": 94,
+    "tier": "HIGH_FIT"
   }
 ]
