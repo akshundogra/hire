@@ -1246,5 +1246,13 @@
     "domain": "robco.de",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:56:54.741390+00:00",
+    "slug": "statista",
+    "company_name": "Statista",
+    "domain": "statista.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
