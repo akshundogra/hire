@@ -1182,5 +1182,13 @@
     "domain": "riverty.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:51:17.304350+00:00",
+    "slug": "dandy",
+    "company_name": "Dandy",
+    "domain": "dandy.com",
+    "score": 95,
+    "tier": "HIGH_FIT"
   }
 ]
