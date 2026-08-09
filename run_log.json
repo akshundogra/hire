@@ -878,5 +878,13 @@
     "domain": "outdooractive.com",
     "score": 95,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:15:31.296175+00:00",
+    "slug": "robco",
+    "company_name": "RobCo",
+    "domain": "robco.de",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
