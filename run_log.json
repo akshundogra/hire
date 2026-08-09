@@ -958,5 +958,13 @@
     "domain": "riverty.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:30:50.487527+00:00",
+    "slug": "connect-ad",
+    "company_name": "Connect AD",
+    "domain": "connectad.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]

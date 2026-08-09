@@ -68,8 +68,6 @@
   .nav-collab { display: flex; align-items: center; gap: 10px; }
   .nav-akshun { font-weight: 700; font-size: 15px; color: var(--text); }
   .nav-x { font-size: 13px; color: var(--muted); font-weight: 300; margin: 0 2px; }
-  
-  
   .nav-company-logo {
     height: 18px; width: 18px; border-radius: 4px; object-fit: contain;
     vertical-align: middle; margin-right: 4px; display: inline-block;
@@ -109,7 +107,12 @@
     width: 24px; height: 24px; border-radius: 50%;
     background: #fff; object-fit: contain; padding: 3px; flex-shrink: 0;
   }
-  
+  .hero-badge-fallback {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); display: flex; align-items: center;
+    justify-content: center; font-size: 11px; font-weight: 700;
+    color: #000; flex-shrink: 0;
+  }
   .hero-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
   .hero-badge-text { font-size: 12px; color: var(--muted); font-weight: 500; }
 
@@ -583,7 +586,7 @@
 
   
 
-    /* ─── FOOTER ─── */
+  /* ─── FOOTER ─── */
   footer {
     background: var(--bg); border-top: 1px solid var(--border);
     padding: 32px 48px;
@@ -675,8 +678,7 @@
   <div class="nav-collab">
     <span class="nav-akshun">Akshun</span>
     <span class="nav-x">×</span>
-    <img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://connect-ad.de&size=64" class="nav-company-logo" alt="Connect AD">
-    <span class="nav-company-name">Connect AD</span>
+    <img src="https://logo.clearbit.com/connectad.com" class="nav-company-logo" alt="Connect AD" onerror="this.style.display='none'"><span class="nav-company-name">Connect AD</span>
   </div>
   <div class="nav-url">hire.akshundogra.com/connect-ad</div>
 </nav>
@@ -690,17 +692,17 @@
     <div class="hero-grid">
       <div>
         <div class="hero-badge">
-          <img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://connect-ad.de&size=64" class="hero-badge-logo" alt="Connect AD">
+          <img src="https://logo.clearbit.com/connectad.com" class="hero-badge-logo" alt="Connect AD" onerror="this.style.display='none'">
           <div class="hero-badge-dot"></div>
           <span class="hero-badge-text">Built for Connect AD</span>
         </div>
-        <div class="hero-label">A personal case · Growth Campaign Manager / Growth Strategy Director / Campaign Growth Lead</div>
+        <div class="hero-label">A personal case · Growth Campaign Manager</div>
         <h1 class="hero-h1">
-          I built 400% organic growth,<br>
-          <span class="highlight">now let's scale Connect AD</span><br>
-          with predictable pipeline.
+          Built growth systems that delivered 36x ROAS,<br>
+          <span class="highlight">now engineered for Connect AD,</span><br>
+          let's own your pipeline.
         </h1>
-        <p class="hero-sub">I generated 36x+ peak ROAS and reduced manual SDR effort by 80% through automated growth pipelines. For Connect AD, establishing repeatable channel ownership will convert publisher supply and buyer demand into predictable pipeline.</p>
+        <p class="hero-sub">I bridge growth strategy with technical execution. Connect AD runs on Form-based and Standard — I build automated intent-signal pipelines, server-side attribution, and CRM lead scoring directly on your existing stack.</p>
         <a href="mailto:akshundogra@gmail.com" class="hero-cta" data-umami-event="hero-email-click" data-umami-event-company="Connect AD">
           ✉&ensp;akshundogra@gmail.com
         </a>
@@ -803,13 +805,13 @@
     <div class="two-col">
       <div>
         <div class="section-label">Why Connect AD</div>
-        <h2 class="section-h2">Driving Repeatable Pipeline for Connect AD's Programmatic Ad Infrastructure</h2>
-        <div class="body-text"><p>Connect AD powers digital publishers and ad networks with scalable programmatic ad serving and yield optimization. As programmatic adtech demand accelerates, establishing owned multi-channel acquisition funnels will secure consistent publisher adoption. I combine technical marketing, paid media ownership, and automation to build predictable revenue pipelines for your ad infrastructure.</p></div>
+        <h2 class="section-h2">Why Connect AD and why now</h2>
+        <div class="body-text"><p>Connect AD is actively hiring across 0 roles with 0 GTM-specific positions. With none detected as active paid channels and Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads as untapped opportunities, there's clear room to scale demand generation while optimizing existing spend.</p></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;padding-top:6px;">
         <div class="card">
           <div class="card-label">Target Role</div>
-          <div class="card-value">Growth Campaign Manager / Growth Strategy Director / Campaign Growth Lead</div>
+          <div class="card-value">Growth Campaign Manager</div>
           <div class="card-sub">Open to discussion — I go where I make the most impact</div>
         </div>
         <div class="card">
@@ -847,8 +849,8 @@
     <div class="pillars-v2">
 
       <!-- ── PILLAR 1: Performance Marketing ── -->
-      <div class="pillar-v2 featured">
-        <div class="pillar-badge">Most relevant for Connect AD</div>
+      <div class="pillar-v2 ">
+        
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">📈</div>
@@ -970,8 +972,8 @@
 
       
       <!-- ── PILLAR: GTM Signal Intelligence ── -->
-      <div class="pillar-v2 ">
-        
+      <div class="pillar-v2 featured">
+        <div class="pillar-badge">Most relevant for Connect AD</div>
         <div class="pillar-v2-inner">
           <div class="pillar-v2-left">
             <div class="pillar-icon">🎯</div>
@@ -1165,23 +1167,23 @@
   <div class="inner">
     <div class="section-label">Specifically for Connect AD</div>
     <h2 class="section-h2">What I'd do in the<br><em>first 90 days</em></h2>
-    <div class="body-text"><p>Managing $50K+ AUD/month ad budgets with 36x+ peak ROAS enabled me to master full-funnel demand creation and capture. By integrating technical SEO, multi-channel attribution, and automated intent routing, I will give Connect AD full channel ownership and pipeline predictability.</p></div>
+    <div class="body-text"><p>Your current stack (Form-based, Standard, Custom) maps directly to my experience building automated enrichment, lead scoring, and attribution systems. I reduced manual SDR effort by 80% with the same tooling and built personalized ABM pages like this one at scale.</p></div>
     <ul class="action-list">
       <li class="action-item">
         <div class="action-num">01</div>
-        <div class="action-text"><strong>Expand Meta Paid Media Reach</strong> — Launch targeted Meta ad campaigns to capture untapped digital publisher and ad buyer demand beyond active Google and LinkedIn channels. Creative A/B testing will optimize ad spend and lower acquisition cost per lead.</div>
+        <div class="action-text"><strong>Audit & upgrade existing lead-to-call workflow</strong> — Sit directly with your Sales Ops and Demand Gen team to audit how lead data currently flows through your CRM. Identify manual research bottlenecks and streamline existing lists before expanding scoring logic.<br><span style='font-family:var(--mono);font-size:11px;color:var(--accent);display:inline-block;margin-top:6px;'>Success test: reliable fields, clear ownership, and an agreed baseline for AE research time saved.</span></div>
       </li>
       <li class="action-item">
         <div class="action-num">02</div>
-        <div class="action-text"><strong>Automate Publisher Lead Processing Workflows</strong> — Connect inbound publisher inquiries directly into Make, Clay, and Lemlist for real-time lead scoring and automated sales routing. This ensures instant lead response and pipeline predictability as Connect AD scales marketing headcount.</div>
+        <div class="action-text"><strong>Deploy native account scoring & disqualification crawlers</strong> — Build and run negative-signal crawlers across target verticals. Build native account & role scoring directly in CRM using captured inputs (domain, company size, tech stack, role) — zero extra tool spend required until proven necessary.<br><span style='font-family:var(--mono);font-size:11px;color:var(--accent);display:inline-block;margin-top:6px;'>Success test: AEs accept the scored accounts and false positives stay low enough to trust the queue.</span></div>
       </li>
       <li class="action-item">
         <div class="action-num">03</div>
-        <div class="action-text"><strong>Scale Programmatic GEO & SEO</strong> — Optimize publisher monetization landing pages and schema markup to rank for high-intent Generative Engine Optimization prompts. Scaling AI-driven search traffic from 1% to 20% will build long-term organic acquisition.</div>
+        <div class="action-text"><strong>Launch signal-triggered outbound & demo-prep workflows</strong> — Two connected workflows: qualified outbound accounts enter a concise, signal-led sequence; when a prospect books a demo, an automation enriches the record and sends the assigned AE a Slack meeting brief before the call.<div style='font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px;padding:8px 12px;background:var(--bg3);border-radius:6px;border:1px solid var(--border);'>Day 1 – Email: relevant signal observation + tailored angle<br>Day 3 – LinkedIn: connection note referencing the same context<br>Day 6 – Email: offer a free audit / benchmark report<br>Day 10 – Email: practical follow-up or case-study angle<br>Day 14 – Break-up note</div><span style='font-family:var(--mono);font-size:11px;color:var(--accent);display:inline-block;margin-top:6px;'>Success test: meetings per AE hour outperform the current cold-list baseline.</span></div>
       </li>
       <li class="action-item">
         <div class="action-num">04</div>
-        <div class="action-text"><strong>Deploy Autonomous Intent Signal Engine</strong> — I will build an autonomous research engine for Connect AD that evaluates publisher tech-stacks, ad-presence, and hiring signals into live fit scores. This routes high-fit adtech accounts straight to sales, turning proof-of-work into outbound pipeline.</div>
+        <div class="action-text"><strong>Deploy cost-optimized AI workflows & staging QA</strong> — Build internal GTM AI tools with multi-model guardrails (Claude Code, Gemini, OpenAI) that handle JSON payloads and staging QA edge cases reliably while keeping API operational costs low.</div>
       </li>
     </ul>
 
@@ -1203,51 +1205,51 @@
   <div class="inner">
     <div class="section-label">Before reaching out</div>
     <h2 class="section-h2">I already did some<br><em>homework.</em></h2>
-    <div class="body-text"><p>I evaluated Connect AD's public digital footprint across active ad channels, technical SEO, and market intent signals. Here are five high-impact opportunities to establish channel ownership and pipeline predictability.</p></div>
+    <div class="body-text"><p>A technical review of Connect AD's web infrastructure across connectad.com reveals these specific signals and expansion opportunities.</p></div>
     <div class="audit-card">
       <div class="audit-header">
         <span class="audit-header-left">⬡ Observations · Connect AD</span>
-        <span class="audit-header-right" style="color:var(--accent);font-family:var(--mono);">Fit Score: 80/100 (HIGH_FIT)</span>
+        <span class="audit-header-right" style="color:var(--accent);font-family:var(--mono);">Fit Score: 93/100 (HIGH_FIT)</span>
       </div>
       <div style="padding:16px 20px;background:rgba(232,197,71,0.04);border-bottom:1px solid var(--border);">
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
           <div>
             <span style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;">ACCOUNT FIT SCORE</span>
-            <div style="font-size:22px;font-weight:700;color:var(--text);line-height:1.1;"><span style="color:var(--accent);">80</span><span style="font-size:14px;color:var(--muted);">/100</span> <span style="font-size:11px;font-family:var(--mono);padding:2px 8px;border-radius:100px;background:rgba(232,197,71,0.15);color:var(--accent);border:1px solid rgba(232,197,71,0.3);margin-left:6px;vertical-align:middle;">HIGH_FIT</span></div>
+            <div style="font-size:22px;font-weight:700;color:var(--text);line-height:1.1;"><span style="color:var(--accent);">93</span><span style="font-size:14px;color:var(--muted);">/100</span> <span style="font-size:11px;font-family:var(--mono);padding:2px 8px;border-radius:100px;background:rgba(232,197,71,0.15);color:var(--accent);border:1px solid rgba(232,197,71,0.3);margin-left:6px;vertical-align:middle;">HIGH_FIT</span></div>
           </div>
           <button id="score-toggle-btn" style="background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.3);color:var(--accent);font-family:var(--mono);font-size:11px;padding:8px 14px;border-radius:6px;cursor:pointer;transition:all 0.2s;" onclick="toggleScoreBreakdown()" data-umami-event="score-breakdown-toggle" data-umami-event-company="Connect AD">Learn how this score was calculated ↓</button>
         </div>
         <div id="score-breakdown-panel" style="display:none;width:100%;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
           <div style="font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">🔍 Signal Evidence Breakdown &amp; Weighted Factors</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Role & Resume Skill Alignment</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+12 pts (20%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Matched 2 resume skills: Gtm, Revops</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Funding & Stage Momentum</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+18 pts (20%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Stage: Series A, Employee Count: 11-50</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.crunchbase.com/organization/connectad" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Hiring & Role Scaling Velocity</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+20 pts (20%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Hiring counts — sales: 0, marketing: 50, revops: 0, engineering: 0; GTM roles: 0.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Paid Channel Footprint & Gaps</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+20 pts (20%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Active ad channels: Google Ads, Google Tag Manager, LinkedIn Ads; Untapped channels: Meta Ads, TikTok Ads.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
-<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Market & Social Validation</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+10 pts (20%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Market signals: 0 review platform hits, 0 recent news/announcement mentions.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.g2.com/search?query=Connect AD" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Job Description & Skill Overlap</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+50 pts (40% (Primary))</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Matched 2 resume skills (Revops, Gtm) + Direct Role Title Alignment.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Paid Channel Footprint & Gaps</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+13 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Active ad channels: none; Untapped channels: Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Funding & Stage Momentum</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+12 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Stage: Growth Stage, Employee Count: 11-50</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.crunchbase.com/organization/connectad" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Market & Social Validation</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+8 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Market signals: 0 review platform hits, 0 recent news/announcement mentions.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://www.g2.com/search?query=Connect AD" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
+<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--text);"><span>Hiring & Role Scaling Context</span><span style="color:var(--green);font-family:var(--mono);font-size:11px;">+10 pts (15%)</span></div><div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">Hiring counts — sales: 0, marketing: 0, revops: 0, engineering: 0; GTM roles: 0.</div><div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-top:4px;"><a href="https://connectad.com/careers" target="_blank" style="color:var(--accent);text-decoration:underline;">Source link ↗</a></div></div>
           </div>
         </div>
       </div>
       <ul class="audit-findings">
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(232,197,71,0.12);color:var(--accent);font-size:13px;">📈</div>
-          <div class="finding-text"><strong>Performance</strong> — Untapped Meta and TikTok ad channels offer immediate growth opportunities to capture publisher demand alongside active Google and LinkedIn ad campaigns.</div>
+          <div class="finding-text"><strong>Performance</strong> — Active paid channels: none detected. Untapped channels: Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads — immediate expansion opportunity for demand capture.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(96,165,250,0.12);color:var(--blue);font-size:13px;">⚡</div>
-          <div class="finding-text"><strong>Automation</strong> — Automated lead routing pipelines can scale high-volume inbound publisher processing without manual overhead as Connect AD's marketing team expands.</div>
+          <div class="finding-text"><strong>Automation</strong> — Currently running Form-based as CRM backbone. Connecting it with enrichment APIs and automated lead routing would reduce manual qualification effort by 60-80%.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(74,222,128,0.12);color:var(--green);font-size:13px;">🔍</div>
-          <div class="finding-text"><strong>SEO / GEO</strong> — Fixing 80 missing image alt tags and implementing Generative Engine Optimization will capture growing AI search traffic for programmatic ad terms.</div>
+          <div class="finding-text"><strong>GTM AI & Data</strong> — 4 pages missing meta descriptions, 0 images lacking alt text. Schema markup detected on 0 pages — structured data expansion would lift search CTR.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon" style="background:rgba(167,139,250,0.12);color:#a78bfa;font-size:13px;">🎯</div>
-          <div class="finding-text"><strong>Signal Intelligence</strong> — Combining active ad presence with marketing hiring velocity creates an ideal signal set for automated target publisher intent scoring.</div>
+          <div class="finding-text"><strong>Signal Intelligence</strong> — Hiring 0 roles including 0 GTM-specific positions — clear investment in growth infrastructure.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon ok">✓</div>
-          <div class="finding-text">Schema markup is already successfully implemented across primary website landing pages.</div>
+          <div class="finding-text">Strong product positioning and active market presence on connectad.com.</div>
         </li>
         <li class="audit-finding">
           <div class="finding-icon info">i</div>
@@ -1753,11 +1755,11 @@ function undoNo() {
 ════════════════════════════════════════ -->
 <footer>
   <div class="footer-top">
-    <div class="footer-brand">Akshun Dogra · Technical Growth Marketer</div>
+    <div class="footer-brand">Akshun Dogra · Technical Growth Lead &amp; GTM Engineer</div>
     <div class="footer-url">hire.akshundogra.com/connect-ad</div>
   </div>
   <div class="footer-disclaimer">
-    <strong>Portfolio & Non-Affiliation Disclaimer:</strong> This personalized landing page is an independent job application pitch and interactive portfolio created by Akshun Dogra. It is not affiliated with, sponsored by, or endorsed by Connect AD. No personal credentials or user data are collected on this page.
+    <strong>Portfolio &amp; Non-Affiliation Disclaimer:</strong> This personalized landing page is an independent job application pitch and interactive portfolio created by Akshun Dogra. It is not affiliated with, sponsored by, or endorsed by Connect AD. No personal credentials or user data are collected on this page.
   </div>
 </footer>
 
