@@ -854,5 +854,13 @@
     "domain": "spreadai.com",
     "score": 96,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T15:48:19.970460+00:00",
+    "slug": "adjoe",
+    "company_name": "adjoe",
+    "domain": "adjoe.com",
+    "score": 98,
+    "tier": "HIGH_FIT"
   }
 ]
