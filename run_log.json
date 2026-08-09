@@ -926,5 +926,13 @@
     "domain": "trustedshops.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:28:59.634702+00:00",
+    "slug": "infineon-technologies",
+    "company_name": "Infineon Technologies",
+    "domain": "infineon.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
