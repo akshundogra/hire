@@ -1054,5 +1054,13 @@
     "domain": "eucalyptus.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:48:41.481348+00:00",
+    "slug": "trusted-shops",
+    "company_name": "Trusted Shops",
+    "domain": "trustedshops.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
