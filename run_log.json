@@ -1206,5 +1206,13 @@
     "domain": "robco.de",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:52:22.034377+00:00",
+    "slug": "alasco",
+    "company_name": "Alasco",
+    "domain": "alasco.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
