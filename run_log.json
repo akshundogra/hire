@@ -718,5 +718,13 @@
     "domain": "enpal.com",
     "score": 98,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T07:59:50.079488+00:00",
+    "slug": "canva",
+    "company_name": "Canva",
+    "domain": "canva.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
