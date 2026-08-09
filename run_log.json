@@ -1150,5 +1150,13 @@
     "domain": "infineon.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:50:37.241461+00:00",
+    "slug": "riverty",
+    "company_name": "Riverty",
+    "domain": "riverty.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
