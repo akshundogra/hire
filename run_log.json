@@ -982,5 +982,13 @@
     "domain": "evotec.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:45:50.311544+00:00",
+    "slug": "evotec",
+    "company_name": "Evotec",
+    "domain": "evotec.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
