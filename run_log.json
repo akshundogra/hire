@@ -768,14 +768,6 @@
     "tier": "HIGH_FIT"
   },
   {
-    "timestamp": "2026-08-09T11:45:52.668795+00:00",
-    "slug": "amd",
-    "company_name": "AMD",
-    "domain": "amd.com",
-    "score": 98,
-    "tier": "HIGH_FIT"
-  },
-  {
     "timestamp": "2026-08-09T11:48:22.528109+00:00",
     "slug": "storyblok",
     "company_name": "Storyblok",
