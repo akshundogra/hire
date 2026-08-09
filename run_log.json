@@ -774,5 +774,13 @@
     "domain": "amd.com",
     "score": 98,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T11:46:38.197530+00:00",
+    "slug": "octonomy",
+    "company_name": "octonomy",
+    "domain": "octonomy.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
