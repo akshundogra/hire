@@ -790,5 +790,13 @@
     "domain": "storyblok.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T11:49:58.510937+00:00",
+    "slug": "applied-intuition",
+    "company_name": "Applied Intuition",
+    "domain": "appliedintuition.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
