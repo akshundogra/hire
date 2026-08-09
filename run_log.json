@@ -1006,5 +1006,13 @@
     "domain": "evotec.com",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:47:17.575013+00:00",
+    "slug": "eucalyptus",
+    "company_name": "Eucalyptus",
+    "domain": "eucalyptus.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
