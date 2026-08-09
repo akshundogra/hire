@@ -1222,5 +1222,13 @@
     "domain": "adjoe.io",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T18:46:04.612213+00:00",
+    "slug": "adjoe",
+    "company_name": "adjoe",
+    "domain": "adjoe.io",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
