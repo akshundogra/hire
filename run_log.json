@@ -1086,5 +1086,13 @@
     "domain": "infineon.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:49:14.137748+00:00",
+    "slug": "trusted-shops",
+    "company_name": "Trusted Shops",
+    "domain": "trustedshops.com",
+    "score": 93,
+    "tier": "HIGH_FIT"
   }
 ]
