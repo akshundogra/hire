@@ -1062,5 +1062,13 @@
     "domain": "trustedshops.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:48:47.498178+00:00",
+    "slug": "barmeniagothaer",
+    "company_name": "BarmeniaGothaer",
+    "domain": "barmeniagothaer.com",
+    "score": 97,
+    "tier": "HIGH_FIT"
   }
 ]
