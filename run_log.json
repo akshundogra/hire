@@ -1126,5 +1126,13 @@
     "domain": "trustedshops.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:50:05.492636+00:00",
+    "slug": "alasco",
+    "company_name": "Alasco",
+    "domain": "alasco.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
