@@ -1198,5 +1198,13 @@
     "domain": "connectad.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:52:20.864563+00:00",
+    "slug": "robco",
+    "company_name": "RobCo",
+    "domain": "robco.de",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
