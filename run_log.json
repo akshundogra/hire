@@ -1222,5 +1222,13 @@
     "domain": "robco.de",
     "score": 100,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:52:57.449802+00:00",
+    "slug": "riverty",
+    "company_name": "Riverty",
+    "domain": "riverty.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
