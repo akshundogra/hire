@@ -148,24 +148,39 @@ sequenceDiagram
 * **`app/scrapers/seo_auditor.py`**: Native Technical SEO & GTM Stack Auditor.
 * **`app/gtm_pipeline/email_finder.py`**: Multi-key Hunter.io API pool with live SMTP email verification.
 * **`app/gtm_pipeline/telegram.py`**: Role-title regex sanitizer (`clean_role_title`) & Telegram bot dispatcher.
+* **`app/utils/exclusion.py`**: Single source of truth for ICP exclusion keywords (Solutions Engineer, Customer Success, D2C, High Seniority, Agencies). Enforced at 4 layers:
+  1. `tier_router.py` — Hard gate before any research/scoring
+  2. `generate_page.py` — CLI entry point check
+  3. `score.py` — Sets `LOW_FIT` / `auto_publish=False`
+  4. `publish.py` — Final publish block
+* **Logo Pipeline**: Clearbit Logo API (`logo.clearbit.com/{domain}`) for company logos with `og:image` and `apple-touch-icon` extraction fallbacks in `research.py`.
 
 ---
 
 ## 📂 Active Live Routes
 
-Below is an index of company landing pages deployed on this host:
+**82 personalized landing pages** are currently deployed on this host. Below is a representative sample:
 
 | Target Company | Open Role | Route | Infrastructure |
 | :--- | :--- | :--- | :--- |
-| **RobCo** | Marketing Operations Specialist | [`hire.akshundogra.com/robco/`](https://hire.akshundogra.com/robco/) | 🟢 RevPilot AI (Fit: 100/100) |
-| **Chaos** | Growth Automation Manager | [`hire.akshundogra.com/chaos/`](https://hire.akshundogra.com/chaos/) | 🟢 RevPilot AI (Fit: 100/100) |
-| **Alasco** | GTM Engineer | [`hire.akshundogra.com/alasco/`](https://hire.akshundogra.com/alasco/) | 🟢 RevPilot AI |
-| **Eye-Able** | GTM Engineer | [`hire.akshundogra.com/eye-able/`](https://hire.akshundogra.com/eye-able/) | 🟢 RevPilot AI |
-| **Celonis** | Enterprise Growth Specialist | [`hire.akshundogra.com/celonis/`](https://hire.akshundogra.com/celonis/) | 🟢 n8n + Flask |
-| **Vercel** | Developer Experience Lead | [`hire.akshundogra.com/vercel/`](https://hire.akshundogra.com/vercel/) | 🟢 n8n + Flask |
-| **PostHog** | Growth & Analytics Engineer | [`hire.akshundogra.com/posthog/`](https://hire.akshundogra.com/posthog/) | 🟢 n8n + Flask |
+| **RobCo** | Marketing Operations Specialist | [`/robco/`](https://hire.akshundogra.com/robco/) | 🟢 RevPilot AI |
+| **Chaos** | Growth Automation Manager | [`/chaos/`](https://hire.akshundogra.com/chaos/) | 🟢 RevPilot AI |
+| **Canva** | Creative Strategist, Growth Marketing | [`/canva/`](https://hire.akshundogra.com/canva/) | 🟢 RevPilot AI |
+| **Storyblok** | Salesforce Lead | [`/storyblok/`](https://hire.akshundogra.com/storyblok/) | 🟢 RevPilot AI |
+| **Personio** | Sr. Business Automation Specialist | [`/personio/`](https://hire.akshundogra.com/personio/) | 🟢 RevPilot AI |
+| **Leapsome** | Head of Growth Marketing & Lifecycle | [`/leapsome/`](https://hire.akshundogra.com/leapsome/) | 🟢 RevPilot AI |
+| **Contentful** | GTM Engineer | [`/contentful/`](https://hire.akshundogra.com/contentful/) | 🟢 RevPilot AI |
+| **Alasco** | GTM Engineer | [`/alasco/`](https://hire.akshundogra.com/alasco/) | 🟢 RevPilot AI |
+| **Eye-Able** | GTM Engineer | [`/eye-able/`](https://hire.akshundogra.com/eye-able/) | 🟢 RevPilot AI |
+| **Gigs** | Go To Market Lead, Germany | [`/gigs/`](https://hire.akshundogra.com/gigs/) | 🟢 RevPilot AI |
+| **Celonis** | Enterprise Growth Specialist | [`/celonis/`](https://hire.akshundogra.com/celonis/) | 🟢 n8n + Flask |
+| **Vercel** | Developer Experience Lead | [`/vercel/`](https://hire.akshundogra.com/vercel/) | 🟢 n8n + Flask |
+| **PostHog** | Growth & Analytics Engineer | [`/posthog/`](https://hire.akshundogra.com/posthog/) | 🟢 n8n + Flask |
+
+> Full route index available at [`hire.akshundogra.com`](https://hire.akshundogra.com) and in [`sitemap.xml`](https://hire.akshundogra.com/sitemap.xml).
 
 ---
 
 > [!NOTE]
-> All landing pages on `hire.akshundogra.com` are created dynamically as proof-of-work GTM engineering demonstrations for targeted company applications.
+> All landing pages on `hire.akshundogra.com` are created dynamically as proof-of-work GTM engineering demonstrations for targeted company applications. Excluded roles (Solutions Engineer, Customer Success, D2C, etc.) are blocked at 4 pipeline layers and will never be generated.
+
