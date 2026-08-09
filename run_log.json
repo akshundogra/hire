@@ -798,5 +798,13 @@
     "domain": "peterpark.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T13:46:46.798008+00:00",
+    "slug": "platinum-gmbh-&-co-kg",
+    "company_name": "PLATINUM GmbH & Co. KG",
+    "domain": "platinumgmbh&cokg.com",
+    "score": 95,
+    "tier": "HIGH_FIT"
   }
 ]
