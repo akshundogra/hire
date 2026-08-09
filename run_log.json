@@ -1014,5 +1014,13 @@
     "domain": "eucalyptus.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T17:47:46.192121+00:00",
+    "slug": "chaos",
+    "company_name": "Chaos",
+    "domain": "chaos.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
