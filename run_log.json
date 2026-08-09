@@ -827,7 +827,7 @@
     "timestamp": "2026-08-09T15:48:19.970460+00:00",
     "slug": "adjoe",
     "company_name": "adjoe",
-    "domain": "adjoe.com",
+    "domain": "adjoe.io",
     "score": 98,
     "tier": "HIGH_FIT"
   },
@@ -1212,6 +1212,14 @@
     "slug": "statista",
     "company_name": "Statista",
     "domain": "statista.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-09T18:45:33.711237+00:00",
+    "slug": "adjoe",
+    "company_name": "adjoe",
+    "domain": "adjoe.io",
     "score": 100,
     "tier": "HIGH_FIT"
   }
