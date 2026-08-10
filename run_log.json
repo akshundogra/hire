@@ -1238,5 +1238,13 @@
     "domain": "instaffo.com",
     "score": 98,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-10T07:46:02.863255+00:00",
+    "slug": "sunday-natural",
+    "company_name": "Sunday Natural",
+    "domain": "sundaynatural.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
