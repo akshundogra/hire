@@ -1,8 +1,8 @@
 # 🚀 hire.akshundogra.com — Autonomous ABM & GTM Engine Host
 
 [![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github)](https://hire.akshundogra.com)
-[![Phase 1 Engine](https://img.shields.io/badge/Phase_1-n8n_%2B_Flask_%2B_Screaming_Frog-blue?style=for-the-badge)](https://hire.akshundogra.com)
-[![Phase 2 Engine](https://img.shields.io/badge/Phase_2-RevPilot_AI_(Chatur)-blueviolet?style=for-the-badge)](https://github.com/akshundogra/Chatur)
+[![Legacy Engine](https://img.shields.io/badge/Phase_1-n8n_%2B_Flask_%2B_Screaming_Frog-blue?style=for-the-badge)](https://hire.akshundogra.com)
+[![Current Engine](https://img.shields.io/badge/Phase_2-RevPilot_AI_(Chatur)-blueviolet?style=for-the-badge)](https://github.com/akshundogra/Chatur)
 [![Tracking](https://img.shields.io/badge/Analytics-GA4_%2B_Telegram-orange?style=for-the-badge)](https://hire.akshundogra.com)
 
 **`hire.akshundogra.com`** is the live deployment domain for **Akshun Dogra's** automated Account-Based Marketing (ABM) and GTM Engineering systems. 
@@ -21,17 +21,16 @@ timeline
             : Screaming Frog CLI (SEO Crawl & Privacy Policy Tech Stack Scan)
             : Performance Marketing Ad Signal & SpyFu Data Point Ingestion
             : DuckDuckGo Funding Lookup Engine
-            : Claude Sonnet (Page Generation) & Haiku (Outreach Copy)
+            : Legacy LLM page-generation and outreach workflow
             : Python Pillow GIF OG-Image Generator ("HI COMPANY, I HAVE A PROPOSITION")
             : GitHub API Automated Page Commits
     Phase 2 : RevPilot AI (Chatur) Agentic Engine
             : Single-Repo Python 3.11 + FastAPI Architecture
-            : Performance Marketing Ad Signal Engine (Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads, GTM tag IDs)
-            : Tech Stack Fingerprinting Matrix (HubSpot, Salesforce, GA4, PostHog, Segment, Intercom, Marketo, Webflow)
-            : Native Technical SEO Auditor (SERP Titles, Meta Descriptions, Alt Text Ratios, OG Cards)
-            : Multi-Agent Intelligence Network (Discovery, Qualification, Research, Scoring, Outreach)
-            : 33/33/33 Hybrid JD-Resume Skill Matcher & 4 Growth Pillars (Performance, Automation, SEO, Tech Stack)
-            : Real-Time GA4 UTM Attribution & Instant Telegram Bot Telemetry
+            : First-party company and active-job research, plus public signal collection
+            : Ad-tag, tech-stack, hiring, and technical SEO evidence extraction
+            : Fit scoring, role matching, and four growth-pillar proposals
+            : Gemini structured draft followed by an independent Codex CLI review
+            : Fail-closed publication gates for job status, quality, and model review
 ```
 
 ---
@@ -81,21 +80,18 @@ graph TD
 ```mermaid
 graph TD
     subgraph Signal Intelligence Engine ["🧠 RevPilot AI (Chatur Engine)"]
-        JD[Job Alert / Job Description] --> Discovery[Discovery & Qualification Agent]
-        Discovery --> Research[Research Agent - DDGS / Glassdoor / Funding]
-        Research --> AdSignals[Ad Signal Engine - Google/Meta/LinkedIn/TikTok Ads]
-        Research --> TechFingerprint[Tech Stack Matrix - app/scrapers/tech_fingerprinter.py]
-        Research --> SEOAudit[Native SEO Auditor - app/scrapers/seo_auditor.py]
-        AdSignals --> Intel[Intelligence Agent - PII Scrubbing]
-        TechFingerprint --> Intel
-        SEOAudit --> Intel
-        Intel --> Scoring[Lead Scoring Agent - 100-pt Fit Matrix]
-        Scoring --> Matcher[33/33/33 Hybrid JD Matcher]
+        JD[Confirmed public job posting] --> Gate[Role and job-status gates]
+        Gate --> Research[First-party and public signal research]
+        Research --> Signals[Ads, tech, hiring, SEO, market and funding evidence]
+        Signals --> Scoring[Fit scoring and role alignment]
+        Scoring --> Draft[Gemini structured page draft]
+        Draft --> Quality[Evidence and company-specific quality gate]
+        Quality --> Review[Independent Codex CLI review]
     end
 
     subgraph Publisher & Deployment ["🌐 hire.akshundogra.com Repository"]
-        Matcher --> Publisher[Publisher Agent - clean_template.html]
-        Publisher --> GitCommit[Git Auto-Commit & Push to main]
+        Review --> Publisher[Publisher Agent - clean_template.html]
+        Publisher --> GitCommit[Git commit and push to main]
         GitCommit --> GHPages[GitHub Pages Live Route Deployment]
     end
 
@@ -138,28 +134,29 @@ sequenceDiagram
 * **`outreach_tracker_route.py` (`/save-outreach`)**: Appends generated email subjects, bodies, and LinkedIn connection notes to local `ABM-Outreach-Tracker.csv`.
 
 ### Phase 2: Agentic Engine ([Chatur / RevPilot AI](https://github.com/akshundogra/Chatur))
-* **FastAPI Orchestrator**: Async single-repo engine running 8 specialized AI sub-agents.
-* **`app/gtm_pipeline/research.py` (`fetch_ad_signals`)**: Performance Marketing Ad Signal Engine scanning for `Google Ads` (AW- tags), `Meta Ads` (fbq), `LinkedIn Ads` (snap.licdn.com), `TikTok Ads` (ttq), `Google Tag Manager` (gtm- IDs), and identifying active vs untapped ad channels.
+* **Evidence-grounded orchestration**: A single-repo Python engine researches the public job posting and target company's first-party homepage before it generates a proposal. Scraped content is sanitized before use.
+* **`app/gtm_pipeline/research.py` (`fetch_ad_signals`)**: Performance Marketing Ad Signal Engine scans public page markup for `Google Ads` (AW- tags), `Meta Ads` (fbq), `LinkedIn Ads` (snap.licdn.com), and `Google Tag Manager` (gtm- IDs), then identifies active versus unobserved channels.
 * **`app/scrapers/tech_fingerprinter.py`**: Tech Stack Fingerprinting Matrix:
   * **CMS**: `Webflow`, `WordPress`, `Next.js`
   * **Analytics & Product**: `GA4`, `PostHog`, `Mixpanel`, `Plausible`, `Hotjar`
   * **CRM & Marketing Ops**: `HubSpot`, `Salesforce`, `Marketo`, `Drift`, `Intercom`
   * **Infrastructure**: `Vercel`, `Stripe`, `Segment`
 * **`app/scrapers/seo_auditor.py`**: Native Technical SEO & GTM Stack Auditor.
-* **`app/gtm_pipeline/email_finder.py`**: Multi-key Hunter.io API pool with live SMTP email verification.
-* **`app/gtm_pipeline/telegram.py`**: Role-title regex sanitizer (`clean_role_title`) & Telegram bot dispatcher.
-* **`app/utils/exclusion.py`**: Single source of truth for ICP exclusion keywords (Solutions Engineer, Customer Success, D2C, High Seniority, Agencies). Enforced at 4 layers:
+* **`app/gtm_pipeline/generate.py`**: Requires a complete structured draft and rejects boilerplate, unsupported tools, thin company theses, repeated sections, and copy not grounded in first-party company language.
+* **`app/gtm_pipeline/model_review.py`**: Uses the locally authenticated Codex CLI in an ephemeral read-only sandbox to independently approve or reject the Gemini draft. A missing, failed, or rejected review pauses the run; it never becomes a single-model publish.
+* **`app/gtm_pipeline/tier_router.py`**: Requires a positively confirmed active public job posting, a `HIGH_FIT` score, a passed evidence/quality gate, and an approved independent review before live publication. Quota failures and incomplete drafts also pause rather than publishing fallback copy.
+* **`app/utils/exclusion.py`**: Single source of truth for ICP exclusion keywords (including Solutions Engineering, Customer Success, Product Marketing, Business Development, and Sales Enablement). Enforced at four layers:
   1. `tier_router.py` — Hard gate before any research/scoring
   2. `generate_page.py` — CLI entry point check
   3. `score.py` — Sets `LOW_FIT` / `auto_publish=False`
   4. `publish.py` — Final publish block
-* **Logo Pipeline**: Clearbit Logo API (`logo.clearbit.com/{domain}`) for company logos with `og:image` and `apple-touch-icon` extraction fallbacks in `research.py`.
+* **Funding accuracy**: Specific funding stages are used only when the company and round can be verified from public evidence; otherwise the proposal stays deliberately non-specific.
 
 ---
 
 ## 📂 Active Live Routes
 
-**82 personalized landing pages** are currently deployed on this host. Below is a representative sample:
+The current route inventory is generated with each live publication; browse the homepage or [`sitemap.xml`](https://hire.akshundogra.com/sitemap.xml) for the authoritative list. Below is a representative sample:
 
 | Target Company | Open Role | Route | Infrastructure |
 | :--- | :--- | :--- | :--- |
@@ -173,14 +170,10 @@ sequenceDiagram
 | **Alasco** | GTM Engineer | [`/alasco/`](https://hire.akshundogra.com/alasco/) | 🟢 RevPilot AI |
 | **Eye-Able** | GTM Engineer | [`/eye-able/`](https://hire.akshundogra.com/eye-able/) | 🟢 RevPilot AI |
 | **Gigs** | Go To Market Lead, Germany | [`/gigs/`](https://hire.akshundogra.com/gigs/) | 🟢 RevPilot AI |
-| **Celonis** | Enterprise Growth Specialist | [`/celonis/`](https://hire.akshundogra.com/celonis/) | 🟢 n8n + Flask |
-| **Vercel** | Developer Experience Lead | [`/vercel/`](https://hire.akshundogra.com/vercel/) | 🟢 n8n + Flask |
-| **PostHog** | Growth & Analytics Engineer | [`/posthog/`](https://hire.akshundogra.com/posthog/) | 🟢 n8n + Flask |
 
 > Full route index available at [`hire.akshundogra.com`](https://hire.akshundogra.com) and in [`sitemap.xml`](https://hire.akshundogra.com/sitemap.xml).
 
 ---
 
 > [!NOTE]
-> All landing pages on `hire.akshundogra.com` are created dynamically as proof-of-work GTM engineering demonstrations for targeted company applications. Excluded roles (Solutions Engineer, Customer Success, D2C, etc.) are blocked at 4 pipeline layers and will never be generated.
-
+> All landing pages on `hire.akshundogra.com` are independent proof-of-work GTM engineering demonstrations for targeted company applications; they are not affiliated with, sponsored by, or endorsed by the named company. Pages are only published after active-job, fit, evidence, quality, and independent-model-review gates pass. Excluded roles and companies are blocked before research and again at every publication boundary.
