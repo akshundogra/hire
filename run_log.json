@@ -1283,5 +1283,18 @@
     "languages": [
       "en"
     ]
+  },
+  {
+    "timestamp": "2026-08-11T17:04:56.374219+00:00",
+    "slug": "actindo",
+    "company_name": "Actindo",
+    "domain": "actindo.com",
+    "role": "Senior B2B SaaS Marketing Manager",
+    "score": 100,
+    "tier": "HIGH_FIT",
+    "languages": [
+      "en",
+      "de"
+    ]
   }
 ]
