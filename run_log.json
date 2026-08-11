@@ -1262,5 +1262,13 @@
     "domain": "naoskalierunggmbh.com",
     "score": 93,
     "tier": "HIGH_FIT"
+  },
+  {
+    "timestamp": "2026-08-11T12:44:36.991044+00:00",
+    "slug": "telli",
+    "company_name": "telli",
+    "domain": "telli.com",
+    "score": 100,
+    "tier": "HIGH_FIT"
   }
 ]
