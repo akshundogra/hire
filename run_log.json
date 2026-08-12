@@ -1321,5 +1321,30 @@
     "languages": [
       "en"
     ]
+  },
+  {
+    "timestamp": "2026-08-12T14:03:16.592212+00:00",
+    "slug": "trading-212",
+    "company_name": "Trading 212",
+    "domain": "trading212.com",
+    "role": "Performance Marketing Expert (Berlin)",
+    "score": 100,
+    "tier": "HIGH_FIT",
+    "languages": [
+      "en"
+    ]
+  },
+  {
+    "timestamp": "2026-08-12T22:52:17.510150+00:00",
+    "slug": "ftapi",
+    "company_name": "FTAPI",
+    "domain": "ftapi.com",
+    "role": "Marketing Operations Manager (w/m/d)",
+    "score": 100,
+    "tier": "HIGH_FIT",
+    "languages": [
+      "en",
+      "de"
+    ]
   }
 ]
