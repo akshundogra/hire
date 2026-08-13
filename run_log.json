@@ -1463,5 +1463,17 @@
       "en",
       "de"
     ]
+  },
+  {
+    "timestamp": "2026-08-13T13:50:51.592889+00:00",
+    "slug": "angi",
+    "company_name": "Angi",
+    "domain": "angi.com",
+    "role": "Performance Marketing Manager (Paid Search)",
+    "score": 100,
+    "tier": "HIGH_FIT",
+    "languages": [
+      "en"
+    ]
   }
 ]
