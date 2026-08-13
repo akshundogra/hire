@@ -1487,5 +1487,18 @@
     "languages": [
       "en"
     ]
+  },
+  {
+    "timestamp": "2026-08-13T21:47:03.876123+00:00",
+    "slug": "klickpiloten",
+    "company_name": "KlickPiloten",
+    "domain": "klickpiloten.de",
+    "role": "AI Automation Engineer \u2013 Marketing & Operations Consulting (m/w/d)",
+    "score": 100,
+    "tier": "HIGH_FIT",
+    "languages": [
+      "en",
+      "de"
+    ]
   }
 ]
