@@ -20,22 +20,21 @@ timeline
     title Evolution of hire.akshundogra.com Infrastructure
     Phase 1 : Legacy n8n + Flask Webhook Microservices
             : Self-Hosted Docker n8n + Flask Webhook Server
-            : Screaming Frog CLI (SEO Crawl & Privacy Policy Tech Scan)
-            : Performance Marketing Ad Signal & SpyFu Data Ingestion
+            : Screaming Frog CLI for SEO and Tech Stack Crawls
+            : Performance Marketing Ad Signal and SpyFu Data Ingestion
             : DuckDuckGo Funding Lookup Engine
             : Single Claude Sonnet/Haiku LLM Generation
-            : Python Pillow GIF OG-Image Generator ("HI COMPANY, I HAVE A PROPOSITION")
-            : Flat Single-Company Directory Structure (/{company}/)
-    Phase 2 : RevPilot AI (Chatur) Autonomous Agentic Operating System
+            : Python Pillow GIF Dynamic Hero Generator
+            : Flat Single-Company Directory Structure
+    Phase 2 : RevPilot AI Autonomous Agentic Operating System
             : Native Single-Repo Python 3.13 + FastAPI Architecture
             : 6 Specialist Evidence Lanes (Performance, GEO, Hiring, Market, Activation, Tech)
-            : Multi-Source JD Waterfall (LinkedIn -> Playwright JS -> Search Fallback -> ATS APIs)
-            : 2-Step Model Routing (Gemini 3.7 Flash Fact Lock -> GPT-5.6 Terra Page Composer)
-            : Role-Specific Directory Architecture (/{company-slug}/{role-slug}/)
-            : Conditional Bilingual Localization (English + German with Static EN/DE Switch)
-            : Scan-First H1 Contract (<15 words / 110 chars) & Fail-Closed detect-secrets Security
-            : 24/7 macOS LaunchAgent Daemons & 2-Way Interactive Telegram Phone Approval
-            : Live Operator Control Dashboard & REST API (:8000)
+            : Multi-Source JD Waterfall (LinkedIn, Playwright JS, Public Search, ATS APIs)
+            : 2-Step Model Routing (Gemini 3.7 Flash Fact Lock and GPT-5.6 Terra Composer)
+            : Role-Specific Directory Architecture with EN/DE Localization Switch
+            : Scan-First H1 Contract and Fail-Closed detect-secrets Security
+            : 24/7 macOS LaunchAgent Daemons and 2-Way Telegram Phone Approval
+            : Live Operator Control Dashboard and REST API Server
 ```
 
 ---
@@ -62,41 +61,41 @@ Every personalized landing page and proposal is generated from a validated, sani
 ```mermaid
 flowchart TD
     subgraph Discovery ["📥 Discovery & Inbound Waterfall"]
-        A1[Gmail Job Alert Listener / LinkedIn Digest] --> A2{Deduplication & ICP Exclusion Guard}
-        A2 -->|Pass| A3[Multi-Source JD Enrichment Waterfall]
-        A3 -->|Order: LinkedIn -> JS Render -> Public Search -> ATS API| A4[Sanitized Job Description & Role Lock]
+        A1["Gmail Job Alert Listener / LinkedIn Digest"] --> A2{"Deduplication & ICP Exclusion Guard"}
+        A2 -->|"Pass"| A3["Multi-Source JD Enrichment Waterfall"]
+        A3 -->|"Order: LinkedIn → JS Render → Public Search → ATS API"| A4["Sanitized Job Description & Role Lock"]
     end
 
     subgraph Intelligence ["🧠 Signal Intelligence & Fact Selection"]
-        A4 --> B1[Specialist Evidence Collectors\nAds, SEO/GEO, Tech, Hiring, Market]
-        B1 --> B2[Sanitized Knowledge Graph]
-        B2 --> B3[Scoring Engine: Fit Score 0-100 & Tiering]
-        B3 --> B4[Gemini 3.7 Flash High:\nFact Selection + 4 Role Observations]
-        B4 --> B5[Python Ground-Truth Resolution & Observation Lock]
+        A4 --> B1["Specialist Evidence Collectors<br>Ads, SEO/GEO, Tech, Hiring, Market"]
+        B1 --> B2["Sanitized Knowledge Graph"]
+        B2 --> B3["Scoring Engine: Fit Score 0-100 & Tiering"]
+        B3 --> B4["Gemini 3.7 Flash High:<br>Fact Selection + 4 Role Observations"]
+        B4 --> B5["Python Ground-Truth Resolution & Observation Lock"]
     end
 
     subgraph Generation ["⚡ Page Decision & Localization"]
-        B5 --> C1[Codex CLI: GPT-5.6 Terra High\nOne Page-Composition Call]
-        C1 --> C2{Deterministic Quality Gates\nScan-First H1, Phased Plan, Hygiene}
-        C2 -->|Fail| C3[One Bounded Targeted Repair]
+        B5 --> C1["Codex CLI: GPT-5.6 Terra High<br>One Page-Composition Call"]
+        C1 --> C2{"Deterministic Quality Gates<br>Scan-First H1, Phased Plan, Hygiene"}
+        C2 -->|"Fail"| C3["One Bounded Targeted Repair"]
         C3 --> C2
-        C2 -->|Pass| C4{Predominantly German JD?}
-        C4 -->|Yes| C5[Gemini Translation:\nTranslates Approved Page Fields]
-        C4 -->|No (English)| C6[English Page Ready]
-        C5 --> C7[Bilingual EN + DE Static Pages]
+        C2 -->|"Pass"| C4{"Predominantly German JD?"}
+        C4 -->|"Yes (German)"| C5["Gemini Translation:<br>Translates Approved Page Fields"]
+        C4 -->|"No (English)"| C6["English Page Ready"]
+        C5 --> C7["Bilingual EN + DE Static Pages"]
     end
 
     subgraph Security ["🔒 Security & Publication"]
-        C6 --> D1[Fail-Closed detect-secrets & Git Remote Scan]
+        C6 --> D1["Fail-Closed detect-secrets & Git Remote Scan"]
         C7 --> D1
-        D1 -->|Pass| D2[Publisher Agent:\nAtomic Git Commit to hire.akshundogra.com]
-        D2 --> D3[Deploy to GitHub Pages\n/{company}/{role}/ and /{company}/{role}/de/]
+        D1 -->|"Pass"| D2["Publisher Agent:<br>Atomic Git Commit to hire.akshundogra.com"]
+        D2 --> D3["Deploy to GitHub Pages<br>/{company}/{role}/ and /{company}/{role}/de/"]
     end
 
     subgraph Telemetry ["📡 Real-Time Telemetry & Phone Approval"]
-        D3 --> E1[Google Analytics 4 UTM Tracking]
-        E1 --> E2[Telegram Bot Alert to Akshun]
-        D3 --> E3[Operator Control Dashboard\nhttp://localhost:8000/dashboard]
+        D3 --> E1["Google Analytics 4 UTM Tracking"]
+        E1 --> E2["Telegram Bot Alert to Akshun"]
+        D3 --> E3["Operator Control Dashboard<br>http://localhost:8000/dashboard"]
     end
 ```
 
